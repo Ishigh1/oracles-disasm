@@ -200,7 +200,7 @@ giveTreasure_body:
 ; column with the parameter in the third column.
 ; Example: When Link gets the seed satchel, he also gets 20 ember seeds.
 @extraItemsToAddTable:
-	.db TREASURE_SEED_SATCHEL	TREASURE_EMBER_SEEDS		$20
+	.db TREASURE_SEED_SATCHEL	TREASURE_EMBER_SEEDS		$0
 	.db TREASURE_HEART_CONTAINER	TREASURE_HEART_REFILL		$40
 	.db TREASURE_BOMB_FLOWER	TREASURE_BOMB_FLOWER_LOWER_HALF	$00
 	.db TREASURE_TUNE_OF_ECHOES	TREASURE_HARP			$01

@@ -438,7 +438,7 @@ groups:
     text: |-
       \pos(2)You got a \col(1)Seed
       Satchel\col(0)! And it
-      has 20 \col(1)Ember
+      has no \col(1)Ember
       Seeds\col(0)!
 
   - name: TX_002e
@@ -684,8 +684,8 @@ groups:
   - name: TX_004e
     index: 0x4e
     text: |-
-      You got \col(1)ten
-      Ore Chunks\col(0)!
+      You got \col(1)
+      Gale Seeds\col(0)!
 
   - name: TX_004f
     index: 0x4f
@@ -8048,29 +8048,22 @@ groups:
   - name: TX_2e00
     index: 0x00
     text: |-
-      Maku Tree Gate\stop
-      Show courage to
-      gain passage!
+      \left Bomb jumps
 
   - name: TX_2e01
     index: 0x01
     text: |-
-      Vases wanted!
-       Ingo, Collector
+      \left Bomb jumps 2
 
-  - name:
-    - TX_2e02
-    - TX_2e03
-    - TX_2e04
-    index:
-    - 0x02
-    - 0x03
-    - 0x04
+  - name: TX_2e02
+    index: 0x02
     text: |-
-      Flying Cucco\stop
-      Flaps when held.
-      Otherwise,
-      it's dangerous.
+      \left Bomb jumps 3
+
+  - name: TX_2e03
+    index: 0x03
+    text: |-
+      \left Bomb jumps 4
 
   - name: TX_2e05
     index: 0x05

@@ -631,7 +631,7 @@ linkApplyDamage:
 	; Apply the damage (finally update wLinkHealth)
 	ld a,(de)
 --
-	dec (hl)
+	; dec (hl)
 	add $02
 	jr nc,--
 

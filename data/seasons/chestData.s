@@ -17,6 +17,7 @@ chestDataGroupTable:
 	.dw chestGroup7Data
 
 chestGroup0Data:
+	m_ChestData $31, $7b, TREASURE_OBJECT_FEATHER_01
 	m_ChestData $11, $f5, TREASURE_OBJECT_RUPEES_03
 	m_ChestData $58, $f9, TREASURE_OBJECT_RUPEES_03
 	m_ChestData $11, $8e, TREASURE_OBJECT_GASHA_SEED_01
@@ -34,12 +35,16 @@ chestGroup1Data:
 
 chestGroup2Data:
 chestGroup3Data:
+	m_ChestData $38, $81, TREASURE_OBJECT_BOMBS_00
 	m_ChestData $34, $9b, TREASURE_OBJECT_GASHA_SEED_01
 	m_ChestData $13, $88, TREASURE_OBJECT_BOMBS_00
 	.db $ff
 
 chestGroup4Data:
-	m_ChestData $5b, $03, TREASURE_OBJECT_SMALL_KEY_03
+	m_ChestData $1d, $02, TREASURE_OBJECT_SEED_SATCHEL_00
+	m_ChestData $11, $00, TREASURE_OBJECT_GALE_SEEDS_00
+	m_ChestData $1d, $01, TREASURE_OBJECT_SEED_SATCHEL_00
+	m_ChestData $11, $03, TREASURE_OBJECT_GALE_SEEDS_00
 	m_ChestData $5d, $05, TREASURE_OBJECT_RUPEES_04
 	m_ChestData $27, $06, TREASURE_OBJECT_SWORD_00
 	m_ChestData $11, $0d, TREASURE_OBJECT_GASHA_SEED_01

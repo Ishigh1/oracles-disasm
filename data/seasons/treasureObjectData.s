@@ -61,7 +61,7 @@ treasureObjectData:
 	/* $20 */ m_TreasurePointer treasureObjectData20
 	/* $21 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_SCENT_SEEDS_00
 	/* $22 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_PEGASUS_SEEDS_00
-	/* $23 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_GALE_SEEDS_00
+	/* $23 */ m_TreasureSubid   $30, $20, $4e, $09, TREASURE_OBJECT_GALE_SEEDS_00
 	/* $24 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_MYSTERY_SEEDS_00
 	/* $25 */ m_TreasureSubid   $38, $00, <TX_00_GET_ECHOES,   $82, TREASURE_OBJECT_TUNE_OF_ECHOES_00
 	/* $26 */ m_TreasureSubid   $38, $00, <TX_00_GET_CURRENTS, $83, TREASURE_OBJECT_TUNE_OF_CURRENTS_00
@@ -134,7 +134,7 @@ treasureObjectData16:
 
 treasureObjectData19:
 	m_BeginTreasureSubids TREASURE_SEED_SATCHEL
-	m_TreasureSubid $0a, $01, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_00
+	m_TreasureSubid $30, $01, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_00
 	m_TreasureSubid $01, $00, $46, $20, TREASURE_OBJECT_SEED_SATCHEL_UPGRADE
 
 treasureObjectData01:
@@ -145,7 +145,7 @@ treasureObjectData01:
 
 treasureObjectData03:
 	m_BeginTreasureSubids TREASURE_BOMBS
-	m_TreasureSubid $38, $10, $4d, $05, TREASURE_OBJECT_BOMBS_00
+	m_TreasureSubid $30, $10, $4d, $05, TREASURE_OBJECT_BOMBS_00
 	m_TreasureSubid $30, $10, $4d, $05, TREASURE_OBJECT_BOMBS_01
 	m_TreasureSubid $02, $10, $4d, $05, TREASURE_OBJECT_BOMBS_02
 	m_TreasureSubid $38, $30, $4d, $05, TREASURE_OBJECT_BOMBS_03

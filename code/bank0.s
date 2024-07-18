@@ -4924,7 +4924,7 @@ decNumBombs:
 
 	call setStatusBarNeedsRefreshBit1
 	ld a,(hl)
-	sub $01
+	; sub $01
 	daa
 	ld (hl),a
 	or h
