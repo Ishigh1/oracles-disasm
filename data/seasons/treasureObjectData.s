@@ -139,7 +139,7 @@ treasureObjectData19:
 
 treasureObjectData01:
 	m_BeginTreasureSubids TREASURE_SHIELD
-	m_TreasureSubid $0a, $01, $1f, $13, TREASURE_OBJECT_SHIELD_00
+	m_TreasureSubid $3a, $01, $1f, $13, TREASURE_OBJECT_SHIELD_00
 	m_TreasureSubid $0a, $02, $20, $14, TREASURE_OBJECT_SHIELD_01
 	m_TreasureSubid $0a, $03, $21, $15, TREASURE_OBJECT_SHIELD_02
 
@@ -161,7 +161,7 @@ treasureObjectData05:
 
 treasureObjectData06:
 	m_BeginTreasureSubids TREASURE_BOOMERANG
-	m_TreasureSubid $0a, $01, $22, $1c, TREASURE_OBJECT_BOOMERANG_00
+	m_TreasureSubid $3a, $01, $22, $1c, TREASURE_OBJECT_BOOMERANG_00
 	m_TreasureSubid $38, $02, $23, $1d, TREASURE_OBJECT_BOOMERANG_01
 
 treasureObjectData07:
@@ -186,7 +186,7 @@ treasureObjectData0c:
 
 treasureObjectData0d:
 	m_BeginTreasureSubids TREASURE_BOMBCHUS
-	m_TreasureSubid $0a, $10, $32, $24, TREASURE_OBJECT_BOMBCHUS_00
+	m_TreasureSubid $0a, $99, $32, $24, TREASURE_OBJECT_BOMBCHUS_00
 	m_TreasureSubid $30, $10, $32, $24, TREASURE_OBJECT_BOMBCHUS_01
 
 treasureObjectData13:
@@ -272,8 +272,8 @@ treasureObjectData2d:
 
 treasureObjectData30:
 	m_BeginTreasureSubids TREASURE_SMALL_KEY
-	m_TreasureSubid $18, $01, $ff, $42, TREASURE_OBJECT_SMALL_KEY_00
-	m_TreasureSubid $28, $01, $ff, $42, TREASURE_OBJECT_SMALL_KEY_01
+	m_TreasureSubid $39, $01, $1a, $42, TREASURE_OBJECT_SMALL_KEY_00
+	m_TreasureSubid $28, $01, $1a, $42, TREASURE_OBJECT_SMALL_KEY_01
 	m_TreasureSubid $49, $01, $1a, $42, TREASURE_OBJECT_SMALL_KEY_02
 	m_TreasureSubid $38, $01, $1a, $42, TREASURE_OBJECT_SMALL_KEY_03
 
@@ -313,7 +313,7 @@ treasureObjectData41:
 
 treasureObjectData42:
 	m_BeginTreasureSubids TREASURE_GNARLED_KEY
-	m_TreasureSubid $29, $00, $42, $44, TREASURE_OBJECT_GNARLED_KEY_00
+	m_TreasureSubid $3a, $00, $42, $44, TREASURE_OBJECT_GNARLED_KEY_00
 	m_TreasureSubid $09, $00, $42, $44, TREASURE_OBJECT_GNARLED_KEY_01
 
 treasureObjectData4a:

@@ -3455,18 +3455,7 @@ initializeGame:
 	ld (wActiveMusic),a
 .endif
 
-; HACK-BASE: Disable pregame intro when quickstart is enabled
-.ifdef QUICKSTART_ENABLE
 	jr func_5a60
-.else
-	ld a,GLOBALFLAG_PREGAME_INTRO_DONE
-	call checkGlobalFlag
-	jr nz,func_5a60
-
-	ld a,GLOBALFLAG_3d
-	call checkGlobalFlag
-	jr nz,@summonLinkCutscene
-.endif
 
 	ld a,$02
 	ld (wGameState),a

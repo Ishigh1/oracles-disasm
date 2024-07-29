@@ -381,7 +381,7 @@ m_section_free Seasons_Interactions_Bank0a NAMESPACE seasonsInteractionsBank0a
 	.include "object_code/seasons/interactions/9a.s"
 	.include "object_code/seasons/interactions/9b.s"
 	.include "object_code/seasons/interactions/springBloomFlower.s"
-	.include "object_code/seasons/interactions/impa.s"
+	.include "object_code/seasons/interactions/npc/impa.s"
 	.include "object_code/seasons/interactions/samasaDesertGate.s"
 	.include "object_code/common/interactions/movingSidescrollPlatform.s"
 	.include "object_code/common/interactions/movingSidescrollConveyor.s"

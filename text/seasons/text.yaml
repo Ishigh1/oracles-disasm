@@ -7097,32 +7097,9 @@ groups:
   - name: TX_2500
     index: 0x00
     text: |-
-      \Link! Are
-      you all right?\stop
-      Actually, I am
-      the nurse of
-      \col(3)Hyrule's\col(0)
-      \col(3)Princess Zelda\col(0).
-      And \col(3)Din's\col(0) no
-      dancer either.
-      She is actually\stop
-      the Oracle of
-      Seasons who
-      wields control
-      over the forces
-      of nature. \col(3)Zelda\col(0)
-      has mystical
-      powers that told
-      of a curtain of
-      shadow drawing
-      around \col(3)Din\col(0).
-      I was instructed
-      to take her to
-      \col(3)Hyrule\col(0) in
-      secret.\stop
-      \call(TX_2502)\stop
-      \jump(TX_2503)
-    null_terminator: False
+      It's dangerous 
+      to go alone!
+      Take this.
 
   - name: TX_2501
     index: 0x01
@@ -8060,10 +8037,18 @@ groups:
 
   - name:
     - TX_2e02
+    index:
+    - 0x02
+    text: |-
+      I got somes
+      explosive 
+      for you
+       Impa
+
+  - name:
     - TX_2e03
     - TX_2e04
     index:
-    - 0x02
     - 0x03
     - 0x04
     text: |-
@@ -10284,23 +10269,21 @@ groups:
   - name: TX_3300
     index: 0x00
     text: |-
-      Return light to
-      unlit torches!
+      Give me
+      explosive and 
+      I shall reward 
+      you with wisdom.
+        \opt()No \opt()Yes
 
   - name: TX_3301
     index: 0x01
     text: |-
-      What you seek
-      is in the eye.
+      You gave all your bombchus to the old man.
 
   - name: TX_3302
     index: 0x02
     text: |-
-      This is the
-      \col(3)Hero's Cave\col(0).\stop
-      Continue on if
-      you trust your
-      skills.
+      Push the fifth block of the third column down and the path shall open.
 
   - name: TX_3303
     index: 0x03

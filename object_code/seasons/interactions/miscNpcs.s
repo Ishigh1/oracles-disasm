@@ -125,29 +125,7 @@ mrWrite_spawnLightableTorch:
 
 dungeonWiseOldMan_textLookup:
 	ld e,$42
-	ld a,(de)
-	or a
-	jr nz,@ret
-	ld a,(wDungeonIndex)
-	dec a
-	bit 7,a
-	jr z,+
-	xor a
-+
-	ld hl,@textLookup
-	rst_addAToHl
-	ld e,$72
-	ld a,(hl)
-	ld (de),a
-	inc e
-	ld a,>TX_3300
-	ld (de),a
-@ret:
 	jp func_5723
-@textLookup:
-	.db <TX_3300, $00, $00,      <TX_3301
-	.db $00,      $00, $00,      $00
-	.db $00,      $00, <TX_3302
 
 ;;
 ; @param[out]	zflag	set if NPC should not be seen

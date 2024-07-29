@@ -527,6 +527,14 @@
 ; @subid_02{Normal eyeball looking at Link}
 ; @subid_03{Spawner for subid 4 (final dungeon eyeball puzzle)}
 ; @subid_04{Final dungeon eyeballs (looking away from direction to go)}
+; @subid_05{Spawner for subid 6}
+; @subid_06{Eyeball looking up}
+; @subid_07{Spawner for subid 8}
+; @subid_08{Eyeball looking right}
+; @subid_09{Spawner for subid a}
+; @subid_0a{Eyeball looking down}
+; @subid_0b{Spawner for subid c}
+; @subid_0c{Eyeball looking left}
 .define INTERAC_STATUE_EYEBALL $e2
 
 ;;

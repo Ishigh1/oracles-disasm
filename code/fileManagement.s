@@ -379,6 +379,7 @@ initialFileVariables:
 	; Initial spawn location
 	.db <wDeathRespawnBuffer.group,		$00
 	.db <wDeathRespawnBuffer.room,		$a7
+	.db <wDeathRespawnBuffer.stateModifier, SEASON_WINTER
 	.db <wDeathRespawnBuffer.y,		$38
 	.db <wDeathRespawnBuffer.x,		$48
 	.db <wDeathRespawnBuffer.facingDir,	$02

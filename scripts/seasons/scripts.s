@@ -633,9 +633,24 @@ ficklManScript_textA:
 dungeonWiseOldManScript:
 	initcollisions
 -
+	enableinput
 	checkabutton
-	showloadedtext
-	asm15 scriptHelp.dungeonWiseOldMan_setLinksInvincibilityCounterTo0
+	disableinput
+	jumpifroomflagset $40, @showHint
+	showtext TX_3300
+	wait 1
+	jumpiftextoptioneq $00, @answeredNo
+@answeredYes:
+	wait 30
+	asm15 scriptHelp.dungeonWiseOldMan_takeBombchus
+	orroomflag $40
+	showtext TX_3301
+	wait 30
+@showHint
+	showtext TX_3302
+@answeredNo:
+	wait 10
+	enableinput
 	scriptjump -
 	
 
@@ -6407,40 +6422,17 @@ impaScript_afterOnoxTakesDin:
 	rungenericnpc TX_2505
 	
 	
-impaScript_after1stEssence:
-	jumpifitemobtained TREASURE_ROD_OF_SEASONS, @gotRodOfSeasons
-	rungenericnpc TX_2510
-@gotRodOfSeasons:
-	rungenericnpc TX_2506
-	
-impaScript_after2ndEssence:
-	rungenericnpc TX_2507
-	
-impaScript_after3rdEssence:
-	jumpifitemobtained TREASURE_FLIPPERS, @gotFlippers
-	rungenericnpc TX_2508
-@gotFlippers:
-	rungenericnpc TX_2509
-	
-impaScript_after4thEssence:
-	rungenericnpc TX_250a
-	
-impaScript_after5thEssence:
-	asm15 scriptHelp.impa_checkIf4thEssenceGotten
-	jumptable_memoryaddress $cfc0
-	.dw @got4thEssence
-	.dw impaScript_after3rdEssence@gotFlippers
-@got4thEssence:
-	rungenericnpc TX_250b
-	
-impaScript_after6thEssence:
-	rungenericnpc TX_250c
-	
-impaScript_after7thEssence:
-	rungenericnpc TX_250d
-	
-impaScript_after8thEssence:
-	rungenericnpc TX_250e
+impaScript_givebombchus:
+	initcollisions
+-
+	enableinput
+	checkabutton
+	disableinput
+	showtext TX_2500
+	wait 20
+	giveitem TREASURE_OBJECT_BOMBCHUS_00
+	wait 20
+	scriptjump -
 	
 impaScript_villagersSeenButNoMakuSeed:
 	initcollisions

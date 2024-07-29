@@ -483,6 +483,7 @@
 ; @subid_24{TODO:}
 ; @subid_25{TODO:}
 ; @subid_26{TODO:}
+; @subid_26{Create a chest at position Y which appears when [wActiveTriggers] == X, but which also disappears when the trigger is released.}
 .define INTERAC_MISCELLANEOUS_1 $6b
 
 ;;

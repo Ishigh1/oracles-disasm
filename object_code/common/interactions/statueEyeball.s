@@ -10,6 +10,14 @@ interactionCodee2:
 	.dw @subid2
 	.dw @subid3
 	.dw @subid4
+	.dw @subid5
+	.dw @subid6
+	.dw @subid7
+	.dw @subid8
+	.dw @subid9
+	.dw @subida
+	.dw @subidb
+	.dw @subidc
 
 @subid0:
 	call checkInteractionState
@@ -39,6 +47,34 @@ interactionCodee2:
 	ret z
 
 	call @centerOnTileAndGetDirectionToFace
+
+@subid6:
+	call checkInteractionState
+	jr z,@state0Common
+	
+	ld a,$00
+	jp @offsetPositionTowardLookingDirection
+
+@subid8:
+	call checkInteractionState
+	jr z,@state0Common
+	
+	ld a,$02
+	jp @offsetPositionTowardLookingDirection
+
+@subida:
+	call checkInteractionState
+	jr z,@state0Common
+	
+	ld a,$04
+	jp @offsetPositionTowardLookingDirection
+
+@subidc:
+	call checkInteractionState
+	jr z,@state0Common
+	
+	ld a,$06
+	jp @offsetPositionTowardLookingDirection
 
 @offsetPositionTowardLookingDirection:
 	ld hl,@lowPositionValues
@@ -203,3 +239,24 @@ interactionCodee2:
 	ld e,Interaction.counter1
 	ld (de),a
 	ret
+
+
+; Spawner for subid 6
+@subid5:
+	ld e,$06 ; subid
+	jp @spawnChildren
+	
+; Spawner for subid 8
+@subid7:
+	ld e,$08 ; subid
+	jp @spawnChildren
+	
+; Spawner for subid a
+@subid9:
+	ld e,$0a ; subid
+	jp @spawnChildren
+
+; Spawner for subid c
+@subidb:
+	ld e,$0c ; subid
+	jp @spawnChildren

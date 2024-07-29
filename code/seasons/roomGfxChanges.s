@@ -298,9 +298,7 @@ roomTileChangesAfterLoad01:
 ;;
 ; $03: Din's troupe screen: Draw tents and stuff if they should be there.
 roomTileChangesAfterLoad03:
-	call getThisRoomFlags
-	and $40
-	ret nz
+	ret
 
 	xor a
 	ld (wRoomLayout+$14),a
@@ -426,9 +424,7 @@ dinsTroupeVramAndCollisions:
 ;;
 ; $0e: West of din's troupe: create wagon
 roomTileChangesAfterLoad0e:
-	ld a,GLOBALFLAG_INTRO_DONE
-	call checkGlobalFlag
-	ret nz
+	ret
 
 	ld a,($ff00+R_SVBK)
 	ld c,a

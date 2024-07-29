@@ -63,7 +63,6 @@ group0WarpSources:
 	m_StandardWarp $0 $00 $03 $5 $4
 	m_StandardWarp $0 $00 $04 $5 $4
 	m_StandardWarp $0 $88 $00 $3 $4
-	m_StandardWarp $0 $b6 $02 $3 $4
 	m_PointerWarp     $d7 warpSource75e3
 	m_PointerWarp     $c5 warpSource7603
 	m_StandardWarp $0 $c8 $05 $3 $4
@@ -145,7 +144,10 @@ group0WarpSources:
 	m_StandardWarp $0 $a6 $9a $5 $4
 	m_StandardWarp $0 $e0 $46 $3 $4
 	m_StandardWarp $0 $7e $9b $5 $4
-	m_StandardWarp $0 $b6 $7b $0 $4
+	m_PointerWarp  $b6 group0Roomb6WarpSources
+	m_WarpListEndNoDefault
+group0Roomb6WarpSources:
+	m_PositionWarp $11 $0c $3 $4
 	m_WarpListEndNoDefault
 
 warpSource75e3:
@@ -211,7 +213,6 @@ warpSource763f:
 	m_WarpListEndWithDefault
 
 warpSource764b:
-	m_PositionWarp $57 $01 $4 $9
 	m_PositionWarp $54 $00 $4 $4
 	m_WarpListEndWithDefault
 

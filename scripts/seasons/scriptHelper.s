@@ -650,9 +650,9 @@ checkTalonReturned:
 ; ==================================================================================================
 ; INTERAC_DUNGEON_WISE_OLD_MAN
 ; ==================================================================================================
-dungeonWiseOldMan_setLinksInvincibilityCounterTo0:
-	xor a
-	ld (w1Link.invincibilityCounter),a
+dungeonWiseOldMan_takeBombchus:
+	ld a,TREASURE_BOMBCHUS
+	call loseTreasure
 	ret
 
 

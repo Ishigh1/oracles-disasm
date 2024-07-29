@@ -44,6 +44,7 @@ interactionCode6b:
 	.dw interactionCode6bSubid24
 	.dw interactionCode6bSubid25
 	.dw interactionCode6bSubid26
+	.dw interaction21_subid27
 
 floodgateKeeper:
 	call checkInteractionState
@@ -920,3 +921,64 @@ interactionCode6bSubid26:
 	ld hl,mainScripts.subrosianScript_templeFallenText
 	call interactionSetScript
 	jp interactionIncState
+
+; Create a chest at position Y which appears when [wActiveTriggers] == X, but which also
+; disappears when the trigger is released.
+interaction21_subid27:
+    call interactionDeleteAndRetIfEnabled02
+    call getThisRoomFlags
+    and ROOMFLAG_ITEM
+    jp nz,interactionDelete
+
+    ld e,Interaction.xh
+    ld a,(de)
+    ld b,a
+    ld a,(wActiveTriggers)
+    cp b
+    jr nz,@triggerInactive
+
+@triggerActive:
+    ld e,Interaction.yh
+    ld a,(de)
+    ld c,a
+    ld b,>wRoomLayout
+    ld a,(bc)
+    cp TILEINDEX_CHEST
+    ret z
+
+    ld a,TILEINDEX_CHEST
+    call setTile
+    call createPuffAt
+    ld a,SND_SOLVEPUZZLE
+    jp playSound
+
+@triggerInactive:
+    ld e,Interaction.yh
+    ld a,(de)
+    ld c,a
+    ld b,>wRoomLayout
+    ld a,(bc)
+    cp TILEINDEX_CHEST
+    ret nz
+
+    ; Retrieve whatever tile was there before the chest
+    ld a,:w3RoomLayoutBuffer
+    ld ($ff00+R_SVBK),a
+    ld b,>w3RoomLayoutBuffer
+    ld a,(bc)
+    ld l,a
+    xor a
+    ld ($ff00+R_SVBK),a
+
+    ld a,l
+    call setTile
+    jp createPuffAt
+
+;;
+; @param    c    Position to create puff at
+createPuffAt:
+    call getFreeInteractionSlot
+    ret nz
+    ld (hl),INTERAC_PUFF
+    ld l,Interaction.yh
+    jp setShortPosition_paramC
