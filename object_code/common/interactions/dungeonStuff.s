@@ -13,6 +13,7 @@ interactionCode12:
 .ifdef ROM_SEASONS
 	.dw @subid05
 .endif
+	.dw @subid06
 
 
 ; Show text upon entering a dungeon
@@ -236,3 +237,11 @@ interactionCode12:
 @@state2:
 	jp interactionDelete
 .endif
+
+@subid06:
+	ld a,LINK_STATE_FORCE_MOVEMENT
+	ld (wLinkForceState),a
+	ld e,Interaction.xh
+	ld a, (de)
+	ld (wLinkStateParameter),a
+	jp interactionDelete

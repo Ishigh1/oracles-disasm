@@ -88,6 +88,7 @@
 ;       This will search the room for tiles with indices between $40-$43, and create
 ;       staircase tiles at those positions.}
 ; @subid_05{Something seasons-specific}
+; @subid_06{Force link to walk for x frames (10 = 1 tile)}
 .define INTERAC_DUNGEON_STUFF $12
 
 ;;

@@ -2308,9 +2308,9 @@ group4Map06ObjectData:
 	obj_End
 
 group4Map07ObjectData:
-	obj_Interaction $13 $01 $38 $38
-	obj_Interaction $12 $04
 	obj_Pointer group4Map07EnemyObjectData
+	obj_Interaction $1e $08 $07 $78
+	obj_Interaction $12 $06 $00 $10
 	obj_End
 
 group4Map08ObjectData:
@@ -2397,10 +2397,18 @@ group4Map18ObjectData:
 	obj_End
 
 group4Map19ObjectData:
-	obj_Interaction $1e $08 $07 $00
-	obj_Interaction $1e $09 $5e $00
-	obj_Interaction $12 $02 $58 $78
 	obj_Pointer group4Map19EnemyObjectData
+	obj_Part $25 $02 $34
+	obj_Part $25 $00 $9a
+	obj_Part $25 $00 $92
+	obj_Part $25 $01 $83
+	obj_Part $25 $00 $5a
+
+	obj_Part $25 $03 $2b
+	obj_Part $25 $00 $9c
+	obj_Part $25 $01 $47
+
+	
 	obj_End
 
 group4Map1aObjectData:
@@ -2410,11 +2418,10 @@ group4Map1aObjectData:
 	obj_End
 
 group4Map1bObjectData:
-	obj_Interaction $1e $14 $07 $00
+	obj_Interaction $1e $04 $07 $00
 	obj_Interaction $12 $01 $58 $78
-	obj_Interaction $1e $0b $50 $00
-	obj_Pointer objectData_makeAllTorchesLightable
 	obj_Pointer group4Map1bEnemyObjectData
+	obj_Part $03 $01 $5d
 	obj_End
 
 group4Map1cObjectData:

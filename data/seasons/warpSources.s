@@ -461,7 +461,6 @@ group4WarpSources:
 	m_StandardWarp $4 $81 $04 $0 $3
 	m_StandardWarp $4 $a7 $05 $0 $3
 	m_StandardWarp $4 $ba $06 $0 $3
-	m_StandardWarp $0 $07 $00 $6 $2
 	m_StandardWarp $0 $0a $01 $6 $2
 	m_StandardWarp $0 $1f $02 $6 $2
 	m_StandardWarp $0 $32 $03 $6 $2
