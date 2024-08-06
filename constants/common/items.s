@@ -71,4 +71,5 @@
 .endif
 	ITEM_RICKY_TORNADO		db ; 0x2a
 	ITEM_DIMITRI_MOUTH		db ; 0x2b: invisible item
+	ITEM_TEMPORARY_COLLISION db ; 0x2c
 .ende

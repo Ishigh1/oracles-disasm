@@ -13,11 +13,14 @@ enableLinkAndMenu:
 dungeonScript_end:
 	scriptend
 
-
 dungeonScript_checkActiveTriggersEq01:
 	stopifitemflagset
 	checkmemoryeq wActiveTriggers, $01
+	scriptjump spawnChestAfterPuff
 
+dungeonScript_checkActiveTriggersEq03:
+	stopifitemflagset
+	checkmemoryeq wActiveTriggers, $03
 
 spawnChestAfterPuff:
 	playsound SND_SOLVEPUZZLE

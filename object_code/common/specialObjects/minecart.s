@@ -286,6 +286,7 @@ minecartCheckCollisions:
 	xor a
 	ret
 +
+	call @checkSwitch
 	; Reverse direction
 	ld a,(de)
 	xor $02
@@ -350,6 +351,85 @@ minecartCheckCollisions:
 
 	scf
 	ret
+
+@checkSwitch:
+	; Check if the next tile is a switch
+	ld a,c
+	sub TILEINDEX_DUNGEON_SWITCH_OFF
+	cp $02
+	ret nc
+
+	; Get offset
+	; Get minecart tile on e
+	ld e,SpecialObject.yh
+	ld a,(de)
+	ld b,a
+	ld e,SpecialObject.xh
+	ld a,(de)
+	ld c,a
+	call getTileAtPosition
+
+	; Find the relevant data in @positionTrackOffsets based on the tile the minecart is
+	; currently on.
+	ld h,d
+	ld l,SpecialObject.direction
+	add a,(hl)
+	swap a
+	ld hl,@trackData
+	rst_addAToHl
+
+	jr +
+	ld e,SpecialObject.direction
+	ld a,(de)
+	ld hl,@positionOffsets
+	rst_addDoubleIndex
+	ldi a,(hl)
+	ld c,(hl)
+	ld b,a
++
+	call getFreeItemSlot
+	ret nz
+
+	; Set Item.enabled
+	inc (hl)
+	inc l
+
+	; Set Item.id
+	ld (hl),ITEM_TEMPORARY_COLLISION
+
+	call objectCopyPositionWithOffset
+	ld e,SpecialObject.direction
+
+	ret
+
+@positionOffsets:
+	; DIR_UP
+	.db TILEINDEX_TRACK_VERTICAL $f0 $00 ; DIR_UP
+	.db TILEINDEX_TRACK_TL       $00 $f0 ; DIR_LEFT
+	.db TILEINDEX_TRACK_TR       $00 $10 ; DIR_RIGHT
+	.db $00
+
+	; DIR_RIGHT
+	.db TILEINDEX_TRACK_HORIZONTAL $00 $10 ; DIR_RIGHT
+	.db TILEINDEX_TRACK_BR         $10 $00 ; DIR_DOWN
+	.db TILEINDEX_TRACK_TR         $f0 $00 ; DIR_UP
+	.db $00
+
+	; DIR_DOWN
+	.db TILEINDEX_TRACK_VERTICAL $10 TILEINDEX_TRACK_VERTICAL   TILEINDEX_TRACK_BR TILEINDEX_TRACK_BL
+	.db TILEINDEX_TRACK_BR       $ff TILEINDEX_TRACK_HORIZONTAL TILEINDEX_TRACK_BL TILEINDEX_TRACK_TL
+	.db TILEINDEX_TRACK_BL       $01 TILEINDEX_TRACK_HORIZONTAL TILEINDEX_TRACK_BR TILEINDEX_TRACK_TR
+	.db $00
+
+	; DIR_LEFT
+	.db TILEINDEX_TRACK_HORIZONTAL $ff TILEINDEX_TRACK_HORIZONTAL TILEINDEX_TRACK_BL TILEINDEX_TRACK_TL
+	.db TILEINDEX_TRACK_BL         $f0 TILEINDEX_TRACK_VERTICAL   TILEINDEX_TRACK_TR TILEINDEX_TRACK_TL
+	.db TILEINDEX_TRACK_TL         $10 TILEINDEX_TRACK_VERTICAL   TILEINDEX_TRACK_BR TILEINDEX_TRACK_BL
+	.db $00
+	.db $f0 $00 ; DIR_UP
+	.db $00 $10 ; DIR_RIGHT
+	.db $10 $00 ; DIR_DOWN
+	.db $00 $f0 ; DIR_LEFT
 
 ;;
 ; Creates an invisible item object which stays with the minecart to give it collision with enemies

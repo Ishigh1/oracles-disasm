@@ -111,6 +111,9 @@ updateItems:
 	.dw itemCode29 ; 0x29
 	.dw itemCode2a ; 0x2a
 	.dw itemCode2b ; 0x2b
+.ifdef ROM_SEASONS
+	.dw itemCode2c ; 0x2c
+.endif
 
 ;;
 ; The main difference between this and the above "updateItems" is that this is called
@@ -186,3 +189,6 @@ updateItemPost:
 	.dw itemCodeNilPost	; 0x29
 	.dw itemCodeNilPost	; 0x2a
 	.dw itemCodeNilPost	; 0x2b
+.ifdef ROM_SEASONS
+	.dw itemCodeNilPost	; 0x2c
+.endif

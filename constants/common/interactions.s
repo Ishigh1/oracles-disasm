@@ -250,6 +250,30 @@
 ;
 ; @subid{Bitmask to check on wSwitchState (if nonzero, "active" tile is placed)}
 ; @X{"index" of tile replacement (defines what tiles are placed for on/off)}
+; @X_00{H BR}
+; @X_01{H TL}
+; @X_02{H TR}
+; @X_03{H BL}
+; @X_04{V BR}
+; @X_05{V TL}
+; @X_06{V TR}
+; @X_07{V BL}
+; @X_08{BR H}
+; @X_09{TL H}
+; @X_0a{TR H}
+; @X_0b{BL H}
+; @X_0c{BR V}
+; @X_0d{TL V}
+; @X_0e{TR V}
+; @X_0f{BL V}
+; @X_10{BR TR}
+; @X_11{TL BL}
+; @X_12{TR BR}
+; @X_13{BL TL}
+; @X_14{BR BL}
+; @X_15{TL TR}
+; @X_16{TR TL}
+; @X_17{BL BR}
 ; @Y{Position of tile that should change when wSwitchState changes}
 ; @postype{short}
 .define INTERAC_SWITCH_TILE_TOGGLER $78

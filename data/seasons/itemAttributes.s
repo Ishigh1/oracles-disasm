@@ -51,3 +51,4 @@ itemAttributes:
 	.db $98 $66 $fc $7e ; $29: ITEM_MAGNET_BALL
 	.db $99 $66 $fc $00 ; $2a: ITEM_RICKY_TORNADO
 	.db $8f $88 $fc $00 ; $2b: ITEM_DIMITRI_MOUTH
+	.db $84 $00 $f8 $7e ; $2c: ITEM_TEMPORARY_COLLISION

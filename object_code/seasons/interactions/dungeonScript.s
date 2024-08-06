@@ -63,7 +63,7 @@ interactionCode20:
 
 @dungeon1:
 	.dw mainScripts.dungeonScript_minibossDeath
-	.dw mainScripts.dungeonScript_checkActiveTriggersEq01
+	.dw mainScripts.dungeonScript_checkActiveTriggersEq03
 	.dw mainScripts.dungeonScript_checkActiveTriggersEq01
 	.dw mainScripts.dungeonScript_bossDeath
 

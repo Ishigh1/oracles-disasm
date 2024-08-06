@@ -186,6 +186,7 @@ m_section_free Bank_6 NAMESPACE bank6
 		.include "object_code/common/items/rickyTornado.s"
 		.include "object_code/common/items/magnetBall.s"
 		.include "object_code/common/items/rickyMooshAttack.s"
+		.include "object_code/common/items/tmpCollision.s"
 		.include "object_code/common/items/shovel.s"
 		.include "object_code/common/items/rodOfSeasons.s"
 		.include "object_code/common/items/minecartCollision.s"
