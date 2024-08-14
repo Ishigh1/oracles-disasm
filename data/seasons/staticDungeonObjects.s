@@ -1,4 +1,10 @@
-; See data/ages/staticDungeonObjects.s for documentation
+; Data format:
+; b0: object type (3=interaction, 4=enemy, 5=part)
+; b1: room index
+; b2: High byte of ID
+; b3: Bits 0-6 = low byte of id, bit 7 sets bit 1 of the object's ENABLED byte
+; b4: Y
+; b5: X
 
 staticDungeonObjects:
 	.dw dungeon0StaticObjects
@@ -20,7 +26,7 @@ dungeon0StaticObjects:
 
 dungeon1StaticObjects:
 	.db $03, $15, INTERAC_MINECART, $00, $18, $c8
-	.db $03, $15, INTERAC_MINECART, $00, $18, $68
+	.db $03, $15, INTERAC_MINECART, $00, $18, $28
 	.db $03, $15, INTERAC_MINECART, $00, $28, $18
 	.db $ff
 

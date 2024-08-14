@@ -249,7 +249,7 @@ group2WarpDestTable:
 
 group3WarpDestTable:
 	m_WarpDest $80 $ff $9 $3
-	m_WarpDest $c0 $20 $0 $4
+	m_WarpDest $91 $45 $0 $1
 	m_WarpDest $82 $ff $9 $3
 	m_WarpDest $83 $ff $9 $3
 	m_WarpDest $84 $ff $9 $3

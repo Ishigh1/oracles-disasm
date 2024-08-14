@@ -70,3 +70,5 @@ interactionCode78:
 	.db $5a $5b ; $15
 	.db $5b $5a ; $16
 	.db $5c $59 ; $17
+	.db TILEINDEX_TRACK_BL TILEINDEX_TRACK_BR ; $18
+	.db TILEINDEX_TRACK_VERTICAL TILEINDEX_TRACK_HORIZONTAL ; $19

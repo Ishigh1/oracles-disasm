@@ -250,30 +250,32 @@
 ;
 ; @subid{Bitmask to check on wSwitchState (if nonzero, "active" tile is placed)}
 ; @X{"index" of tile replacement (defines what tiles are placed for on/off)}
-; @X_00{H BR}
-; @X_01{H TL}
-; @X_02{H TR}
-; @X_03{H BL}
-; @X_04{V BR}
-; @X_05{V TL}
-; @X_06{V TR}
-; @X_07{V BL}
-; @X_08{BR H}
-; @X_09{TL H}
-; @X_0a{TR H}
-; @X_0b{BL H}
-; @X_0c{BR V}
-; @X_0d{TL V}
-; @X_0e{TR V}
-; @X_0f{BL V}
-; @X_10{BR TR}
-; @X_11{TL BL}
-; @X_12{TR BR}
-; @X_13{BL TL}
-; @X_14{BR BL}
-; @X_15{TL TR}
-; @X_16{TR TL}
-; @X_17{BL BR}
+; @X_00{H TL}
+; @X_01{H BR}
+; @X_02{H BL}
+; @X_03{H TR}
+; @X_04{V TL}
+; @X_05{V BR}
+; @X_06{V BL}
+; @X_07{V TR}
+; @X_08{TL H}
+; @X_09{BR H}
+; @X_0a{TL H}
+; @X_0b{TR H}
+; @X_0c{TL V}
+; @X_0d{BR V}
+; @X_0e{TL V}
+; @X_0f{TR V}
+; @X_10{TL TL}
+; @X_11{BR TR}
+; @X_12{TL TL}
+; @X_13{TR BR}
+; @X_14{TL TR}
+; @X_15{BR TL}
+; @X_16{TL BR}
+; @X_17{TR TL}
+; @X_18{BL BR}
+; @X_19{V H}
 ; @Y{Position of tile that should change when wSwitchState changes}
 ; @postype{short}
 .define INTERAC_SWITCH_TILE_TOGGLER $78
@@ -566,3 +568,9 @@
 ; @subid_00{Blue snake help book}
 ; @subid_01{Red snake help book}
 .define INTERAC_RING_HELP_BOOK $e5
+
+;;
+; Like INTERAC_SWITCH_TILE_TOGGLER, but defined for the room to have less interactions
+; @subid_00{Room 40F}
+; @subid_01{Room 414}
+.define INTERAC_ROOM_TILE_TOGGLER $61

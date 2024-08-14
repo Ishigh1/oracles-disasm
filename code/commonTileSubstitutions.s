@@ -217,8 +217,27 @@ replaceSwitchTiles:
 .else; ROM_SEASONS
 
 	@group4SwitchData:
-		.db $0f $01 $0b $33
-		.db $0f $01 $5a $74
+		.db $0f $01 TILEINDEX_TRACK_TL $72
+    	.db $0f $01 TILEINDEX_TRACK_BL $78
+		.db $0f $01 TILEINDEX_DUNGEON_SWITCH_ON $7D
+
+		.db $0f $02 TILEINDEX_TRACK_BR $7A
+		
+		.db $0f $04 TILEINDEX_TRACK_BL $5A
+		.db $0f $04 TILEINDEX_GRASS $56
+		.db $0f $04 TILEINDEX_DUNGEON_SWITCH_ON $5C
+
+		.db $0f $08 TILEINDEX_TRACK_BR $3A
+		.db $0f $08 TILEINDEX_TRACK_BL $9A
+		.db $0f $08 TILEINDEX_DUNGEON_SWITCH_ON $1A
+
+		.db $0f $10 TILEINDEX_TRACK_TR $9C
+
+		.db $14 $01 TILEINDEX_TRACK_HORIZONTAL $2B
+		.db $14 $01 TILEINDEX_TRACK_TL $4B
+		.db $14 $01 TILEINDEX_DUNGEON_SWITCH_ON $6B
+
+
 		.db $6f $01 $0b $8c
 		.db $6f $01 $5c $29
 		.db $70 $02 $0b $28

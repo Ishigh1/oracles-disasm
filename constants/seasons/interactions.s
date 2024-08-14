@@ -397,8 +397,6 @@
 
 .define INTERAC_COMPANION_SPAWNER $5f
 
-.define INTERAC_STUB_61 $61
-
 ;;
 ; subid_00{Spawns subid01 4 times with var03 of 0-3}
 ; subid_01{Handles chests and contents, and opening order}

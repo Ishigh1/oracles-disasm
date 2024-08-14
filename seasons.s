@@ -344,6 +344,7 @@ m_section_free Seasons_Interactions_Bank09 NAMESPACE seasonsInteractionsBank09
 	.include "object_code/seasons/interactions/templeSinkingExplosion.s"
 	.include "object_code/seasons/interactions/makuTree.s"
 	.include "object_code/seasons/interactions/88.s"
+	.include "object_code/seasons/interactions/roomTileTogglerCaller.s"
 .ends
 
 
@@ -928,6 +929,7 @@ m_section_free Bank3f NAMESPACE bank3f
 	.include "code/treasureAndDrops.s"
 	.include "code/textbox.s"
 	.include "object_code/common/interactions/faroreMakeChest.s"
+	.include "object_code/seasons/interactions/roomTileToggler.s"
 
 	.include {"{GAME_DATA_DIR}/objectGfxHeaders.s"}
 	.include {"{GAME_DATA_DIR}/treeGfxHeaders.s"}

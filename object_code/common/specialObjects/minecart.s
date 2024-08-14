@@ -368,33 +368,43 @@ minecartCheckCollisions:
 	ld a,(de)
 	ld c,a
 	call getTileAtPosition
+	ld c,a
 
 	; Find the relevant data in @positionTrackOffsets based on the tile the minecart is
 	; currently on.
 	ld h,d
 	ld l,SpecialObject.direction
+	ld a,(hl)
+	sla a
+	sla a
+	sla a
 	add a,(hl)
-	swap a
-	ld hl,@trackData
-	rst_addAToHl
-
-	jr +
-	ld e,SpecialObject.direction
-	ld a,(de)
 	ld hl,@positionOffsets
-	rst_addDoubleIndex
+	rst_addAToHl
+--
+	ldi a,(hl)
+	cp c
+	jr z,++
+
+	ld a,$02
+	rst_addAToHl
+	jr --
+
+	; Found a matching tile in @positionOffsets
+++
 	ldi a,(hl)
 	ld c,(hl)
 	ld b,a
-+
+
 	call getFreeItemSlot
 	ret nz
 
-	; Set Item.enabled
+	ld l,Item.enabled
 	inc (hl)
 	inc l
 
 	; Set Item.id
+	; ld (hl),ITEM_BOMB ; Debug to see the item
 	ld (hl),ITEM_TEMPORARY_COLLISION
 
 	call objectCopyPositionWithOffset
@@ -404,32 +414,31 @@ minecartCheckCollisions:
 
 @positionOffsets:
 	; DIR_UP
-	.db TILEINDEX_TRACK_VERTICAL $f0 $00 ; DIR_UP
-	.db TILEINDEX_TRACK_TL       $00 $f0 ; DIR_LEFT
-	.db TILEINDEX_TRACK_TR       $00 $10 ; DIR_RIGHT
-	.db $00
+	.db TILEINDEX_TRACK_VERTICAL   $f0 $00 ; DIR_UP
+	.db TILEINDEX_TRACK_TR         $00 $f0 ; DIR_LEFT
+	.db TILEINDEX_TRACK_TL         $00 $10 ; DIR_RIGHT
 
 	; DIR_RIGHT
 	.db TILEINDEX_TRACK_HORIZONTAL $00 $10 ; DIR_RIGHT
-	.db TILEINDEX_TRACK_BR         $10 $00 ; DIR_DOWN
-	.db TILEINDEX_TRACK_TR         $f0 $00 ; DIR_UP
-	.db $00
+	.db TILEINDEX_TRACK_BR         $f0 $00 ; DIR_UP
+	.db TILEINDEX_TRACK_TR         $10 $00 ; DIR_DOWN
 
 	; DIR_DOWN
-	.db TILEINDEX_TRACK_VERTICAL $10 TILEINDEX_TRACK_VERTICAL   TILEINDEX_TRACK_BR TILEINDEX_TRACK_BL
-	.db TILEINDEX_TRACK_BR       $ff TILEINDEX_TRACK_HORIZONTAL TILEINDEX_TRACK_BL TILEINDEX_TRACK_TL
-	.db TILEINDEX_TRACK_BL       $01 TILEINDEX_TRACK_HORIZONTAL TILEINDEX_TRACK_BR TILEINDEX_TRACK_TR
-	.db $00
+	.db TILEINDEX_TRACK_VERTICAL   $10 $00 ; DIR_DOWN
+	.db TILEINDEX_TRACK_BR         $00 $f0 ; DIR_LEFT
+	.db TILEINDEX_TRACK_BL         $00 $10 ; DIR_RIGHT
 
 	; DIR_LEFT
-	.db TILEINDEX_TRACK_HORIZONTAL $ff TILEINDEX_TRACK_HORIZONTAL TILEINDEX_TRACK_BL TILEINDEX_TRACK_TL
-	.db TILEINDEX_TRACK_BL         $f0 TILEINDEX_TRACK_VERTICAL   TILEINDEX_TRACK_TR TILEINDEX_TRACK_TL
-	.db TILEINDEX_TRACK_TL         $10 TILEINDEX_TRACK_VERTICAL   TILEINDEX_TRACK_BR TILEINDEX_TRACK_BL
-	.db $00
-	.db $f0 $00 ; DIR_UP
-	.db $00 $10 ; DIR_RIGHT
-	.db $10 $00 ; DIR_DOWN
-	.db $00 $f0 ; DIR_LEFT
+	.db TILEINDEX_TRACK_HORIZONTAL $00 $f0 ; DIR_LEFT
+	.db TILEINDEX_TRACK_BL         $f0 $00 ; DIR_UP
+	.db TILEINDEX_TRACK_TL         $10 $00 ; DIR_DOWN
+
+	.db TILEINDEX_TRACK_HORIZONTAL $00 $00
+	.db TILEINDEX_TRACK_VERTICAL   $00 $00
+	.db TILEINDEX_TRACK_BL         $00 $00
+	.db TILEINDEX_TRACK_BR         $00 $00
+	.db TILEINDEX_TRACK_TL         $00 $00
+	.db TILEINDEX_TRACK_TR         $00 $00
 
 ;;
 ; Creates an invisible item object which stays with the minecart to give it collision with enemies
