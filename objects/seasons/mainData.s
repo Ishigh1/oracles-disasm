@@ -2374,7 +2374,7 @@ group4Map13ObjectData:
 
 group4Map14ObjectData:
 	obj_Pointer group4Map14EnemyObjectData
-	obj_Part $05 $01 $6b
+	obj_Part $05 $20 $6b
 	obj_Interaction $61 $01
 	obj_End
 

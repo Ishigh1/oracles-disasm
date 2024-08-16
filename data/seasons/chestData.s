@@ -40,6 +40,7 @@ chestGroup3Data:
 	.db $ff
 
 chestGroup4Data:
+	m_ChestData $14, $0f, TREASURE_OBJECT_BOOMERANG_00
 	m_ChestData $57, $15, TREASURE_OBJECT_BOOMERANG_00
 	m_ChestData $37, $01, TREASURE_OBJECT_SMALL_KEY_00
 	m_ChestData $2d, $02, TREASURE_OBJECT_SMALL_KEY_00
