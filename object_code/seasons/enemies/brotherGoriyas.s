@@ -2,12 +2,22 @@
 ; ENEMY_BROTHER_GORIYAS
 ; ==================================================================================================
 enemyCode70:
+	call ecom_checkHazards
 	jr z,@normalStatus
-	sub $03
+
+	; ENEMYSTATUS_STUNNED
+	sub $02
 	ret c
+	jp nz,+
+	ld l,Enemy.stunCounter
+	dec (hl)
+	ret
++
+	; ENEMYSTATUS_NO_HEALTH
+	dec a
 	jp z,@dead
 	dec a
-	jp nz,ecom_updateKnockback
+	jp nz,ecom_updateKnockbackAndCheckHazards
 @normalStatus:
 	call ecom_getSubidAndCpStateTo08
 	jr nc,+

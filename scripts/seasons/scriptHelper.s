@@ -3258,3 +3258,8 @@ dekuScrub_upgradeSatchel:
 	ret
 table_65cf:
 	.db $20 $50 $99
+
+stopMusic:
+	ld a,(wActiveMusic2)
+	ld (wActiveMusic),a
+	jp playSound

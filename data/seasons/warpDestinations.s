@@ -328,7 +328,7 @@ group3WarpDestTable:
 group4WarpDestTable:
 	m_WarpDest $04 $ff $9 $3
 	m_WarpDest $07 $ff $9 $3
-	m_WarpDest $15 $ff $9 $3
+	m_WarpDest $1c $ff $9 $3
 	m_WarpDest $39 $ff $9 $3
 	m_WarpDest $4b $ff $9 $3
 	m_WarpDest $81 $ff $9 $3

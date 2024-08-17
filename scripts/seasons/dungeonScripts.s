@@ -7,6 +7,14 @@ dungeonScript_minibossDeath:
 	wait 20
 	spawninteraction INTERAC_MINIBOSS_PORTAL, $00, $00, $00
 
+dungeonScript_minibossDeathWithMusic:
+	stopifroomflag80set
+	checknoenemies
+	orroomflag $80
+	wait 20
+	asm15 scriptHelp.stopMusic
+	spawninteraction INTERAC_MINIBOSS_PORTAL, $00, $00, $00
+
 enableLinkAndMenu:
 	writememory wDisableLinkCollisionsAndMenu, $00
 

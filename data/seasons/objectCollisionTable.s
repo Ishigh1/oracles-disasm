@@ -263,7 +263,7 @@ objectCollisionTable:
 
 	; ENEMYCOLLISION_GORIYA_BROS (0x41)
 	.db $02 $10 $0f $0f $08 $09 $09 $0a $0a $08 $08 $0a $0d $0d $08 $00
-	.db $00 $00 $00 $2f $09 $1c $1c $09 $00 $20 $20 $20 $08 $20 $20 $00
+	.db $00 $00 $00 $2f $09 $22 $1c $09 $00 $20 $20 $20 $08 $20 $20 $00
 
 	; ENEMYCOLLISION_OMUAI_VULNERABLE (0x42)
 	.db $02 $06 $05 $05 $0b $0b $0b $0b $0b $0b $0b $0b $00 $00 $0b $00

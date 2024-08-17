@@ -150,7 +150,7 @@ interactionCode7e:
 	.db $82 $aa
 .else
 	.db $01 $01
-	.db $0b $15
+	.db $0b $16
 	.db $21 $39
 	.db $48 $4b
 	.db $6a $81

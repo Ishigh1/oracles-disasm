@@ -575,7 +575,8 @@ miscNPC_scriptTable:
 	.dw mainScripts.ficklManScript_textA
 
 @dungeonWiseOldManScripts:
-	.dw mainScripts.dungeonWiseOldManScript
+	.dw mainScripts.dungeonWiseOldManScript_bombchus
+	.dw mainScripts.dungeonWiseOldManScript_carts
 
 @sunkenCityTreasureHunterScripts:
 	.dw mainScripts.treasureHunterScript_text1

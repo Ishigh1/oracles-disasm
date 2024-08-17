@@ -630,7 +630,7 @@ ficklManScript_textA:
 ; ==================================================================================================
 ; INTERAC_DUNGEON_WISE_OLD_MAN
 ; ==================================================================================================
-dungeonWiseOldManScript:
+dungeonWiseOldManScript_bombchus:
 	initcollisions
 -
 	enableinput
@@ -652,7 +652,9 @@ dungeonWiseOldManScript:
 	wait 10
 	enableinput
 	scriptjump -
-	
+
+dungeonWiseOldManScript_carts:
+	rungenericnpc TX_3303
 
 ; ==================================================================================================
 ; INTERAC_TREASURE_HUNTER

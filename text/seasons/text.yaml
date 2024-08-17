@@ -10288,15 +10288,9 @@ groups:
   - name: TX_3303
     index: 0x03
     text: |-
-      You've done well
-      to make it this
-      far, but there
-      is a final trial
-      for the true
-      hero. It costs
-      60 Rupees.
-      Will you try?
-        \opt()Yes \opt()No
+      A minecart can flip levers, 
+      altering the tracks on 
+      the same row and column. 
 
   - name: TX_3304
     index: 0x04
