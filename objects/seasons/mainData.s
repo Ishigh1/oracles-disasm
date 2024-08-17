@@ -351,7 +351,6 @@ group0Mapc6ObjectData:
 	obj_Interaction $3e $20 $36 $58
 	obj_Interaction $2d $80 $18 $78
 	obj_Interaction $2d $86 $18 $68
-	obj_Interaction $37 $81 $38 $48
 	obj_Interaction $80 $02 $18 $38
 	obj_Interaction $2a $0b $18 $88
 	obj_End

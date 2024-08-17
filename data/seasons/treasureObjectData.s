@@ -272,14 +272,14 @@ treasureObjectData2d:
 
 treasureObjectData30:
 	m_BeginTreasureSubids TREASURE_SMALL_KEY
-	m_TreasureSubid $39, $01, $1a, $42, TREASURE_OBJECT_SMALL_KEY_00
-	m_TreasureSubid $38, $01, $1a, $42, TREASURE_OBJECT_SMALL_KEY_01
+	m_TreasureSubid $18, $01, $ff, $42, TREASURE_OBJECT_SMALL_KEY_00
+	m_TreasureSubid $28, $01, $ff, $42, TREASURE_OBJECT_SMALL_KEY_01
 	m_TreasureSubid $49, $01, $1a, $42, TREASURE_OBJECT_SMALL_KEY_02
 	m_TreasureSubid $38, $01, $1a, $42, TREASURE_OBJECT_SMALL_KEY_03
 
 treasureObjectData31:
 	m_BeginTreasureSubids TREASURE_BOSS_KEY
-	m_TreasureSubid $39, $00, $1b, $43, TREASURE_OBJECT_BOSS_KEY_00
+	m_TreasureSubid $19, $00, $1b, $43, TREASURE_OBJECT_BOSS_KEY_00
 	m_TreasureSubid $29, $00, $1b, $43, TREASURE_OBJECT_BOSS_KEY_01
 	m_TreasureSubid $49, $00, $1b, $43, TREASURE_OBJECT_BOSS_KEY_02
 	m_TreasureSubid $38, $00, $1b, $43, TREASURE_OBJECT_BOSS_KEY_03
