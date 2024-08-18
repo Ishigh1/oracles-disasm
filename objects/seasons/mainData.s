@@ -2418,10 +2418,8 @@ group4Map1aObjectData:
 	obj_End
 
 group4Map1bObjectData:
-	obj_Interaction $1e $04 $07 $00
 	obj_Interaction $12 $01 $58 $78
 	obj_Pointer group4Map1bEnemyObjectData
-	obj_Part $03 $01 $5d
 	obj_End
 
 group4Map1cObjectData:
