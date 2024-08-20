@@ -7104,14 +7104,10 @@ groups:
   - name: TX_2501
     index: 0x01
     text: |-
-      \Link! Are
-      you all right?
-      That which \col(3)Zelda\col(0)
-      foresaw has come
-      to pass...
-      \call(TX_2511)\stop
-      \jump(TX_2503)
-    null_terminator: False
+      You will also 
+      need a \col(3)Shield\col(0)...
+      I think there is
+      one in a cave south of here
 
   - name: TX_2502
     index: 0x02

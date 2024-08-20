@@ -40,12 +40,13 @@ chestGroup3Data:
 	.db $ff
 
 chestGroup4Data:
+	m_ChestData $27, $09, TREASURE_OBJECT_MAP_02
 	m_ChestData $17, $0b, TREASURE_OBJECT_BOSS_KEY_03
 	m_ChestData $57, $15, TREASURE_OBJECT_BOOMERANG_00
 	m_ChestData $37, $01, TREASURE_OBJECT_SMALL_KEY_03
 	m_ChestData $2d, $02, TREASURE_OBJECT_SMALL_KEY_03
 	m_ChestData $5d, $05, TREASURE_OBJECT_SHIELD_00
-	m_ChestData $27, $06, TREASURE_OBJECT_RUPEES_00
+	m_ChestData $27, $06, TREASURE_OBJECT_COMPASS_02
 	m_ChestData $11, $0d, TREASURE_OBJECT_SMALL_KEY_03
 	m_ChestData $67, $10, TREASURE_OBJECT_BOMBS_00
 	m_ChestData $2c, $11, TREASURE_OBJECT_SMALL_KEY_03
@@ -141,6 +142,7 @@ chestGroup5Data:
 	.db $ff
 
 chestGroup6Data:
+	m_ChestData $27, $09, TREASURE_OBJECT_NONE_00
 	.db $ff
 
 chestGroup7Data:

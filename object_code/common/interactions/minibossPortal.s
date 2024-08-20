@@ -9,6 +9,7 @@ interactionCode7e:
 	.dw @subid01
 .ifdef ROM_SEASONS
 	.dw @subid02
+	.dw @subid03
 .endif
 
 
@@ -149,7 +150,7 @@ interactionCode7e:
 	.db $4d $56
 	.db $82 $aa
 .else
-	.db $01 $01
+	.db $06 $04
 	.db $0b $16
 	.db $21 $39
 	.db $48 $4b
@@ -238,12 +239,12 @@ interactionCode7e:
 	.dw @herosCave2State0
 	.dw @state1
 	.dw @state2
-	.dw @herosCave2State3
+	.dw @minibossState3
 
 @herosCave2State0:
 	call getThisRoomFlags
 	and $20
-	jp z,interactionDelete
+	ret z
 	jp @commonState0
 
 @herosCave2State3:
@@ -288,3 +289,35 @@ interactionCode7e:
 	.db $24 $57
 	.db $34 $17
 .endif
+
+; Subid $03: chest portals
+@subid03:
+	ld e,Interaction.state
+	ld a,(de)
+	rst_jumpTable
+	.dw @chestState0
+	.dw @state1
+	.dw @state2
+	.dw @minibossState3
+
+@chestState0:
+	ld a,(wDungeonIndex)
+	ld hl,@dungeonRoomTable
+	rst_addDoubleIndex
+	ld c,(hl)
+	ld a,(wActiveGroup)
+	ld hl,flagLocationGroupTable
+	rst_addAToHl
+	ld h,(hl)
+	ld l,c
+
+	; hl now points to room flags for the miniboss room
+	; Delete if chest is not open.
+	ld a,(hl)
+	and $20
+	jp z,interactionDelete
+
+	ld c,$57
+	call objectSetShortPosition
+
+	jp @commonState0

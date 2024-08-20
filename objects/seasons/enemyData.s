@@ -2546,3 +2546,6 @@ group4Map0dEnemyObjectData:
 	obj_SpecificEnemyA     $0a $01 $88 $98
 	obj_SpecificEnemyA     $0a $01 $28 $98
 	obj_EndPointer
+
+group4Map06EnemyObjectData:
+	obj_EndPointer

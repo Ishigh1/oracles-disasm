@@ -6434,6 +6434,9 @@ impaScript_givebombchus:
 	wait 20
 	giveitem TREASURE_OBJECT_BOMBCHUS_00
 	wait 20
+	jumpifitemobtained TREASURE_SHIELD, @haveShield
+	showtext TX_2501
+@haveShield
 	scriptjump -
 	
 impaScript_villagersSeenButNoMakuSeed:
@@ -8258,3 +8261,11 @@ gettingRodOfSeasonsScript_setCounter1To32:
 	setcounter1 $32
 	scriptend
 
+; ==================================================================================================
+; INTERAC_HEROS_CAVE_SWORD_CHEST
+; ==================================================================================================
+
+; Create the miniboss portal when the chest is open
+dungeonScript_portal_chest:
+	orroomflag $80
+	spawninteraction INTERAC_MINIBOSS_PORTAL, $00, $00, $00
