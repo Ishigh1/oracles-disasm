@@ -62,25 +62,25 @@ group0WarpSources:
 	m_StandardWarp $0 $03 $02 $5 $4
 	m_StandardWarp $0 $00 $03 $5 $4
 	m_StandardWarp $0 $00 $04 $5 $4
-	m_StandardWarp $0 $88 $00 $3 $4
+	m_StandardWarp $0 $88 $00 $3 $4 ; lon lon
 	m_StandardWarp $0 $b6 $02 $3 $4
 	m_PointerWarp     $d7 warpSource75e3
 	m_PointerWarp     $c5 warpSource7603
-	m_StandardWarp $0 $c8 $05 $3 $4
+	m_StandardWarp $0 $c8 $05 $3 $4 ; mayor
 	m_PointerWarp     $d2 warpSource763f
-	m_StandardWarp $0 $e8 $15 $3 $4
+	m_StandardWarp $0 $e8 $15 $3 $4 ; vasu
 	m_PointerWarp     $f6 warpSource7623
-	m_StandardWarp $0 $b5 $18 $3 $4
-	m_StandardWarp $0 $4d $1d $3 $4
-	m_StandardWarp $0 $10 $1f $3 $4
-	m_StandardWarp $0 $5e $20 $3 $4
-	m_StandardWarp $0 $3f $21 $3 $4
-	m_StandardWarp $0 $6d $23 $3 $4
-	m_StandardWarp $0 $6f $32 $3 $4
+	m_StandardWarp $0 $b5 $18 $3 $4 ; treehouse
+	m_StandardWarp $0 $4d $1d $3 $4 ; ingo
+	m_StandardWarp $0 $10 $1f $3 $4 ; d6 old man
+	m_StandardWarp $0 $5e $20 $3 $4 ; syrup
+	m_StandardWarp $0 $3f $21 $3 $4 ; flooded house
+	m_StandardWarp $0 $6d $23 $3 $4 ; treasure hunter
+	m_StandardWarp $0 $6f $32 $3 $4 ; bomb house
 	m_PointerWarp     $7f warpSource7637
 	m_PointerWarp     $f9 warpSource762b
-	m_StandardWarp $0 $e6 $2b $3 $4
-	m_StandardWarp $0 $04 $30 $3 $4
+	m_StandardWarp $0 $e6 $2b $3 $4 ; shop
+	m_StandardWarp $0 $04 $30 $3 $4 ; d8 fairy -- 0x134DD
 	m_StandardWarp $0 $f7 $33 $3 $4
 	m_StandardWarp $0 $a3 $3c $3 $4
 	m_StandardWarp $0 $78 $3d $3 $4
