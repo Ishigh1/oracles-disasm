@@ -392,13 +392,13 @@ group3WarpSources:
 	m_StandardWarp $4 $96 $0e $1 $3
 	m_StandardWarp $4 $97 $0f $1 $3
 	m_StandardWarp $0 $98 $37 $4 $2
-	m_StandardWarp $4 $99 $48 $0 $3 ; ingo -- 0x1384D
+	m_StandardWarp $4 $99 $48 $0 $3 ; ingo -- 0x13849
 	m_StandardWarp $0 $9a $4b $0 $2
 	m_StandardWarp $0 $9b $4c $0 $2 ; under tree near d6
 	m_StandardWarp $4 $9c $4d $0 $3 ; syrup -- 0x13855
 	m_StandardWarp $4 $9d $4e $0 $3 ; flooded
 	m_StandardWarp $8 $9e $15 $1 $3
-	m_StandardWarp $4 $9f $50 $0 $3 ; treasure hunter -- 0x13865
+	m_StandardWarp $4 $9f $50 $0 $3 ; treasure hunter -- 0x13861
 	m_StandardWarp $4 $a0 $11 $1 $3
 	m_StandardWarp $4 $a1 $10 $1 $3
 	m_StandardWarp $4 $a2 $12 $1 $3
