@@ -72,7 +72,7 @@ group0WarpSources:
 	m_PointerWarp     $f6 warpSource7623
 	m_StandardWarp $0 $b5 $18 $3 $4 ; treehouse
 	m_StandardWarp $0 $4d $1d $3 $4 ; ingo
-	m_StandardWarp $0 $10 $1f $3 $4 ; d6 old man
+	m_StandardWarp $0 $10 $1f $3 $4 ; under tree
 	m_StandardWarp $0 $5e $20 $3 $4 ; syrup
 	m_StandardWarp $0 $3f $21 $3 $4 ; flooded house
 	m_StandardWarp $0 $6d $23 $3 $4 ; treasure hunter
@@ -81,26 +81,26 @@ group0WarpSources:
 	m_PointerWarp     $f9 warpSource762b
 	m_StandardWarp $0 $e6 $2b $3 $4 ; shop
 	m_StandardWarp $0 $04 $30 $3 $4 ; d8 fairy -- 0x134DD
-	m_StandardWarp $0 $f7 $33 $3 $4
-	m_StandardWarp $0 $a3 $3c $3 $4
-	m_StandardWarp $0 $78 $3d $3 $4
+	m_StandardWarp $0 $f7 $33 $3 $4 ; village portal
+	m_StandardWarp $0 $a3 $3c $3 $4 ; Mrs Ruul
+	m_StandardWarp $0 $78 $3d $3 $4 ; Blaino
 	m_PointerWarp     $62 warpSource761b
-	m_StandardWarp $0 $5d $3f $3 $4
-	m_StandardWarp $0 $43 $41 $3 $4
+	m_StandardWarp $0 $5d $3f $3 $4 ; master diver
+	m_StandardWarp $0 $43 $41 $3 $4 ; lost woods deku -- 0x134F5
 	m_PointerWarp     $5b warpSource760b
-	m_StandardWarp $0 $9a $06 $1 $8
-	m_StandardWarp $0 $b0 $07 $1 $8
+	m_StandardWarp $0 $9a $06 $1 $8 ; suburb portal
+	m_StandardWarp $0 $b0 $07 $1 $8 ; swamp portal -- 0x13501
 	m_PointerWarp     $1e warpSource75fb
-	m_StandardWarp $0 $b9 $09 $1 $8
-	m_StandardWarp $0 $25 $0a $1 $8
-	m_StandardWarp $0 $04 $0b $1 $8
-	m_StandardWarp $1 $d9 $00 $2 $3
-	m_StandardWarp $2 $d9 $00 $2 $3
-	m_StandardWarp $0 $7d $5e $5 $4
+	m_StandardWarp $0 $b9 $09 $1 $8 ; lake portal
+	m_StandardWarp $0 $25 $0a $1 $8 ; temple lower portal
+	m_StandardWarp $0 $04 $0b $1 $8 ; unused upper portal ? -- 0x13511
+	m_StandardWarp $1 $d9 $00 $2 $3 ; to deku tree
+	m_StandardWarp $2 $d9 $00 $2 $3 ; to deku tree
+	m_StandardWarp $0 $7d $5e $5 $4 ; 1st WoW cave -- 0x1351D
 	m_PointerWarp     $8e warpSource765f
-	m_StandardWarp $0 $da $58 $5 $2
+	m_StandardWarp $0 $da $58 $5 $2 ; guru guru top -- 0x13525
 	m_PointerWarp     $ea warpSource7673
-	m_StandardWarp $0 $4f $5f $5 $4
+	m_StandardWarp $0 $4f $5f $5 $4 ; sunken summer cave -- 0x1352D
 	m_StandardWarp $0 $1b $60 $5 $4
 	m_StandardWarp $0 $0b $62 $5 $4
 	m_StandardWarp $0 $1c $64 $5 $4
@@ -372,33 +372,33 @@ warpSource77ef:
 
 
 group3WarpSources:
-	m_StandardWarp $4 $80 $0b $0 $3
-	m_StandardWarp $4 $81 $0c $0 $3
-	m_StandardWarp $4 $82 $0d $0 $3
-	m_StandardWarp $4 $83 $11 $0 $3
-	m_StandardWarp $4 $84 $0e $0 $3
-	m_StandardWarp $4 $85 $10 $0 $3
+	m_StandardWarp $4 $80 $0b $0 $3 ; lon lon -- 0x137F9
+	m_StandardWarp $4 $81 $0c $0 $3 ; unused
+	m_StandardWarp $4 $82 $0d $0 $3 ; impa
+	m_StandardWarp $4 $83 $11 $0 $3 ; tick tock -- 0x13805
+	m_StandardWarp $4 $84 $0e $0 $3 ; know-all-bird xx
+	m_StandardWarp $4 $85 $10 $0 $3 ; mayor's house -- 0x1380D
 	m_StandardWarp $4 $88 $45 $0 $3
 	m_StandardWarp $4 $89 $46 $0 $3
 	m_StandardWarp $4 $8a $19 $1 $3
 	m_StandardWarp $0 $8a $0a $3 $2
 	m_PointerWarp     $8b warpSource78f7
 	m_StandardWarp $4 $8f $17 $1 $3
-	m_StandardWarp $4 $91 $12 $0 $3
+	m_StandardWarp $4 $91 $12 $0 $3 ; Vasu -- 0x13829
 	m_StandardWarp $4 $92 $13 $0 $3
 	m_StandardWarp $4 $93 $14 $0 $3
-	m_StandardWarp $4 $94 $15 $0 $3
+	m_StandardWarp $4 $94 $15 $0 $3 ; Treehouse -- 0x13835
 	m_StandardWarp $0 $95 $0d $1 $2
 	m_StandardWarp $4 $96 $0e $1 $3
 	m_StandardWarp $4 $97 $0f $1 $3
 	m_StandardWarp $0 $98 $37 $4 $2
-	m_StandardWarp $4 $99 $48 $0 $3
+	m_StandardWarp $4 $99 $48 $0 $3 ; ingo -- 0x1384D
 	m_StandardWarp $0 $9a $4b $0 $2
-	m_StandardWarp $0 $9b $4c $0 $2
-	m_StandardWarp $4 $9c $4d $0 $3
-	m_StandardWarp $4 $9d $4e $0 $3
+	m_StandardWarp $0 $9b $4c $0 $2 ; under tree 
+	m_StandardWarp $4 $9c $4d $0 $3 ; syrup -- 0x13859
+	m_StandardWarp $4 $9d $4e $0 $3 ; flooded
 	m_StandardWarp $8 $9e $15 $1 $3
-	m_StandardWarp $4 $9f $50 $0 $3
+	m_StandardWarp $4 $9f $50 $0 $3 ; treasure hunter -- 0x13865
 	m_StandardWarp $4 $a0 $11 $1 $3
 	m_StandardWarp $4 $a1 $10 $1 $3
 	m_StandardWarp $4 $a2 $12 $1 $3
@@ -408,21 +408,21 @@ group3WarpSources:
 	m_StandardWarp $4 $a6 $18 $0 $3
 	m_StandardWarp $0 $a6 $2e $3 $2
 	m_PointerWarp     $a7 warpSource78ef
-	m_StandardWarp $4 $a8 $3a $0 $3
+	m_StandardWarp $4 $a8 $3a $0 $3 ; d8 fairy room -- 0x13889
 	m_StandardWarp $0 $a8 $0b $1 $8
 	m_StandardWarp $4 $a9 $16 $1 $3
-	m_StandardWarp $4 $aa $51 $0 $3
+	m_StandardWarp $4 $aa $51 $0 $3 ; bomb house -- 0x13895
 	m_PointerWarp     $ab warpSource78ff
 	m_StandardWarp $4 $af $0f $0 $3
 	m_StandardWarp $0 $b0 $2d $3 $2
 	m_StandardWarp $8 $b1 $13 $1 $3
 	m_StandardWarp $4 $b2 $14 $1 $3
-	m_StandardWarp $4 $b3 $20 $0 $3
-	m_StandardWarp $4 $b4 $21 $0 $3
+	m_StandardWarp $4 $b3 $20 $0 $3 ; ruul - 0x138AD
+	m_StandardWarp $4 $b4 $21 $0 $3 ; blaino
 	m_StandardWarp $4 $b5 $22 $0 $3
-	m_StandardWarp $4 $b6 $4f $0 $3
+	m_StandardWarp $4 $b6 $4f $0 $3 ; master diver - 0x138B9
 	m_StandardWarp $0 $b6 $0a $7 $2
-	m_StandardWarp $0 $b7 $47 $0 $2
+	m_StandardWarp $0 $b7 $47 $0 $2 ; lost woods deku - 0x138C1
 	m_StandardWarp $4 $b8 $53 $0 $3
 	m_StandardWarp $8 $b8 $54 $0 $3
 	m_StandardWarp $0 $b8 $45 $3 $2
@@ -446,9 +446,9 @@ warpSource78f7:
 	m_PositionWarp $61 $18 $1 $2
 	m_WarpListEndWithDefault
 
-warpSource78ff:
-	m_PositionWarp $66 $52 $0 $4
-	m_PositionWarp $44 $0c $1 $8
+warpSource78ff: ; village portal
+	m_PositionWarp $66 $52 $0 $4 ; staircase -- 13901
+	m_PositionWarp $44 $0c $1 $8 ; portal
 	m_WarpListEndWithDefault
 
 
@@ -535,7 +535,7 @@ group4WarpSources:
 	m_StandardWarp $0 $f8 $63 $0 $4
 	m_StandardWarp $4 $f9 $1b $1 $3
 	m_StandardWarp $8 $f9 $1c $1 $3
-	m_StandardWarp $4 $fa $64 $0 $3
+	m_StandardWarp $4 $fa $64 $0 $3 ; winter swamp cave
 	m_StandardWarp $4 $fb $65 $0 $3
 	m_StandardWarp $4 $fc $66 $0 $3
 	m_StandardWarp $0 $b6 $7b $0 $4
@@ -630,7 +630,7 @@ group5WarpSources:
 	m_StandardWarp $4 $b3 $28 $0 $3
 	m_StandardWarp $8 $b3 $29 $0 $3
 	m_StandardWarp $4 $b4 $25 $0 $3
-	m_StandardWarp $4 $b5 $2e $0 $3
+	m_StandardWarp $4 $b5 $2e $0 $3 ; flooded summer cave - 0x13B81
 	m_StandardWarp $4 $b6 $2f $0 $3
 	m_PointerWarp     $b7 warpSource7d6b
 	m_StandardWarp $0 $b8 $61 $5 $2
@@ -713,9 +713,9 @@ warpSource7ca3:
 	m_PositionWarp $3d $5b $5 $2
 	m_WarpListEndWithDefault
 
-warpSource7cab:
-	m_PositionWarp $23 $56 $5 $2
-	m_PositionWarp $78 $2a $0 $2
+warpSource7cab: ; guru guru top level
+	m_PositionWarp $23 $56 $5 $2 ; down
+	m_PositionWarp $78 $2a $0 $2 ; up -- 13CB1
 	m_WarpListEndWithDefault
 
 warpSource7cb3:
