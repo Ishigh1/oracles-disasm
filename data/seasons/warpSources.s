@@ -122,8 +122,8 @@ group0WarpSources:
 	m_StandardWarp $0 $fd $50 $4 $4
 	m_StandardWarp $0 $ff $52 $4 $4
 	m_PointerWarp     $bf warpSource7613
-	m_StandardWarp $0 $cc $56 $4 $4
-	m_StandardWarp $0 $51 $57 $4 $4
+	m_StandardWarp $0 $cc $56 $4 $4 ; suburb spring cave
+	m_StandardWarp $0 $51 $57 $4 $4 ; phonograph deku - 0x13589
 	m_StandardWarp $0 $c2 $5a $4 $4
 	m_StandardWarp $0 $a7 $5b $4 $4
 	m_StandardWarp $0 $b3 $39 $4 $4
@@ -132,7 +132,7 @@ group0WarpSources:
 	m_StandardWarp $0 $e2 $84 $5 $4
 	m_StandardWarp $0 $ee $83 $5 $4
 	m_StandardWarp $0 $dc $89 $5 $4
-	m_StandardWarp $0 $66 $8b $5 $4
+	m_StandardWarp $0 $66 $8b $5 $4 ; blaino old man - 0x135AD
 	m_StandardWarp $0 $97 $8c $5 $4
 	m_StandardWarp $0 $02 $8f $5 $4
 	m_StandardWarp $0 $8f $90 $5 $4
@@ -149,11 +149,11 @@ group0WarpSources:
 	m_WarpListEndNoDefault
 
 warpSource75e3:
-	m_PositionWarp $43 $03 $3 $4
+	m_PositionWarp $43 $03 $3 $4 ; tick tock
 	m_PositionWarp $14 $98 $5 $4
 	m_WarpListEndWithDefault
 
-warpSource75eb:
+warpSource75eb: ; natsu 57
 	m_PositionWarp $32 $92 $5 $4
 	m_PositionWarp $15 $99 $5 $4
 	m_WarpListEndWithDefault
@@ -169,8 +169,8 @@ warpSource75fb:
 	m_WarpListFallThrough
 
 warpSource7603:
-	m_PositionWarp $11 $04 $3 $4
-	m_PositionWarp $14 $38 $3 $4
+	m_PositionWarp $11 $04 $3 $4 ; bird - 0x13605
+	m_PositionWarp $14 $38 $3 $4 ; advance shop
 	m_WarpListEndWithDefault
 
 warpSource760b:
@@ -184,17 +184,17 @@ warpSource7613:
 	m_WarpListEndWithDefault
 
 warpSource761b:
-	m_PositionWarp $27 $40 $4 $4
-	m_PositionWarp $34 $3e $3 $4
+	m_PositionWarp $27 $40 $4 $4 ; floodgate right
+	m_PositionWarp $34 $3e $3 $4 ; floodgate house
 	m_WarpListEndWithDefault
 
 warpSource7623:
-	m_PositionWarp $24 $16 $3 $4
+	m_PositionWarp $24 $16 $3 $4 ; bipin left - 0x13625
 	m_PositionWarp $26 $17 $3 $4
 	m_WarpListEndWithDefault
 
 warpSource762b:
-	m_PositionWarp $62 $8e $5 $4
+	m_PositionWarp $62 $8e $5 $4 ; left old man - 0x13631
 	m_PositionWarp $33 $29 $3 $4
 	m_PositionWarp $25 $2a $3 $4
 	m_WarpListEndWithDefault
@@ -204,10 +204,10 @@ warpSource7637:
 	m_PositionWarp $27 $28 $3 $9
 	m_WarpListEndWithDefault
 
-warpSource763f:
-	m_PositionWarp $12 $8d $5 $4
-	m_PositionWarp $24 $06 $3 $4
-	m_PositionWarp $16 $07 $3 $4
+warpSource763f: ; 0d2 - coast stump
+	m_PositionWarp $12 $8d $5 $4 ; old man on the coast - 0x13641
+	m_PositionWarp $24 $06 $3 $4 ; left
+	m_PositionWarp $16 $07 $3 $4 ; right
 	m_WarpListEndWithDefault
 
 warpSource764b:
@@ -224,20 +224,20 @@ warpSource7657:
 	m_PositionWarp $18 $0c $4 $2
 	m_WarpListEndWithDefault
 
-warpSource765f:
+warpSource765f: ; D2 caves
 	m_PositionWarp $12 $0d $4 $2
-	m_PositionWarp $43 $5c $5 $4
-	m_PositionWarp $48 $5d $5 $4
+	m_PositionWarp $43 $5c $5 $4 ; peek cave
+	m_PositionWarp $48 $5d $5 $4 ; magnet cave - 0x13669
 	m_WarpListEndWithDefault
 
 warpSource766b:
-	m_PositionWarp $21 $3b $4 $4
-	m_PositionWarp $25 $04 $4 $4
+	m_PositionWarp $21 $3b $4 $4 ; floodgate left - 0x1366D
+	m_PositionWarp $25 $04 $4 $4 ; d3
 	m_WarpListEndWithDefault
 
 warpSource7673:
-	m_PositionWarp $15 $55 $5 $4
-	m_PositionWarp $07 $5a $5 $4
+	m_PositionWarp $15 $55 $5 $4 ; guru guru
+	m_PositionWarp $07 $5a $5 $4 ; side guru guru
 	m_WarpListEndWithDefault
 
 warpSource767b:
@@ -260,11 +260,11 @@ warpSource768b:
 
 group1WarpSources:
 	m_StandardWarp $0 $00 $01 $5 $4
-	m_StandardWarp $0 $09 $48 $3 $4
+	m_StandardWarp $0 $09 $48 $3 $4 ; temple of seasons - 0x136A1
 	m_PointerWarp     $28 warpSource7733
 	m_StandardWarp $0 $08 $9d $5 $4
 	m_StandardWarp $0 $0a $9e $5 $4
-	m_StandardWarp $0 $2a $9f $5 $4
+	m_StandardWarp $0 $2a $9f $5 $4 ; winter temple - 0x136B1
 	m_StandardWarp $0 $05 $1a $0 $8
 	m_StandardWarp $0 $57 $1b $0 $8
 	m_StandardWarp $0 $53 $1c $0 $8
@@ -279,16 +279,16 @@ group1WarpSources:
 	m_StandardWarp $0 $23 $1a $3 $4
 	m_StandardWarp $0 $33 $1b $3 $4
 	m_StandardWarp $0 $49 $22 $3 $4
-	m_StandardWarp $0 $45 $24 $3 $4
-	m_StandardWarp $0 $44 $25 $3 $4
+	m_StandardWarp $0 $45 $24 $3 $4 ; sub market - 0x136ED
+	m_StandardWarp $0 $44 $25 $3 $4 ; house above h&s
 	m_StandardWarp $0 $26 $26 $3 $4
 	m_StandardWarp $0 $5a $31 $3 $4
 	m_StandardWarp $0 $51 $3a $3 $4
 	m_StandardWarp $0 $52 $3b $3 $4
 	m_StandardWarp $0 $54 $06 $7 $4
 	m_StandardWarp $0 $03 $4a $4 $4
-	m_StandardWarp $0 $04 $4b $4 $4
-	m_StandardWarp $0 $11 $4c $4 $4
+	m_StandardWarp $0 $04 $4b $4 $4 ; boomerang cave - 0x1370D
+	m_StandardWarp $0 $11 $4c $4 $4 ; open cave
 	m_PointerWarp     $58 warpSource771f
 	m_StandardWarp $0 $74 $82 $5 $4
 	m_StandardWarp $0 $b6 $7b $0 $4
@@ -376,7 +376,7 @@ group3WarpSources:
 	m_StandardWarp $4 $81 $0c $0 $3 ; unused
 	m_StandardWarp $4 $82 $0d $0 $3 ; impa
 	m_StandardWarp $4 $83 $11 $0 $3 ; tick tock -- 0x13805
-	m_StandardWarp $4 $84 $0e $0 $3 ; know-all-bird xx
+	m_StandardWarp $4 $84 $0e $0 $3 ; know-all-bird
 	m_StandardWarp $4 $85 $10 $0 $3 ; mayor's house -- 0x1380D
 	m_StandardWarp $4 $88 $45 $0 $3
 	m_StandardWarp $4 $89 $46 $0 $3
@@ -385,8 +385,8 @@ group3WarpSources:
 	m_PointerWarp     $8b warpSource78f7
 	m_StandardWarp $4 $8f $17 $1 $3
 	m_StandardWarp $4 $91 $12 $0 $3 ; Vasu -- 0x13829
-	m_StandardWarp $4 $92 $13 $0 $3
-	m_StandardWarp $4 $93 $14 $0 $3
+	m_StandardWarp $4 $92 $13 $0 $3 ; bipin left
+	m_StandardWarp $4 $93 $14 $0 $3 ; bipin right
 	m_StandardWarp $4 $94 $15 $0 $3 ; Treehouse -- 0x13835
 	m_StandardWarp $0 $95 $0d $1 $2
 	m_StandardWarp $4 $96 $0e $1 $3
@@ -399,8 +399,8 @@ group3WarpSources:
 	m_StandardWarp $4 $9d $4e $0 $3 ; flooded
 	m_StandardWarp $8 $9e $15 $1 $3
 	m_StandardWarp $4 $9f $50 $0 $3 ; treasure hunter -- 0x13861
-	m_StandardWarp $4 $a0 $11 $1 $3
-	m_StandardWarp $4 $a1 $10 $1 $3
+	m_StandardWarp $4 $a0 $11 $1 $3 ; sub market
+	m_StandardWarp $4 $a1 $10 $1 $3 ; house above h&s
 	m_StandardWarp $4 $a2 $12 $1 $3
 	m_StandardWarp $4 $a3 $2d $0 $3
 	m_StandardWarp $4 $a4 $16 $0 $3
@@ -413,13 +413,13 @@ group3WarpSources:
 	m_StandardWarp $4 $a9 $16 $1 $3
 	m_StandardWarp $4 $aa $51 $0 $3 ; bomb house -- 0x13895
 	m_PointerWarp     $ab warpSource78ff
-	m_StandardWarp $4 $af $0f $0 $3
+	m_StandardWarp $4 $af $0f $0 $3 ; advance shop
 	m_StandardWarp $0 $b0 $2d $3 $2
 	m_StandardWarp $8 $b1 $13 $1 $3
 	m_StandardWarp $4 $b2 $14 $1 $3
 	m_StandardWarp $4 $b3 $20 $0 $3 ; ruul - 0x138AD
 	m_StandardWarp $4 $b4 $21 $0 $3 ; blaino
-	m_StandardWarp $4 $b5 $22 $0 $3
+	m_StandardWarp $4 $b5 $22 $0 $3 ; floodgate house
 	m_StandardWarp $4 $b6 $4f $0 $3 ; master diver - 0x138B9
 	m_StandardWarp $0 $b6 $0a $7 $2
 	m_StandardWarp $0 $b7 $47 $0 $2 ; lost woods deku - 0x138C1
@@ -432,7 +432,7 @@ group3WarpSources:
 	m_StandardWarp $2 $ac $49 $3 $3
 	m_StandardWarp $4 $bd $35 $3 $3
 	m_StandardWarp $8 $bd $35 $3 $3
-	m_StandardWarp $4 $bc $22 $1 $3
+	m_StandardWarp $4 $bc $22 $1 $3 ; temple of seasons - 0x138E9
 	m_StandardWarp $0 $b6 $7b $0 $4
 	m_WarpListEndNoDefault
 
@@ -511,7 +511,7 @@ group4WarpSources:
 	m_PointerWarp     $e3 warpSource7a77
 	m_PointerWarp     $e5 warpSource7a7f
 	m_StandardWarp $0 $e6 $3d $4 $2
-	m_StandardWarp $0 $e7 $23 $0 $2
+	m_StandardWarp $0 $e7 $23 $0 $2 ; floodgate right - 0x139F1
 	m_StandardWarp $8 $e8 $0a $2 $3
 	m_StandardWarp $0 $e8 $44 $4 $2
 	m_StandardWarp $8 $e9 $14 $2 $3
@@ -521,8 +521,8 @@ group4WarpSources:
 	m_StandardWarp $4 $ed $5b $0 $3
 	m_StandardWarp $4 $ee $28 $2 $3
 	m_StandardWarp $4 $ef $01 $1 $3
-	m_StandardWarp $4 $f0 $02 $1 $3
-	m_StandardWarp $4 $f1 $03 $1 $3
+	m_StandardWarp $4 $f0 $02 $1 $3 ; boomerang cave - 0x13A19
+	m_StandardWarp $4 $f1 $03 $1 $3 ; open cave
 	m_StandardWarp $0 $f2 $04 $1 $2
 	m_StandardWarp $4 $f2 $05 $1 $3
 	m_StandardWarp $4 $f3 $5d $0 $3
@@ -531,8 +531,8 @@ group4WarpSources:
 	m_StandardWarp $0 $f5 $5f $0 $4
 	m_StandardWarp $0 $f6 $60 $0 $4
 	m_StandardWarp $4 $f6 $61 $0 $3
-	m_StandardWarp $0 $f7 $62 $0 $4
-	m_StandardWarp $0 $f8 $63 $0 $4
+	m_StandardWarp $0 $f7 $62 $0 $4 ; suburb spring cave
+	m_StandardWarp $0 $f8 $63 $0 $4 ; phonograph deku - 0x13A45
 	m_StandardWarp $4 $f9 $1b $1 $3
 	m_StandardWarp $8 $f9 $1c $1 $3
 	m_StandardWarp $4 $fa $64 $0 $3 ; winter swamp cave
@@ -557,7 +557,7 @@ warpSource7a6f:
 	m_WarpListEndWithDefault
 
 warpSource7a77:
-	m_PositionWarp $12 $24 $0 $2
+	m_PositionWarp $12 $24 $0 $2 ; floodgate left - 0x13A79
 	m_PositionWarp $7c $3e $4 $2
 	m_WarpListEndWithDefault
 
@@ -577,7 +577,7 @@ group5WarpSources:
 	m_StandardWarp $0 $3c $1b $5 $2
 	m_PointerWarp     $43 warpSource7cdb
 	m_StandardWarp $0 $46 $2a $5 $2
-	m_StandardWarp $0 $47 $05 $5 $2
+	m_StandardWarp $0 $47 $05 $5 $2 ; dr left old man - 0x13AAD
 	m_StandardWarp $0 $4a $06 $5 $2
 	m_PointerWarp     $4b warpSource7d4b
 	m_StandardWarp $0 $4c $07 $5 $2
@@ -622,13 +622,13 @@ group5WarpSources:
 	m_StandardWarp $0 $26 $50 $5 $2
 	m_StandardWarp $0 $27 $54 $5 $2
 	m_StandardWarp $0 $34 $53 $5 $2
-	m_StandardWarp $4 $b0 $2b $0 $3
+	m_StandardWarp $4 $b0 $2b $0 $3 ; guru guru main - 0x13B61
 	m_PointerWarp     $b0 warpSource7ca3
 	m_PointerWarp     $b1 warpSource7cab
-	m_StandardWarp $8 $b2 $2c $0 $3
+	m_StandardWarp $8 $b2 $2c $0 $3 ; winter guru guru - 0x13B6D
 	m_StandardWarp $0 $b2 $57 $5 $2
-	m_StandardWarp $4 $b3 $28 $0 $3
-	m_StandardWarp $8 $b3 $29 $0 $3
+	m_StandardWarp $4 $b3 $28 $0 $3 ; d2 peek cave - 0x13B75
+	m_StandardWarp $8 $b3 $29 $0 $3 ; d2 magnet cave
 	m_StandardWarp $4 $b4 $25 $0 $3
 	m_StandardWarp $4 $b5 $2e $0 $3 ; flooded summer cave - 0x13B81
 	m_StandardWarp $4 $b6 $2f $0 $3
@@ -668,9 +668,9 @@ group5WarpSources:
 	m_StandardWarp $0 $d3 $85 $5 $2
 	m_StandardWarp $4 $d3 $57 $0 $3
 	m_StandardWarp $0 $01 $69 $0 $2
-	m_StandardWarp $0 $02 $6a $0 $2
+	m_StandardWarp $0 $02 $6a $0 $2 ; old man blaino
 	m_StandardWarp $0 $03 $6b $0 $2
-	m_StandardWarp $0 $04 $6c $0 $2
+	m_StandardWarp $0 $04 $6c $0 $2 ; old man coast - 0x13C21
 	m_StandardWarp $0 $05 $6d $0 $2
 	m_StandardWarp $0 $06 $6e $0 $2
 	m_StandardWarp $0 $07 $6f $0 $2
@@ -687,7 +687,7 @@ group5WarpSources:
 	m_StandardWarp $4 $f3 $23 $1 $3
 	m_StandardWarp $4 $f6 $24 $1 $3
 	m_StandardWarp $4 $f9 $25 $1 $3
-	m_StandardWarp $4 $f0 $26 $1 $3
+	m_StandardWarp $4 $f0 $26 $1 $3 ; winter cave - 0x13C65
 	m_StandardWarp $0 $f3 $a1 $5 $2
 	m_PointerWarp     $f4 warpSource7cc3
 	m_StandardWarp $0 $f5 $a2 $5 $2
