@@ -194,7 +194,7 @@ warpSource7623:
 	m_WarpListEndWithDefault
 
 warpSource762b:
-	m_PositionWarp $62 $8e $5 $4 ; left old man - 0x13631
+	m_PositionWarp $62 $8e $5 $4 ; left old man - 0x1362D
 	m_PositionWarp $33 $29 $3 $4
 	m_PositionWarp $25 $2a $3 $4
 	m_WarpListEndWithDefault
@@ -572,12 +572,12 @@ group5WarpSources:
 	m_StandardWarp $4 $87 $00 $1 $3
 	m_StandardWarp $4 $97 $08 $0 $3
 	m_StandardWarp $4 $9d $09 $0 $3
-	m_StandardWarp $0 $37 $17 $5 $2
+	m_StandardWarp $0 $37 $17 $5 $2 ; d7 below magnet
 	m_StandardWarp $0 $39 $18 $5 $2
 	m_StandardWarp $0 $3c $1b $5 $2
 	m_PointerWarp     $43 warpSource7cdb
 	m_StandardWarp $0 $46 $2a $5 $2
-	m_StandardWarp $0 $47 $05 $5 $2 ; dr left old man - 0x13AAD
+	m_StandardWarp $0 $47 $05 $5 $2 ; d7 magnet - 0x13AAD
 	m_StandardWarp $0 $4a $06 $5 $2
 	m_PointerWarp     $4b warpSource7d4b
 	m_StandardWarp $0 $4c $07 $5 $2
@@ -671,7 +671,7 @@ group5WarpSources:
 	m_StandardWarp $0 $02 $6a $0 $2 ; old man blaino
 	m_StandardWarp $0 $03 $6b $0 $2
 	m_StandardWarp $0 $04 $6c $0 $2 ; old man coast - 0x13C21
-	m_StandardWarp $0 $05 $6d $0 $2
+	m_StandardWarp $0 $05 $6d $0 $2 ; dr left old man
 	m_StandardWarp $0 $06 $6e $0 $2
 	m_StandardWarp $0 $07 $6f $0 $2
 	m_StandardWarp $0 $08 $70 $0 $2
