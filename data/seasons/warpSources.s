@@ -262,8 +262,8 @@ group1WarpSources:
 	m_StandardWarp $0 $00 $01 $5 $4
 	m_StandardWarp $0 $09 $48 $3 $4 ; temple of seasons - 0x136A1
 	m_PointerWarp     $28 warpSource7733
-	m_StandardWarp $0 $08 $9d $5 $4
-	m_StandardWarp $0 $0a $9e $5 $4
+	m_StandardWarp $0 $08 $9d $5 $4 ; summer tower
+	m_StandardWarp $0 $0a $9e $5 $4 ; autumn tower
 	m_StandardWarp $0 $2a $9f $5 $4 ; winter temple - 0x136B1
 	m_StandardWarp $0 $05 $1a $0 $8
 	m_StandardWarp $0 $57 $1b $0 $8
@@ -271,12 +271,12 @@ group1WarpSources:
 	m_StandardWarp $0 $4a $1d $0 $8
 	m_StandardWarp $0 $13 $1e $0 $8
 	m_StandardWarp $0 $20 $2f $3 $8
-	m_StandardWarp $0 $12 $74 $5 $4
+	m_StandardWarp $0 $12 $74 $5 $4 ; closed cave - 0x136CD
 	m_PointerWarp     $35 warpSource773b
 	m_PointerWarp     $72 warpSource7727
-	m_StandardWarp $0 $22 $13 $3 $4
-	m_StandardWarp $0 $24 $19 $3 $4
-	m_StandardWarp $0 $23 $1a $3 $4
+	m_StandardWarp $0 $22 $13 $3 $4 ; subrosian cook
+	m_StandardWarp $0 $24 $19 $3 $4 ; dance hall
+	m_StandardWarp $0 $23 $1a $3 $4 ; useless subrosian house - 0x136E1
 	m_StandardWarp $0 $33 $1b $3 $4
 	m_StandardWarp $0 $49 $22 $3 $4
 	m_StandardWarp $0 $45 $24 $3 $4 ; sub market - 0x136ED
@@ -286,7 +286,7 @@ group1WarpSources:
 	m_StandardWarp $0 $51 $3a $3 $4
 	m_StandardWarp $0 $52 $3b $3 $4
 	m_StandardWarp $0 $54 $06 $7 $4
-	m_StandardWarp $0 $03 $4a $4 $4
+	m_StandardWarp $0 $03 $4a $4 $4 ; volcano cave
 	m_StandardWarp $0 $04 $4b $4 $4 ; boomerang cave - 0x1370D
 	m_StandardWarp $0 $11 $4c $4 $4 ; open cave
 	m_PointerWarp     $58 warpSource771f
@@ -310,9 +310,9 @@ warpSource7733:
 	m_PositionWarp $55 $07 $7 $4
 	m_WarpListEndWithDefault
 
-warpSource773b:
-	m_PositionWarp $43 $58 $4 $4
-	m_PositionWarp $46 $59 $4 $4
+warpSource773b: ; rosa corridor
+	m_PositionWarp $43 $58 $4 $4 ; left - 0x1373D
+	m_PositionWarp $46 $59 $4 $4 ; right
 	m_WarpListEndWithDefault
 
 
@@ -383,13 +383,13 @@ group3WarpSources:
 	m_StandardWarp $4 $8a $19 $1 $3
 	m_StandardWarp $0 $8a $0a $3 $2
 	m_PointerWarp     $8b warpSource78f7
-	m_StandardWarp $4 $8f $17 $1 $3
+	m_StandardWarp $4 $8f $17 $1 $3 ; cook
 	m_StandardWarp $4 $91 $12 $0 $3 ; Vasu -- 0x13829
 	m_StandardWarp $4 $92 $13 $0 $3 ; bipin left
 	m_StandardWarp $4 $93 $14 $0 $3 ; bipin right
 	m_StandardWarp $4 $94 $15 $0 $3 ; Treehouse -- 0x13835
-	m_StandardWarp $0 $95 $0d $1 $2
-	m_StandardWarp $4 $96 $0e $1 $3
+	m_StandardWarp $0 $95 $0d $1 $2 ; dance hall
+	m_StandardWarp $4 $96 $0e $1 $3 ; useless sub
 	m_StandardWarp $4 $97 $0f $1 $3
 	m_StandardWarp $0 $98 $37 $4 $2
 	m_StandardWarp $4 $99 $48 $0 $3 ; ingo -- 0x13849
@@ -520,7 +520,7 @@ group4WarpSources:
 	m_StandardWarp $4 $eb $67 $0 $3
 	m_StandardWarp $4 $ed $5b $0 $3
 	m_StandardWarp $4 $ee $28 $2 $3
-	m_StandardWarp $4 $ef $01 $1 $3
+	m_StandardWarp $4 $ef $01 $1 $3 ; volcano cave
 	m_StandardWarp $4 $f0 $02 $1 $3 ; boomerang cave - 0x13A19
 	m_StandardWarp $4 $f1 $03 $1 $3 ; open cave
 	m_StandardWarp $0 $f2 $04 $1 $2
@@ -533,8 +533,8 @@ group4WarpSources:
 	m_StandardWarp $4 $f6 $61 $0 $3
 	m_StandardWarp $0 $f7 $62 $0 $4 ; suburb spring cave
 	m_StandardWarp $0 $f8 $63 $0 $4 ; phonograph deku - 0x13A45
-	m_StandardWarp $4 $f9 $1b $1 $3
-	m_StandardWarp $8 $f9 $1c $1 $3
+	m_StandardWarp $4 $f9 $1b $1 $3 ; corridor left
+	m_StandardWarp $8 $f9 $1c $1 $3 ; corridor right
 	m_StandardWarp $4 $fa $64 $0 $3 ; winter swamp cave
 	m_StandardWarp $4 $fb $65 $0 $3
 	m_StandardWarp $4 $fc $66 $0 $3
@@ -646,7 +646,7 @@ group5WarpSources:
 	m_PointerWarp     $c2 warpSource7d83
 	m_StandardWarp $0 $c3 $37 $0 $2
 	m_StandardWarp $0 $c4 $38 $0 $2
-	m_StandardWarp $4 $c6 $1a $1 $3
+	m_StandardWarp $4 $c6 $1a $1 $3 ; closed cave - 0x13BC1
 	m_StandardWarp $4 $c7 $3b $0 $3
 	m_StandardWarp $8 $c8 $3c $0 $3
 	m_StandardWarp $4 $c9 $3d $0 $3
@@ -685,8 +685,8 @@ group5WarpSources:
 	m_StandardWarp $0 $11 $79 $0 $2
 	m_StandardWarp $4 $12 $7a $0 $3
 	m_StandardWarp $4 $f3 $23 $1 $3
-	m_StandardWarp $4 $f6 $24 $1 $3
-	m_StandardWarp $4 $f9 $25 $1 $3
+	m_StandardWarp $4 $f6 $24 $1 $3 ; summer tower
+	m_StandardWarp $4 $f9 $25 $1 $3 ; autumn tower
 	m_StandardWarp $4 $f0 $26 $1 $3 ; winter cave - 0x13C65
 	m_StandardWarp $0 $f3 $a1 $5 $2
 	m_PointerWarp     $f4 warpSource7cc3
