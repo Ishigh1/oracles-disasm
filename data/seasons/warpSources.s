@@ -250,11 +250,11 @@ warpSource7683:
 	m_PositionWarp $55 $66 $5 $4
 	m_WarpListEndWithDefault
 
-warpSource768b:
+warpSource768b: ; room 019
 	m_PositionWarp $06 $7d $5 $4
 	m_PositionWarp $08 $7e $5 $4
 	m_PositionWarp $22 $73 $5 $4
-	m_PositionWarp $57 $81 $5 $4
+	m_PositionWarp $57 $81 $5 $4 ; outside stairs - 0x13699
 	m_WarpListEndWithDefault
 
 
@@ -658,7 +658,7 @@ group5WarpSources:
 	m_StandardWarp $8 $cb $41 $0 $3
 	m_StandardWarp $0 $cb $3f $0 $2
 	m_StandardWarp $4 $cc $44 $0 $3 ; goron bomb - 0x13BED
-	m_StandardWarp $0 $cc $43 $0 $2
+	m_StandardWarp $0 $cc $43 $0 $2 ; goron outside stairs
 	m_StandardWarp $4 $c5 $42 $0 $3
 	m_PointerWarp     $cf warpSource7c9b
 	m_StandardWarp $0 $d4 $55 $0 $2 ; pirate ship - 0x13BFD
