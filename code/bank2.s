@@ -3231,7 +3231,7 @@ playHeartBeepAtInterval:
 	ret z
 
 	ld a,(wFrameCounter)
-	and $3f
+	and $ff
 	ret nz
 
 	ld hl,wLinkHealth
