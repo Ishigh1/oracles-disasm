@@ -20,7 +20,7 @@ specialObjectCode_minecart:
 
 	ld h,d
 	ld l,SpecialObject.speed
-	ld (hl),SPEED_100
+	ld (hl),SPEED_200
 
 	ld l,SpecialObject.direction
 	ld a,(hl)

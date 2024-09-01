@@ -1068,6 +1068,7 @@ group4Map0cEnemyObjectData:
 	obj_EndPointer
 
 group4Map0eEnemyObjectData:
+	obj_Part $28 $00 $57
 	obj_EndPointer
 
 group4Map10EnemyObjectData:
@@ -1106,8 +1107,7 @@ group4Map1aEnemyObjectData:
 	obj_EndPointer
 
 group4Map1bEnemyObjectData:
-	obj_SpecificEnemyA $01 $31 $01 $28 $a8
-	obj_SpecificEnemyA     $31 $01 $88 $a8
+	obj_SpecificEnemyA $01 $31 $01 $58 $a8
 	obj_EndPointer
 
 objectData49e7: ; UNUSED?

@@ -8037,7 +8037,7 @@ groups:
     - 0x02
     text: |-
       I got somes
-      explosive 
+      explosives 
       for you
        Impa
 
@@ -10266,7 +10266,7 @@ groups:
     index: 0x00
     text: |-
       Give me
-      explosive and 
+      explosives and 
       I shall reward 
       you with wisdom.
         \opt()No \opt()Yes
