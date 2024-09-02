@@ -118,7 +118,7 @@ group0WarpSources:
 	m_PointerWarp     $19 warpSource768b
 	m_StandardWarp $0 $29 $80 $5 $4 ; goron bomb
 	m_StandardWarp $0 $31 $48 $4 $4
-	m_StandardWarp $0 $f1 $4f $4 $4
+	m_StandardWarp $0 $f1 $4f $4 $4 ; graveyard cave - 0x13575
 	m_StandardWarp $0 $fd $50 $4 $4
 	m_StandardWarp $0 $ff $52 $4 $4
 	m_PointerWarp     $bf warpSource7613
@@ -136,7 +136,7 @@ group0WarpSources:
 	m_StandardWarp $0 $97 $8c $5 $4
 	m_StandardWarp $0 $02 $8f $5 $4
 	m_StandardWarp $0 $8f $90 $5 $4
-	m_StandardWarp $0 $a4 $91 $5 $4
+	m_StandardWarp $0 $a4 $91 $5 $4 ; ruul old man - 0x135BD
 	m_PointerWarp     $57 warpSource75eb
 	m_StandardWarp $0 $69 $93 $5 $4
 	m_StandardWarp $0 $79 $94 $5 $4
@@ -144,7 +144,7 @@ group0WarpSources:
 	m_StandardWarp $0 $49 $97 $5 $4
 	m_StandardWarp $0 $a6 $9a $5 $4
 	m_StandardWarp $0 $e0 $46 $3 $4
-	m_StandardWarp $0 $7e $9b $5 $4
+	m_StandardWarp $0 $7e $9b $5 $4 ; 2nd wow cave - 0x135DD
 	m_StandardWarp $0 $b6 $7b $0 $4
 	m_WarpListEndNoDefault
 
@@ -195,13 +195,13 @@ warpSource7623:
 
 warpSource762b:
 	m_PositionWarp $62 $8e $5 $4 ; left old man - 0x1362D
-	m_PositionWarp $33 $29 $3 $4
-	m_PositionWarp $25 $2a $3 $4
+	m_PositionWarp $33 $29 $3 $4 ; dr left
+	m_PositionWarp $25 $2a $3 $4 ; dr left side
 	m_WarpListEndWithDefault
 
 warpSource7637:
-	m_PositionWarp $47 $27 $3 $4
-	m_PositionWarp $27 $28 $3 $9
+	m_PositionWarp $47 $27 $3 $4 ; holly chimney
+	m_PositionWarp $27 $28 $3 $9 ; holly door
 	m_WarpListEndWithDefault
 
 warpSource763f: ; 0d2 - coast stump
@@ -378,8 +378,8 @@ group3WarpSources:
 	m_StandardWarp $4 $83 $11 $0 $3 ; tick tock -- 0x13805
 	m_StandardWarp $4 $84 $0e $0 $3 ; know-all-bird
 	m_StandardWarp $4 $85 $10 $0 $3 ; mayor's house -- 0x1380D
-	m_StandardWarp $4 $88 $45 $0 $3
-	m_StandardWarp $4 $89 $46 $0 $3
+	m_StandardWarp $4 $88 $45 $0 $3 ; coast house
+	m_StandardWarp $4 $89 $46 $0 $3 ; coast house side
 	m_StandardWarp $4 $8a $19 $1 $3 ; pirate house - 0x13819
 	m_StandardWarp $0 $8a $0a $3 $2 ; pirate 1f to 2f
 	m_PointerWarp     $8b warpSource78f7
@@ -402,9 +402,9 @@ group3WarpSources:
 	m_StandardWarp $4 $a0 $11 $1 $3 ; sub market
 	m_StandardWarp $4 $a1 $10 $1 $3 ; house above h&s
 	m_StandardWarp $4 $a2 $12 $1 $3
-	m_StandardWarp $4 $a3 $2d $0 $3
-	m_StandardWarp $4 $a4 $16 $0 $3
-	m_StandardWarp $4 $a5 $17 $0 $3
+	m_StandardWarp $4 $a3 $2d $0 $3 ; holly house
+	m_StandardWarp $4 $a4 $16 $0 $3 ; dr left
+	m_StandardWarp $4 $a5 $17 $0 $3 ; dr left side - 0x13879
 	m_StandardWarp $4 $a6 $18 $0 $3
 	m_StandardWarp $0 $a6 $2e $3 $2
 	m_PointerWarp     $a7 warpSource78ef
@@ -525,8 +525,8 @@ group4WarpSources:
 	m_StandardWarp $4 $f1 $03 $1 $3 ; open cave
 	m_StandardWarp $0 $f2 $04 $1 $2
 	m_StandardWarp $4 $f2 $05 $1 $3
-	m_StandardWarp $4 $f3 $5d $0 $3
-	m_StandardWarp $0 $f3 $5c $0 $4
+	m_StandardWarp $4 $f3 $5d $0 $3 ; graveyard cave - 0x13A29
+	m_StandardWarp $0 $f3 $5c $0 $4 ; graveyard chimney
 	m_StandardWarp $0 $f4 $5e $0 $4
 	m_StandardWarp $0 $f5 $5f $0 $4
 	m_StandardWarp $0 $f6 $60 $0 $4 ; useless
@@ -629,7 +629,7 @@ group5WarpSources:
 	m_StandardWarp $0 $b2 $57 $5 $2
 	m_StandardWarp $4 $b3 $28 $0 $3 ; d2 peek cave - 0x13B75
 	m_StandardWarp $8 $b3 $29 $0 $3 ; d2 magnet cave
-	m_StandardWarp $4 $b4 $25 $0 $3
+	m_StandardWarp $4 $b4 $25 $0 $3 ; 1st wow cave
 	m_StandardWarp $4 $b5 $2e $0 $3 ; flooded summer cave - 0x13B81
 	m_StandardWarp $4 $b6 $2f $0 $3 ; talon cave
 	m_PointerWarp     $b7 warpSource7d6b
@@ -674,7 +674,7 @@ group5WarpSources:
 	m_StandardWarp $0 $05 $6d $0 $2 ; dr left old man
 	m_StandardWarp $0 $06 $6e $0 $2
 	m_StandardWarp $0 $07 $6f $0 $2
-	m_StandardWarp $0 $08 $70 $0 $2
+	m_StandardWarp $0 $08 $70 $0 $2 ; ruul old man - 0x13C31
 	m_StandardWarp $4 $09 $71 $0 $3
 	m_StandardWarp $0 $0a $72 $0 $2
 	m_StandardWarp $4 $0b $73 $0 $3
@@ -683,7 +683,7 @@ group5WarpSources:
 	m_StandardWarp $0 $0f $77 $0 $2
 	m_StandardWarp $0 $10 $78 $0 $2
 	m_StandardWarp $0 $11 $79 $0 $2
-	m_StandardWarp $4 $12 $7a $0 $3 
+	m_StandardWarp $4 $12 $7a $0 $3 ; 2nd wow cave
 	m_StandardWarp $4 $f3 $23 $1 $3 ; spring tower - 0x13C59
 	m_StandardWarp $4 $f6 $24 $1 $3 ; summer tower
 	m_StandardWarp $4 $f9 $25 $1 $3 ; autumn tower
