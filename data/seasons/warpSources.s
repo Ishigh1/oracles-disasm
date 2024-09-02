@@ -101,9 +101,9 @@ group0WarpSources:
 	m_StandardWarp $0 $da $58 $5 $2 ; guru guru top -- 0x13525
 	m_PointerWarp     $ea warpSource7673
 	m_StandardWarp $0 $4f $5f $5 $4 ; sunken summer cave -- 0x1352D
-	m_StandardWarp $0 $1b $60 $5 $4
-	m_StandardWarp $0 $0b $62 $5 $4
-	m_StandardWarp $0 $1c $64 $5 $4
+	m_StandardWarp $0 $1b $60 $5 $4 ; talon cave
+	m_StandardWarp $0 $0b $62 $5 $4 ; top of cucco
+	m_StandardWarp $0 $1c $64 $5 $4 ; winter cucco cave
 	m_PointerWarp     $0f warpSource7683
 	m_StandardWarp $0 $1f $67 $5 $4
 	m_StandardWarp $0 $aa $69 $5 $4
@@ -529,8 +529,8 @@ group4WarpSources:
 	m_StandardWarp $0 $f3 $5c $0 $4
 	m_StandardWarp $0 $f4 $5e $0 $4
 	m_StandardWarp $0 $f5 $5f $0 $4
-	m_StandardWarp $0 $f6 $60 $0 $4 ; desert fairies - 0x13A39
-	m_StandardWarp $4 $f6 $61 $0 $3 ; useless
+	m_StandardWarp $0 $f6 $60 $0 $4 ; useless
+	m_StandardWarp $4 $f6 $61 $0 $3 ; desert fairies - 0x13A3D
 	m_StandardWarp $0 $f7 $62 $0 $4 ; suburb spring cave
 	m_StandardWarp $0 $f8 $63 $0 $4 ; phonograph deku - 0x13A45
 	m_StandardWarp $4 $f9 $1b $1 $3 ; corridor left
@@ -631,10 +631,10 @@ group5WarpSources:
 	m_StandardWarp $8 $b3 $29 $0 $3 ; d2 magnet cave
 	m_StandardWarp $4 $b4 $25 $0 $3
 	m_StandardWarp $4 $b5 $2e $0 $3 ; flooded summer cave - 0x13B81
-	m_StandardWarp $4 $b6 $2f $0 $3
+	m_StandardWarp $4 $b6 $2f $0 $3 ; talon cave
 	m_PointerWarp     $b7 warpSource7d6b
 	m_StandardWarp $0 $b8 $61 $5 $2
-	m_StandardWarp $8 $b9 $31 $0 $3
+	m_StandardWarp $8 $b9 $31 $0 $3 ; winter cucco cave - 0x13B91
 	m_StandardWarp $0 $ba $32 $0 $2
 	m_StandardWarp $4 $ba $33 $0 $3
 	m_StandardWarp $4 $bb $34 $0 $3
@@ -799,7 +799,7 @@ warpSource7d63:
 
 warpSource7d6b:
 	m_PositionWarp $24 $63 $5 $2
-	m_PositionWarp $74 $30 $0 $2
+	m_PositionWarp $74 $30 $0 $2 ; top of cucco
 	m_WarpListEndWithDefault
 
 warpSource7d73:
