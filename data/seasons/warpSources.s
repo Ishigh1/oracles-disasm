@@ -119,7 +119,7 @@ group0WarpSources:
 	m_StandardWarp $0 $29 $80 $5 $4 ; goron bomb
 	m_StandardWarp $0 $31 $48 $4 $4
 	m_StandardWarp $0 $f1 $4f $4 $4 ; graveyard cave - 0x13575
-	m_StandardWarp $0 $fd $50 $4 $4
+	m_StandardWarp $0 $fd $50 $4 $4 ; useless
 	m_StandardWarp $0 $ff $52 $4 $4
 	m_PointerWarp     $bf warpSource7613
 	m_StandardWarp $0 $cc $56 $4 $4 ; suburb spring cave
@@ -200,8 +200,8 @@ warpSource762b:
 	m_WarpListEndWithDefault
 
 warpSource7637:
-	m_PositionWarp $47 $27 $3 $4 ; holly chimney
-	m_PositionWarp $27 $28 $3 $9 ; holly door
+	m_PositionWarp $47 $27 $3 $4 ; holly door
+	m_PositionWarp $27 $28 $3 $9 ; holly chimney
 	m_WarpListEndWithDefault
 
 warpSource763f: ; 0d2 - coast stump
