@@ -111,7 +111,7 @@ group0WarpSources:
 	m_PointerWarp     $06 warpSource767b
 	m_StandardWarp $0 $07 $6f $5 $4 ; right TR stairs -0x13551
 	m_StandardWarp $0 $15 $75 $5 $4 ; TR bomb cave
-	m_StandardWarp $0 $18 $76 $5 $4 : biggoron
+	m_StandardWarp $0 $18 $76 $5 $4 ; biggoron
 	m_PointerWarp     $28 warpSource75f3
 	m_StandardWarp $0 $39 $7b $5 $4 ; goron bottom -0x13561
 	m_StandardWarp $0 $09 $7f $5 $4 ; goron lynel
