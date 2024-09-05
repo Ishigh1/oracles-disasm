@@ -105,52 +105,52 @@ group0WarpSources:
 	m_StandardWarp $0 $0b $62 $5 $4 ; top of cucco
 	m_StandardWarp $0 $1c $64 $5 $4 ; winter cucco cave
 	m_PointerWarp     $0f warpSource7683
-	m_StandardWarp $0 $1f $67 $5 $4
-	m_StandardWarp $0 $aa $69 $5 $4
-	m_StandardWarp $0 $16 $6d $5 $4
+	m_StandardWarp $0 $1f $67 $5 $4 ; fast platform
+	m_StandardWarp $0 $aa $69 $5 $4 ; lake boulder - 0x13545
+	m_StandardWarp $0 $16 $6d $5 $4 ; TR cave
 	m_PointerWarp     $06 warpSource767b
-	m_StandardWarp $0 $07 $6f $5 $4
-	m_StandardWarp $0 $15 $75 $5 $4
-	m_StandardWarp $0 $18 $76 $5 $4
+	m_StandardWarp $0 $07 $6f $5 $4 ; right TR stairs -0x13551
+	m_StandardWarp $0 $15 $75 $5 $4 ; TR bomb cave
+	m_StandardWarp $0 $18 $76 $5 $4 : biggoron
 	m_PointerWarp     $28 warpSource75f3
 	m_StandardWarp $0 $39 $7b $5 $4 ; goron bottom -0x13561
-	m_StandardWarp $0 $09 $7f $5 $4
+	m_StandardWarp $0 $09 $7f $5 $4 ; goron lynel
 	m_PointerWarp     $19 warpSource768b
 	m_StandardWarp $0 $29 $80 $5 $4 ; goron bomb
-	m_StandardWarp $0 $31 $48 $4 $4
+	m_StandardWarp $0 $31 $48 $4 $4 ; lost woods bomb cave
 	m_StandardWarp $0 $f1 $4f $4 $4 ; graveyard cave - 0x13575
 	m_StandardWarp $0 $fd $50 $4 $4 ; useless
-	m_StandardWarp $0 $ff $52 $4 $4
+	m_StandardWarp $0 $ff $52 $4 $4 ; desert stairs
 	m_PointerWarp     $bf warpSource7613
 	m_StandardWarp $0 $cc $56 $4 $4 ; suburb spring cave
 	m_StandardWarp $0 $51 $57 $4 $4 ; phonograph deku - 0x13589
-	m_StandardWarp $0 $c2 $5a $4 $4
-	m_StandardWarp $0 $a7 $5b $4 $4
-	m_StandardWarp $0 $b3 $39 $4 $4
-	m_StandardWarp $0 $87 $3a $4 $4
+	m_StandardWarp $0 $c2 $5a $4 $4 ; swamp bomb cave
+	m_StandardWarp $0 $a7 $5b $4 $4 ; lake bomb cave
+	m_StandardWarp $0 $b3 $39 $4 $4 ; ruul cave - 0x13595
+	m_StandardWarp $0 $87 $3a $4 $4 ; autumn water cave - 0x13599
 	m_StandardWarp $0 $d3 $5c $4 $4 ; beach fairy
 	m_StandardWarp $0 $e2 $84 $5 $4 ; pirate ship - 0x135A1
-	m_StandardWarp $0 $ee $83 $5 $4
-	m_StandardWarp $0 $dc $89 $5 $4
+	m_StandardWarp $0 $ee $83 $5 $4 ; desert pirate ship
+	m_StandardWarp $0 $dc $89 $5 $4 ; desert cave
 	m_StandardWarp $0 $66 $8b $5 $4 ; blaino old man - 0x135AD
-	m_StandardWarp $0 $97 $8c $5 $4
-	m_StandardWarp $0 $02 $8f $5 $4
-	m_StandardWarp $0 $8f $90 $5 $4
+	m_StandardWarp $0 $97 $8c $5 $4 ; d1 old man
+	m_StandardWarp $0 $02 $8f $5 $4 ; tarm old man
+	m_StandardWarp $0 $8f $90 $5 $4 ; suburb old man
 	m_StandardWarp $0 $a4 $91 $5 $4 ; ruul old man - 0x135BD
 	m_PointerWarp     $57 warpSource75eb
 	m_StandardWarp $0 $69 $93 $5 $4
 	m_StandardWarp $0 $79 $94 $5 $4
 	m_StandardWarp $0 $59 $95 $5 $4
-	m_StandardWarp $0 $49 $97 $5 $4
-	m_StandardWarp $0 $a6 $9a $5 $4
-	m_StandardWarp $0 $e0 $46 $3 $4
+	m_StandardWarp $0 $49 $97 $5 $4 ; natzu common stairs
+	m_StandardWarp $0 $a6 $9a $5 $4 ; red ring
+	m_StandardWarp $0 $e0 $46 $3 $4 ; hidden graveyard stairs
 	m_StandardWarp $0 $7e $9b $5 $4 ; 2nd wow cave - 0x135DD
-	m_StandardWarp $0 $b6 $7b $0 $4
+	m_StandardWarp $0 $b6 $7b $0 $4 ; unused ?
 	m_WarpListEndNoDefault
 
 warpSource75e3:
 	m_PositionWarp $43 $03 $3 $4 ; tick tock
-	m_PositionWarp $14 $98 $5 $4
+	m_PositionWarp $14 $98 $5 $4 ; hidden stairs - 0x135E9
 	m_WarpListEndWithDefault
 
 warpSource75eb: ; natsu 57
@@ -173,9 +173,9 @@ warpSource7603:
 	m_PositionWarp $14 $38 $3 $4 ; advance shop
 	m_WarpListEndWithDefault
 
-warpSource760b:
-	m_PositionWarp $33 $42 $3 $4
-	m_PositionWarp $35 $43 $3 $4
+warpSource760b: ; moblin keep
+	m_PositionWarp $33 $42 $3 $4 ; left
+	m_PositionWarp $35 $43 $3 $4 ; right
 	m_WarpListEndWithDefault
 
 warpSource7613:
@@ -241,19 +241,19 @@ warpSource7673:
 	m_WarpListEndWithDefault
 
 warpSource767b:
-	m_PositionWarp $13 $71 $5 $4
-	m_PositionWarp $16 $72 $5 $4
+	m_PositionWarp $13 $71 $5 $4 ; left stairs TR
+	m_PositionWarp $16 $72 $5 $4 ; middle stairs TR
 	m_WarpListEndWithDefault
 
-warpSource7683:
-	m_PositionWarp $15 $65 $5 $4
-	m_PositionWarp $55 $66 $5 $4
+warpSource7683: ; banana tree
+	m_PositionWarp $15 $65 $5 $4 ; banana stairs
+	m_PositionWarp $55 $66 $5 $4 ; banana cave - 0x13689
 	m_WarpListEndWithDefault
 
 warpSource768b: ; room 019
-	m_PositionWarp $06 $7d $5 $4
-	m_PositionWarp $08 $7e $5 $4
-	m_PositionWarp $22 $73 $5 $4
+	m_PositionWarp $06 $7d $5 $4 ; goron top left cave
+	m_PositionWarp $08 $7e $5 $4 ; goron top right cave
+	m_PositionWarp $22 $73 $5 $4 ; goron ring cave
 	m_PositionWarp $57 $81 $5 $4 ; outside stairs - 0x13699
 	m_WarpListEndWithDefault
 
@@ -265,24 +265,24 @@ group1WarpSources:
 	m_StandardWarp $0 $08 $9d $5 $4 ; summer tower
 	m_StandardWarp $0 $0a $9e $5 $4 ; autumn tower
 	m_StandardWarp $0 $2a $9f $5 $4 ; winter temple - 0x136B1
-	m_StandardWarp $0 $05 $1a $0 $8
+	m_StandardWarp $0 $05 $1a $0 $8 ; mountain portal
 	m_StandardWarp $0 $57 $1b $0 $8
 	m_StandardWarp $0 $53 $1c $0 $8
 	m_StandardWarp $0 $4a $1d $0 $8
 	m_StandardWarp $0 $13 $1e $0 $8
-	m_StandardWarp $0 $20 $2f $3 $8
+	m_StandardWarp $0 $20 $2f $3 $8 ; d8 portal
 	m_StandardWarp $0 $12 $74 $5 $4 ; closed cave - 0x136CD
 	m_PointerWarp     $35 warpSource773b
 	m_PointerWarp     $72 warpSource7727
 	m_StandardWarp $0 $22 $13 $3 $4 ; subrosian cook
 	m_StandardWarp $0 $24 $19 $3 $4 ; dance hall
 	m_StandardWarp $0 $23 $1a $3 $4 ; useless subrosian house - 0x136E1
-	m_StandardWarp $0 $33 $1b $3 $4
-	m_StandardWarp $0 $49 $22 $3 $4
+	m_StandardWarp $0 $33 $1b $3 $4 ; smithy
+	m_StandardWarp $0 $49 $22 $3 $4 ; furnace
 	m_StandardWarp $0 $45 $24 $3 $4 ; sub market - 0x136ED
 	m_StandardWarp $0 $44 $25 $3 $4 ; house above h&s
-	m_StandardWarp $0 $26 $26 $3 $4
-	m_StandardWarp $0 $5a $31 $3 $4
+	m_StandardWarp $0 $26 $26 $3 $4 ; unused
+	m_StandardWarp $0 $5a $31 $3 $4 ; sign guy
 	m_StandardWarp $0 $51 $3a $3 $4 ; strange bro left - 0x136FD
 	m_StandardWarp $0 $52 $3b $3 $4 ; strange bro right
 	m_StandardWarp $0 $54 $06 $7 $4 ; staircase to spring
@@ -290,13 +290,13 @@ group1WarpSources:
 	m_StandardWarp $0 $04 $4b $4 $4 ; boomerang cave - 0x1370D
 	m_StandardWarp $0 $11 $4c $4 $4 ; open cave
 	m_PointerWarp     $58 warpSource771f
-	m_StandardWarp $0 $74 $82 $5 $4
+	m_StandardWarp $0 $74 $82 $5 $4 ; pirate
 	m_StandardWarp $0 $b6 $7b $0 $4
 	m_WarpListEndNoDefault
 
 warpSource771f:
-	m_PositionWarp $25 $4d $4 $4
-	m_PositionWarp $52 $4e $4 $4
+	m_PositionWarp $25 $4d $4 $4 ; red ore stairs
+	m_PositionWarp $52 $4e $4 $4 ; red ore cave
 	m_WarpListEndWithDefault
 
 warpSource7727:
@@ -390,14 +390,14 @@ group3WarpSources:
 	m_StandardWarp $4 $94 $15 $0 $3 ; Treehouse -- 0x13835
 	m_StandardWarp $0 $95 $0d $1 $2 ; dance hall
 	m_StandardWarp $4 $96 $0e $1 $3 ; useless sub
-	m_StandardWarp $4 $97 $0f $1 $3
+	m_StandardWarp $4 $97 $0f $1 $3 ; smithy
 	m_StandardWarp $0 $98 $37 $4 $2
 	m_StandardWarp $4 $99 $48 $0 $3 ; ingo -- 0x13849
 	m_StandardWarp $0 $9a $4b $0 $2
 	m_StandardWarp $0 $9b $4c $0 $2 ; under tree near d6
 	m_StandardWarp $4 $9c $4d $0 $3 ; syrup -- 0x13855
 	m_StandardWarp $4 $9d $4e $0 $3 ; flooded
-	m_StandardWarp $8 $9e $15 $1 $3
+	m_StandardWarp $8 $9e $15 $1 $3 ; furnace
 	m_StandardWarp $4 $9f $50 $0 $3 ; treasure hunter -- 0x13861
 	m_StandardWarp $4 $a0 $11 $1 $3 ; sub market
 	m_StandardWarp $4 $a1 $10 $1 $3 ; house above h&s
@@ -409,7 +409,7 @@ group3WarpSources:
 	m_StandardWarp $0 $a6 $2e $3 $2
 	m_PointerWarp     $a7 warpSource78ef
 	m_StandardWarp $4 $a8 $3a $0 $3 ; d8 fairy room -- 0x13889
-	m_StandardWarp $0 $a8 $0b $1 $8
+	m_StandardWarp $0 $a8 $0b $1 $8 ; sign guy
 	m_StandardWarp $4 $a9 $16 $1 $3
 	m_StandardWarp $4 $aa $51 $0 $3 ; bomb house -- 0x13895
 	m_PointerWarp     $ab warpSource78ff
@@ -423,11 +423,11 @@ group3WarpSources:
 	m_StandardWarp $4 $b6 $4f $0 $3 ; master diver - 0x138B9
 	m_StandardWarp $0 $b6 $0a $7 $2
 	m_StandardWarp $0 $b7 $47 $0 $2 ; lost woods deku - 0x138C1
-	m_StandardWarp $4 $b8 $53 $0 $3
-	m_StandardWarp $8 $b8 $54 $0 $3
-	m_StandardWarp $0 $b8 $45 $3 $2
+	m_StandardWarp $4 $b8 $53 $0 $3 ; moblin keep left
+	m_StandardWarp $8 $b8 $54 $0 $3 ; moblin keep right
+	m_StandardWarp $0 $b8 $45 $3 $2 ; moblin keep inside
 	m_StandardWarp $0 $b9 $44 $3 $2
-	m_StandardWarp $0 $ba $58 $0 $2
+	m_StandardWarp $0 $ba $58 $0 $2 ; graveyard stairs - 0x138D5
 	m_StandardWarp $1 $ac $49 $3 $3
 	m_StandardWarp $2 $ac $49 $3 $3
 	m_StandardWarp $4 $bd $35 $3 $3
@@ -506,8 +506,8 @@ group4WarpSources:
 	m_StandardWarp $0 $d4 $33 $4 $2
 	m_StandardWarp $0 $d5 $1c $3 $2
 	m_StandardWarp $0 $d6 $35 $4 $2
-	m_StandardWarp $4 $e0 $0c $0 $3
-	m_StandardWarp $4 $e1 $5a $0 $3
+	m_StandardWarp $4 $e0 $0c $0 $3 ; ruul cave - 0x139DD
+	m_StandardWarp $4 $e1 $5a $0 $3 ; autumn water cave - 0x139E1
 	m_PointerWarp     $e3 warpSource7a77
 	m_PointerWarp     $e5 warpSource7a7f
 	m_StandardWarp $0 $e6 $3d $4 $2
@@ -518,17 +518,17 @@ group4WarpSources:
 	m_StandardWarp $0 $e9 $42 $4 $2
 	m_StandardWarp $4 $ea $1e $2 $3
 	m_StandardWarp $4 $eb $67 $0 $3 ; mountain fairy - 0x13A09
-	m_StandardWarp $4 $ed $5b $0 $3
+	m_StandardWarp $4 $ed $5b $0 $3 ; lost woods bomb cave
 	m_StandardWarp $4 $ee $28 $2 $3
 	m_StandardWarp $4 $ef $01 $1 $3 ; volcano cave
 	m_StandardWarp $4 $f0 $02 $1 $3 ; boomerang cave - 0x13A19
 	m_StandardWarp $4 $f1 $03 $1 $3 ; open cave
-	m_StandardWarp $0 $f2 $04 $1 $2
-	m_StandardWarp $4 $f2 $05 $1 $3
+	m_StandardWarp $0 $f2 $04 $1 $2 ; red ore stairs
+	m_StandardWarp $4 $f2 $05 $1 $3 ; red ore cave
 	m_StandardWarp $4 $f3 $5d $0 $3 ; graveyard cave - 0x13A29
 	m_StandardWarp $0 $f3 $5c $0 $4 ; graveyard chimney
 	m_StandardWarp $0 $f4 $5e $0 $4
-	m_StandardWarp $0 $f5 $5f $0 $4
+	m_StandardWarp $0 $f5 $5f $0 $4 ; desert chest
 	m_StandardWarp $0 $f6 $60 $0 $4 ; useless
 	m_StandardWarp $4 $f6 $61 $0 $3 ; desert fairies - 0x13A3D
 	m_StandardWarp $0 $f7 $62 $0 $4 ; suburb spring cave
@@ -536,7 +536,7 @@ group4WarpSources:
 	m_StandardWarp $4 $f9 $1b $1 $3 ; corridor left
 	m_StandardWarp $8 $f9 $1c $1 $3 ; corridor right
 	m_StandardWarp $4 $fa $64 $0 $3 ; winter swamp cave
-	m_StandardWarp $4 $fb $65 $0 $3
+	m_StandardWarp $4 $fb $65 $0 $3 ; lake bomb cave
 	m_StandardWarp $4 $fc $66 $0 $3 ; beach fairy - 0x13A59
 	m_StandardWarp $0 $b6 $7b $0 $4
 	m_WarpListEndNoDefault
@@ -635,54 +635,54 @@ group5WarpSources:
 	m_PointerWarp     $b7 warpSource7d6b
 	m_StandardWarp $0 $b8 $61 $5 $2
 	m_StandardWarp $8 $b9 $31 $0 $3 ; winter cucco cave - 0x13B91
-	m_StandardWarp $0 $ba $32 $0 $2
-	m_StandardWarp $4 $ba $33 $0 $3
-	m_StandardWarp $4 $bb $34 $0 $3
+	m_StandardWarp $0 $ba $32 $0 $2 ; banana stairs
+	m_StandardWarp $4 $ba $33 $0 $3 ; banana cave
+	m_StandardWarp $4 $bb $34 $0 $3 ; fast platform
 	m_PointerWarp     $be warpSource7d73
 	m_PointerWarp     $bf warpSource7d7b
 	m_StandardWarp $0 $c0 $6b $5 $2
-	m_StandardWarp $4 $c1 $36 $0 $2
+	m_StandardWarp $4 $c1 $36 $0 $2 ; TR cave - 0x13BAD
 	m_StandardWarp $0 $c1 $70 $5 $2
 	m_PointerWarp     $c2 warpSource7d83
-	m_StandardWarp $0 $c3 $37 $0 $2
-	m_StandardWarp $0 $c4 $38 $0 $2
+	m_StandardWarp $0 $c3 $37 $0 $2 ; left stairs TR
+	m_StandardWarp $0 $c4 $38 $0 $2 ; middle stairs TR
 	m_StandardWarp $4 $c6 $1a $1 $3 ; closed cave - 0x13BC1
-	m_StandardWarp $4 $c7 $3b $0 $3
+	m_StandardWarp $4 $c7 $3b $0 $3 ; TR bomb cave
 	m_StandardWarp $8 $c8 $3c $0 $3 ; goron top - 0x13BC9
 	m_StandardWarp $4 $c9 $3d $0 $3 ; goron middle
 	m_StandardWarp $4 $ca $3e $0 $3 ; goron bottom
 	m_StandardWarp $0 $c8 $79 $5 $2
 	m_PointerWarp     $c9 warpSource7cb3
 	m_StandardWarp $0 $ca $7a $5 $2
-	m_StandardWarp $4 $cb $40 $0 $3
-	m_StandardWarp $8 $cb $41 $0 $3
-	m_StandardWarp $0 $cb $3f $0 $2
+	m_StandardWarp $4 $cb $40 $0 $3 ; goron lynel cave left
+	m_StandardWarp $8 $cb $41 $0 $3 ; goron lynel cave right
+	m_StandardWarp $0 $cb $3f $0 $2 ; goron lynels
 	m_StandardWarp $4 $cc $44 $0 $3 ; goron bomb - 0x13BED
 	m_StandardWarp $0 $cc $43 $0 $2 ; goron outside stairs
-	m_StandardWarp $4 $c5 $42 $0 $3
+	m_StandardWarp $4 $c5 $42 $0 $3 ; goron ring
 	m_PointerWarp     $cf warpSource7c9b
 	m_StandardWarp $0 $d4 $55 $0 $2 ; pirate ship - 0x13BFD
 	m_StandardWarp $0 $d0 $88 $5 $2
 	m_StandardWarp $0 $d1 $88 $5 $2
 	m_StandardWarp $0 $d2 $88 $5 $2
 	m_StandardWarp $0 $d3 $85 $5 $2
-	m_StandardWarp $4 $d3 $57 $0 $3
+	m_StandardWarp $4 $d3 $57 $0 $3 ; desert cave
 	m_StandardWarp $0 $01 $69 $0 $2 ; goron old man - 0x13C15
 	m_StandardWarp $0 $02 $6a $0 $2 ; old man blaino
-	m_StandardWarp $0 $03 $6b $0 $2
+	m_StandardWarp $0 $03 $6b $0 $2 ; d1 old man
 	m_StandardWarp $0 $04 $6c $0 $2 ; old man coast - 0x13C21
 	m_StandardWarp $0 $05 $6d $0 $2 ; dr left old man
-	m_StandardWarp $0 $06 $6e $0 $2
-	m_StandardWarp $0 $07 $6f $0 $2
+	m_StandardWarp $0 $06 $6e $0 $2 ; tarm old man
+	m_StandardWarp $0 $07 $6f $0 $2 ; suburb old man
 	m_StandardWarp $0 $08 $70 $0 $2 ; ruul old man - 0x13C31
 	m_StandardWarp $4 $09 $71 $0 $3
 	m_StandardWarp $0 $0a $72 $0 $2
 	m_StandardWarp $4 $0b $73 $0 $3
 	m_StandardWarp $0 $0c $74 $0 $2
-	m_StandardWarp $0 $0e $76 $0 $2
-	m_StandardWarp $0 $0f $77 $0 $2
+	m_StandardWarp $0 $0e $76 $0 $2 ; natzu common
+	m_StandardWarp $0 $0f $77 $0 $2 ; hidden stairs behind clock - 0x13C49
 	m_StandardWarp $0 $10 $78 $0 $2
-	m_StandardWarp $0 $11 $79 $0 $2
+	m_StandardWarp $0 $11 $79 $0 $2 ; red ring
 	m_StandardWarp $4 $12 $7a $0 $3 ; 2nd wow cave
 	m_StandardWarp $4 $f3 $23 $1 $3 ; spring tower - 0x13C59
 	m_StandardWarp $4 $f6 $24 $1 $3 ; summer tower
@@ -799,12 +799,12 @@ warpSource7d63:
 
 warpSource7d6b:
 	m_PositionWarp $24 $63 $5 $2
-	m_PositionWarp $74 $30 $0 $2 ; top of cucco
+	m_PositionWarp $74 $30 $0 $2 ; top of cucco - 0x13D71
 	m_WarpListEndWithDefault
 
 warpSource7d73:
 	m_PositionWarp $34 $6a $5 $2
-	m_PositionWarp $48 $35 $0 $2
+	m_PositionWarp $48 $35 $0 $2 ; boulder cave - 0x13D79
 	m_WarpListEndWithDefault
 
 warpSource7d7b:
@@ -813,7 +813,7 @@ warpSource7d7b:
 	m_WarpListEndWithDefault
 
 warpSource7d83:
-	m_PositionWarp $22 $39 $0 $2
+	m_PositionWarp $22 $39 $0 $2 ; right stairs in TR - 0x13D85
 	m_PositionWarp $3b $6e $5 $2
 	m_WarpListEndWithDefault
 
