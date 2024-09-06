@@ -138,9 +138,9 @@ group0WarpSources:
 	m_StandardWarp $0 $8f $90 $5 $4 ; suburb old man
 	m_StandardWarp $0 $a4 $91 $5 $4 ; ruul old man - 0x135BD
 	m_PointerWarp     $57 warpSource75eb
-	m_StandardWarp $0 $69 $93 $5 $4
-	m_StandardWarp $0 $79 $94 $5 $4
-	m_StandardWarp $0 $59 $95 $5 $4
+	m_StandardWarp $0 $69 $93 $5 $4 ; dimitri deku
+	m_StandardWarp $0 $79 $94 $5 $4 ; ricky deku
+	m_StandardWarp $0 $59 $95 $5 $4 ; moosh deku
 	m_StandardWarp $0 $49 $97 $5 $4 ; natzu common stairs
 	m_StandardWarp $0 $a6 $9a $5 $4 ; red ring
 	m_StandardWarp $0 $e0 $46 $3 $4 ; hidden graveyard stairs
@@ -154,8 +154,8 @@ warpSource75e3:
 	m_WarpListEndWithDefault
 
 warpSource75eb: ; natsu 57
-	m_PositionWarp $32 $92 $5 $4
-	m_PositionWarp $15 $99 $5 $4
+	m_PositionWarp $32 $92 $5 $4 ; ricky fairy
+	m_PositionWarp $15 $99 $5 $4 ; moosh fairy
 	m_WarpListEndWithDefault
 
 warpSource75f3:
@@ -675,13 +675,13 @@ group5WarpSources:
 	m_StandardWarp $0 $06 $6e $0 $2 ; tarm old man
 	m_StandardWarp $0 $07 $6f $0 $2 ; suburb old man
 	m_StandardWarp $0 $08 $70 $0 $2 ; ruul old man - 0x13C31
-	m_StandardWarp $4 $09 $71 $0 $3
+	m_StandardWarp $4 $09 $71 $0 $3 ; ricky fairy
 	m_StandardWarp $0 $0a $72 $0 $2
 	m_StandardWarp $4 $0b $73 $0 $3
 	m_StandardWarp $0 $0c $74 $0 $2
 	m_StandardWarp $0 $0e $76 $0 $2 ; natzu common
 	m_StandardWarp $0 $0f $77 $0 $2 ; hidden stairs behind clock - 0x13C49
-	m_StandardWarp $0 $10 $78 $0 $2
+	m_StandardWarp $0 $10 $78 $0 $2 ; moosh fairy
 	m_StandardWarp $0 $11 $79 $0 $2 ; red ring
 	m_StandardWarp $4 $12 $7a $0 $3 ; 2nd wow cave
 	m_StandardWarp $4 $f3 $23 $1 $3 ; spring tower - 0x13C59
