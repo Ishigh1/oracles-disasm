@@ -211,8 +211,8 @@ warpSource763f: ; 0d2 - coast stump
 	m_WarpListEndWithDefault
 
 warpSource764b:
-	m_PositionWarp $57 $01 $4 $9
-	m_PositionWarp $54 $00 $4 $4
+	m_PositionWarp $57 $01 $4 $9 ; d0 chimney
+	m_PositionWarp $54 $00 $4 $4 ; d0 entrance
 	m_WarpListEndWithDefault
 
 warpSource7653: ; hardcoded usage of this through getLinkedHerosCaveSideEntranceRoom
@@ -220,12 +220,12 @@ warpSource7653: ; hardcoded usage of this through getLinkedHerosCaveSideEntrance
 	m_WarpListFallThrough
 
 warpSource7657:
-	m_PositionWarp $24 $03 $4 $4
-	m_PositionWarp $18 $0c $4 $2
+	m_PositionWarp $24 $03 $4 $4 ; d2 entrance
+	m_PositionWarp $18 $0c $4 $2 ; d2 side left - 0x1365D
 	m_WarpListEndWithDefault
 
 warpSource765f: ; D2 caves
-	m_PositionWarp $12 $0d $4 $2
+	m_PositionWarp $12 $0d $4 $2 ; d2 right
 	m_PositionWarp $43 $5c $5 $4 ; peek cave
 	m_PositionWarp $48 $5d $5 $4 ; magnet cave - 0x13669
 	m_WarpListEndWithDefault
@@ -291,7 +291,7 @@ group1WarpSources:
 	m_StandardWarp $0 $11 $4c $4 $4 ; open cave
 	m_PointerWarp     $58 warpSource771f
 	m_StandardWarp $0 $74 $82 $5 $4 ; pirate
-	m_StandardWarp $0 $b6 $7b $0 $4
+	m_StandardWarp $0 $b6 $7b $0 $4 ; ???
 	m_WarpListEndNoDefault
 
 warpSource771f:
@@ -464,8 +464,8 @@ group4WarpSources:
 	m_StandardWarp $0 $0a $01 $6 $2
 	m_StandardWarp $0 $1f $02 $6 $2
 	m_StandardWarp $0 $32 $03 $6 $2
-	m_StandardWarp $0 $33 $26 $0 $2
-	m_StandardWarp $0 $37 $27 $0 $2
+	m_StandardWarp $0 $33 $26 $0 $2 ; d2 left side
+	m_StandardWarp $0 $37 $27 $0 $2 ; d2 right side - 0x13939
 	m_StandardWarp $0 $3e $05 $6 $2
 	m_PointerWarp     $3f warpSource7a5f
 	m_PointerWarp     $41 warpSource7a67
@@ -704,8 +704,8 @@ group5WarpSources:
 	m_WarpListEndNoDefault
 
 warpSource7c9b:
-	m_PositionWarp $97 $56 $0 $2
-	m_PositionWarp $16 $1d $1 $2
+	m_PositionWarp $97 $56 $0 $2 ; desert ship - 13C9D
+	m_PositionWarp $16 $1d $1 $2 ; sub ship
 	m_WarpListEndWithDefault
 
 warpSource7ca3:
