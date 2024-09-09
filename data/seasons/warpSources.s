@@ -843,11 +843,11 @@ group7WarpSources:
 	m_StandardWarp $2 $5d $2e $5 $3
 	m_StandardWarp $1 $60 $3a $5 $3
 	m_StandardWarp $2 $62 $3c $5 $3
-	m_StandardWarp $1 $e0 $49 $0 $3
-	m_StandardWarp $2 $e1 $4a $0 $3
+	m_StandardWarp $1 $e0 $49 $0 $3 ; cucco dive
+	m_StandardWarp $2 $e1 $4a $0 $3 ; sunken dive
 	m_StandardWarp $1 $e2 $1e $1 $3 ; staircase to spring - 0x13DE9
 	m_StandardWarp $1 $e3 $1f $1 $3 ; spring staircase - 0x13DED
-	m_StandardWarp $1 $e4 $68 $0 $3
+	m_StandardWarp $1 $e4 $68 $0 $3 ; jewel water
 	m_StandardWarp $1 $e6 $51 $4 $3
 	m_StandardWarp $2 $e7 $53 $4 $3
 	m_StandardWarp $1 $e8 $40 $3 $3
