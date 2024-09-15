@@ -409,8 +409,8 @@ group3WarpSources:
 	m_StandardWarp $0 $a6 $2e $3 $2
 	m_PointerWarp     $a7 warpSource78ef
 	m_StandardWarp $4 $a8 $3a $0 $3 ; d8 fairy room -- 0x13889
-	m_StandardWarp $0 $a8 $0b $1 $8 ; sign guy
-	m_StandardWarp $4 $a9 $16 $1 $3
+	m_StandardWarp $0 $a8 $0b $1 $8 ; d8 fairy portal
+	m_StandardWarp $4 $a9 $16 $1 $3 ; sign guy
 	m_StandardWarp $4 $aa $51 $0 $3 ; bomb house -- 0x13895
 	m_PointerWarp     $ab warpSource78ff
 	m_StandardWarp $4 $af $0f $0 $3 ; advance shop
@@ -577,7 +577,7 @@ group5WarpSources:
 	m_StandardWarp $0 $3c $1b $5 $2
 	m_PointerWarp     $43 warpSource7cdb
 	m_StandardWarp $0 $46 $2a $5 $2
-	m_StandardWarp $0 $47 $05 $5 $2 ; d7 magnet - 0x13AAD
+	m_StandardWarp $0 $47 $05 $5 $2 ; - 0x13AAD
 	m_StandardWarp $0 $4a $06 $5 $2
 	m_PointerWarp     $4b warpSource7d4b
 	m_StandardWarp $0 $4c $07 $5 $2
@@ -676,9 +676,9 @@ group5WarpSources:
 	m_StandardWarp $0 $07 $6f $0 $2 ; suburb old man
 	m_StandardWarp $0 $08 $70 $0 $2 ; ruul old man - 0x13C31
 	m_StandardWarp $4 $09 $71 $0 $3 ; ricky fairy
-	m_StandardWarp $0 $0a $72 $0 $2
-	m_StandardWarp $4 $0b $73 $0 $3
-	m_StandardWarp $0 $0c $74 $0 $2
+	m_StandardWarp $0 $0a $72 $0 $2 ; dimitri fairy
+	m_StandardWarp $4 $0b $73 $0 $3 ; ricky deku
+	m_StandardWarp $0 $0c $74 $0 $2 ; moosh deku
 	m_StandardWarp $0 $0e $76 $0 $2 ; natzu common
 	m_StandardWarp $0 $0f $77 $0 $2 ; hidden stairs behind clock - 0x13C49
 	m_StandardWarp $0 $10 $78 $0 $2 ; moosh fairy
