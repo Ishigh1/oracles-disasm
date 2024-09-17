@@ -366,8 +366,8 @@ warpSource77e7:
 	m_WarpListEndWithDefault
 
 warpSource77ef:
-	m_PositionWarp $06 $45 $4 $4
-	m_PositionWarp $56 $43 $4 $4
+	m_PositionWarp $06 $45 $4 $4 ; maku first room - 137F1
+	m_PositionWarp $56 $43 $4 $4 ; maku treetop to inside
 	m_WarpListEndWithDefault
 
 
