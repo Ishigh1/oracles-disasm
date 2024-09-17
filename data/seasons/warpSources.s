@@ -353,7 +353,7 @@ group2WarpSources:
 	m_PointerWarp     $4c warpSource77ef
 	m_PointerWarp     $4d warpSource77ef
 	m_PointerWarp     $4e warpSource77ef
-	m_StandardWarp $0 $3b $49 $4 $4
+	m_StandardWarp $0 $3b $49 $4 $4 ; maku top room - 0x137D5
 	m_StandardWarp $0 $3c $49 $4 $4
 	m_StandardWarp $0 $3d $49 $4 $4
 	m_StandardWarp $0 $3e $49 $4 $4
