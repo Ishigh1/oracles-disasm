@@ -337,7 +337,7 @@ group2WarpSources:
 	m_StandardWarp $8 $5d $19 $0 $3
 	m_StandardWarp $4 $5e $19 $0 $3
 	m_StandardWarp $8 $5e $19 $0 $3
-	m_StandardWarp $0 $7b $41 $4 $4
+	m_StandardWarp $0 $7b $41 $4 $4 ; maku inside - 0x13795
 	m_StandardWarp $0 $2b $41 $4 $4
 	m_StandardWarp $0 $2c $41 $4 $4
 	m_StandardWarp $0 $2d $41 $4 $4
@@ -512,14 +512,14 @@ group4WarpSources:
 	m_PointerWarp     $e5 warpSource7a7f
 	m_StandardWarp $0 $e6 $3d $4 $2
 	m_StandardWarp $0 $e7 $23 $0 $2 ; floodgate right - 0x139F1
-	m_StandardWarp $8 $e8 $0a $2 $3
+	m_StandardWarp $8 $e8 $0a $2 $3 ; inside maku - 139F5
 	m_StandardWarp $0 $e8 $44 $4 $2
-	m_StandardWarp $8 $e9 $14 $2 $3
+	m_StandardWarp $8 $e9 $14 $2 $3 ; top inside maku
 	m_StandardWarp $0 $e9 $42 $4 $2
-	m_StandardWarp $4 $ea $1e $2 $3
+	m_StandardWarp $4 $ea $1e $2 $3 ; first maku roof room
 	m_StandardWarp $4 $eb $67 $0 $3 ; mountain fairy - 0x13A09
 	m_StandardWarp $4 $ed $5b $0 $3 ; lost woods bomb cave
-	m_StandardWarp $4 $ee $28 $2 $3
+	m_StandardWarp $4 $ee $28 $2 $3 ; second maku roof room
 	m_StandardWarp $4 $ef $01 $1 $3 ; volcano cave
 	m_StandardWarp $4 $f0 $02 $1 $3 ; boomerang cave - 0x13A19
 	m_StandardWarp $4 $f1 $03 $1 $3 ; open cave
