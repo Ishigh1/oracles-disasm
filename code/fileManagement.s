@@ -364,8 +364,8 @@ initialFileVariables:
 .ifdef ROM_AGES
 	; Initial spawn location
 	.db <wDeathRespawnBuffer.group,		$00
-	.db <wDeathRespawnBuffer.room,		$8a
-	.db <wDeathRespawnBuffer.y,		$38
+	.db <wDeathRespawnBuffer.room,		$57
+	.db <wDeathRespawnBuffer.y,		$48
 	.db <wDeathRespawnBuffer.x,		$48
 	.db <wDeathRespawnBuffer.facingDir,	$00
 
