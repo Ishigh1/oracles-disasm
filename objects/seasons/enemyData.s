@@ -2527,7 +2527,7 @@ group4Map02EnemyObjectData:
 
 group4Map01EnemyObjectData:
 	obj_Part $25 $00 $54
-	obj_Part $25 $03 $69
+	obj_Part $25 $03 $6b
 	obj_EndPointer
 
 group4Map1cEnemyObjectData:

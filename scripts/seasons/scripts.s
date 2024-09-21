@@ -6430,13 +6430,19 @@ impaScript_givebombchus:
 	enableinput
 	checkabutton
 	disableinput
+	jumpifitemobtained TREASURE_ESSENCE, @haveBeatenD1
 	showtext TX_2500
 	wait 20
 	giveitem TREASURE_OBJECT_BOMBCHUS_00
 	wait 20
 	jumpifitemobtained TREASURE_SHIELD, @haveShield
 	showtext TX_2501
+	scriptjump -
 @haveShield
+	showtext TX_2502
+	scriptjump -
+@haveBeatenD1
+	showtext TX_2503
 	scriptjump -
 	
 impaScript_villagersSeenButNoMakuSeed:

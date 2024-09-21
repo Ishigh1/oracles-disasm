@@ -114,6 +114,11 @@ groups:
   - name: TX_000e
     index: 0x0e
     text: |-
+      \pos(2)\slow()Congatulations, 
+      you beat this 
+      hack! 
+      \col(1)Thanks for playing!\col(0)
+    vanilla: |-
       \pos(2)\slow()You got the
       \col(1)Fertile Soil\col(0), an
       Essence of
@@ -7112,41 +7117,17 @@ groups:
   - name: TX_2502
     index: 0x02
     text: |-
-      \col(3)Zelda\col(0) gave me
-      this quest...\stop
-      But, ow! I've
-      been wounded,
-      and I won't be
-      able to travel
-      for some time...\stop
-      \Link, I know
-      not why you were
-      lying in the
-      woods, but...
-      You and \col(3)Din\col(0) were
-      fated to meet.
-      If the \sym(0x57) on your
-      left hand is
-      real, then you
-      may be the hero
-      who will save
-      the world.
-      Please! Use your
-      power to aid
-      \col(3)Din\col(0)!
+      Now that you
+      have a \col(3)Shield\col(0), 
+      you can slay the
+      dragon up north
+      which terrorizes
+      the villagers.
 
   - name: TX_2503
     index: 0x03
     text: |-
-      Please take my
-      message to the
-      \col(3)Maku Tree\col(0) in
-      \col(3)Horon Village\col(0).
-      The \col(3)Maku Tree\col(0)
-      is the guardian
-      of all \col(3)Holodrum\col(0).
-      Surely he can
-      help.
+      Congratulations on beating the dragon ! There is no more secret left in this hack.
 
   - name: TX_2504
     index: 0x04

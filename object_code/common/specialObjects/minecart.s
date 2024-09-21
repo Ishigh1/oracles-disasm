@@ -20,7 +20,7 @@ specialObjectCode_minecart:
 
 	ld h,d
 	ld l,SpecialObject.speed
-	ld (hl),SPEED_200
+	ld (hl),SPEED_300
 
 	ld l,SpecialObject.direction
 	ld a,(hl)
@@ -64,25 +64,63 @@ specialObjectCode_minecart:
 	xor a
 	ld l,<w1Link.knockbackCounter
 	ldi (hl),a
-
-	; Check if on the center of the tile (y)
+	
 	ld h,d
-	ld l,SpecialObject.yh
-	ldi a,(hl)
-	ld b,a
-	and $0f
-	cp $08
-	jr nz,++
+	ld l,SpecialObject.direction
+	ld a,(hl)
+	cp DIR_RIGHT
+	jr z,@@right
+	cp DIR_DOWN
+	jr z,@@down
+	cp DIR_LEFT
+	jr z,@@left
 
-	; Check if on the center of the tile (x)
-	inc l
-	ldi a,(hl)
-	ld c,a
+@@up:
+	ld l,SpecialObject.yh
+	ld a,(hl)
 	and $0f
-	cp $08
-	jr nz,++
+	sub $08
+	sub $03
+	jr nc,++
+	jr +++
+
+@@right:
+	ld l,SpecialObject.xh
+	ld a,(hl)
+	and $0f
+	sub $06
+	sub $03
+	jr nc,++
+	jr +++
+
+@@down:
+	ld l,SpecialObject.yh
+	ld a,(hl)
+	and $0f
+	sub $06
+	sub $03
+	jr nc,++
+	jr +++
+
+@@left:
+	ld l,SpecialObject.xh
+	ld a,(hl)
+	and $0f
+	sub $08
+	sub $03
+	jr nc,++
+
++++ 
+	ld a,(hl)
+	and $f0
+	or $08
+	ld (hl),a
 
 	; Minecart is centered on the tile
+	ld l,SpecialObject.yh
+	ld b,(hl)
+	ld l,SpecialObject.xh
+	ld c,(hl)
 
 	call minecartCheckCollisions
 	jr c,@minecartStopped
