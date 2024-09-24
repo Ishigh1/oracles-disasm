@@ -2518,11 +2518,7 @@ group4Map05EnemyObjectData:
 	obj_EndPointer
 
 group4Map02EnemyObjectData:
-	obj_Part $25 $02 $08
-	obj_Part $25 $02 $09
-	obj_Part $25 $02 $0a
-	obj_Part $25 $02 $0b
-	obj_SpecificEnemyA 0 $4e $00 $38 $90
+	obj_SpecificEnemyA 0 $4e $00 $58 $b8
 	obj_EndPointer
 
 group4Map01EnemyObjectData:
