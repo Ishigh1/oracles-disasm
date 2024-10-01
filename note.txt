@@ -1,6 +1,23 @@
 TODO :
-- Spawn to d0
-- D0 to end of the hack
+- Idea to have each person do their own floor of hack (can change this later on if you want)
+-the next few floors till dungeon 0 is done.
+
 
 Current progression :
-None
+- Floor 0 done (plus a little shop outside the dungeon)
+
+Items used:
+- Shovel
+- Bombs
+- Bombchus
+- Power Bracelet
+- Shield
+- Dungeon Map
+- Dungeon Compass
+- Keys (x4) on Floor 0
+
+Possible fixes needed:
+-Subterror keeps spawning inside his boss room even after defeating, I don't know how to fix that.
+
+notes:
+Floor 0 is basically a no-sword run, defeated enemies with bomb throws, and shovel flipping.

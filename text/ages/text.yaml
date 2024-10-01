@@ -1593,7 +1593,7 @@ groups:
     - 0x00
     - 0x0d
     text: |2-
-         Maku Road
+        Relay Dungeon
 
   - name: TX_0201
     index: 0x01
@@ -3942,10 +3942,8 @@ groups:
   - name: TX_0901
     index: 0x01
     text: |-
-      Eternal Spirit
-      It speaks across
-      time to the
-      heart!
+      Relay Dungeon below!
+      Be warned, many dangers await the unprepared!
 
   - name: TX_0902
     index: 0x02
@@ -14165,7 +14163,7 @@ groups:
   - name: TX_2e0d
     index: 0x0d
     text: |-
-      Maku Path
+      Relay Dungeon
 
   - name: TX_2e0e
     index: 0x0e

@@ -65,5 +65,4 @@ objectData4062:
 
 ; Lightable torches
 objectData_makeAllTorchesLightable:
-	obj_Interaction $c7 $08 $06 $10
 	obj_EndPointer
