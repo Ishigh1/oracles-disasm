@@ -88,6 +88,7 @@
 ;       This will search the room for tiles with indices between $40-$43, and create
 ;       staircase tiles at those positions.}
 ; @subid_05{Something seasons-specific}
+; @subid_06{Make a key drop if the tile at var03 is changed and all enemies are dead}
 .define INTERAC_DUNGEON_STUFF $12
 
 ;;

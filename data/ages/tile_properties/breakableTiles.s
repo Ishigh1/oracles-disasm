@@ -102,6 +102,7 @@ breakableTileCollisionTable:
 	.db $3a $26
 	.db $3b $27
 	.db $16 $28
+	.db $17 $28
 	.db $15 $29
 	.db $db $2d
 	.db $24 $2c

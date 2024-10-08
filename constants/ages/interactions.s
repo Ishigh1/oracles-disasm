@@ -703,6 +703,7 @@
 ; @subid_14{Goron bomb statue (right)}
 ; @subid_15{Stone statue of Link that appears only after finishing game}
 ; @subid_16{A flame that appears for [counter1] frames.}
+; @subid_17{Renewable bomb dig spot.}
 .define INTERAC_MISCELLANEOUS_1 $6b
 
 ;;

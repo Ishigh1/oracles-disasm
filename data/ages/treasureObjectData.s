@@ -214,8 +214,8 @@ treasureObjectData17:
 
 treasureObjectData19:
 	m_BeginTreasureSubids TREASURE_SEED_SATCHEL
-	m_TreasureSubid $0a, $01, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_00
-	m_TreasureSubid $0a, $00, $7b, $20, TREASURE_OBJECT_SEED_SATCHEL_01
+	m_TreasureSubid $3a, $00, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_00
+	m_TreasureSubid $3a, $00, $7b, $20, TREASURE_OBJECT_SEED_SATCHEL_01
 	m_TreasureSubid $29, $00, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_02
 	m_TreasureSubid $09, $00, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_03
 	m_TreasureSubid $01, $00, $80, $20, TREASURE_OBJECT_SEED_SATCHEL_UPGRADE

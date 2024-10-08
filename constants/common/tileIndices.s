@@ -111,6 +111,7 @@
 .define TILEINDEX_DUNGEON_POT		$10 ; dungeons, indoors
 .define TILEINDEX_PUSHABLE_BLOCK	$1d ; dungeons, indoors only
 .define TILEINDEX_DUNGEON_BUSH		$20 ; dungeons, indoors only
+.define TILEINDEX_PUSHABLE_ARMOS	$25 ; dungeons only
 .define TILEINDEX_PUSHABLE_STATUE	$2a ; dungeons only
 .define TILEINDEX_RED_PUSHABLE_BLOCK	$2c ; dungeons only
 .define TILEINDEX_YELLOW_PUSHABLE_BLOCK	$2d ; dungeons only
@@ -152,6 +153,7 @@
 .define TILEINDEX_LAVA_HOLE			$d0 ; Seasons D8 holes for ice crystals
 
 .define TILEINDEX_EYE_STATUE		$ee ; dungeon only (eyeballs spawn on these)
+.define TILEINDEX_DUNGEON_SAND		$ef ; dungeon only
 .define TILEINDEX_BLANK_HOLE		$f4 ; dungeons / indoors only
 
 ; $d4-$d7 are filled slate tiles in ages D8

@@ -28,6 +28,7 @@ interactionCode6b:
 	.dw interaction6b_subid14
 	.dw interaction6b_subid15
 	.dw interaction6b_subid16
+	.dw oreChunkDigSpot
 
 
 ; Handles showing Impa's "Help" text when Link's about to screen transition
@@ -779,6 +780,78 @@ interaction6b_subid16:
 	jp z,interactionDelete
 	jp interactionAnimate
 
+oreChunkDigSpot:
+	ld e,Interaction.state
+	ld a,(de)
+	rst_jumpTable
+	.dw @state0
+	.dw @state1
+	.dw @state2
+
+@state0:
+	ld a,$01
+	ld (de),a
+	call objectGetShortPosition
+	ld (wccaa),a
+@state1:
+	ld a,(wccaa)
+	inc a
+	ret nz
+
+	ld a,$02
+	ld (de),a
+
+	call getFreePartSlot
+	ret nz
+	ld (hl),PART_ITEM_DROP
+	inc l
+	ld (hl),$04
+	inc l
+	ld (hl),$01
+	ld a,($d008)
+	swap a
+	rrca
+	ld l,$c9
+	ld (hl),a
+	jp objectCopyPosition
+@state2:
+	ld e,Interaction.substate
+	ld a,(de)
+	inc a
+	ld (de),a
+	ret nz
+
+	dec e
+	ld (de),a
+
+	call getFreePartSlot
+	ret nz
+
+	ld (hl),PART_SUBTERROR_DIRT
+	call objectCopyPosition
+
+	ld l,Part.relatedObj1
+	ld a,Interaction.start
+	ldi (hl),a
+	ld (hl),d
+
+	ld e,Interaction.relatedObj2
+	ld a,Part.start
+	ld (de),a
+	inc e
+	ld a,h
+	ld (de),a
+
+	ld e,Interaction.angle
+	ld l,Part.angle
+	ld a,(de)
+	ldi (hl),a
+	xor a
+
+	call objectGetShortPosition
+	ld c,a
+	ld a,TILEINDEX_DUNGEON_SAND
+	jp setTile
 
 ;;
 interaction6b_initGraphicsAndIncState:

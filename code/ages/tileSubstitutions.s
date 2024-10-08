@@ -164,6 +164,9 @@ applyStandardTileSubstitutions:
 	bit 3,a
 	call nz,@locFunc
 
+	ld a,(wActiveRoom)
+	cp $01
+	jr z,@room401
 	ld hl,standardTileSubstitutions@bit7
 	ldh a,(<hFF8B)
 	bit 7,a
@@ -177,6 +180,28 @@ applyStandardTileSubstitutions:
 	ld e,l
 	ld d,h
 	jr replaceTiles
+
+@room401:
+	call getARoomFlags
+	and $C0
+	cp $40
+	ret c
+	ld a,$A0
+	ld c,$87
+	call setTile
+	call getThisRoomFlags
+	cp $80
+	ret c
+	ld a,$A0
+	ld c,$57
+	call setTile
+	call getThisRoomFlags
+	cp $C0
+	ret c
+	ld a,$A0
+	ld c,$27
+	call setTile
+	ret
 
 
 .include {"{GAME_DATA_DIR}/tile_properties/standardTileSubstitutions.s"}

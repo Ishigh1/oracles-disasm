@@ -10,6 +10,10 @@ enemyCode72:
 	sub ENEMYSTATUS_NO_HEALTH
 	ret c
 	jr nz,@normalStatus
+	call getThisRoomFlags
+	ld a,(hl)
+	or $80
+	ld (hl),a
 	jp enemyBoss_dead
 
 @normalStatus:
@@ -36,6 +40,13 @@ enemyCode72:
 
 
 subterror_state_uninitialized:
+	call getThisRoomFlags
+	ld a,(hl)
+	and $80
+	jr z,@normal
+	call decNumEnemies
+	jp enemyDelete
+@normal:
 	ld a,ENEMY_SUBTERROR
 	ld b,PALH_be
 	call enemyBoss_initializeRoom

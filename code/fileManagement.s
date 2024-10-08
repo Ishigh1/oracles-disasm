@@ -375,6 +375,7 @@ initialFileVariables:
 	.db <wPirateShipY,			$48
 	.db <wPirateShipX,			$48
 	.db <wPirateShipAngle,			$02
+	.db <wSatchelSelectedSeeds		$04
 .else ;ROM_SEASONS
 	; Initial spawn location
 	.db <wDeathRespawnBuffer.group,		$00

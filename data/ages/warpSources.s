@@ -532,6 +532,8 @@ group4WarpSources:
 	m_StandardWarp $4 $f3 $33 $1 $3
 	m_StandardWarp $8 $f3 $33 $1 $3
 	m_StandardWarp $4 $fe $49 $4 $3
+	m_StandardWarp $0 $0f $45 $4 $4
+	m_StandardWarp $0 $05 $4e $4 $4
 	m_WarpListEndNoDefault
 
 warpSource7b8e:
@@ -748,7 +750,6 @@ warpSource7e06:
 
 group6WarpSources:
 	m_StandardWarp $1 $05 $08 $4 $3
-	m_StandardWarp $1 $10 $0b $4 $3
 	m_StandardWarp $4 $27 $0c $4 $3
 	m_StandardWarp $1 $29 $0f $4 $3
 	m_StandardWarp $2 $2a $10 $4 $3

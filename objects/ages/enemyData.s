@@ -977,7 +977,6 @@ group4Map12EnemyObjectData:
 	obj_EndPointer
 
 group4Map13BeforeEventObjectData:
-	obj_SpecificEnemyA $00 $78 $00 $58 $78
 	obj_EndPointer
 
 objectData4784: ; UNUSED?
@@ -2569,4 +2568,13 @@ group4Map07EnemyObjectData:
 group4Map0eEnemyObjectData:
 	obj_SpecificEnemyA 0 $23 $00 $28 $78
 	obj_SpecificEnemyA     $23 $00 $88 $78
+	obj_EndPointer
+
+group4Map10EnemyObjectData:
+	obj_SpecificEnemyA 0 $1d $00 $3f $a0
+	obj_EndPointer
+
+group4Map11EnemyObjectData:
+	obj_SpecificEnemyA 0 $1d $00 $26 $a0
+	obj_Part $13 $00 $51
 	obj_EndPointer

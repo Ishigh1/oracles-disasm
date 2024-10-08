@@ -373,10 +373,27 @@ nextToKeyBlock:
 	ld a,SND_OPENCHEST
 	call playSound
 
-	; Set bit 7 of the room flags to remember the keyblock has been opened
 	call getThisRoomFlags
+	ld a,(wActiveRoom)
+	cp $01
+	jr nz,@normal 
+	; Assume it's room 401
+	ld a,(hl)
+	ld b,a
+	and $3F
+	ld c,a
+	ld a,b
+	and $C0
+	add $40
+	or c
+	ld (hl),a
+	jr @puff
+
+@normal:
+	; Set bit 7 of the room flags to remember the keyblock has been opened
 	set ROOMFLAG_BIT_KEYBLOCK,(hl)
 
+@puff:
 	; Create a "puff" at the keyblock's former position
 	call getFreeInteractionSlot
 	jr nz,++

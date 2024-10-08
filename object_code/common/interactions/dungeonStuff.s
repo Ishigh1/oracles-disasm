@@ -12,7 +12,10 @@ interactionCode12:
 	.dw @subid04
 .ifdef ROM_SEASONS
 	.dw @subid05
+.else
+	.dw @subid04
 .endif
+	.dw @subid06
 
 
 ; Show text upon entering a dungeon
@@ -236,3 +239,38 @@ interactionCode12:
 @@state2:
 	jp interactionDelete
 .endif
+
+; A small key falls when [xh] is broken.
+@subid06:
+	call returnIfScrollMode01Unset
+	ld e,Interaction.state
+	ld a,(de)
+	rst_jumpTable
+	.dw @@substate0
+	.dw @@substate1
+
+@@substate0:
+	ld a,$01
+	ld (de),a
+	ld e,Interaction.var03
+	ld a,(de)
+	ld l,a
+	ld h,>wRoomLayout
+	ld a,(hl)
+	ld e,Interaction.var30
+	ld (de),a
+	ld hl,mainScripts.dropSmallKeyWhenNoEnemiesScript
+	call interactionSetScript
+
+@@substate1:
+	ld e,Interaction.var03
+	ld a,(de)
+	ld l,a
+	ld h,>wRoomLayout
+	ld e,Interaction.var30
+	ld a,(de)
+	cp a,(hl)
+	ret z
+	call interactionRunScript
+	jp c,interactionDelete
+	ret

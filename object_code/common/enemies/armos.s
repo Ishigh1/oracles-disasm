@@ -17,6 +17,11 @@ enemyCode1d:
 
 	; ENEMYSTATUS_JUST_HIT
 
+	ld e,Enemy.var2a
+	ld a,(de)
+	cp $80|ITEMCOLLISION_MYSTERY_SEED
+	jr z,@hitByMystery
+
 	; For subid $80, if Link touches this position, activate the armos.
 	ld e,Enemy.var2a
 	ld a,(de)
@@ -56,6 +61,13 @@ enemyCode1d:
 	.dw armos_subid00
 	.dw armos_subid01
 
+@hitByMystery:
+	call objectGetShortPosition
+	ld c,a
+	ld a,TILEINDEX_PUSHABLE_ARMOS
+	call setTile
+	call decNumEnemies
+	jp enemyDelete
 
 armos_uninitialized:
 	ld a,b
@@ -72,6 +84,12 @@ armos_uninitialized:
 	ld (de),a
 	ld a,(hl)
 	call ecom_setSpeedAndState8
+
+	; Enable mystery seed interaction
+	ld l,Enemy.var3f
+	ld a,(hl)
+	or $20
+	ld (hl),a
 
 	; Subid 1 gets more health
 	ld l,Enemy.subid
