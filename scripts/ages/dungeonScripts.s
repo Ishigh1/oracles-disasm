@@ -265,3 +265,8 @@ moonlitGrottoScript_brokeAllCrystals:
 	enableinput
 	asm15 scriptHelp.moonlitGrotto_enableControlAfterBreakingCrystal
 	scriptend
+
+wingDungeonScript_spawnSwitchHook:
+	stopifitemflagset
+	spawnitem TREASURE_SWITCH_HOOK, $00
+	scriptend

@@ -489,7 +489,6 @@ warpSource7ac6:
 	m_WarpListFallThrough
 
 group4WarpSources:
-	m_StandardWarp $4 $24 $01 $0 $3
 	m_StandardWarp $4 $46 $01 $1 $3
 	m_StandardWarp $4 $66 $02 $0 $3
 	m_StandardWarp $4 $91 $03 $0 $3
@@ -498,7 +497,6 @@ group4WarpSources:
 	m_StandardWarp $4 $04 $00 $0 $3
 	m_StandardWarp $0 $1b $01 $6 $2
 	m_StandardWarp $0 $32 $02 $6 $2
-	m_PointerWarp     $37 warpSource7b8e
 	m_StandardWarp $0 $47 $03 $6 $2
 	m_StandardWarp $0 $48 $04 $6 $2
 	m_StandardWarp $0 $6c $08 $6 $2
@@ -532,14 +530,22 @@ group4WarpSources:
 	m_StandardWarp $4 $f3 $33 $1 $3
 	m_StandardWarp $8 $f3 $33 $1 $3
 	m_StandardWarp $4 $fe $49 $4 $3
-	m_StandardWarp $0 $0f $45 $4 $4
-	m_StandardWarp $0 $05 $4e $4 $4
+	m_StandardWarp $0 $0f $45 $4 $2
+	m_StandardWarp $0 $05 $4e $4 $2
+	m_StandardWarp $00 $16 $0b $4 $2
+	m_StandardWarp $0 $20 $00 $6 $4
+	m_StandardWarp $01 $15 $50 $4 $3
+	m_StandardWarp $04 $1c $51 $4 $3
+	m_StandardWarp $04 $35 $52 $4 $3
+	m_StandardWarp $01 $2c $53 $4 $3
+	m_PointerWarp  $19 group4Room19WarpSources
+	m_StandardWarp $0 $39 $4f $4 $2
+	m_StandardWarp $0 $2d $54 $4 $2
+	m_WarpListEndNoDefault
+group4Room19WarpSources:
+	m_PositionWarp $62 $01 $0 $4
 	m_WarpListEndNoDefault
 
-warpSource7b8e:
-	m_PositionWarp $63 $05 $6 $2
-	m_PositionWarp $6a $06 $6 $2
-	m_WarpListEndWithDefault
 
 warpSource7b96:
 	m_PositionWarp $11 $2e $4 $2

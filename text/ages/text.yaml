@@ -18536,16 +18536,13 @@ groups:
   - name: TX_3901
     index: 0x01
     text: |-
-      Good defense is
-      the best offense
-      against spikes.
+      Build a path.
 
   - name: TX_3902
     index: 0x02
     text: |-
-      Paths open when
-      ancient words
-      are mastered.
+      Kept you waiting
+      huh?
 
   - name: TX_3903
     index: 0x03

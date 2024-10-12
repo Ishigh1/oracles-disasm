@@ -1,12 +1,13 @@
 TODO :
 - Idea to have each person do their own floor of hack (can change this later on if you want)
 - the next few floors till dungeon 0 is done.
-- Floor 0 is only half done and ends abruptly in room 415
+- Make the bridge in room 419 stay destroyed after a screen change
+- Maybe add a warp to the entrance after finishing floor 1?
 
 
 Current progression :
-- Floor 1 done (plus a little shop outside the dungeon)
-- Floor 0 half done
+- Floor 2 done (plus a little shop outside the dungeon)
+- Floor 1 done (added a new floor below with an empty room where floor 1 ends)
 
 Items used:
 - Shovel
@@ -16,23 +17,28 @@ Items used:
 - Shield
 - Dungeon Map
 - Dungeon Compass
-- Keys (x4) on Floor 1
-- Small key on floor 0
+- Keys (x4) on Floor 2
+- Keys (x3) on Floor 1
 - Seed Satchel
 - Mystery Seeds
+- Switch Hook L2
+- Magnetic Gloves
+- Wooden Sword
 
 Possible fixes needed:
-None noticed
+-Probably door logic
 
 New stuff:
 Using a mystery seed on an armos transforms it into a pushable armos statue
 Implemented a "regrowable sand" as INTERAC_MISCELLANEOUS_1, subid 17
 Implemented a keydrop if the tile at var03 changes as INTERAC_DUNGEON_STUFF subid 06
+Implemented a bridge collapsing event in room 419
 
 Notes:
-Floor 1 is basically a no-sword run, defeated enemies with bomb throws, and shovel flipping.
-For floor 0 (remove details once that floor is done):
-    room 405 and 410 play with ledge jump over several tiles or different screens
+Floor 2 is basically a no-sword run, defeated enemies with bomb throws, and shovel flipping.
+For floor 1 (remove details once that floor is done):
+    room 405, 410, 419 and 431 play with ledge jump over several tiles or different screens
     room 411 introduces mystery to transform armos into statues
     room 413 introduces breaking a false statue
     I intended to make a room to combine those concepts together, tile 0x17 is ready to act as a fake statue to be broken
+    The use of magnetic gloves on the diamonds is necessary to complete the floor.

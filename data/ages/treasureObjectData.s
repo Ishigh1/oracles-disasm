@@ -34,7 +34,7 @@ treasureObjectData:
 	/* $05 */ m_TreasurePointer treasureObjectData05
 	/* $06 */ m_TreasurePointer treasureObjectData06
 	/* $07 */ m_TreasureSubid   $38, $07, <TX_00_GET_RODOFSEASONS, $81, TREASURE_OBJECT_ROD_OF_SEASONS_00
-	/* $08 */ m_TreasureSubid   $38, $00, <TX_00_GET_MAGNETGLOVES, $7c, TREASURE_OBJECT_MAGNET_GLOVES_00
+	/* $08 */ m_TreasureSubid   $3a, $00, <TX_00_GET_MAGNETGLOVES, $7c, TREASURE_OBJECT_MAGNET_GLOVES_00
 	/* $09 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_SWITCH_HOOK_HELPER_00
 	/* $0a */ m_TreasurePointer treasureObjectData0a
 	/* $0b */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_SWITCH_HOOK_CHAIN_00
@@ -145,7 +145,7 @@ treasureObjectData03:
 
 treasureObjectData05:
 	m_BeginTreasureSubids TREASURE_SWORD
-	m_TreasureSubid $09, $01, $1c, $10, TREASURE_OBJECT_SWORD_00
+	m_TreasureSubid $3b, $01, $1c, $10, TREASURE_OBJECT_SWORD_00
 	m_TreasureSubid $09, $02, $1d, $11, TREASURE_OBJECT_SWORD_01
 	m_TreasureSubid $09, $03, $1e, $12, TREASURE_OBJECT_SWORD_02
 	m_TreasureSubid $03, $01, $ff, $10, TREASURE_OBJECT_SWORD_03
@@ -162,8 +162,8 @@ treasureObjectData06:
 
 treasureObjectData0a:
 	m_BeginTreasureSubids TREASURE_SWITCH_HOOK
-	m_TreasureSubid $38, $01, $30, $1f, TREASURE_OBJECT_SWITCH_HOOK_00
-	m_TreasureSubid $38, $02, $28, $1f, TREASURE_OBJECT_SWITCH_HOOK_01
+	m_TreasureSubid $0a, $02, $30, $1f, TREASURE_OBJECT_SWITCH_HOOK_00
+	m_TreasureSubid $0a, $02, $28, $1f, TREASURE_OBJECT_SWITCH_HOOK_01
 
 treasureObjectData0c:
 	m_BeginTreasureSubids TREASURE_BIGGORON_SWORD

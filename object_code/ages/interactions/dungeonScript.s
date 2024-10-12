@@ -79,6 +79,8 @@ interactionCode20:
 	.dw mainScripts.wingDungeonScript_spawn30Rupees
 	.dw mainScripts.dungeonScript_minibossDeath
 	.dw mainScripts.wingDungeonScript_bossDeath
+	.dw mainScripts.wingDungeonScript_spawnSwitchHook
+	.dw mainScripts.mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1
 @dungeon3:
 	.dw mainScripts.dungeonScript_minibossDeath
 	.dw mainScripts.dungeonScript_bossDeath
@@ -115,3 +117,5 @@ interactionCode20:
 	.dw mainScripts.dungeonScript_bossDeath
 	.dw mainScripts.mermaidsCaveScript_spawnBridgeWhenOrbHit
 	.dw mainScripts.mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1
+
+

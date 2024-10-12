@@ -558,14 +558,11 @@ interactiondc_subid0B:
 	or a
 	jp z,interactionDelete
 
-	ld a,TILEINDEX_WARP_HOLE
+	ld a,TILEINDEX_DUNGEON_LAVA_1
 	jp breakCrackedFloor
 
 @listOfTilesToBreak:
-	.db $67 $66 $65 $64 $63 $62 $61 $51
-	.db $41 $31 $21 $11 $12 $13 $23 $33
-	.db $43 $44 $45 $46 $47 $48 $38 $28
-	.db $18 $17 $16 $00
+	.db $62 $52 $42 $00
 
 
 ; Bridge handler in Rolling Ridge past (subid 0c) and present (subid 0d)

@@ -61,6 +61,7 @@ applyRoomSpecificTileChanges:
 	.dw tileReplacement_group0Map98 ; $35
 	.dw tileReplacement_group0Map76 ; $36
 	.dw tileReplacement_group0Mapa5 ; $37
+	.dw tileReplacement_group4Map19 ; $38
 
 roomTileChangerCodeGroupTable:
 	.dw roomTileChangerCodeGroup0Data
@@ -123,6 +124,7 @@ roomTileChangerCodeGroup4Data:
 	.db $c7 $2d
 	.db $c9 $2e
 	.db $ea $33
+	.db $19 $38 
 	.db $00
 roomTileChangerCodeGroup5Data:
 	.db $f5 $00
@@ -1364,6 +1366,20 @@ tileReplacement_group0Mapa5:
 	inc l
 	ld (hl),$ef
 	ret
+
+;;
+; Room 419 Bridge colapse
+tileReplacement_group4Map19:
+	call getThisRoomFlags
+	and $80
+	ret z
+
+	ld de,@replacementTiles
+	jp replaceTiles
+
+@replacementTiles:
+	.db $61 $6A 
+	.db $00
 
 ;;
 ; Leftover function from Seasons (d8LavaRoomsFillTilesWithLava). Can be used for other tiles, not

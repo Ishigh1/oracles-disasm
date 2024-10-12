@@ -2870,7 +2870,7 @@ paletteData5120:
 
 	m_RGB16 $14 $17 $19
 	m_RGB16 $0e $12 $12
-	m_RGB16 $07 $0b $0a
+	m_RGB16 $0b $0b $0c
 	m_RGB16 $00 $00 $00
 
 	m_RGB16 $1f $1f $11
