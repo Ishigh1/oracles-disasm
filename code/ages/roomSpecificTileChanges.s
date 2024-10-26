@@ -277,6 +277,7 @@ tileReplacement_group4Mapc7:
 ;;
 ; D3, left of miniboss: deal with bridges
 tileReplacement_group4Map4c:
+/*
 	ld hl,wSwitchState
 	bit 0,(hl)
 	ret nz
@@ -291,10 +292,12 @@ tileReplacement_group4Map4c:
 	ld l,$76
 	ld a,$f4
 	jp set4Bytes
+*/
 
 ;;
 ; D3, left, down from miniboss: deal with bridges
 tileReplacement_group4Map4e:
+/*
 	ld hl,wSwitchState
 	bit 1,(hl)
 	ret z
@@ -316,6 +319,7 @@ tileReplacement_group4Map4e:
 	ld l,$6c
 	ld (hl),a
 	ret
+*/
 
 ;;
 ; D3, right of seed shooter room: set torch lit

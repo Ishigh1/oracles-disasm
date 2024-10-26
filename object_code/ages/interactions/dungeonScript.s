@@ -61,6 +61,10 @@ interactionCode20:
 	.dw @dungeond
 
 @dungeon0:
+	.dw mainScripts.dungeonScript_bossDeath
+	.dw mainScripts.floorRaze_smallKeyIn2DRoom
+	.dw mainScripts.floorRaze_buttonSpawnChest
+
 @dungeond:
 	.dw mainScripts.makuPathScript_spawnChestWhenActiveTriggersEq01
 	.dw mainScripts.makuPathScript_spawnDownStairsWhenEnemiesKilled

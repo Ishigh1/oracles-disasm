@@ -412,10 +412,10 @@ tilesetData:
 	.db $23, $04, $10
 
 	; 0x39
-	.db $24, $08
+	.db $20, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_SKULL_DUNGEON
-	.db PALH_TILESET_ANCIENT_TOMB
+	.db PALH_TILESET_ZORA_PALACE
 	.db $24, $04, $10
 
 	; 0x3a
@@ -426,17 +426,17 @@ tilesetData:
 	.db $25, $04, $10
 
 	; 0x3b
-	.db $26, $08
+	.db $20, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_MERMAIDS_CAVE
-	.db PALH_TILESET_MERMAIDS_CAVE_PRESENT
+	.db PALH_TILESET_ROOM_OF_RITES
 	.db $26, $05, $10
 
 	; 0x3c
-	.db $2c, $88
+	.db $20, $88
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_MERMAIDS_CAVE
-	.db PALH_TILESET_MERMAIDS_CAVE_PAST
+	.db PALH_TILESET_ZORA_PALACE
 	.db $26, $05, $10
 
 	; 0x3d
@@ -552,7 +552,7 @@ tilesetData:
 	.db $32, $04, $12
 
 	; 0x4d
-	.db $32, $28
+	.db $30, $28
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_SIDESCROLL
 	.db PALH_TILESET_SIDESCROLL

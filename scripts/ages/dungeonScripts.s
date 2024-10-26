@@ -270,3 +270,19 @@ wingDungeonScript_spawnSwitchHook:
 	stopifitemflagset
 	spawnitem TREASURE_SWITCH_HOOK, $00
 	scriptend
+
+floorRaze_smallKeyIn2DRoom:
+	stopifitemflagset
+	spawnitem TREASURE_SMALL_KEY, $04
+	scriptend
+
+floorRaze_buttonSpawnChest:
+	stopifitemflagset
+	checkmemoryeq wActiveTriggers, $01
+	createpuff
+	settilehere $f1
+	setcoords $2a
+	createpuff
+	settilehere $53
+	playsound SND_SOLVEPUZZLE
+	scriptend
