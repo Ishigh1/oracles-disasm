@@ -102,10 +102,10 @@ wingDungeonScript_bossDeath:
 	; Create staircase tiles
 	setcoords $a8, $48
 	createpuff
-	settilehere $19
+	settilehere $18
 	setcoords $a8, $a8
 	createpuff
-	settilehere $19
+	settilehere $18
 
 @spawnHeart:
 	stopifitemflagset

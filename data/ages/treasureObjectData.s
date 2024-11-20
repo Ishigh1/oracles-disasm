@@ -101,7 +101,7 @@ treasureObjectData:
 	/* $48 */ m_TreasureSubid   $51, $01, $67, $55, TREASURE_OBJECT_RICKY_GLOVES_00
 	/* $49 */ m_TreasurePointer treasureObjectData49
 	/* $4a */ m_TreasureSubid   $38, $00, $36, $27, TREASURE_OBJECT_MERMAID_SUIT_00
-	/* $4b */ m_TreasureSubid   $38, $00, $48, $50, TREASURE_OBJECT_SLATE_00
+	/* $4b */ m_TreasurePointer treasureObjectData4b
 	/* $4c */ m_TreasurePointer treasureObjectData4c
 	/* $4d */ m_TreasureSubid   $0a, $00, $0d, $3e, TREASURE_OBJECT_SCENT_SEEDLING_00
 	/* $4e */ m_TreasureSubid   $0a, $00, $47, $51, TREASURE_OBJECT_ZORA_SCALE_00
@@ -146,7 +146,7 @@ treasureObjectData03:
 treasureObjectData05:
 	m_BeginTreasureSubids TREASURE_SWORD
 	m_TreasureSubid $3b, $01, $1c, $10, TREASURE_OBJECT_SWORD_00
-	m_TreasureSubid $09, $02, $1d, $11, TREASURE_OBJECT_SWORD_01
+	m_TreasureSubid $38, $02, $1d, $11, TREASURE_OBJECT_SWORD_01
 	m_TreasureSubid $09, $03, $1e, $12, TREASURE_OBJECT_SWORD_02
 	m_TreasureSubid $03, $01, $ff, $10, TREASURE_OBJECT_SWORD_03
 	m_TreasureSubid $03, $02, $ff, $11, TREASURE_OBJECT_SWORD_04
@@ -163,7 +163,7 @@ treasureObjectData06:
 treasureObjectData0a:
 	m_BeginTreasureSubids TREASURE_SWITCH_HOOK
 	m_TreasureSubid $0a, $02, $30, $1f, TREASURE_OBJECT_SWITCH_HOOK_00
-	m_TreasureSubid $0a, $02, $28, $1f, TREASURE_OBJECT_SWITCH_HOOK_01
+	m_TreasureSubid $3a, $02, $28, $1f, TREASURE_OBJECT_SWITCH_HOOK_01
 
 treasureObjectData0c:
 	m_BeginTreasureSubids TREASURE_BIGGORON_SWORD
@@ -346,7 +346,7 @@ treasureObjectData30:
 
 treasureObjectData31:
 	m_BeginTreasureSubids TREASURE_BOSS_KEY
-	m_TreasureSubid $19, $00, $1b, $43, TREASURE_OBJECT_BOSS_KEY_00
+	m_TreasureSubid $38, $01, $1b, $43, TREASURE_OBJECT_BOSS_KEY_00
 	m_TreasureSubid $29, $00, $1b, $43, TREASURE_OBJECT_BOSS_KEY_01
 	m_TreasureSubid $49, $00, $1b, $43, TREASURE_OBJECT_BOSS_KEY_02
 	m_TreasureSubid $38, $00, $1b, $43, TREASURE_OBJECT_BOSS_KEY_03
@@ -403,5 +403,10 @@ treasureObjectData5e:
 	m_BeginTreasureSubids TREASURE_ROCK_BRISKET
 	m_TreasureSubid $0a, $00, $3e, $4e, TREASURE_OBJECT_ROCK_BRISKET_00
 	m_TreasureSubid $10, $00, $3e, $4e, TREASURE_OBJECT_ROCK_BRISKET_01
+
+treasureObjectData4b:
+	m_BeginTreasureSubids TREASURE_SLATE
+	m_TreasureSubid $38, $00, $48, $50, TREASURE_OBJECT_SLATE_00
+	m_TreasureSubid $38, $00, $48, $50, TREASURE_OBJECT_SLATE_01
 
 .ends

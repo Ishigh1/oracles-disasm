@@ -26,14 +26,14 @@ staticDungeonObjects:
 
 
 dungeon2StaticObjects:
-	.db $03, $33, INTERAC_MINECART, $00, $38, $c8
-	.db $03, $35, INTERAC_MINECART, $00, $68, $b8
-	.db $03, $40, INTERAC_MINECART, $00, $58, $a8
+	.db $03, $3f, INTERAC_MINECART, $00, $58, $58
+	.db $03, $5b, INTERAC_MINECART, $00, $38, $78
+	.db $03, $5e, INTERAC_MINECART, $00, $38, $78
 	.db $ff 
 
 dungeon4StaticObjects:
-	.db $03, $73, INTERAC_MINECART, $00, $58, $48
-	.db $03, $75, INTERAC_MINECART, $00, $58, $a8
+	.db $03, $73, INTERAC_MINECART, $00, $48, $58
+	.db $03, $75, INTERAC_MINECART, $00, $38, $78
 	.db $03, $78, INTERAC_MINECART, $00, $88, $78
 	.db $03, $89, INTERAC_MINECART, $00, $88, $48
 	.db $ff 
@@ -48,6 +48,11 @@ dungeonbStaticObjects:
 	.db $ff 
 
 dungeon0StaticObjects:
+	.db $03, $3f, INTERAC_MINECART, $00, $58, $48
+	.db $03, $5b, INTERAC_MINECART, $00, $38, $78
+	.db $03, $5e, INTERAC_MINECART, $00, $38, $78
+	.db $ff 
+
 dungeon1StaticObjects:
 dungeon3StaticObjects:
 dungeon5StaticObjects:

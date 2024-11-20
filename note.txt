@@ -9,6 +9,7 @@ Current progression :
 - Floor 3 done (plus a little shop outside the dungeon)
 - Floor 2 done (added a new floor below with an empty room where floor 2 ends)
 - Floor 1 done (could use some polishing perhaps)
+- Floor 0 done (rewards a sword upgrade)
 
 Items used:
 - Shovel
@@ -28,9 +29,16 @@ Items used:
 - Magnetic Gloves
 - Wooden Sword
 - Flippers
+- Keys (x2) on Floor 0*
+- Ember Seeds*
+- Slingshot*
+- Noble Sword*
 
 Possible fixes needed:
 -Probably door logic
+-Strange color changing to palette 2 when moving color cube in certain positions*
+-Minecarts don't spawn when returning from Game Over??*
+-D2 boss event when defeated maybe*
 
 New stuff:
 Using a mystery seed on an armos transforms it into a pushable armos statue
@@ -58,4 +66,4 @@ $02: spawns a chest in room 453 when a button is pressed
 floor 1 TODO:
 add stairs in room 453 to roomSpecificTileSubstitutions
 
-Floor 0 is ready for the next in line
+Floor 0 is a kind of challenging run with 3 bosses*

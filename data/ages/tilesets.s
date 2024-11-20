@@ -461,10 +461,10 @@ tilesetData:
 	.db $27, $05, $15
 
 	; 0x40
-	.db $28, $88
+	.db $20, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_ANCIENT_TOMB
-	.db PALH_TILESET_ANCIENT_TOMB
+	.db PALH_TILESET_HEROS_CAVE
 	.db $28, $05, $10
 
 	; 0x41
@@ -527,7 +527,7 @@ tilesetData:
 	.db $2b, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_MAKU_PATH
-	.db PALH_TILESET_HEROS_CAVE_WITH_BUSHES
+	.db PALH_68
 	.db $20, $04, $10
 
 	; 0x4a
