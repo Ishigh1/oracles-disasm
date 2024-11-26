@@ -466,7 +466,7 @@ interaction21_subid13:
 	ret
 
 @positionsToCheck: ; The positions in a circle around the owl statue
-	.db $47 $48 $49 $57 $59 $67 $68 $69 $00
+	.db $36 $37 $38 $46 $48 $56 $57 $58 $00
 
 
 ; d5: A chest spawns here when two blocks are pushed to the right places

@@ -6,6 +6,7 @@ TODO :
 
 
 Current progression :
+- Floor 4 done (Slate hunt time)
 - Floor 3 done (plus a little shop outside the dungeon)
 - Floor 2 done (added a new floor below with an empty room where floor 2 ends)
 - Floor 1 done (could use some polishing perhaps)
@@ -19,6 +20,7 @@ Items used:
 - Shield
 - Dungeon Map
 - Dungeon Compass
+- Keys (x2) on Floor 4
 - Keys (x4) on Floor 3
 - Keys (x3) on Floor 2
 - Keys (x4) on Floor 1
@@ -33,6 +35,8 @@ Items used:
 - Ember Seeds*
 - Slingshot*
 - Noble Sword*
+- Roc's Feather
+- Cane of Somaria
 
 Possible fixes needed:
 -Probably door logic

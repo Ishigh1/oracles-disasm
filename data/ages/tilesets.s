@@ -366,7 +366,7 @@ tilesetData:
 	.db $1f, $44
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_ZORA_PALACE
-	.db PALH_TILESET_UNDERWATER_CAVE
+	.db PALH_36
 	.db $18, $01, $10
 
 	; 0x33
@@ -468,10 +468,10 @@ tilesetData:
 	.db $28, $05, $10
 
 	; 0x41
-	.db $28, $88
+	.db $20, $08
 	.db UNIQUE_GFXH_ANCIENT_TOMB_BOSS
 	.db GFXH_TILESET_ANCIENT_TOMB
-	.db PALH_TILESET_ANCIENT_TOMB_BOSS
+	.db PALH_TILESET_ANCIENT_TOMB
 	.db $28, $05, $10
 
 	; 0x42
