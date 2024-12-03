@@ -8,7 +8,7 @@ applyRoomSpecificTileChanges:
 	.dw tileReplacement_group5Mapf5 ; $00
 	.dw tileReplacement_group4Map1b ; $01
 	.dw tileReplacement_group2Map7e ; $02
-	.dw tileReplacement_group4Map4c ; $03
+	.dw tileReplacement_group4Map7c ; $03
 	.dw tileReplacement_group4Map4e ; $04
 	.dw tileReplacement_group4Map59 ; $05
 	.dw tileReplacement_group4Map60 ; $06
@@ -116,7 +116,7 @@ roomTileChangerCodeGroup3Data:
 	.db $00
 roomTileChangerCodeGroup4Data:
 	.db $1b $01
-	.db $4c $03
+	.db $7c $03
 	.db $4e $04
 	.db $59 $05
 	.db $60 $06
@@ -276,23 +276,24 @@ tileReplacement_group4Mapc7:
 
 ;;
 ; D3, left of miniboss: deal with bridges
-tileReplacement_group4Map4c:
-/*
-	ld hl,wSwitchState
-	bit 0,(hl)
-	ret nz
+tileReplacement_group4Map7c:
 
-	ld hl,wRoomLayout + $43
-	ld a,$6a
+	call getThisRoomFlags
+	bit 7,(hl)
+	ret z
+
+	ld hl,wRoomLayout + $54
+	ld a,$c6
 	ld (hl),a
-	ld l,$53
+
+	ld l,$07
+	ld a,$78
 	ld (hl),a
-	ld l,$63
-	ld (hl),a
+
 	ld l,$76
-	ld a,$f4
-	jp set4Bytes
-*/
+	ld a,$cc
+	jp set3Bytes
+
 
 ;;
 ; D3, left, down from miniboss: deal with bridges

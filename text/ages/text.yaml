@@ -3447,55 +3447,83 @@ groups:
   - name: TX_0607
     index: 0x07
     text: |-
-      I, too, ask for
-      your help.\stop
-      All people, not
-      just those of
-      this age, will
-      meet with great
-      misfortune.
-      \col(3)Nayru\col(0), \col(3)Impa\col(0) and
-      I will try to
-      give strength to
-      the people.
-      \Link,
-      we're counting
-      on you.
+      \Link!\stop
+      I'm so happy
+      to see you!\stop
+      If you're here,
+      it means you've
+      completed the
+      whole dungeon!
+      Congratulations!\stop
+      I hope you've
+      enjoyed this
+      relay Hack
+      so far! \heart
 
   - name: TX_0608
     index: 0x08
     text: |-
-      \pos(2)\Link,
-      I always hope
-      for your safe
-      return.
+      Ahh... (sniff)
+      I guess here's
+      where everything
+      ends... (sniff)\stop
+      Now that you've
+      beaten the game,
+      you're probably
+      gonna move on
+      with your life
+      and leave
+      me here...\stop
+      (sniff)
 
   - name: TX_0609
     index: 0x09
     text: |-
-      AAHHHHHH!!!
+      Unless...
 
   - name: TX_060a
     index: 0x0a
     text: |-
-      I asked \col(3)Nayru\col(0) to
-      bring me here.
-      \col(3)Impa\col(0) tried to
-      stop me, but I
-      can't stand by
-      alone and do
-      nothing.
+      Well, if you
+      can't leave
+      the dungeon,
+      I guess you
+      can't finish
+      this game.\stop
+      Oopsie! hehe\stop
+      Don't you prefer
+      to stay with me
+      forever? \heart
 
   - name: TX_060b
     index: 0x0b
     text: |-
-      Let me take care
-      of the
-      villagers.
-      \Link, you
-      must take care
-      of \col(3)Veran\col(0) and
-      \col(3)Ralph\col(0)!
+      Wait, where
+      are you?\stop
+      COME BACK!!
+
+  - name: TX_060c
+    index: 0x0c
+    text: |-
+      HA! Nice try!\stop
+      I have the power
+      to modify
+      level layouts!\stop
+      I won't allow
+      you to beat any
+      dungeon from
+      this whole game!\stop
+      Now, would you
+      kindly take
+      those stairs
+      back to my room?\stop
+      Please... \heart
+
+  - name: TX_060d
+    index: 0x0d
+    text: |-
+      unused
+      0123456789abcdef
 
 - group: 0x07
   data:
@@ -18559,41 +18587,51 @@ groups:
     - 0x04
     - 0x05
     text: |-
-      Time's flow can
-      change the land.
+      Bring all to me.
 
   - name: TX_3906
     index: 0x06
     text: |-
-      Do not forget
-      to feed me
-      Mystery Seeds.
+      Unintended
+      destination.\n
+    null_terminator: False
 
   - name: TX_3907
     index: 0x07
     text: |-
-      The red face
-      fears smoke.
+      Take these
+      stairs to go
+      back.
 
   - name: TX_3908
     index: 0x08
     text: |-
-      Scents seduce
-      savage beasts.
+      Follow me.
 
   - name: TX_3909
     index: 0x09
     text: |-
-      Beware deep
-      waters.
+      You are not
+      safe from her
+      \col(3)in this game\col(0).\stop
+      I hid some
+      stairs that
+      will lead you
+      \col(3)somewhere else\col(0).\stop
+      Good luck on
+      your quest,
+      \Link.
 
   - name: TX_390a
     index: 0x0a
     text: |-
-      Open your ears
-      to the sound of
-      a sword against
-      the wall.
+      If you
+      cannot beat
+      \col(3)this\col(0) dungeon,
+      you might still
+      be able to beat
+      \col(3)another\col(0) dungeon.\stop
+      Take the stairs.
 
   - name: TX_390b
     index: 0x0b
@@ -18623,9 +18661,10 @@ groups:
   - name: TX_390f
     index: 0x0f
     text: |-
-      Greater speed
-      gives greater
-      distance.
+      Congratulations!\stop
+      You have finally
+      beaten this
+      Relay Hack!!
 
   - name: TX_3910
     index: 0x10

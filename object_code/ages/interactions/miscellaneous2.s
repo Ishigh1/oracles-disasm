@@ -29,7 +29,33 @@ interactionCodedc:
 	.dw interactiondc_subid15
 	.dw interactiondc_subid16
 	.dw interactiondc_subid17
+	.dw interactiondc_subid18
 
+; Makes Vitrous "wet" tiles behave like spikes, so Link gets damaged by them
+interactiondc_subid18:
+	call returnIfScrollMode01Unset
+	ld a,$60
+	ld b,$0b ;$0b
+	ld c,$05 ;$05
+
+	ld hl,wRoomLayout+$22
+-
+	ldi (hl),a
+	dec b
+	jr nz,-
+
+	;change row
+	ld b,$0b
+	ld a,l
+	and $f0
+	add $12
+	ld l,a
+	ld a,$60
+	dec c
+	jr nz,-
+
+	;end
+	jp interactionDelete
 
 ; Heart piece spawner
 interactiondc_subid07:

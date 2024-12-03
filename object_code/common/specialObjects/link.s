@@ -766,6 +766,8 @@ warpTransitionB:
 	ret nz
 
 	call objectSetVisiblec2
+	call setDeathRespawnPoint
+	call updateLinkLocalRespawnPosition
 	jp initLinkStateAndAnimateStanding
 
 

@@ -291,6 +291,26 @@ drawCrownDungeonOpeningTiles:
 	.db $5e $2c $5d $2c $3a $0c $3b $0c
 	.db $5c $0c $5c $2c $3b $2c $3a $2c
 
+miseryMire_undrawEyes:
+	call getThisRoomFlags
+	and $80
+	ret nz
+	ld hl,@rectToDraw
+	jp drawRectangleToVramTiles
+
+@rectToDraw:
+	.dw w3VramTiles+$12b
+	.db $03 $08
+
+	.db $55 $4b $6e $0b $86 $0b
+	.db $86 $0b $86 $0b $86 $0b
+	.db $6e $6b $54 $0b $45 $0b
+	.db $6f $4b $86 $0b $86 $0b
+	.db $86 $0b $86 $0b $6f $6b
+	.db $44 $0b $55 $0b $54 $0b
+	.db $7e $4b $7f $4b $7f $4b
+	.db $7e $6b $55 $0b $54 $0b
+
 ;;
 ; Dungeon 2 present screen: redraw the cave if it's collapsed.
 ;

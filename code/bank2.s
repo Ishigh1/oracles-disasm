@@ -9014,7 +9014,7 @@ dungeonMapFloorNameTiles:
 ; side of the screen.
 dungeonMapFloorListStartPositions:
 	.ifdef ROM_AGES
-		.db $80 $80 $80 $80
+		.db $20 $80 $80 $80
 		.db $80 $80 $80 $60
 		.db $40 $60 $60 $60
 		.db $80 $80
@@ -9030,7 +9030,7 @@ dungeonMapFloorListStartPositions:
 ; b1: Y position at which to draw the Boss symbol in a dungeon (next to the floor indicator)
 dungeonMapSymbolPositions:
 	.ifdef ROM_AGES
-		.db $50 $00
+		.db $38 $00 ;$50 $00
 		.db $50 $50
 		.db $50 $50
 		.db $50 $58

@@ -384,24 +384,24 @@ tilesetData:
 	.db $20, $04, $10
 
 	; 0x35
-	.db $2d, $88
+	.db $20, $88
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_MAKU_PATH
 	.db PALH_TILESET_MAKU_PATH_PAST
 	.db $20, $04, $10
 
 	; 0x36
-	.db $21, $08
+	.db $20, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_SPIRITS_GRAVE
-	.db PALH_TILESET_SPIRITS_GRAVE
+	.db PALH_TILESET_MAKU_PATH_PAST
 	.db $21, $04, $10
 
 	; 0x37
-	.db $22, $88
+	.db $20, $88
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_WING_DUNGEON
-	.db PALH_TILESET_WING_DUNGEON
+	.db PALH_TILESET_MAKU_PATH_PAST
 	.db $22, $04, $10
 
 	; 0x38
@@ -419,10 +419,10 @@ tilesetData:
 	.db $24, $04, $10
 
 	; 0x3a
-	.db $25, $08
+	.db $20, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_CROWN_DUNGEON
-	.db PALH_TILESET_CROWN_DUNGEON
+	.db PALH_TILESET_MOONLIT_GROTTO
 	.db $25, $04, $10
 
 	; 0x3b
@@ -643,7 +643,7 @@ tilesetData:
 	.db $16, $05, $10
 
 	; 0x5a
-	.db $2e, $18
+	.db $20, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_MOBLIN_FORTRESS
 	.db PALH_TILESET_AMBIS_PALACE

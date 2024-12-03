@@ -41,14 +41,31 @@ Items used:
 Possible fixes needed:
 -Probably door logic
 -Strange color changing to palette 2 when moving color cube in certain positions*
+   -Caused by the Switch Diamond. Would be hard to fix without altering the room layout
 -Minecarts don't spawn when returning from Game Over??*
+   -Fixed
 -D2 boss event when defeated maybe*
+-You can get softlocked if you run out of mystery seeds before talking to the Owl Statue from the bottom-most floor
+   -Added some pots with Mystery Seed drops
 
 New stuff:
 Using a mystery seed on an armos transforms it into a pushable armos statue
 Implemented a "regrowable sand" as INTERAC_MISCELLANEOUS_1, subid 17
 Implemented a keydrop if the tile at var03 changes as INTERAC_DUNGEON_STUFF subid 06
 Implemented a bridge collapsing event in room 419
+Implemented an object that resets minecarts, as a fix to the aforementined issue. INTERAC_DUNGEON_STUFF subid 07
+Implemented a cutscene with Zelda subid $04
+Implemented a trigger that resets some statues' positions (MISC_PUZZLES subid $22)
+Implemented an object that turns half of the room into invisible spikes (MISCELANEOUS_2 subid $18)
+Owl Statues move to the left if var03 is different than $00
+Implemented diagonal walls (tile collision values = $20, $21, $22 or $23)
+Programmed a "new" boss, which spawns a "new" enemy (Enemy IDs $65, $6f)
+
+New files:
+(I won't say their names because I don't wanna spoil the boss)
+2 new spr files in gfx_compressible/ages
+4 new .s files in object_code/ages/enemies
+
 
 Notes:
 Floor 3 is basically a no-sword run, defeated enemies with bomb throws, and shovel flipping.
@@ -61,10 +78,21 @@ For floor 2 (remove details once that floor is done):
 
 Floor 1 uses 2 custom dungeonScripts for dungeon 0:
 
+Since neither Giant Ghini nor Eyesoar Child are used in this hack, their ObjectCollisionTables have been repurposed for the custom enemy and boss.
+
+
 Current Dungeon 0 scripts (used by INTERAC_DUNGEON_SCRIPT):
 $00: standard boss death script
 $01: spawns a free-standing small key in room 62f
 $02: spawns a chest in room 453 when a button is pressed
+$03: spawns a Long Hook
+$04: activates Trigger 2 if Triggers 0 and 1 are active (vanilla script from Mermaid's Cave)
+$05: moves the camera to focus this object. Used during the cutscene with Zelda
+$06: spawns an Owl Statue if Roomflag $20 is not set
+$07: custom BossDeath for the custom boss
+$08: shows a text 90 frames after entering the room
+$09: warps Link out of the dungeon. Used at the end of the game
+
 
 
 floor 1 TODO:

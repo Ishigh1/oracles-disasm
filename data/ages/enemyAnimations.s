@@ -257,7 +257,13 @@ enemyOamDataTable: ; 0x36e5c
 	.dw enemy7dOamDataPointers
 	.dw enemy7eOamDataPointers
 	.dw enemy7fOamDataPointers
-
+enemy65Animations:
+enemy6fAnimations:
+	.dw enemyAnimation374fb
+	.dw enemyAnimation37500 ;normal
+	.dw enemyAnimation37515 ;left
+	.dw enemyAnimation3751a ;right
+	.dw enemyAnimationViteousEmerge
 enemy00Animations:
 enemy01Animations:
 enemy2bAnimations:
@@ -268,7 +274,7 @@ enemy57Animations:
 enemy5aAnimations:
 enemy5bAnimations:
 enemy5cAnimations:
-enemy65Animations:
+;enemy65Animations:
 enemy66Animations:
 enemy67Animations:
 enemy68Animations:
@@ -278,7 +284,7 @@ enemy6bAnimations:
 enemy6cAnimations:
 enemy6dAnimations:
 enemy6eAnimations:
-enemy6fAnimations:
+;enemy6fAnimations:
 	.dw enemyAnimation374fb
 	.dw enemyAnimation37500
 	.dw enemyAnimation37515
@@ -1124,6 +1130,11 @@ enemyAnimation37500:
 	.db $7f $02 $00
 	m_AnimationLoop enemyAnimation37500
 
+enemyAnimationViteousEmerge:
+	.db $15 $02 $00
+	.db $01 $02 $01
+	m_AnimationLoop enemyAnimationViteousEmerge
+
 enemyAnimation37505:
 	.db $08 $10 $00
 	.db $08 $12 $00
@@ -1787,9 +1798,14 @@ enemyAnimation379f1:
 	.db $04 $10 $00
 	m_AnimationLoop enemyAnimation379f1
 
-
-
-
+enemy65OamDataPointers: ; 0x379ff
+	.dw enemyOamData4d367 ;hidden
+	.dw enemyOamData4d35e ;emerged, normal
+enemy6fOamDataPointers: ; 0x379ff
+	.dw enemyOamDataVitreous_hidden
+	.dw enemyOamDataVitreous_normal
+	.dw enemyOamDataVitreous_left
+	.dw enemyOamDataVitreous_right
 enemy00OamDataPointers: ; 0x379ff
 enemy01OamDataPointers: ; 0x379ff
 enemy2bOamDataPointers: ; 0x379ff
@@ -1800,7 +1816,7 @@ enemy57OamDataPointers: ; 0x379ff
 enemy5aOamDataPointers: ; 0x379ff
 enemy5bOamDataPointers: ; 0x379ff
 enemy5cOamDataPointers: ; 0x379ff
-enemy65OamDataPointers: ; 0x379ff
+;enemy65OamDataPointers: ; 0x379ff
 enemy66OamDataPointers: ; 0x379ff
 enemy67OamDataPointers: ; 0x379ff
 enemy68OamDataPointers: ; 0x379ff
@@ -1810,7 +1826,7 @@ enemy6bOamDataPointers: ; 0x379ff
 enemy6cOamDataPointers: ; 0x379ff
 enemy6dOamDataPointers: ; 0x379ff
 enemy6eOamDataPointers: ; 0x379ff
-enemy6fOamDataPointers: ; 0x379ff
+;enemy6fOamDataPointers: ; 0x379ff
 	.dw enemyOamData4e4f0
 	.dw enemyOamData4e511
 	.dw enemyOamData4e532

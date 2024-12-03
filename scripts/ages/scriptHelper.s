@@ -15,6 +15,68 @@ setTrigger2IfTriggers0And1Set:
 	res 2,(hl)
 	ret
 
+floorFerran_miseryMire_undrawVitreousEyes:
+	push de
+	callab roomGfxChanges.miseryMire_undrawEyes
+	call reloadTileMap
+	pop de
+
+	ld bc,$5060
+	call @spawnPuff
+	ld bc,$5870
+	call @spawnPuff
+	ld bc,$5880
+	call @spawnPuff
+	ld bc,$5090
+@spawnPuff:
+	call getFreeInteractionSlot
+	ret nz
+	ld (hl),INTERAC_PUFF
+	inc l
+	ld (hl),$00
+	ld l,Interaction.yh
+	ld (hl),b
+	ld l,Interaction.xh
+	ld (hl),c
+	ret
+
+floorFerran_spawnOwlStatue_body:
+	call getFreePartSlot
+	ret nz
+	ld (hl),PART_OWL_STATUE
+	inc l
+	ld (hl),$08
+	inc l
+	ld (hl),$01
+	call objectCopyPosition
+	ret
+
+floorFerran_warpLinkOut_body:
+	ld hl,wPresentRoomFlags+$67
+	set 7,(hl)
+
+	ld hl,@warp
+	ldi a,(hl)
+	ld (wWarpDestGroup),a
+	ldi a,(hl)
+	ld (wWarpDestRoom),a
+	ldi a,(hl)
+	ld (wWarpDestPos),a
+	ld a,(hl)
+	ld (wWarpTransition),a
+	ld a,$83
+	ld (wWarpTransition2),a
+
+	;xor a
+	;ld (wActiveMusic),a
+	ld a,SNDCTRL_SLOW_FADEOUT
+	call playSound
+
+	jp clearStaticObjects
+
+@warp:
+	.db $80, $77, $55, TRANSITION_DEST_X_SHIFTED
+
 ;;
 ; Creates a part object (PART_LIGHTABLE_TORCH) at each unlit torch, allowing them to be lit.
 makeTorchesLightable:
@@ -7622,6 +7684,17 @@ zora_setLinkDirectionLeft:
 ; ==================================================================================================
 ; INTERAC_ZELDA
 ; ==================================================================================================
+
+zelda_moveLinkForward:
+	ld a,LINK_STATE_FORCE_MOVEMENT
+	ld (wLinkForceState),a
+	ld a,$58
+	ld (wLinkStateParameter),a
+	ld hl,w1Link.direction
+	xor a
+	ldi (hl),a
+	ld (hl),a
+	ret
 
 ;;
 zelda_warpOutOfVireMinigame:

@@ -1954,6 +1954,50 @@ enemyOamData4e389:
 	.db $10 $0d $32 $00
 	.db $18 $fd $2e $00
 
+enemyOamDataVitreous_hidden:
+	.db $08
+	.db $00 $f8 $00 $00
+	.db $00 $00 $02 $00
+	.db $00 $10 $00 $20
+	.db $00 $08 $02 $20
+	.db $10 $f8 $04 $00
+	.db $10 $00 $06 $00
+	.db $10 $10 $04 $20
+	.db $10 $08 $06 $20
+
+enemyOamDataVitreous_normal:
+	.db $08
+	.db $00 $f8 $08 $00
+	.db $00 $00 $0a $00
+	.db $00 $10 $08 $20
+	.db $00 $08 $0a $20
+	.db $10 $f8 $0c $00
+	.db $10 $00 $0e $00
+	.db $10 $10 $0c $20
+	.db $10 $08 $0e $20
+
+enemyOamDataVitreous_left:
+	.db $08
+	.db $00 $f8 $10 $00
+	.db $00 $00 $12 $00
+	.db $00 $08 $14 $00
+	.db $00 $10 $16 $00
+	.db $10 $f8 $18 $00
+	.db $10 $00 $1a $00
+	.db $10 $08 $1c $00
+	.db $10 $10 $1e $00
+
+enemyOamDataVitreous_right:
+	.db $08
+	.db $00 $f8 $16 $20
+	.db $00 $00 $14 $20
+	.db $00 $08 $12 $20
+	.db $00 $10 $10 $20
+	.db $10 $f8 $1e $20
+	.db $10 $00 $1c $20
+	.db $10 $08 $1a $20
+	.db $10 $10 $18 $20
+
 enemyOamData4e3a6:
 	.db $08
 	.db $10 $f8 $04 $00

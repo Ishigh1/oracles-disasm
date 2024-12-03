@@ -407,6 +407,7 @@ enemyCheckCollisions:
 	.dw collisionEffect3d
 	.dw collisionEffect3e
 	.dw collisionEffect3f
+	.dw collisionEffect40
 
 ; Parameters which get passed to collision code functions:
 ; bc = link / item object (points to the start of the object)
@@ -508,6 +509,11 @@ collisionEffect09:
 ; COLLISIONEFFECT_SWORD_HIGH_KNOCKBACK
 collisionEffect0a:
 	ld e,ENEMYDMG_08
+	jr label_07_027
+
+;;
+collisionEffect40:
+	ld e,ENEMYDMG_50
 	jr label_07_027
 
 ;;
@@ -1313,6 +1319,7 @@ applyDamageToEnemyOrPart:
 	.db $50 $00 $00 $00 ; ENEMYDMG_44
 	.db $70 $f7 $07 $00 ; ENEMYDMG_48
 	.db $70 $f5 $09 $00 ; ENEMYDMG_4c
+	.db $f2 $20 $0f $00 ; ENEMYDMG_50
 
 
 @soundEffects:
@@ -1346,6 +1353,7 @@ applyDamageToEnemyOrPart:
 	ENEMYDMG_44	dsb 4
 	ENEMYDMG_48	dsb 4
 	ENEMYDMG_4c	dsb 4
+	ENEMYDMG_50	dsb 4
 .ENDE
 
 

@@ -43,7 +43,7 @@ enemyBoss_dead:
 	ld e,Enemy.id
 	ld a,(de)
 	sub $08
-	cp $68
+	cp $67 ;reduced from $78 due to the extra boss added to $6f
 	jr c,++
 	ld a,(wActiveMusic2)
 	ld (wActiveMusic),a

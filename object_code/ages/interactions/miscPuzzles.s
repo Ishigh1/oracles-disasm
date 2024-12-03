@@ -40,6 +40,8 @@ interactionCode90:
 	.dw miscPuzzles_subid20
 	.dw miscPuzzles_subid21
 
+	.dw miscPuzzles_subid22
+
 
 ; Boss key puzzle in D6
 miscPuzzles_subid00:
@@ -1345,6 +1347,81 @@ miscPuzzles_subid21:
 	call interactionIncState
 	ld a,$04
 	jp fadeoutToWhiteWithDelay
+
+miscPuzzles_subid22:
+	ld e,Interaction.state
+	ld a,(de)
+	rst_jumpTable
+	.dw @state0
+	.dw @state1
+	.dw @state2
+	.dw @state3
+
+@state0:
+	ld a,(wActiveTriggers)
+	or a
+	ret z
+	ld e,Interaction.counter1
+	ld a,$06
+	ld (de),a
+	jp interactionIncState
+@state1:
+-
+	; Find a statue and remove it by loading the original tile from w3LayoutBuffer
+	ld a,$2a
+	call findTileInRoom
+	jp nz,interactionIncState
+	ld c,l
+
+	ld a,($ff00+R_SVBK)
+	push af
+	ld a,:w3RoomLayoutBuffer
+	ld ($ff00+R_SVBK),a
+	ld b,>w3RoomLayoutBuffer
+	ld a,(bc)
+	ld b,a
+	pop af
+	ld ($ff00+R_SVBK),a
+	ld a,b
+	cp $2a ;if the original tile was the statue, set a StandardFloor tile instead
+	jr nz,+
+	ld a,$a0
++
+	call setTile
+	jr -
+@state2:
+	; Once all statues have been removed, place ones at their original locations
+
+	ld hl,@statuePositionsTable
+--
+	ld a,(hl)
+	push hl
+	ld c,a
+	ld a,$2a
+	call setTile
+
+	call interactionDecCounter1
+	jr z,@end
+	pop hl
+	inc hl
+	jr --
+@end:
+	pop hl
+	jp interactionIncState
+
+@state3:
+	; wait for button to stop being pushed
+	ld a,(wActiveTriggers)
+	or a
+	ret nz
+	ld e,Interaction.state
+	xor a
+	ld (de),a
+	ret
+
+@statuePositionsTable:
+	.db $22 $52 $82 $2c $5c $8c
+	
 
 ;;
 miscPuzzles_deleteSelfAndRetIfItemFlagSet:

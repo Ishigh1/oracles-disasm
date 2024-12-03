@@ -8702,33 +8702,41 @@ zeldaSubid03Script:
 
 
 zeldaSubid04Script:
-	checkmemoryeq wTmpcfc0.genericCutscene.cfd0, $01
-	setanimation $03
-	applyspeed $11
-	checkmemoryeq wTmpcfc0.genericCutscene.cfd0, $02
-
-	setanimation $03
-	checkmemoryeq wTmpcfc0.genericCutscene.cfd0, $03
-
+	;checkmemoryeq wcc93, $00
+	setdisabledobjectsto91
+	disablemenu
+	wait 30
+	asm15 scriptHelp.createExclamationMark, 30
 	setanimation $02
-	checkmemoryeq wTmpcfc0.genericCutscene.cfd0, $05
-
-	setanimation $03
-	checkmemoryeq wTmpcfc0.genericCutscene.cfd0, $07
-
-	writememory w1Link.direction, DIR_RIGHT
+	wait 30
 	showtext TX_0607
 	wait 30
+	setanimation $00	
+	asm15 scriptHelp.zelda_moveLinkForward
+	applyspeed $58
+	wait 30
+	setspeed SPEED_080
+	applyspeed $10
+	wait 30
+	showtext TX_0608
+	wait 30
+	playsound SNDCTRL_STOPMUSIC
+	asm15 scriptHelp.createExclamationMark, 30
+	wait 30
+	setanimation $02
+	wait 10
+	showtext TX_0609
 
 	writememory wTmpcfc0.genericCutscene.cfd0, $08
-	wait 45
+	wait 90
+	spawninteraction INTERAC_DOOR_CONTROLLER, $12, $a7, $00
+	wait 60
 
-	writememory w1Link.direction, DIR_RIGHT
-	moveup $11
-
-	writememory w1Link.direction, DIR_UP
-	moveleft $11
-	moveup $41
+	setmusic MUS_ROOM_OF_RITES
+	writememory wActiveMusic, MUS_ROOM_OF_RITES
+	asm15 setCameraFocusedObjectToLink
+	wait 90
+	showtext TX_060a
 	scriptend
 
 

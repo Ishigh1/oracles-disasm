@@ -108,7 +108,7 @@ enemyData:
 	/* 0x62 */ m_EnemyData $6b $90 $2c $09
 	/* 0x63 */ m_EnemyData $78 $82 $01 $46
 	/* 0x64 */ m_EnemyData $d5 $b9 $1b $66
-	/* 0x65 */ m_EnemyData $00 $00 $00 $00
+	/* 0x65 */ m_EnemyData $e2 $95 $46 $00
 	/* 0x66 */ m_EnemyData $00 $00 $00 $00
 	/* 0x67 */ m_EnemyData $00 $00 $00 $00
 	/* 0x68 */ m_EnemyData $00 $00 $00 $00
@@ -118,8 +118,8 @@ enemyData:
 	/* 0x6c */ m_EnemyData $00 $00 $00 $00
 	/* 0x6d */ m_EnemyData $00 $00 $00 $00
 	/* 0x6e */ m_EnemyData $00 $00 $00 $00
-	/* 0x6f */ m_EnemyData $00 $00 $00 $00
-	/* 0x70 */ m_EnemyData $ad $ff $1c $50
+	/* 0x6f */ m_EnemyData $e1 $7f $45 $00
+	/* 0x70 */ m_EnemyData $ad $c4 $1c $50
 	/* 0x71 */ m_EnemyData $af $c4 $1d $20
 	/* 0x72 */ m_EnemyData $b1 $c4 $1e $10
 	/* 0x73 */ m_EnemyData $b4 $c4 enemy73SubidData
@@ -331,3 +331,6 @@ extraEnemyData:
 	.db $04 $06 $f8 $06 ; 0x42
 	.db $04 $02 $fc $01 ; 0x43
 	.db $02 $02 $00 $02 ; 0x44
+
+	.db $0e $0e $f8 $18 ; 0x45
+	.db $06 $06 $fa $10 ; 0x46

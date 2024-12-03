@@ -101,7 +101,7 @@ enemyCodeTable:
 	.dw bank0e.enemyCode62 ; 0x62
 	.dw bank0e.enemyCode63 ; 0x63
 	.dw bank0e.enemyCode64 ; 0x64
-	.dw enemyCodeNil       ; 0x65
+	.dw bank0e.enemyCode65 ; 0x65
 	.dw enemyCodeNil       ; 0x66
 	.dw enemyCodeNil       ; 0x67
 	.dw enemyCodeNil       ; 0x68
@@ -111,7 +111,7 @@ enemyCodeTable:
 	.dw enemyCodeNil       ; 0x6c
 	.dw enemyCodeNil       ; 0x6d
 	.dw enemyCodeNil       ; 0x6e
-	.dw enemyCodeNil       ; 0x6f
+	.dw bank0f.enemyCode6f ; 0x6f
 	.dw bank0f.enemyCode70 ; 0x70
 	.dw bank0f.enemyCode71 ; 0x71
 	.dw bank0f.enemyCode72 ; 0x72

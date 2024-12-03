@@ -4320,10 +4320,14 @@ checkTileCollision_allowHoles:
 ; @param	bc	YX position to check
 checkGivenCollision_allowHoles:
 	cp $10
-	jr c,_simpleCollision
-
+	jp c,_simpleCollision
+	cp $20
+	jr c,+
+	cp $30
+	jr c,_diagonalCollision
++
 	ld hl,@specialCollisions
-	jr _complexCollision
+	jp _complexCollision
 
 ; See constants/common/specialCollisionValues.s for what each of these bytes is for.
 ; ie. The first defined byte is for holes.
@@ -4369,9 +4373,14 @@ checkTileCollision_disallowHoles:
 ; @param	a	Collision value
 checkGivenCollision_disallowHoles:
 	cp $10
-	jr c,_simpleCollision
+	jp c,_simpleCollision
+	cp $20
+	jr c,+
+	cp $30
+	jr c,_diagonalCollision
++
 	ld hl,@specialCollisions
-	jr _complexCollision
+	jp _complexCollision
 
 @specialCollisions:
 	.db %11111111 %11000011 %00000011 %11000000 %00000000 %11000011 %11000011 %00000000
@@ -4384,13 +4393,75 @@ checkCollisionPosition_disallowSmallBridges:
 	ld h,>wRoomCollisions
 	ld a,(hl)
 	cp $10
-	jr c,_simpleCollision
+	jp c,_simpleCollision
+	cp $20
+	jr c,+
+	cp $30
+	jr c,_diagonalCollision
++
 	ld hl,@specialCollisions
-	jr _complexCollision
+	jp _complexCollision
 
 @specialCollisions:
 	.db %00000000 %11111111 %00000011 %11000000 %11000011 %11000011 %11000011 %00000000
 	.db %00000000 %11111111 %00000011 %11000000 %11000001 %11000001 %11111111 %00000000
+
+_diagonalCollision:
+	push de
+	sub $20
+	ld l,a
+
+	ld a,b
+	and $0f
+	ld d,a
+	ld a,c
+	and $0f
+	ld e,a
+
+	ld a,l
+	;and $03
+	rst_jumpTable
+	.dw @south_west
+	.dw @north_east
+	.dw @north_west
+	.dw @south_east
+
+@south_west:
+	ld a,e
+	sub d
+	add $10
+	cp $10
+	jr c,@yes
+	jr @no
+@north_east:
+	ld a,e
+	sub d
+	add $10
+	cp $10
+	jr c,@no
+	jr @yes
+@south_east:
+	ld a,e
+	add d
+	cp $10
+	jr c,@no
+	jr @yes
+@north_west:
+	ld a,e
+	add d
+	cp $10
+	jr c,@yes
+	jr @no
+
+@no:
+	xor a
+	pop de
+	ret
+@yes:
+	xor a
+	sub $01
+	pop de
+	ret
 
 ; Sets carry flag if the object is not in a wall?
 _simpleCollision:
@@ -10854,7 +10925,7 @@ updateEnemy:
 .ifdef ROM_AGES
 	; Calculate bank number in 'b'
 	ld b,$0f
-	cp $70
+	cp $6f ;reduced from $70 due to the extra boss added to $6f
 	jr nc,++
 	dec b
 	cp $30

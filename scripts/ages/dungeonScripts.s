@@ -91,7 +91,7 @@ dungeonScript_bossDeath:
 	setcoords $58, $78
 
 spawnHeartContainer:
-	spawnitem TREASURE_HEART_CONTAINER, $00
+	spawnitem TREASURE_HEART_CONTAINER, $05
 	scriptjump enableLinkAndMenu
 
 wingDungeonScript_bossDeath:
@@ -111,6 +111,21 @@ wingDungeonScript_bossDeath:
 	stopifitemflagset
 	setcoords $98, $78
 	scriptjump spawnHeartContainer
+
+floorFerran_miseryMireScript_bossDeath:
+	jumpifroomflagset $80, @spawnHeart
+	checkmemoryeq wActiveTriggers, $01
+
+	asm15 scriptHelp.floorFerran_miseryMire_undrawVitreousEyes
+
+	checknoenemies
+	orroomflag $80
+
+@spawnHeart:
+	stopifitemflagset
+	setcoords $78, $78
+	spawnitem TREASURE_HEART_CONTAINER, $04
+	scriptjump enableLinkAndMenu
 
 
 ; Spawn stairs to the bracelet room when the two torches are lit.
@@ -285,4 +300,33 @@ floorRaze_buttonSpawnChest:
 	createpuff
 	settilehere $53
 	playsound SND_SOLVEPUZZLE
+	scriptend
+
+floorFerran_moveCameraTowardsDoor:
+	checkmemoryeq wTmpcfc0.genericCutscene.cfd0, $08
+	asm15 setCameraFocusedObject
+	wait 150
+	scriptend
+
+floorFerran_spawnOwlStatue:
+	stopifitemflagset
+	asm15 scriptHelp.floorFerran_spawnOwlStatue_body
+	wait 30
+	showtext TX_060b
+	scriptend
+
+floorFerran_remoteZeldaText:
+	stopifroomflag80set
+	setdisabledobjectsto91
+	wait 90
+	showtext TX_060c
+	scriptjump @end
+@end:
+	enableallobjects
+	scriptend
+
+floorFerran_warpLinkOut:
+	checkflagset $05, wGroup4RoomFlags+$80
+	checkheartdisplayupdated
+	asm15 scriptHelp.floorFerran_warpLinkOut_body
 	scriptend

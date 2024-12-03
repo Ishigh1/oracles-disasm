@@ -607,6 +607,8 @@ m_section_free Enemy_Code_Bank0e NAMESPACE bank0e
 	.include "object_code/common/enemies/twinrovaBat.s"
 	.include "object_code/common/enemies/ganonRevivalCutscene.s"
 
+	.include "object_code/ages/enemies/vitreousChild.s"
+
 	.include {"{GAME_DATA_DIR}/orbMovementScript.s"}
 	.include "code/objectMovementScript.s"
 
@@ -635,6 +637,7 @@ m_section_free Enemy_Code_Bank0f NAMESPACE bank0f
 	.include "object_code/common/enemies/commonCode.s"
 	.include "object_code/common/enemies/commonBossCode.s"
 
+	.include "object_code/ages/enemies/vitreous.s"
 	.include "object_code/ages/enemies/giantGhini.s"
 	.include "object_code/ages/enemies/swoop.s"
 	.include "object_code/ages/enemies/subterror.s"
@@ -1004,6 +1007,15 @@ loadD6ChangingFloorPatternToBigBuffer:
 
 ; HACK-BASE: Bank $18 is repurposed for the expanded tilesets patch.
 
+.BANK $18 SLOT 1
+.ORG 0
+	m_section_free Bank18 NAMESPACE bank18
+	.include "object_code/common/enemies/commonCode.s"
+	.include "object_code/common/enemies/commonBossCode.s"
+	.include "object_code/ages/enemies/vitreousMain.s"
+	.include "object_code/ages/enemies/vitreousChildMain.s"
+.ends
+
 .BANK $19 SLOT 1
 .ORG 0
 
@@ -1316,7 +1328,6 @@ oamData_7249:
 	.db $90 $80 $48 $05
 	.db $48 $50 $4a $02
 	.db $60 $40 $4c $00
-
 
 .include "object_code/ages/interactions/monkeyMain.s"
 .include "object_code/ages/interactions/rabbitMain.s"

@@ -16,6 +16,7 @@ interactionCode12:
 	.dw @subid04
 .endif
 	.dw @subid06
+	.dw @subid07
 
 
 ; Show text upon entering a dungeon
@@ -274,3 +275,19 @@ interactionCode12:
 	call interactionRunScript
 	jp c,interactionDelete
 	ret
+
+; Reloads static objects. Used in floor 1 to ensure that minecarts properly spawn.
+@subid07:
+	call checkInteractionState
+	jr nz,@@initialized
+
+	call interactionIncState
+	ld a,$08
+	call objectSetCollideRadius
+	
+@@initialized
+	call objectCheckCollidedWithLink_notDead
+	ret nc
+
+	call loadStaticObjects
+	jp interactionDelete

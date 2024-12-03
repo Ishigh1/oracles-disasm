@@ -542,7 +542,7 @@
 ; @subid_01{An individual shadow}
 .define ENEMY_GANON_REVIVAL_CUTSCENE $60
 
-.define ENEMY_STUB_65 $65
+;.define ENEMY_STUB_65 $65
 .define ENEMY_STUB_66 $66
 .define ENEMY_STUB_67 $67
 .define ENEMY_STUB_68 $68
@@ -552,7 +552,7 @@
 .define ENEMY_STUB_6c $6c
 .define ENEMY_STUB_6d $6d
 .define ENEMY_STUB_6e $6e
-.define ENEMY_STUB_6f $6f
+;.define ENEMY_STUB_6f $6f
 
 ;;
 ; @subid_00{Main form}

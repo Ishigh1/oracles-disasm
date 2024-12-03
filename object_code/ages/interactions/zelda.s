@@ -30,22 +30,44 @@ zelda_state0:
 	.dw @initSubid0a
 
 @initSubid04:
-	call checkIsLinkedGame
-	jp z,interactionDeleteAndUnmarkSolidPosition
-
-	ld a,TREASURE_MAKU_SEED
-	call checkTreasureObtained
-	jp nc,interactionDeleteAndUnmarkSolidPosition
-
-	ld a,GLOBALFLAG_PRE_BLACK_TOWER_CUTSCENE_DONE
-	call checkGlobalFlag
+	call getThisRoomFlags
+	bit 7,(hl)
 	jp nz,interactionDeleteAndUnmarkSolidPosition
 
 	ld h,d
 	ld l,Interaction.speed
 	ld (hl),SPEED_100
 	ld l,Interaction.angle
-	ld (hl),$08
+	ld (hl),$00
+
+	xor a
+	ld (wDisableLinkCollisionsAndMenu),a
+
+	ld hl,wcc93
+	set 7,(hl)
+
+	ld a,(wScrollMode)
+	and SCROLLMODE_01
+	ret nz
+
+	ld a,LINK_STATE_FORCE_MOVEMENT
+	ld (wLinkForceState),a
+
+.ifdef ROM_AGES
+	ld a,$16
+.else; ROM_SEASONS
+	ld a,$1a
+.endif
+	ld (wLinkStateParameter),a
+
+	ld hl,w1Link.direction
+	ld a,(wScreenTransitionDirection)
+	ldi (hl),a
+	swap a
+	rrca
+	ld (hl),a
+
+	ld h,d
 	jp @commonInit
 
 @initSubid03:
@@ -56,6 +78,7 @@ zelda_state0:
 	jp @commonInit
 
 @initSubid07:
+/*
 	ld a,GLOBALFLAG_GOT_RING_FROM_ZELDA
 	call checkGlobalFlag
 	jp z,interactionDeleteAndUnmarkSolidPosition
@@ -68,7 +91,8 @@ zelda_state0:
 	call checkGlobalFlag
 	ld a,<TX_0606
 	jr nz,@actAsGenericNpc
-	ld a,<TX_0605
+*/
+	ld a,<TX_060a
 
 @actAsGenericNpc:
 	ld e,Interaction.textID
@@ -158,9 +182,28 @@ zelda_state1:
 	jp interactionRunScript
 
 @runSubid4:
+	ld e,Interaction.substate
+	ld a,(de)
+	rst_jumpTable
+	.dw @@substate00
+	.dw @faceLinkAndRunScript
+
+@@substate00:
 	call interactionRunScript
 	jp nc,interactionAnimateBasedOnSpeed
-	jp interactionDeleteAndUnmarkSolidPosition
+
+	
+	call getThisRoomFlags
+	set 7,(hl)
+	dec l
+	set 7,(hl)
+	call setDeathRespawnPoint
+	xor a
+	ld (wDisabledObjects),a
+	ld (wMenuDisabled),a
+	call interactionIncSubstate
+	ld a,<TX_060a
+	jp zelda_state0@actAsGenericNpc
 
 @faceLinkAndRunScript:
 	call interactionRunScript

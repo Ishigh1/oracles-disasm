@@ -30,6 +30,8 @@ singleTileChangeGroup0Data:
 	.db $6a $02 $48 $3a
 	.db $48 $02 $68 $3a
 	.db $64 $02 $67 $3a
+	.db $67 $80 $54 $1b
+	.db $67 $80 $55 $1b
 	.db $00 $00
 
 singleTileChangeGroup1Data:
@@ -60,11 +62,25 @@ singleTileChangeGroup3Data:
 	.db $00 $00
 
 singleTileChangeGroup4Data:
-	.db $56 $20 $44 $a0
 	.db $59 $80 $a3 $a0
 	.db $4b $80 $54 $a0
 	.db $4b $80 $55 $1d
 	.db $c5 $20 $57 $52
+	.db $7d $80 $a7 $7a
+
+	.db $67 $01 $77 $d4
+	.db $67 $01 $86 $09
+	.db $67 $01 $88 $09
+	.db $67 $02 $5a $d5
+	.db $67 $02 $4b $09
+	.db $67 $02 $6b $09
+	.db $67 $04 $37 $d6
+	.db $67 $04 $26 $09
+	.db $67 $04 $28 $09
+	.db $67 $08 $54 $d7
+	.db $67 $08 $43 $09
+	.db $67 $08 $63 $09
+	.db $67 $40 $77 $52
 	.db $00 $00
 
 singleTileChangeGroup5Data:

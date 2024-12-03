@@ -75,7 +75,6 @@ group0WarpSources:
 	m_StandardWarp $0 $37 $3e $2 $4
 	m_PointerWarp     $3d warpSource76f6
 	m_StandardWarp $0 $45 $3e $3 $4
-	m_PointerWarp     $47 warpSource76fe
 	m_StandardWarp $0 $4d $09 $2 $4
 	m_StandardWarp $0 $53 $32 $2 $4
 	m_StandardWarp $0 $55 $3b $3 $4
@@ -170,10 +169,6 @@ warpSource76f6:
 	m_PositionWarp $13 $10 $3 $4
 	m_WarpListEndWithDefault
 
-warpSource76fe:
-	m_PositionWarp $25 $37 $2 $4
-	m_PositionWarp $27 $38 $2 $4
-	m_WarpListEndWithDefault
 
 warpSource7706:
 	m_PositionWarp $21 $00 $4 $4
@@ -498,7 +493,6 @@ group4WarpSources:
 	m_StandardWarp $0 $32 $02 $6 $2
 	m_StandardWarp $0 $47 $03 $6 $2
 	m_StandardWarp $08 $6c $64 $4 $2
-	m_StandardWarp $0 $86 $07 $6 $2
 	m_StandardWarp $0 $99 $0f $6 $2
 	m_StandardWarp $0 $9b $10 $6 $2
 	m_StandardWarp $0 $a0 $0d $6 $2
@@ -557,6 +551,27 @@ group4WarpSources:
 	m_StandardWarp $0 $75 $1b $6 $4
 	m_StandardWarp $0 $74 $68 $4 $4
 	m_StandardWarp $0 $79 $69 $4 $4
+	m_StandardWarp $0 $7c $1d $6 $4
+	m_StandardWarp $0 $85 $6b $4 $4
+	m_StandardWarp $00 $86 $6c $4 $4
+	m_StandardWarp $0 $87 $6d $4 $4
+	m_PointerWarp  $83 group4Room83WarpSources
+	m_PointerWarp  $82 group4Room82WarpSources
+	m_PointerWarp  $7e group4Room7eWarpSources
+	m_PointerWarp  $64 group4Room64WarpSources
+	m_WarpListEndNoDefault
+group4Room64WarpSources:
+	m_PositionWarp $11 $71 $4 $2
+	m_PositionWarp $8c $72 $4 $2
+	m_WarpListEndNoDefault
+group4Room7eWarpSources:
+	m_PositionWarp $58 $6e $4 $2
+	m_WarpListEndNoDefault
+group4Room82WarpSources:
+	m_PositionWarp $67 $70 $4 $2
+	m_WarpListEndNoDefault
+group4Room83WarpSources:
+	m_PositionWarp $67 $6f $4 $2
 	m_WarpListEndNoDefault
 group4Room66WarpSources:
 	m_PositionWarp $07 $5c $4 $2
@@ -822,7 +837,7 @@ group6WarpSources:
 	m_StandardWarp $04 $6e $66 $4 $3
 	m_StandardWarp $04 $76 $12 $4 $3
 	m_StandardWarp $08 $76 $67 $4 $3
-	m_StandardWarp $01 $7b $02 $0 $3
+	m_StandardWarp $01 $7b $6a $4 $3
 	m_StandardWarp $08 $7b $62 $4 $3
 	m_WarpListEndNoDefault
 

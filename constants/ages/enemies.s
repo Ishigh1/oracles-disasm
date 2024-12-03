@@ -154,6 +154,21 @@
 .define ENEMY_LINK_MIMIC $64
 
 ;;
+; Part of the boss Vitreous
+;
+; -FerranArevalo-
+.define ENEMY_VITREOUS_CHILD $65
+
+;;
+; The boss from Misery Mire (A Link to the Past).
+;
+; -FerranArevalo-
+;
+; @subid_00{Spawner; spawns subid 1 and children}
+; @subid_01{The main part of the boss}
+.define ENEMY_VITREOUS $6f
+
+;;
 .define ENEMY_GIANT_GHINI $70
 
 ;;

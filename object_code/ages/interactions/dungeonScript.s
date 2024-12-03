@@ -61,9 +61,16 @@ interactionCode20:
 	.dw @dungeond
 
 @dungeon0:
-	.dw mainScripts.dungeonScript_bossDeath
-	.dw mainScripts.floorRaze_smallKeyIn2DRoom
-	.dw mainScripts.floorRaze_buttonSpawnChest
+	.dw mainScripts.dungeonScript_bossDeath					;$00
+	.dw mainScripts.floorRaze_smallKeyIn2DRoom				;$01
+	.dw mainScripts.floorRaze_buttonSpawnChest				;$02
+	.dw mainScripts.wingDungeonScript_spawnSwitchHook			;$03
+	.dw mainScripts.mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1	;$04
+	.dw mainScripts.floorFerran_moveCameraTowardsDoor			;$05
+	.dw mainScripts.floorFerran_spawnOwlStatue				;$06
+	.dw mainScripts.floorFerran_miseryMireScript_bossDeath			;$07
+	.dw mainScripts.floorFerran_remoteZeldaText				;$08
+	.dw mainScripts.floorFerran_warpLinkOut					;$09
 
 @dungeond:
 	.dw mainScripts.makuPathScript_spawnChestWhenActiveTriggersEq01

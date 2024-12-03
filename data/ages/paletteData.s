@@ -2703,35 +2703,35 @@ paletteData5000:
 	m_RGB16 $00 $00 $00
 
 paletteData5030:
-	m_RGB16 $11 $0c $04
-	m_RGB16 $1a $15 $07
-	m_RGB16 $12 $09 $05
-	m_RGB16 $00 $00 $00
+	m_RGB16 $08 $10 $0d
+	m_RGB16 $12 $0d $07
+	m_RGB16 $0a $08 $05
+	m_RGB16 $02 $02 $02
 
-	m_RGB16 $17 $19 $12
-	m_RGB16 $11 $13 $0b
-	m_RGB16 $08 $0a $01
-	m_RGB16 $00 $00 $00
+	m_RGB16 $11 $17 $0f
+	m_RGB16 $07 $0f $07
+	m_RGB16 $05 $0a $06
+	m_RGB16 $02 $02 $02
 
-	m_RGB16 $1a $13 $0b
-	m_RGB16 $12 $0d $05
-	m_RGB16 $0b $07 $02
-	m_RGB16 $00 $00 $00
+	m_RGB16 $0a $13 $10
+	m_RGB16 $08 $10 $0d
+	m_RGB16 $06 $0c $09
+	m_RGB16 $02 $02 $02
 
-	m_RGB16 $1f $1f $11
-	m_RGB16 $1a $15 $07
-	m_RGB16 $12 $09 $05
-	m_RGB16 $00 $00 $00
+	m_RGB16 $12 $0d $07
+	m_RGB16 $07 $0f $07
+	m_RGB16 $05 $0a $06
+	m_RGB16 $02 $02 $02
 
-	m_RGB16 $1f $1f $11
-	m_RGB16 $0b $11 $17
-	m_RGB16 $00 $08 $10
-	m_RGB16 $00 $00 $00
+	m_RGB16 $1e $1e $1e
+	m_RGB16 $13 $13 $12
+	m_RGB16 $0b $0b $0c
+	m_RGB16 $02 $02 $02
 
-	m_RGB16 $1f $1f $11
-	m_RGB16 $19 $09 $00
+	m_RGB16 $19 $13 $11
+	m_RGB16 $16 $0d $0b
+	m_RGB16 $11 $06 $04
 	m_RGB16 $0d $00 $00
-	m_RGB16 $00 $00 $00
 
 paletteData5060:
 	m_RGB16 $12 $10 $0b
@@ -3884,10 +3884,10 @@ paletteData5720:
 	m_RGB16 $02 $0b $0e
 	m_RGB16 $00 $00 $00
 
-	m_RGB16 $15 $17 $12
+	m_RGB16 $0a $0e $0f
+	m_RGB16 $0a $0e $0f
+	m_RGB16 $04 $09 $0a
 	m_RGB16 $00 $00 $00
-	m_RGB16 $02 $15 $08
-	m_RGB16 $1f $17 $11
 
 paletteData5750:
 	m_RGB16 $14 $14 $02
