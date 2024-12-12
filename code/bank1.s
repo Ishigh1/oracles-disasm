@@ -2115,6 +2115,13 @@ playCompassSoundIfKeyInRoom:
 	cp <ROOM_SEASONS_68b
 	jr z,@playSound
 +
+	; Same for $62F
+	ld a,(wActiveGroup)
+	cp >ROOM_AGES_62f
+	jr nz,+
+	ld a,(wActiveRoom)
+	cp <ROOM_AGES_62f
+	jr z,@playSound
 .endif
 
 	ld a,(wDungeonRoomProperties)

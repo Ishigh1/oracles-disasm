@@ -22,7 +22,7 @@ applyRoomSpecificTileChanges:
 	.dw tileReplacement_group5Map5c ; $0e
 	.dw tileReplacement_group5Map4d ; $0f
 	.dw tileReplacement_group5Map5d ; $10
-	.dw tileReplacement_group7Map4a ; $11
+	.dw tileReplacement_group6Map62 ; $11
 	.dw tileReplacement_group5Map95 ; $12
 	.dw tileReplacement_group5Mapc3 ; $13
 	.dw tileReplacement_group0Map5c ; $14
@@ -144,9 +144,9 @@ roomTileChangerCodeGroup5Data:
 	.db $e3 $2a
 	.db $00
 roomTileChangerCodeGroup6Data:
+	.db $63 $11
 	.db $00
 roomTileChangerCodeGroup7Data:
-	.db $4a $11
 	.db $00
 
 ;;
@@ -700,18 +700,22 @@ tileReplacement_group5Map5d:
 	.db $c7 $c1 $c1 $c1 $c8
 
 ;;
-; D7 miniboss room (except it's group 7 instead of 5?)
+; D0 miniboss room (except it's group 6 instead of 4?)
 ; Creates a ladder if the miniboss has been murdered.
-tileReplacement_group7Map4a:
+tileReplacement_group6Map62:
 	call getThisRoomFlags
 	and $80
 	ret z
 
-	ld hl,@ladderRect
+	ld hl,@ladderRect1
+	call fillRectInRoomLayout
+	ld hl,@ladderRect2
 	jp fillRectInRoomLayout
 
-@ladderRect:
-	.db $0d $0a $01 $18
+@ladderRect1:
+	.db $01 $05 $01 $16
+@ladderRect2:
+	.db $0d $05 $01 $16
 
 ;;
 ; Graveyard: Clear the fence if opened

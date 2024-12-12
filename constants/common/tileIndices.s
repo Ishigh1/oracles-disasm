@@ -199,6 +199,7 @@
 ; Tiles in sidescrolling tilesets
 .define TILEINDEX_SS_EMPTY		$01
 .define TILEINDEX_SS_SPIKE		$02
+.define TILEINDEX_SS_LADDER0	$18
 .define TILEINDEX_SS_LADDER		$18
 .define TILEINDEX_SS_52			$52
 

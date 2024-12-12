@@ -490,7 +490,7 @@ group4WarpSources:
 	m_StandardWarp $4 $ce $05 $0 $3
 	m_StandardWarp $4 $04 $00 $0 $3
 	m_StandardWarp $0 $1b $01 $6 $2
-	m_StandardWarp $0 $32 $02 $6 $2
+	m_StandardWarp $0 $32 $73 $4 $2
 	m_StandardWarp $0 $47 $03 $6 $2
 	m_StandardWarp $08 $6c $64 $4 $2
 	m_StandardWarp $0 $99 $0f $6 $2

@@ -2884,8 +2884,6 @@ group4Map40ObjectData:
 
 group4Map41ObjectData:
 	obj_Pointer group4Map41EnemyObjectData
-	obj_Part $03 $00 $23
-	obj_Part $03 $00 $2d
 	obj_End
 
 group4Map42ObjectData:
@@ -3008,7 +3006,7 @@ group4Map58ObjectData:
 group4Map59ObjectData:
 	obj_Pointer group4Map59EnemyObjectData
 	obj_Interaction $1e $0a $a7 $00
-	obj_Interaction $12 $07 $10 $78
+	obj_Interaction $12 $07 $18 $78
 	obj_End
 
 group4Map5aObjectData:
@@ -4846,7 +4844,7 @@ group4Map26ObjectData:
 group4Map67ObjectData:
 	obj_Interaction $7b $00 $58 $70
 	obj_Interaction $7b $01 $58 $80
-	obj_Interaction $db $02 $36 $78
+	obj_Interaction $db $02 $35 $78
 	obj_Interaction $db $01 $58 $aa
 	obj_Interaction $db $03 $58 $46
 	obj_Interaction $90 $0e $78 $78

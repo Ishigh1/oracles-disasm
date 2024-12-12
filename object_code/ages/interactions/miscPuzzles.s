@@ -679,7 +679,7 @@ miscPuzzles_subid0b:
 	ld a,c
 	ldh (<hFF92),a
 
-	ld a,TILEINDEX_SS_LADDER
+	ld a,TILEINDEX_SS_LADDER0
 	call setTile
 
 	ld b,INTERAC_PUFF
@@ -693,14 +693,6 @@ miscPuzzles_subid0b:
 	ldh a,(<hFF92)
 	cp $90
 	ret c
-
-	; Restore the entrance on the left side
-	ld c,$80
-	ld a,TILEINDEX_SS_52
-	call setTile
-	ld c,$90
-	ld a,TILEINDEX_SS_EMPTY
-	call setTile
 
 	ld a,SND_SOLVEPUZZLE
 	call playSound

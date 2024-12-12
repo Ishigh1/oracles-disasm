@@ -275,7 +275,7 @@ treasureObjectData2a:
 	m_TreasureSubid $02, $04, $16, $3b, TREASURE_OBJECT_HEART_CONTAINER_02
 	m_TreasureSubid $38, $00, $16, $3b, TREASURE_OBJECT_HEART_CONTAINER_03
 	m_TreasureSubid $28, $04, $16, $3b, TREASURE_OBJECT_HEART_CONTAINER_04
-	m_TreasureSubid $1a, $04, $16, $3b, TREASURE_OBJECT_HEART_CONTAINER_05
+	m_TreasureSubid $3a, $04, $16, $3b, TREASURE_OBJECT_HEART_CONTAINER_05
 
 treasureObjectData2c:
 	m_BeginTreasureSubids TREASURE_RING_BOX
