@@ -109,6 +109,10 @@ group0WarpSources:
 	m_StandardWarp $0 $5b $28 $5 $4
 	m_StandardWarp $0 $a0 $33 $5 $4
 	m_StandardWarp $0 $a5 $3e $5 $4
+	m_PointerWarp  $e3 group0Roome3WarpSources
+	m_WarpListEndNoDefault
+group0Roome3WarpSources:
+	m_PositionWarp $46 $40 $4 $4
 	m_WarpListEndNoDefault
 
 warpSource769a:
@@ -485,7 +489,6 @@ warpSource7ac6:
 	m_WarpListFallThrough
 
 group4WarpSources:
-	m_StandardWarp $4 $24 $01 $0 $3
 	m_StandardWarp $4 $46 $01 $1 $3
 	m_StandardWarp $4 $66 $02 $0 $3
 	m_StandardWarp $4 $91 $03 $0 $3
@@ -532,6 +535,56 @@ group4WarpSources:
 	m_StandardWarp $4 $f3 $33 $1 $3
 	m_StandardWarp $8 $f3 $33 $1 $3
 	m_StandardWarp $4 $fe $49 $4 $3
+	m_PointerWarp  $24 group4Room24WarpSources
+	m_PointerWarp  $25 group4Room25WarpSources
+	m_PointerWarp  $21 group4Room21WarpSources
+	m_PointerWarp  $1e group4Room1eWarpSources
+	m_PointerWarp  $1d group4Room1dWarpSources
+	m_PointerWarp  $20 group4Room20WarpSources
+	m_PointerWarp  $1c group4Room1cWarpSources
+	m_PointerWarp  $1a group4Room1aWarpSources
+	m_PointerWarp  $19 group4Room19WarpSources
+	m_PointerWarp  $15 group4Room15WarpSources
+	m_WarpListEndNoDefault
+group4Room15WarpSources:
+	m_PositionWarp $57 $52 $0 $2
+	m_WarpListEndNoDefault
+group4Room19WarpSources:
+	m_PositionWarp $2c $54 $0 $2
+	m_PositionWarp $11 $56 $4 $2
+	m_WarpListEndNoDefault
+group4Room1aWarpSources:
+	m_PositionWarp $82 $53 $0 $2
+	m_PositionWarp $11 $55 $4 $2
+	m_WarpListEndNoDefault
+group4Room1cWarpSources:
+	m_PositionWarp $57 $51 $0 $2
+	m_PositionWarp $97 $53 $4 $2
+	m_PositionWarp $17 $54 $4 $2
+	m_WarpListEndNoDefault
+group4Room20WarpSources:
+	m_PositionWarp $8c $50 $0 $2
+	m_PositionWarp $11 $52 $4 $2
+	m_WarpListEndNoDefault
+group4Room1dWarpSources:
+	m_PositionWarp $91 $4f $0 $2
+	m_PositionWarp $1c $51 $4 $2
+	m_WarpListEndNoDefault
+group4Room1eWarpSources:
+	m_PositionWarp $91 $4e $0 $2
+	m_PositionWarp $1d $50 $4 $2
+	m_WarpListEndNoDefault
+group4Room21WarpSources:
+	m_PositionWarp $1d $4d $0 $2
+	m_PositionWarp $56 $4f $4 $2
+	m_WarpListEndNoDefault
+group4Room25WarpSources:
+	m_PositionWarp $97 $08 $0 $2
+	m_PositionWarp $73 $4e $4 $2
+	m_WarpListEndNoDefault
+group4Room24WarpSources:
+	m_PositionWarp $97 $01 $0 $4
+	m_PositionWarp $11 $45 $4 $2
 	m_WarpListEndNoDefault
 
 warpSource7b8e:

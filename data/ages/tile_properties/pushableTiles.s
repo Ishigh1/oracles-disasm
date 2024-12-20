@@ -29,7 +29,7 @@ pushableTilePropertiesTable:
 
 @overworld:
 	.db $d3 $3a $02 $01
-	.db $d8 $3a $02 $05
+	.db $d8 $3a $d8 $05
 	.db $d9 $dc $02 $85
 	.db $02 $3a $02 $05
 @underwater:

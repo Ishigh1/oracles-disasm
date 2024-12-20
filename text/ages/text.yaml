@@ -1671,7 +1671,7 @@ groups:
     - 0x0e
     - 0x0f
     text: |2-
-       The Black Tower
+       The Pit Of 100 Trials
 
 - group: 0x03
   data:
@@ -3942,10 +3942,13 @@ groups:
   - name: TX_0901
     index: 0x01
     text: |-
-      Eternal Spirit
-      It speaks across
-      time to the
-      heart!
+      Welcome to the Pit of 100 Trials
+      Relay Hack! Here you will face 100
+      Rooms of puzzle/combat made by the
+      community! This is heavily inspired
+      by the Pit of 100 Trials from the
+      Paper Mario series, so have fun
+      and please enjoy this project!
 
   - name: TX_0902
     index: 0x02
@@ -7510,7 +7513,7 @@ groups:
     index: 0x13
     text: |-
       \pos(2)Accept our
-      quest, hero!
+      challenge, hero!
 
 - group: 0x13
   data:

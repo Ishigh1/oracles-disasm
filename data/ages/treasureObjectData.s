@@ -62,7 +62,7 @@ treasureObjectData:
 	/* $21 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_SCENT_SEEDS_00
 	/* $22 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_PEGASUS_SEEDS_00
 	/* $23 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_GALE_SEEDS_00
-	/* $24 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_MYSTERY_SEEDS_00
+	/* $24 */ m_TreasureSubid   $32, $00, $ff, $0a, TREASURE_OBJECT_MYSTERY_SEEDS_00
 	/* $25 */ m_TreasureSubid   $68, $00, $72, $69, TREASURE_OBJECT_TUNE_OF_ECHOES_00
 	/* $26 */ m_TreasureSubid   $0a, $00, $0a, $6a, TREASURE_OBJECT_TUNE_OF_CURRENTS_00
 	/* $27 */ m_TreasureSubid   $0a, $00, $0b, $6b, TREASURE_OBJECT_TUNE_OF_AGES_00
@@ -200,7 +200,7 @@ treasureObjectData15:
 
 treasureObjectData16:
 	m_BeginTreasureSubids TREASURE_BRACELET
-	m_TreasureSubid $0a, $01, $26, $19, TREASURE_OBJECT_BRACELET_00
+	m_TreasureSubid $32, $01, $26, $19, TREASURE_OBJECT_BRACELET_00
 	m_TreasureSubid $0a, $01, $77, $19, TREASURE_OBJECT_BRACELET_01
 	m_TreasureSubid $38, $02, $2f, $1a, TREASURE_OBJECT_BRACELET_02
 	m_TreasureSubid $0a, $01, $26, $19, TREASURE_OBJECT_BRACELET_03
@@ -214,7 +214,7 @@ treasureObjectData17:
 
 treasureObjectData19:
 	m_BeginTreasureSubids TREASURE_SEED_SATCHEL
-	m_TreasureSubid $0a, $01, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_00
+	m_TreasureSubid $32, $01, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_00
 	m_TreasureSubid $0a, $00, $7b, $20, TREASURE_OBJECT_SEED_SATCHEL_01
 	m_TreasureSubid $29, $00, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_02
 	m_TreasureSubid $09, $00, $2d, $20, TREASURE_OBJECT_SEED_SATCHEL_03
@@ -270,7 +270,7 @@ treasureObjectData2b:
 
 treasureObjectData2a:
 	m_BeginTreasureSubids TREASURE_HEART_CONTAINER
-	m_TreasureSubid $1a, $04, $16, $3b, TREASURE_OBJECT_HEART_CONTAINER_00
+	m_TreasureSubid $32, $04, $16, $3b, TREASURE_OBJECT_HEART_CONTAINER_00
 	m_TreasureSubid $30, $04, $16, $3b, TREASURE_OBJECT_HEART_CONTAINER_01
 	m_TreasureSubid $02, $04, $16, $3b, TREASURE_OBJECT_HEART_CONTAINER_02
 
