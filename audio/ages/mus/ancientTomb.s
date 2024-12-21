@@ -1,397 +1,362 @@
 musAncientTombStart:
 
 musAncientTombChannel1:
-	vibrato $00
+	vibrato $41
 	env $0 $00
 	cmdf2
 	duty $02
 musicf7b58:
-	vol $0
-	note gs3 $ff
-	note gs3 $21
+	octave 4
 	vol $6
-	note d5  $03
-	rest $03
-	vol $5
-	note d5  $03
-	rest $03
-	vol $4
-	note d5  $03
-	rest $03
-	vol $4
-	note d5  $03
-	rest $03
-	vol $4
-	note d5  $03
-	rest $2d
-	vol $6
-	note gs5 $03
-	rest $03
-	vol $5
-	note gs5 $03
-	rest $03
-	vol $4
-	note gs5 $03
-	rest $03
-	vol $4
-	note gs5 $03
-	rest $03
-	vol $4
-	note gs5 $03
-	rest $3f
-	vol $6
-	note d5  $03
-	rest $03
-	vol $5
-	note d5  $03
-	rest $03
-	vol $4
-	note d5  $03
-	rest $03
-	vol $6
-	note gs5 $03
-	rest $03
-	vol $5
-	note gs5 $03
-	rest $03
-	vol $4
-	note gs5 $03
-	rest $03
-	vol $4
-	note gs5 $03
-	rest $03
-	vol $4
-	note gs5 $03
-	rest $ff
-	vol $0
-	note gs3 $72
-	vol $6
-	note e5  $03
-	rest $03
-	vol $5
-	note e5  $03
-	rest $03
-	vol $4
-	note e5  $03
-	rest $03
-	vol $4
-	note e5  $03
-	rest $03
-	vol $4
-	note e5  $03
-	rest $2d
-	vol $6
-	note as5 $03
-	rest $03
-	vol $5
-	note as5 $03
-	rest $03
-	vol $4
-	note as5 $03
-	rest $03
-	vol $4
-	note as5 $03
-	rest $03
-	vol $4
-	note as5 $03
-	rest $3f
-	vol $6
-	note e5  $03
-	rest $03
-	vol $5
-	note e5  $03
-	rest $03
-	vol $4
-	note e5  $03
-	rest $03
-	vol $6
-	note as5 $03
-	rest $03
-	vol $5
-	note as5 $03
-	rest $03
-	vol $4
-	note as5 $03
-	rest $03
-	vol $4
-	note as5 $03
-	rest $03
-	vol $4
-	note as5 $03
-	rest $51
-	vol $4
-	note c6  $09
-	vol $7
-	note c6  $09
-	vol $5
-	note c6  $04
-	rest $05
-	vol $4
-	note c6  $04
-	rest $05
-	note fs5 $09
-	vol $6
-	note fs5 $09
-	vol $4
-	note fs5 $04
-	rest $05
-	vol $3
-	note fs5 $04
-	rest $05
-	note as5 $09
-	vol $6
-	note as5 $09
-	vol $5
-	note as5 $04
-	rest $05
-	vol $4
-	note as5 $04
-	rest $05
-	vol $3
-	note e5  $09
-	vol $6
-	note e5  $09
-	vol $4
-	note e5  $04
-	rest $05
-	vol $3
-	note e5  $04
-	rest $05
-	vol $3
-	note e5  $04
-	rest $05
-	vol $2
-	note e5  $04
-	rest $29
-	vol $3
-	note e6  $03
-	rest $06
-	vol $6
-	note e6  $06
-	rest $03
-	vol $6
-	note as5 $03
-	rest $06
-	vol $5
-	note as5 $09
-	rest $04
-	vol $3
-	note as5 $09
-	rest $05
-	vol $1
-	note as5 $09
-	rest $1b
+	note as 10
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 10
+	note as 10
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 10
+	note gs 10
+	note c 10
+	note cs 10
+	note gs 20
+	note c 10
+	note cs 10
+	note gs 20
+	note c 10
+	note cs 10
+	note gs 20
+	note c 10
+	note cs 10
+	note gs 10
+	note fs 10
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note fs 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note fs 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note fs 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note fs 10
+	note as 10
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 10
+	note as 10
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 20
+	note d 10
+	note ds 10
+	note as 10
+	note gs 10
+	note c 10
+	note cs 10
+	note gs 20
+	note c 10
+	note cs 10
+	note gs 20
+	note c 10
+	note cs 10
+	note gs 20
+	note c 10
+	note cs 10
+	note gs 10
+	note fs 10
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note fs 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note fs 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note fs 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note fs 10
+	note f 10
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note f 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note f 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note f 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note f 10
+	note e 5
+	note e 5
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note e 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note e 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note e 20
+	octave 3
+	note as 10
+	note b 10
+	octave 4
+	note e 10
+	note ds 10
+	octave 3
+	note a 10
+	note as 10
+	octave 4
+	note ds 20
+	octave 3
+	note a 10
+	note as 10
+	octave 4
+	note ds 20
+	octave 3
+	note a 10
+	note as 10
+	octave 4
+	note ds 20
+	octave 3
+	note a 10
+	note as 10
+	octave 4
+	note ds 10
+	note d 10
+	octave 3
+	note gs 10
+	note a 10
+	octave 4
+	note d 20
+	octave 3
+	note gs 10
+	note a 10
+	octave 4
+	note d 20
+	octave 3
+	note gs 10
+	note a 10
+	octave 4
+	note d 20
+	octave 3
+	note gs 10
+	note a 10
+	octave 4
+	note d 10
 	goto musicf7b58
 	cmdff
 
 musAncientTombChannel0:
-	vibrato $00
+	vibrato $41
 	env $0 $00
 	cmdf2
 	duty $01
 musicf7c85:
+	octave 2
 	vol $6
-	note gs2 $24
-	vol $6
-	note a2  $24
-	note gs2 $24
-	note e2  $24
-	note gs2 $24
-	note a2  $24
-	note gs2 $24
-	note e2  $24
-	duty $02
-	vol $7
-	note a4  $03
-	rest $03
-	vol $6
-	note a4  $03
-	rest $03
-	vol $4
-	note a4  $03
-	rest $03
-	vol $4
-	note a4  $03
-	rest $03
-	vol $3
-	note a4  $03
-	rest $2d
-	vol $7
-	note d5  $03
-	rest $03
-	vol $6
-	note d5  $03
-	rest $03
-	vol $4
-	note d5  $03
-	rest $03
-	vol $4
-	note d5  $03
-	rest $03
-	vol $3
-	note d5  $03
-	rest $3f
-	vol $7
-	note a4  $03
-	rest $03
-	vol $6
-	note a4  $03
-	rest $03
-	vol $4
-	note a4  $03
-	rest $03
-	vol $7
-	note d5  $03
-	rest $03
-	vol $6
-	note d5  $03
-	rest $03
-	vol $4
-	note d5  $03
-	rest $03
-	vol $7
-	note a3  $03
-	rest $03
-	vol $6
-	note a3  $03
-	rest $03
-	vol $4
-	note a3  $03
-	rest $03
-	vol $7
-	note d4  $03
-	rest $03
-	vol $6
-	note d4  $03
-	rest $03
-	vol $4
-	note d4  $03
-	rest $03
-	vol $7
-	note gs3 $03
-	rest $03
-	vol $6
-	note gs3 $03
-	rest $03
-	vol $4
-	note gs3 $03
-	rest $03
-	vol $4
-	note gs3 $03
-	rest $03
-	vol $3
-	note gs3 $03
-	rest $1b
-	duty $01
-	vol $6
-	note gs2 $24
-	note a2  $24
-	note gs2 $24
-	note a2  $24
-	note as2 $24
-	note b2  $24
-	note as2 $24
-	note f2  $24
-	duty $02
-	vol $7
-	note a4  $03
-	rest $03
-	vol $6
-	note a4  $03
-	rest $03
-	vol $4
-	note a4  $03
-	rest $03
-	vol $4
-	note a4  $03
-	rest $03
-	vol $3
-	note a4  $03
-	rest $2d
-	vol $7
-	note ds5 $03
-	rest $03
-	vol $6
-	note ds5 $03
-	rest $03
-	vol $4
-	note ds5 $03
-	rest $03
-	vol $4
-	note ds5 $03
-	rest $03
-	vol $3
-	note ds5 $03
-	rest $3f
-	vol $7
-	note a4  $03
-	rest $03
-	vol $6
-	note a4  $03
-	rest $03
-	vol $4
-	note a4  $03
-	rest $03
-	vol $7
-	note ds5 $03
-	rest $03
-	vol $6
-	note ds5 $03
-	rest $03
-	vol $4
-	note ds5 $03
-	rest $03
-	vol $7
-	note a3  $03
-	rest $03
-	vol $6
-	note a3  $03
-	rest $03
-	vol $4
-	note a3  $03
-	rest $03
-	vol $7
-	note d4  $03
-	rest $03
-	vol $6
-	note d4  $03
-	rest $03
-	vol $4
-	note d4  $03
-	rest $03
-	vol $7
-	note gs3 $03
-	rest $03
-	vol $6
-	note gs3 $03
-	rest $03
-	vol $4
-	note gs3 $03
-	rest $03
-	vol $4
-	note gs3 $03
-	rest $03
-	vol $3
-	note gs3 $03
-	rest $1b
-	vol $3
-	note fs5 $09
-	vol $6
-	note fs5 $09
-	vol $4
-	note fs5 $06
-	rest $03
-	vol $2
-	note fs5 $06
-	rest $03
-	vol $3
-	note c5  $09
-	vol $6
-	note c5  $09
-	vol $4
-	note c5  $06
-	rest $03
-	vol $2
+	note g 10
+	octave 3
+	note d 10
+	note ds 10
+	note as 50
+	octave 2
+	note g 10
+	octave 3
+	note d 10
+	note ds 10
+	note as 50
+	octave 2
+	note g 10
+	octave 3
+	note d 10
+	note ds 10
+	note as 50
+	octave 2
+	note g 10
+	octave 3
+	note d 10
+	note ds 10
+	note as 50
+	octave 2
+	note f 10
+	octave 3
+	note c 10
+	note cs 10
+	note gs 50
+	octave 2
+	note f 10
+	octave 3
+	note c 10
+	note cs 10
+	note gs 50
+	octave 2
+	note ds 10
+	note as 10
+	note b 10
+	octave 3
+	note fs 50
+	octave 2
+	note g 10
+	octave 3
+	note d 10
+	note ds 10
+	note as 50
+	octave 2
+	note g 10
+	octave 3
+	note d 10
+	note ds 10
+	note as 50
+	octave 2
+	note g 10
+	octave 3
+	note d 10
+	note ds 10
+	note as 50
+	octave 2
+	note g 10
+	octave 3
+	note d 10
+	note ds 10
+	note as 50
+	octave 2
+	note f 10
+	octave 3
+	note c 10
+	note cs 10
+	note gs 50
+	octave 2
+	note f 10
+	octave 3
+	note c 10
+	note cs 10
+	note gs 50
+	octave 2
+	note ds 10
+	note as 10
+	note b 10
+	octave 3
+	note fs 50
+	octave 2
+	note d 10
+	note a 10
+	note as 10
+	octave 3
+	note f 50
+	octave 2
+	note d 10
+	note a 10
+	note as 10
+	octave 3
+	note f 50
+	octave 2
+	note cs 10
+	note gs 10
+	note a 10
+	octave 3
+	note e 50
+	octave 2
+	note cs 10
+	note gs 10
+	note a 10
+	octave 3
+	note e 50
+	octave 2
+	note cs 10
+	note gs 10
+	note a 10
+	octave 3
+	note ds 50
+	octave 2
+	note cs 10
+	note gs 10
+	note a 10
+	octave 3
+	note ds 50
+	octave 1
+	note b 10
+	octave 2
+	note gs 10
+	note a 10
+	octave 3
+	note d 50
+	octave 1
+	note b 10
+	octave 2
+	note gs 10
+	note a 10
+	octave 3
+	note d 50
 	note c5  $06
 	rest $03
 	vol $3
@@ -445,40 +410,137 @@ musAncientTombChannel4:
 	cmdf2
 musicf7e2a:
 	duty $0e
-	note d2  $24
-	note ds2 $24
-	note d2  $24
-	note as1 $24
-	note d2  $24
-	note ds2 $24
-	note d2  $24
-	note as1 $24
-	note d2  $24
-	note ds2 $24
-	note d2  $24
-	note as1 $24
-	note d2  $24
-	note ds2 $24
-	note d2  $24
-	note as1 $24
-	note d2  $24
-	note ds2 $24
-	note d2  $24
-	note ds2 $24
-	note e2  $24
-	note f2  $24
-	note e2  $24
-	note b1  $24
-	note e2  $24
-	note f2  $24
-	note e2  $24
-	note b1  $24
-	note e2  $24
-	note f2  $24
-	note e2  $24
-	note f2  $24
-	rest $ff
-	rest $21
+	vibrato $f0
+	octave 3
+	note g 255
+	note gs 255
+	note f  255
+	note ds 255
+	vibrato $81
+	octave 5
+	note d 80
+	note c 40
+	note f 30
+	note e 5
+	note ds 5
+	note d 80
+	note c 80
+	octave 4
+	note fs 80
+	note fs 40
+	vibrato $82
+	note fs 40
+	vibrato $81
+	note f  80
+	vibrato $82
+	note f 50
+	vibrato $81
+	note as 10
+	octave 5
+	note cs 10
+	note f 10
+	note e 80
+	note cs 80
+	note ds 80
+	octave 4
+	note as 10
+	octave 5
+	note f 30
+	note e 5
+	note ds 5
+	note d 80
+	note d 40
+	vibrato $82
+	note d 20
+	vibrato $83
+	note d 20
+	vibrato $81
+	octave 1
+	note ds 10
+	octave 2
+	vibrato $82
+	note b 10
+	octave 3
+	note cs 10
+	note ds 20
+	rest 30
+	octave 1
+	vibrato $81
+	note g 10
+	octave 2
+	vibrato $82
+	note b 10
+	octave 3
+	note cs 10
+	note ds 20
+	rest 30
+	octave 1
+	vibrato $81
+	note ds 10
+	octave 2
+	vibrato $82
+	note b 10
+	octave 3
+	note cs 10
+	note ds 20
+	rest 30
+	octave 1
+	vibrato $81
+	note e 10
+	octave 2
+	vibrato $82
+	note b 10
+	octave 3
+	note ds 10
+	note f 20
+	rest 30
+	octave 1
+	vibrato $81
+	note g 10
+	octave 2
+	vibrato $82
+	note b 10
+	octave 3
+	note cs 10
+	note ds 20
+	rest 30
+	octave 1
+	vibrato $81
+	note c 10
+	octave 2
+	vibrato $82
+	note b 10
+	octave 3
+	note cs 10
+	note ds 20
+	rest 30
+	octave 1
+	vibrato $81
+	note ds 10
+	octave 2
+	vibrato $82
+	note b 10
+	octave 3
+	note cs 10
+	note ds 20
+	rest 30
+	octave 1
+	vibrato $81
+	note e 10
+	octave 2
+	vibrato $82
+	note b 10
+	octave 3
+	note ds 10
+	note f 20
+	rest 30
+	vibrato $81
+	octave 2
+	note d 80
+	vibrato $82
+	note d 40
+	vibrato $83
+	note d 40
 	goto musicf7e2a
 	cmdff
 
