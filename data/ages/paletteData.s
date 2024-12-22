@@ -3235,7 +3235,7 @@ paletteData5360:
 	m_RGB16 $00 $00 $00
 
 	m_RGB16 $1f $1f $11
-	m_RGB16 $17 $12 $08
+	m_RGB16 $11 $0f $18
 	m_RGB16 $0c $09 $02
 	m_RGB16 $00 $00 $00
 
@@ -3244,9 +3244,9 @@ paletteData5360:
 	m_RGB16 $0a $0c $08
 	m_RGB16 $00 $00 $00
 
+	m_RGB16 $11 $0f $18
 	m_RGB16 $12 $12 $0a
-	m_RGB16 $16 $07 $11
-	m_RGB16 $0e $01 $08
+	m_RGB16 $0a $0c $08
 	m_RGB16 $00 $00 $00
 
 	m_RGB16 $1f $1f $11

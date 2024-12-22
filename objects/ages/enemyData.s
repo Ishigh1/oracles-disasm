@@ -971,13 +971,16 @@ group4Map0bEnemyObjectData:
 	obj_EndPointer
 
 group4Map12EnemyObjectData:
-	obj_SpecificEnemyA $00 $28 $00 $05 $00
-	obj_ItemDrop $03 $00 $6d
-	obj_ItemDrop     $00 $8d
+	obj_SpecificEnemyA $01 $45 $00 $78 $88
+	obj_SpecificEnemyA     $1c $00 $30 $50
+	obj_SpecificEnemyA     $1c $00 $98 $98
+	obj_SpecificEnemyA     $1c $00 $58 $68
+	obj_SpecificEnemyA     $1c $00 $58 $28
+	obj_SpecificEnemyA 0 $45 $00 $78 $58
+	obj_SpecificEnemyA     $45 $00 $48 $38
 	obj_EndPointer
 
 group4Map13BeforeEventObjectData:
-	obj_SpecificEnemyA $00 $78 $00 $58 $78
 	obj_EndPointer
 
 objectData4784: ; UNUSED?
@@ -1546,7 +1549,6 @@ group4Map94EnemyObjectData:
 group4Map96EnemyObjectData:
 group4Map97EnemyObjectData:
 group4Map9eEnemyObjectData:
-group4Mapa5EnemyObjectData:
 group4Mapa9EnemyObjectData:
 group4Mapb1EnemyObjectData:
 group4MapbbEnemyObjectData:
@@ -2561,4 +2563,25 @@ group4Map1aEnemyObjectData:
 
 group4Map15EnemyObjectData:
 	obj_SpecificEnemyA 0 $74 $00 $28 $78
+	obj_EndPointer
+
+group4Map11EnemyObjectData:
+	obj_Part $13 $00 $32
+	obj_Interaction $ce $0c $38 $c8
+	obj_EndPointer
+
+group4Mapa5EnemyObjectData:
+	obj_EndPointer
+
+group0Map69EnemyObjectData:
+	obj_EndPointer
+
+group4Map13EnemyObjectData:
+	obj_SpecificEnemyA $01 $4e $00 $18 $78
+	obj_SpecificEnemyA     $4e $00 $58 $28
+	obj_SpecificEnemyA     $4e $00 $58 $c8
+	obj_SpecificEnemyA     $4e $00 $98 $78
+	obj_SpecificEnemyA     $28 $00 $ff $00
+	obj_Part $13 $01 $83
+	obj_SpecificEnemyA 0 $50 $00 $09 $18
 	obj_EndPointer

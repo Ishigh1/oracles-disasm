@@ -1,13 +1,12 @@
-musAncientTombStart:
+musCelestialTowerStart:
 
-musAncientTombChannel1:
+musCelestialTowerChannel1:
 	vibrato $41
 	env $0 $00
 	cmdf2
 	duty $02
 musicf7b58:
 	octave 4
-	vol $6
 	note as 10
 	note d 10
 	note ds 10
@@ -213,17 +212,54 @@ musicf7b58:
 	note a 10
 	octave 4
 	note d 10
+	octave 3
+	; env $2 $03
+	note b 60
+	note b 40
+	note b 40
+	note b 40
+	note g 60
+	note g 40
+	note g 40
+	note b 60
+	note b 40
+	note b 40
+	note b 40
+	note b 60
+	note b 40
+	note b 40
+	note g 60
+	note g 40
+	note g 40
+	note g 40
+	note c 60
+	note c 40
+	note g 40
+	octave 2
+	note b 60
+	note b 40
+	note b 40
+	note b 40
+	octave 3
+	note e 60
+	note e 40
+	note e 40
+	note as 5
+	octave 4
+	note c 5
+	env $0 $00
+	note f 80
+	note f 75
 	goto musicf7b58
 	cmdff
 
-musAncientTombChannel0:
+musCelestialTowerChannel0:
 	vibrato $41
 	env $0 $00
 	cmdf2
-	duty $01
+	duty $03
 musicf7c85:
 	octave 2
-	vol $6
 	note g 10
 	octave 3
 	note d 10
@@ -266,6 +302,12 @@ musicf7c85:
 	octave 3
 	note fs 50
 	octave 2
+	note ds 10
+	note as 10
+	note b 10
+	octave 3
+	note fs 50
+	octave 2
 	note g 10
 	octave 3
 	note d 10
@@ -301,6 +343,12 @@ musicf7c85:
 	note c 10
 	note cs 10
 	note gs 50
+	octave 2
+	note ds 10
+	note as 10
+	note b 10
+	octave 3
+	note fs 50
 	octave 2
 	note ds 10
 	note as 10
@@ -357,65 +405,107 @@ musicf7c85:
 	note a 10
 	octave 3
 	note d 50
-	note c5  $06
-	rest $03
-	vol $3
-	note e5  $09
-	vol $6
-	note e5  $09
-	vol $4
-	note e5  $06
-	rest $03
-	vol $2
-	note e5  $06
-	rest $03
-	vol $3
-	note as4 $09
-	vol $6
-	note as4 $09
-	vol $4
-	note as4 $06
-	rest $03
-	vol $3
-	note as4 $06
-	rest $03
-	vol $2
-	note as4 $06
-	rest $03
-	vol $2
-	note as4 $06
-	rest $27
-	vol $3
-	note as5 $06
-	rest $03
-	vol $6
-	note as5 $06
-	rest $03
-	note e5  $06
-	rest $03
-	vol $5
-	note e5  $09
-	rest $04
-	vol $2
-	note e5  $09
-	rest $05
-	vol $1
-	note e5  $09
-	rest $1b
-	duty $01
+	env $1 $03
+	duty $02
+	vibrato $ff
+	octave 4
+	note d 5
+	note as 55
+	note d 5
+	note as 35
+	note d 5
+	note as 35
+	note d 5
+	note as 35
+	note ds 5
+	octave 5
+	note cs 35
+	octave 4
+	note ds 5
+	octave 5
+	note cs 35
+	octave 4
+	note ds 5
+	octave 5
+	note cs 35
+	octave 4
+	note cs 5
+	note gs 55
+	note cs 5
+	note gs 35
+	note cs 5
+	note gs 35
+	note cs 5
+	note gs 35
+	note ds 5
+	note b 55
+	note ds 5
+	note b 35
+	note ds 5
+	note b 35
+	note ds 5
+	note as 55
+	note ds 5
+	note as 35
+	note d 5
+	note as 35
+	note cs 5
+	note as 35
+	note f 5
+	octave 5
+	note c 55
+	octave 4
+	note e 5
+	octave 5
+	note c 35
+	octave 4
+	note ds 5
+	octave 5
+	note c 35
+	octave 4
+	note cs 5
+	note gs 55
+	note cs 5
+	note gs 35
+	note cs 5
+	note gs 35
+	note cs 5
+	note gs 35
+	octave 3
+	note b 5
+	octave 4
+	note fs 55
+	octave 3
+	note b 5
+	octave 4
+	note fs 35
+	octave 3
+	duty $03
+	env $0 $00
+	vibrato $00
+	note as 40
+	note as 40
 	goto musicf7c85
 	cmdff
 
-musAncientTombChannel4:
+musCelestialTowerChannel4:
 	cmdf2
+	duty $16
 musicf7e2a:
-	duty $0e
-	vibrato $f0
 	octave 3
-	note g 255
-	note gs 255
-	note f  255
-	note ds 255
+	vibrato $f0
+	note g 79
+	rest 1
+	note g 80
+	note gs 79
+	rest 1
+	note gs 80
+	note f 79
+	rest 1
+	note f 80
+	note ds 79
+	rest 1
+	note ds 80
 	vibrato $81
 	octave 5
 	note d 80
@@ -426,12 +516,17 @@ musicf7e2a:
 	note d 80
 	note c 80
 	octave 4
+	note gs 80
+	note as 40
+	octave 5
+	note c 40
+	octave 4
 	note fs 80
 	note fs 40
 	vibrato $82
 	note fs 40
 	vibrato $81
-	note f  80
+	note f 80
 	vibrato $82
 	note f 50
 	vibrato $81
@@ -443,7 +538,7 @@ musicf7e2a:
 	note cs 80
 	note ds 80
 	octave 4
-	note as 10
+	note as 40
 	octave 5
 	note f 30
 	note e 5
@@ -544,4 +639,4 @@ musicf7e2a:
 	goto musicf7e2a
 	cmdff
 
-.define musAncientTombChannel6 MUSIC_CHANNEL_FALLBACK EXPORT
+.define musCelestialTowerChannel6 MUSIC_CHANNEL_FALLBACK EXPORT

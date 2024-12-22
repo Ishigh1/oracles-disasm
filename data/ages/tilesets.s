@@ -286,11 +286,11 @@ tilesetData:
 	.db $11, $02, $07
 
 	; 0x27
-	.db $af, $18
+	.db $a1, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_BLACK_TOWER
-	.db PALH_TILESET_BLACK_TOWER
-	.db $13, $04, $ff
+	.db PALH_TILESET_ROOM_OF_RITES_ICE
+	.db $13, $04, $10
 
 	; 0x28
 	.db $1f, $04
@@ -405,7 +405,7 @@ tilesetData:
 	.db $22, $04, $10
 
 	; 0x38
-	.db $23, $08
+	.db $21, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_MOONLIT_GROTTO
 	.db PALH_TILESET_MOONLIT_GROTTO

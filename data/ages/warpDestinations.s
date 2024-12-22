@@ -105,6 +105,9 @@ group0WarpDestTable:
 	m_WarpDest $00 $00 $0 $1
 	m_WarpDest $00 $00 $0 $1
 	m_WarpDest $00 $00 $0 $1
+	m_WarpDest $00 $00 $0 $1
+	m_WarpDest $00 $00 $0 $1
+	m_WarpDest $00 $00 $0 $1
 
 group1WarpDestTable:
 	m_WarpDest $48 $21 $0 $1
@@ -417,6 +420,10 @@ group4WarpDestTable:
 	m_WarpDest $1a $82 $0 $1
 	m_WarpDest $19 $2c $0 $1
 	m_WarpDest $15 $57 $0 $1
+	m_WarpDest $13 $57 $1 $1
+	m_WarpDest $11 $87 $0 $1
+	m_WarpDest $11 $87 $0 $1
+	m_WarpDest $13 $7d $0 $1
 
 group5WarpDestTable:
 	m_WarpDest $26 $ff $9 $3

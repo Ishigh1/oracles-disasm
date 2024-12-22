@@ -27,7 +27,7 @@ soundPointers:
 	/* 0x17 */ m_soundPointer musCrownDungeon
 	/* 0x18 */ m_soundPointer musMermaidsCave
 	/* 0x19 */ m_soundPointer musJabuJabusBelly
-	/* 0x1a */ m_soundPointer musAncientTomb
+	/* 0x1a */ m_soundPointer musCelestialTower
 	/* 0x1b */ m_soundPointer musFinalDungeon
 	/* 0x1c */ m_soundPointer musOnoxCastle
 	/* 0x1d */ m_soundPointer musRoomOfRites

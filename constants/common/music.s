@@ -50,7 +50,7 @@
 	MUS_CROWN_DUNGEON         db ; $17
 	MUS_MERMAIDS_CAVE         db ; $18
 	MUS_JABU_JABUS_BELLY      db ; $19
-	MUS_ANCIENT_TOMB          db ; $1a
+	MUS_CELESTIAL_TOWER       db ; $1a
 .else
 	MUS_HEROS_CAVE             db ; $12
 	MUS_GNARLED_ROOT_DUNGEON   db ; $13

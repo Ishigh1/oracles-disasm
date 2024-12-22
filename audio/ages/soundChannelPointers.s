@@ -668,15 +668,15 @@ musJabuJabusBelly:
 	.dw musJabuJabusBellyChannel6
 	.db $ff
 
-musAncientTomb:
+musCelestialTower:
 	.db $00
-	.dw musAncientTombChannel0
+	.dw musCelestialTowerChannel0
 	.db $01
-	.dw musAncientTombChannel1
+	.dw musCelestialTowerChannel1
 	.db $04
-	.dw musAncientTombChannel4
+	.dw musCelestialTowerChannel4
 	.db $06
-	.dw musAncientTombChannel6
+	.dw musCelestialTowerChannel6
 	.db $ff
 
 musUnderwater:

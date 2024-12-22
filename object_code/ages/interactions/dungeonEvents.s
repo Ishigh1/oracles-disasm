@@ -31,7 +31,60 @@ interactionCode21:
 	.dw interaction21_subid17
 	.dw interaction21_subid18
 	.dw interaction21_subid19
+	.dw interaction21_subid1a
 
+; Custom interaction for Pit Hack, Floor 11:
+; Create a staircase at position Y which appears when [wActiveTriggers] == X, but which also
+; disappears when the trigger is released.
+interaction21_subid1a:
+	call interactionDeleteAndRetIfEnabled02
+	call getThisRoomFlags
+	and ROOMFLAG_ITEM
+	jp nz,interactionDelete
+
+	ld e,Interaction.xh
+	ld a,(de)
+	ld b,a
+	ld a,(wActiveTriggers)
+	cp b
+	jr nz,@stairTriggerInactive
+
+@stairTriggerActive:
+	ld e,Interaction.yh
+	ld a,(de)
+	ld c,a
+	ld b,>wRoomLayout
+	ld a,(bc)
+	cp TILEINDEX_INDOOR_UPSTAIRCASE
+	ret z
+
+	ld a,TILEINDEX_INDOOR_UPSTAIRCASE
+	call setTile
+	call createPuffAt
+	ld a,SND_SOLVEPUZZLE
+	jp playSound
+
+@stairTriggerInactive:
+	ld e,Interaction.yh
+	ld a,(de)
+	ld c,a
+	ld b,>wRoomLayout
+	ld a,(bc)
+	cp TILEINDEX_INDOOR_UPSTAIRCASE
+	ret nz
+
+	; Retrieve whatever tile was there before the chest
+	ld a,:w3RoomLayoutBuffer
+	ld ($ff00+R_SVBK),a
+	ld b,>w3RoomLayoutBuffer
+	ld a,(bc)
+	ld l,a
+	xor a
+	ld ($ff00+R_SVBK),a
+
+	ld a,l
+	call setTile
+	jp createPuffAt
 
 ; D2: Verify a 2x2 floor pattern
 interaction21_subid01:

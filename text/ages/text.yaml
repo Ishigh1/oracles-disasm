@@ -18533,15 +18533,18 @@ groups:
   data:
   - name: TX_3900
     index: 0x00
-    text: |-
-      Bring all to me.
+    text: >-
+      Floors 11 through 20
+      by Athebyne.
+
+      Song Playing: Celestial
+      Tower (Pokemon BW)
 
   - name: TX_3901
     index: 0x01
     text: |-
-      Good defense is
-      the best offense
-      against spikes.
+      The red stairs shall
+      take you home.
 
   - name: TX_3902
     index: 0x02

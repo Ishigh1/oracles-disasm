@@ -52,6 +52,7 @@ chestGroup3Data:
 	.db $ff
 
 chestGroup4Data:
+	m_ChestData $14, $12, TREASURE_OBJECT_MAGNET_GLOVES_00
 	m_ChestData $55, $15, TREASURE_OBJECT_HEART_CONTAINER_00
 	m_ChestData $18, $19, TREASURE_OBJECT_MYSTERY_SEEDS_00
 	m_ChestData $3c, $1d, TREASURE_OBJECT_BRACELET_00
