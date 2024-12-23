@@ -62,9 +62,11 @@ spiritsGraveScript_spawnMovingPlatform:
 	playsound SND_SOLVEPUZZLE
 	scriptend
 
-spiritsGraveScript_spawnBracelet:
+spiritsGraveScript_spawnHeartPieceOnEnemyDeath:
 	stopifitemflagset
-	spawnitem TREASURE_BRACELET, $00
+	wait 30
+	checknoenemies
+	spawnitem TREASURE_HEART_PIECE, $00
 	scriptend
 
 

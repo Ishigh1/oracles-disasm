@@ -3688,10 +3688,10 @@ paletteData5600:
 	m_RGB16 $08 $0a $06
 	m_RGB16 $00 $00 $00
 
-	m_RGB16 $1c $19 $0f
+	m_RGB16 $00 $00 $00
 	m_RGB16 $0f $12 $01
 	m_RGB16 $05 $08 $00
-	m_RGB16 $00 $00 $00
+	m_RGB16 $02 $08 $00
 
 	m_RGB16 $1f $1f $11
 	m_RGB16 $11 $0b $19
@@ -3699,8 +3699,8 @@ paletteData5600:
 	m_RGB16 $00 $00 $00
 
 	m_RGB16 $1c $1c $1e
-	m_RGB16 $0b $10 $14
-	m_RGB16 $05 $0a $0f
+	m_RGB16 $11 $0f $18
+	m_RGB16 $0e $01 $08
 	m_RGB16 $00 $00 $00
 
 paletteData5630:

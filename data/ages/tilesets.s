@@ -548,7 +548,7 @@ tilesetData:
 	.db $31, $28
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_SIDESCROLL
-	.db PALH_TILESET_SIDESCROLL_SPIRITS_GRAVE
+	.db PALH_68
 	.db $32, $04, $12
 
 	; 0x4d

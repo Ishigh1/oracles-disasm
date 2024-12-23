@@ -69,7 +69,7 @@ interactionCode20:
 	.dw mainScripts.makuPathScript_spawnUpStairsWhen2TorchesLit
 @dungeon1:
 	.dw mainScripts.dungeonScript_spawnChestOnTriggerBit0
-	.dw mainScripts.spiritsGraveScript_spawnBracelet
+	.dw mainScripts.spiritsGraveScript_spawnHeartPieceOnEnemyDeath
 	.dw mainScripts.dungeonScript_minibossDeath
 	.dw mainScripts.dungeonScript_bossDeath
 	.dw mainScripts.spiritsGraveScript_stairsToBraceletRoom
