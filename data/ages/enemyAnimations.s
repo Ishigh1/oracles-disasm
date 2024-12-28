@@ -262,7 +262,6 @@ enemy00Animations:
 enemy01Animations:
 enemy2bAnimations:
 enemy44Animations:
-enemy46Animations:
 enemy50Animations:
 enemy57Animations:
 enemy5aAnimations:
@@ -538,6 +537,13 @@ enemy39Animations:
 enemy3bAnimations:
 	.dw enemyAnimation3746e
 	.dw enemyAnimation37476
+enemy46Animations:
+	.dw enemyAnimation374fb
+	.dw enemyAnimation37572
+	.dw enemyAnimation37584
+	.dw enemyAnimation3751f
+	.dw enemyAnimation3773e
+	.dw enemyAnimation37750
 enemy3cAnimations:
 	.dw enemyAnimation3756a
 	.dw enemyAnimation37679
@@ -1193,15 +1199,16 @@ enemyAnimation3756a:
 	.db $18 $02 $01
 	m_AnimationLoop enemyAnimation3756a
 
-enemyAnimation37572: ; Unused
+enemyAnimation37572: ; Used for Magunesu in Romhack
 	.db $08 $02 $00
 	.db $08 $10 $00
 	.db $08 $12 $01
 	.db $08 $10 $00
 	.db $08 $0c $00
 	.db $7f $0c $02
-	.db $08 $0a $00
-	.db $08 $10 $00
+enemyAnimation37584:
+	.db $7f $06 $00
+	m_AnimationLoop enemyAnimation37584
 	.db $08 $12 $00
 	.db $08 $10 $01
 	.db $08 $04 $00
@@ -1413,12 +1420,16 @@ enemyAnimation37736:
 	.db $01 $04 $00
 	m_AnimationLoop enemyAnimation37736
 
-enemyAnimation3773e: ; Unused
-	.db $08 $08 $04
-	.db $08 $0c $06
-	.db $08 $00 $00
-	.db $08 $04 $02
-	m_AnimationLoop enemyAnimation3773e
+enemyAnimation3773e: ; Used for Magunesu in Romhack
+	.db $08 $0a $00
+	.db $08 $10 $00
+	.db $08 $12 $00
+	.db $08 $10 $01
+	.db $08 $04 $00
+	.db $7f $04 $02
+enemyAnimation37750:
+	.db $7f $0e $00
+	m_AnimationLoop enemyAnimation37750
 
 enemyAnimation3774c:
 	.db $7f $16 $00
@@ -1794,7 +1805,6 @@ enemy00OamDataPointers: ; 0x379ff
 enemy01OamDataPointers: ; 0x379ff
 enemy2bOamDataPointers: ; 0x379ff
 enemy44OamDataPointers: ; 0x379ff
-enemy46OamDataPointers: ; 0x379ff
 enemy50OamDataPointers: ; 0x379ff
 enemy57OamDataPointers: ; 0x379ff
 enemy5aOamDataPointers: ; 0x379ff
@@ -2215,7 +2225,17 @@ enemy3bOamDataPointers: ; 0x37c4b
 	.dw enemyOamData4e784
 	.dw enemyOamData4e7a5
 	.dw enemyOamData4e7c6
-
+enemy46OamDataPointers: ; magunesu
+	.dw enemyOamData492bb
+	.dw enemyOamData492cd
+	.dw enemyOamData492f1
+	.dw enemyOamData492c4
+	.dw enemyOamData492d6
+	.dw enemyOamData4946b
+	.dw enemyOamData49474
+	.dw enemyOamData493c0
+	.dw enemyOamData4947d
+	.dw enemyOamData49486
 enemy3cOamDataPointers: ; 0x37c53
 enemy55OamDataPointers: ; 0x37c53
 enemy59OamDataPointers: ; 0x37c53

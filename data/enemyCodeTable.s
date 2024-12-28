@@ -70,7 +70,7 @@ enemyCodeTable:
 	.dw bank0e.enemyCode43 ; 0x43
 	.dw enemyCodeNil       ; 0x44
 	.dw bank0e.enemyCode45 ; 0x45
-	.dw enemyCodeNil       ; 0x46
+	.dw bank0e.enemyCode46 ; 0x46
 	.dw bank0e.enemyCode47 ; 0x47
 	.dw bank0e.enemyCode48 ; 0x48
 	.dw bank0e.enemyCode49 ; 0x49
@@ -84,7 +84,7 @@ enemyCodeTable:
 	.dw bank0e.enemyCode51 ; 0x51
 	.dw bank0e.enemyCode52 ; 0x52
 	.dw bank0e.enemyCode53 ; 0x53
-	.dw bank0e.enemyCode54 ; 0x54
+	.dw enemyCodeNil       ; 0x54 Ambi Palace Guard Enemy, commented out to free up space. Re-add this if you want to use them.
 	.dw bank0e.enemyCode55 ; 0x55
 	.dw bank0e.enemyCode56 ; 0x56
 	.dw enemyCodeNil       ; 0x57

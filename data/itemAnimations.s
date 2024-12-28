@@ -162,6 +162,8 @@ item1cAnimations:
 item1dAnimations:
 item1eAnimations:
 item1fAnimations:
+	.dw itemAnimation1e7ad
+	.dw itemAnimation1e7b0
 item20Animations:
 	.dw itemAnimation1e818
 item21Animations:

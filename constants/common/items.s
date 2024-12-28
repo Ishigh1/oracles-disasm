@@ -49,7 +49,12 @@
 	ITEM_MINECART_COLLISION		db ; 0x1d
 
 	ITEM_FOOLS_ORE			db ; 0x1e
-	ITEM_1f				db ; 0x1f
+
+.ifdef ROM_SEASONS
+	ITEM_MAGNET_BALL		db ; 0x1f
+.else
+	ITEM_1f		                db ; 0x1f
+.endif
 
 	; Item IDs $20 and above can't be used directly as items in link's inventory.
 	ITEM_EMBER_SEED			db ; 0x20
@@ -64,7 +69,7 @@
 	; animal companion attack? (includes moosh's attack, ricky's punch)
 	ITEM_28				db ; 0x28
 
-.ifdef ROM_AGES
+.ifdef ROM_SEASONS
 	ITEM_29				db ; 0x29
 .else
 	ITEM_MAGNET_BALL		db ; 0x29

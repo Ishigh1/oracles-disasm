@@ -16,6 +16,12 @@ setTrigger2IfTriggers0And1Set:
 	ret
 
 ;;
+setNumEnemiesTo1:
+	ld a,$01
+	ld (wNumEnemies),a
+	ret
+
+;;
 ; Creates a part object (PART_LIGHTABLE_TORCH) at each unlit torch, allowing them to be lit.
 makeTorchesLightable:
 	call getFreeInteractionSlot

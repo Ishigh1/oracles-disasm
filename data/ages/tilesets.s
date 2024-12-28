@@ -398,7 +398,7 @@ tilesetData:
 	.db $21, $04, $10
 
 	; 0x37
-	.db $22, $88
+	.db $21, $88
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_WING_DUNGEON
 	.db PALH_TILESET_WING_DUNGEON

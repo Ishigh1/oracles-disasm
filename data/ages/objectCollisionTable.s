@@ -390,9 +390,10 @@ objectCollisionTable:
 	.db $36 $00 $00 $05 $36 $36 $36 $36 $36 $36 $00 $00 $00 $36 $36 $00
 	.db $00 $00 $00 $08 $00 $2f $09 $08 $0a $08 $20 $0b $0b $20 $29 $00
 
-	; ENEMYCOLLISION_AMBI_GUARD (0x5a)
-	.db $30 $00 $00 $00 $30 $30 $30 $30 $30 $30 $30 $30 $30 $30 $30 $00
-	.db $00 $00 $00 $30 $30 $2d $30 $30 $30 $20 $20 $20 $20 $20 $20 $00
+	; formerly ENEMY_COLLISION_AMBI_GUARD
+	; ENEMYCOLLISION_MAGUNESU (0x5a)
+	.db $02 $10 $0f $0f $08 $09 $09 $0a $0a $08 $0c $0a $09 $1c $1c $25
+	.db $00 $00 $00 $1b $1c $00 $1b $1b $00 $09 $1c $20 $0c $20 $20 $09
 
 	; ENEMYCOLLISION_VERAN_GHOST (0x5b)
 	.db $02 $00 $00 $00 $1c $1c $1c $1c $00 $1c $00 $00 $00 $2e $1c $00

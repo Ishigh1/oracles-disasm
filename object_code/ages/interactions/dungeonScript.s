@@ -73,7 +73,8 @@ interactionCode20:
 	.dw mainScripts.dungeonScript_minibossDeath
 	.dw mainScripts.dungeonScript_bossDeath
 	.dw mainScripts.spiritsGraveScript_stairsToBraceletRoom
-	.dw mainScripts.spiritsGraveScript_spawnMovingPlatform
+	.dw mainScripts.spiritsGraveScript_startArenaTrigger
+	.dw mainScripts.spiritsGraveScript_spawnShovelPlatform
 @dungeon2:
 	.dw mainScripts.wingDungeonScript_spawnFeather
 	.dw mainScripts.wingDungeonScript_spawn30Rupees
@@ -89,28 +90,28 @@ interactionCode20:
 	.dw mainScripts.skullDungeonScript_spawnChestWhenOrb0Hit
 	.dw mainScripts.skullDungeonScript_spawnChestWhenOrb1Hit
 @dungeon5:
-	.dw mainScripts.dungeonScript_minibossDeath
-	.dw mainScripts.dungeonScript_bossDeath
-	.dw mainScripts.crownDungeonScript_spawnChestWhen3TriggersActive
+	;.dw mainScripts.dungeonScript_minibossDeath
+	;.dw mainScripts.dungeonScript_bossDeath
+	;.dw mainScripts.crownDungeonScript_spawnChestWhen3TriggersActive
 @dungeon6:
 	.dw mainScripts.dungeonScript_minibossDeath
 @dungeon7:
 	.dw mainScripts.dungeonScript_bossDeath
 @dungeon8:
-	.dw mainScripts.dungeonScript_minibossDeath
-	.dw mainScripts.dungeonScript_bossDeath
-	.dw mainScripts.ancientTombScript_spawnSouthStairsWhenTrigger0Active
-	.dw mainScripts.ancientTombScript_spawnNorthStairsWhenTrigger0Active
-	.dw mainScripts.ancientTombScript_retractWallWhenTrigger0Active
-	.dw mainScripts.ancientTombScript_spawnDownStairsWhenEnemiesKilled
-	.dw mainScripts.ancientTombScript_spawnVerticalBridgeWhenTorchLit
+	;.dw mainScripts.dungeonScript_minibossDeath
+	;.dw mainScripts.dungeonScript_bossDeath
+	;.dw mainScripts.ancientTombScript_spawnSouthStairsWhenTrigger0Active
+	;.dw mainScripts.ancientTombScript_spawnNorthStairsWhenTrigger0Active
+	;.dw mainScripts.ancientTombScript_retractWallWhenTrigger0Active
+	;.dw mainScripts.ancientTombScript_spawnDownStairsWhenEnemiesKilled
+	;.dw mainScripts.ancientTombScript_spawnVerticalBridgeWhenTorchLit
 @dungeon9:
 @dungeona:
 @dungeonb:
-	.dw mainScripts.dungeonScript_spawnChestOnTriggerBit0
-	.dw mainScripts.herosCaveScript_spawnChestWhen4TriggersActive
-	.dw mainScripts.herosCaveScript_spawnBridgeWhenTriggerPressed
-	.dw mainScripts.herosCaveScript_spawnNorthStairsWhenEnemiesKilled
+	;.dw mainScripts.dungeonScript_spawnChestOnTriggerBit0
+	;.dw mainScripts.herosCaveScript_spawnChestWhen4TriggersActive
+	;.dw mainScripts.herosCaveScript_spawnBridgeWhenTriggerPressed
+	;.dw mainScripts.herosCaveScript_spawnNorthStairsWhenEnemiesKilled
 @dungeonc:
 	.dw mainScripts.dungeonScript_bossDeath
 	.dw mainScripts.mermaidsCaveScript_spawnBridgeWhenOrbHit

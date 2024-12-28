@@ -145,7 +145,7 @@ treasureObjectData03:
 
 treasureObjectData05:
 	m_BeginTreasureSubids TREASURE_SWORD
-	m_TreasureSubid $09, $01, $1c, $10, TREASURE_OBJECT_SWORD_00
+	m_TreasureSubid $39, $01, $1c, $10, TREASURE_OBJECT_SWORD_00
 	m_TreasureSubid $09, $02, $1d, $11, TREASURE_OBJECT_SWORD_01
 	m_TreasureSubid $09, $03, $1e, $12, TREASURE_OBJECT_SWORD_02
 	m_TreasureSubid $03, $01, $ff, $10, TREASURE_OBJECT_SWORD_03
@@ -172,7 +172,7 @@ treasureObjectData0c:
 
 treasureObjectData0d:
 	m_BeginTreasureSubids TREASURE_BOMBCHUS
-	m_TreasureSubid $0a, $10, $32, $24, TREASURE_OBJECT_BOMBCHUS_00
+	m_TreasureSubid $32, $10, $32, $24, TREASURE_OBJECT_BOMBCHUS_00
 	m_TreasureSubid $30, $10, $32, $24, TREASURE_OBJECT_BOMBCHUS_01
 	m_TreasureSubid $02, $10, $32, $24, TREASURE_OBJECT_BOMBCHUS_02
 
@@ -194,7 +194,7 @@ treasureObjectData13:
 
 treasureObjectData15:
 	m_BeginTreasureSubids TREASURE_SHOVEL
-	m_TreasureSubid $0a, $00, $25, $1b, TREASURE_OBJECT_SHOVEL_00
+	m_TreasureSubid $3a, $00, $25, $1b, TREASURE_OBJECT_SHOVEL_00
 	m_TreasureSubid $0a, $00, $74, $1b, TREASURE_OBJECT_SHOVEL_01
 	m_TreasureSubid $0a, $00, $25, $1b, TREASURE_OBJECT_SHOVEL_02
 

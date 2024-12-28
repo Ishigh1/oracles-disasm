@@ -611,10 +611,11 @@ m_section_free Enemy_Code_Bank0e NAMESPACE bank0e
 	.include "code/objectMovementScript.s"
 
 	.include "object_code/ages/enemies/bari.s"
+	.include "object_code/ages/enemies/magunesu.s"
 	.include "object_code/ages/enemies/giantGhiniChild.s"
 	.include "object_code/ages/enemies/shadowHagBug.s"
 	.include "object_code/ages/enemies/colorChangingGel.s"
-	.include "object_code/ages/enemies/ambiGuard.s"
+	; Disabled to free up space for Magunesu .include "object_code/ages/enemies/ambiGuard.s"
 	.include "object_code/ages/enemies/candle.s"
 	.include "object_code/ages/enemies/kingMoblinMinion.s"
 	.include "object_code/ages/enemies/veranPossessionBoss.s"

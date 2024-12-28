@@ -74,7 +74,7 @@
 .define ENEMY_SHADOW_HAG_BUG $42
 
 ;;
-.define ENEMY_STUB_46 $46
+.define ENEMY_MAGUNESU $46
 
 ;;
 ; Enemies in floor-tile-changing puzzles in Ages only.

@@ -37,7 +37,7 @@ itemData:
 	.db $00 $00 $00 ; $1c: ITEM_1c
 	.db $00 $00 $00 ; $1d: ITEM_MINECART_COLLISION
 	.db $00 $52 $08 ; $1e: ITEM_FOOLS_ORE
-	.db $00 $00 $00 ; $1f: ITEM_1f
+	.db $e2 $00 $02 ; $1f: ITEM_MAGNET_BALL
 	.db $78 $12 $02 ; $20: ITEM_EMBER_SEED
 	.db $78 $14 $03 ; $21: ITEM_SCENT_SEED
 	.db $78 $16 $01 ; $22: ITEM_PEGASUS_SEED
@@ -47,6 +47,6 @@ itemData:
 	.db $00 $1e $00 ; $26: ITEM_26
 	.db $00 $38 $0c ; $27: ITEM_SWORD_BEAM
 	.db $00 $00 $00 ; $28: ITEM_28
-	.db $72 $0a $02 ; $29: ITEM_29
+	.db $e2 $00 $02 ; $29: ITEM_29
 	.db $00 $28 $09 ; $2a: ITEM_RICKY_TORNADO
 	; Item $2b (dimitri mouth) exists, but it's invisible, so this doesn't matter.

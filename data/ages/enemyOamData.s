@@ -4154,3 +4154,53 @@ enemyOamData4fe9a:
 	.db $18 $13 $52 $20
 	.db $18 $0b $54 $20
 
+
+enemyOamData492bb:
+	.db $02
+	.db $08 $00 $00 $00
+	.db $08 $08 $02 $00
+
+enemyOamData492cd:
+	.db $02
+	.db $08 $00 $08 $00
+	.db $08 $08 $0a $00
+
+enemyOamData492f1:
+	.db $02
+	.db $08 $00 $0a $20
+	.db $08 $08 $08 $20
+
+enemyOamData492c4:
+	.db $02
+	.db $08 $00 $04 $00
+	.db $08 $08 $06 $00
+
+enemyOamData492d6:
+	.db $02
+	.db $08 $00 $0c $00
+	.db $08 $08 $0e $00
+
+enemyOamData4946b:
+	.db $02
+	.db $08 $00 $14 $00
+	.db $08 $08 $0a $00
+
+enemyOamData49474:
+	.db $02
+	.db $08 $00 $0a $20
+	.db $08 $08 $14 $20
+
+enemyOamData493c0:
+	.db $02
+	.db $08 $00 $10 $00
+	.db $08 $08 $12 $00
+
+enemyOamData4947d:
+	.db $02
+	.db $08 $00 $16 $00
+	.db $08 $08 $16 $20
+
+enemyOamData49486:
+	.db $02
+	.db $08 $00 $18 $03
+	.db $08 $08 $18 $20

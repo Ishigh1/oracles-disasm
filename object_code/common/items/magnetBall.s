@@ -12,7 +12,6 @@
 ;   var34: horizontal friction
 itemCode29:
 
-.ifdef ROM_SEASONS
 	ld e,Item.state
 	ld a,(de)
 	rst_jumpTable
@@ -42,10 +41,10 @@ itemCode29:
 
 	; Room with the wall flame shooters
 	ld a,(wActiveGroup)
-	cp >ROOM_SEASONS_494
+	cp >ROOM_AGES_494
 	jr nz,@mainState
 	ld a,(wActiveRoom)
-	cp <ROOM_SEASONS_494
+	cp <ROOM_AGES_494
 	jr nz,@mainState
 	ld e,Item.var03
 	ld a,$01
@@ -705,4 +704,3 @@ itemCode29:
 	ld b,SPEED_080
 	jp updateLinkPositionGivenVelocity
 
-.endif

@@ -215,6 +215,7 @@ flyingTile_layoutData:
 	.dw @subid0
 	.dw @subid1
 	.dw @subid2
+	.dw @subid3
 
 ; First byte is value for var03 (subid for spawned children).
 ; All remaining bytes are positions at which to spawn flying tiles.
@@ -237,6 +238,13 @@ flyingTile_layoutData:
 	.db $80
 	.db $67 $54 $5a $47 $34 $3a $76 $38
 	.db $78 $36 $58 $45 $49 $56 $65 $69
+	.db $00
+
+@subid3:
+	.db $80
+	.db $17 $5b $97 $53 $1b $6b $96 $43
+	.db $18 $9b $98 $63 $16 $4b $93 $13
+	.db $14 $2b $9a $83 $23 $1a $8b $94
 	.db $00
 .else
 flyingTile_layoutData:

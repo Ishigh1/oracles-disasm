@@ -18549,17 +18549,13 @@ groups:
   - name: TX_3902
     index: 0x02
     text: |-
-      Paths open when
-      ancient words
-      are mastered.
+      Magunesu dislike shovels.
+      They can't move while shooting, and can be stunlocked in tight corridors!
 
   - name: TX_3903
     index: 0x03
-    text: |-
-      With the blue
-      wing, soar over
-      the colored
-      heights.
+    text: >-
+      Make sure to not let go of the button for too long!
 
   - name:
     - TX_3904
