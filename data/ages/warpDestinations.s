@@ -426,8 +426,10 @@ group4WarpDestTable:
 	m_WarpDest $11 $87 $0 $1
 	m_WarpDest $11 $87 $0 $1
 	m_WarpDest $12 $7d $0 $1
-	m_WarpDest $18 $87 $0 $1
-	m_WarpDest $1f $00 $0 $1
+	m_WarpDest $18 $17 $0 $1
+	m_WarpDest $1f $87 $0 $1
+	m_WarpDest $23 $00 $0 $1
+	m_WarpDest $22 $97 $0 $1
 
 group5WarpDestTable:
 	m_WarpDest $26 $ff $9 $3

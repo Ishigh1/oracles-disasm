@@ -183,6 +183,9 @@
 	m_GfxData spr_headthwomp_3 ; $0b251e
 	m_GfxData spr_shadowhag_1 ; $0b253a
 	m_GfxData spr_shadowhag_2 ; $0b26ee
+	m_GfxData spr_digdogger_1 ; $0adf14
+	m_GfxData spr_digdogger_2 ; $0ae0ab
+	m_GfxData spr_digdogger_3 ; $0ae25c
 	m_GfxData spr_smog_1 ; $0b2823
 	m_GfxData spr_smog_2 ; $0b2950
 	m_GfxData spr_smog_3 ; $0b2ad5

@@ -2693,7 +2693,7 @@ group4Map16ObjectData:
 
 group4Map17ObjectData:
 	obj_Pointer group4Map17EnemyObjectData
-	obj_Interaction $20 $05
+	obj_Interaction $21 $1c $58 $78
 	obj_End
 
 group4Map18ObjectData:
@@ -2702,6 +2702,7 @@ group4Map18ObjectData:
 	obj_ItemDrop 0 $05 $53
 	obj_Part $13 $02 $57
 	obj_ItemDrop 0 $01 $67
+	obj_Interaction $21 $1b $1d $44
 	obj_End
 
 group4Map19ObjectData:
@@ -2751,6 +2752,9 @@ group4Map1fObjectData:
 	obj_Pointer group4Map1fEnemyObjectData
 	obj_Interaction $12 $05 $38 $78
 	obj_ItemDrop $01 $0a $12
+	obj_ItemDrop     $0a $1c
+	obj_Interaction $21 $1b $97 $44
+	obj_Interaction $20 $07 $28 $78
 	obj_End
 
 group4Map20ObjectData:
@@ -2771,10 +2775,11 @@ group4Map21ObjectData:
 
 group4Map22ObjectData:
 .ifndef REGION_JP
-	obj_Interaction $1e $05 $5e $00
-	obj_Part $09 $80 $5b
 .endif
 	obj_Pointer group4Map22EnemyObjectData
+	obj_BeforeEvent group4Map22BeforeEventObjectData
+	obj_Interaction $20 $03 $58 $78
+	obj_Interaction $21 $1b $51 $44
 	obj_End
 
 group4Map23ObjectData:

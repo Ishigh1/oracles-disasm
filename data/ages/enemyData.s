@@ -24,7 +24,7 @@ enemyData:
 	/* 0x0e */ m_EnemyData $9e $93 enemy0eSubidData
 	/* 0x0f */ m_EnemyData $d3 $10 $0e $75
 	/* 0x10 */ m_EnemyData $9b $14 $0a $06
-	/* 0x11 */ m_EnemyData $c4 $95 $2d $39
+	/* 0x11 */ m_EnemyData $e5 $95 $16 $67
 	/* 0x12 */ m_EnemyData $9b $96 $17 $20
 	/* 0x13 */ m_EnemyData $9b $97 $03 $0a
 	/* 0x14 */ m_EnemyData $8c $98 $0a $14
@@ -130,7 +130,7 @@ enemyData:
 	/* 0x78 */ m_EnemyData $bc $c9 $24 $30
 	/* 0x79 */ m_EnemyData $bf $ca $25 $00
 	/* 0x7a */ m_EnemyData $c2 $4b $26 $30
-	/* 0x7b */ m_EnemyData $c4 $ed $27 $10
+	/* 0x7b */ m_EnemyData $e3 $8a enemy7bSubidData
 	/* 0x7c */ m_EnemyData $c5 $cd $28 $30
 	/* 0x7d */ m_EnemyData $c8 $ce $29 $20
 	/* 0x7e */ m_EnemyData $cb $4f $2a $10
@@ -254,6 +254,12 @@ enemy73SubidData:
 	m_EnemySubidData $32 $30
 	m_EnemySubidDataEnd
 
+enemy7bSubidData:
+	m_EnemySubidData $00 $60
+	m_EnemySubidData $3b $10
+	m_EnemySubidData $45 $60
+	m_EnemySubidDataEnd
+
 
 ; Data format:
 ;   b0: value for Enemy.collisionRadiusY
@@ -331,3 +337,4 @@ extraEnemyData:
 	.db $04 $06 $f8 $06 ; 0x42
 	.db $04 $02 $fc $01 ; 0x43
 	.db $02 $02 $00 $02 ; 0x44
+	.db $0a $0a $fc $04 ; 0x45

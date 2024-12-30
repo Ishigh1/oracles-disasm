@@ -36,7 +36,10 @@
 ; @subid_01{Right of eyesoar}
 ; @subid_02{Below eyesoar}
 ; @subid_03{Left of eyesoar}
-.define ENEMY_EYESOAR_CHILD $11
+;.define ENEMY_EYESOAR_CHILD $11
+
+;;
+.define ENEMY_MINI_DIGDOGGER $11
 
 ;;
 ; Used by ENEMY_VERAN_FINAL_FORM. Flies at you, then despawns when off-screen.
@@ -203,7 +206,10 @@
 ;;
 ; @subid_00{Spawner; spawns subid 1 and 4 children}
 ; @subid_01{The main part of the boss}
-.define ENEMY_EYESOAR $7b
+;.define ENEMY_EYESOAR $7b
+
+;;
+.define ENEMY_DIGDOGGER $7b
 
 ;;
 ; Spawned by INTERAC_SMOG.

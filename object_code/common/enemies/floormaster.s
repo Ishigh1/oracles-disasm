@@ -35,7 +35,7 @@ enemyCode35:
 	; Grabbed Link
 	ld h,d
 	ld l,Enemy.state
-	ld (hl),$0c
+	ld (hl),LINK_STATE_GRABBED_BY_WALLMASTER
 	ld l,Enemy.zh
 	ld (hl),$fb
 

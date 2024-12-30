@@ -53,8 +53,9 @@ makuPathScript_spawnUpStairsWhen2TorchesLit:
 ; The Pit Custom Scripts
 spiritsGraveScript_startArenaTrigger:
 	checkflagset $00, wMagnetGloveState
-	playsound SND_RUMBLE2
-	shakescreen 20
+	playsound SND_RUMBLE
+	shakescreen 10
+	wait 20
 	spawnenemy ENEMY_FLYING_TILE, $03, $50, $78
 	spawnenemy ENEMY_MAGUNESU, $00, $58, $38
 	spawnenemy ENEMY_MAGUNESU, $00, $18, $78
@@ -146,6 +147,8 @@ spiritsGraveScript_spawnShovelPlatform:
 	setcoords $78, $68
 	settilehere $ef
 	setcoords $38, $78
+	playsound SND_POOF
+	createpuff
 	settilehere $f1
 	setcoords $48, $78
 	settilehere $ef
@@ -183,7 +186,11 @@ spiritsGraveScript_spawnShovelPlatform:
 	playsound SND_DING
 	wait 30
 	setmusic MUS_CELESTIAL_TOWER
-	
+	scriptend
+
+dungeonScript_refillChest:
+	settilehere TILEINDEX_CHEST
+	scriptend
 
 ; Create the miniboss portal when it's killed.
 dungeonScript_minibossDeath:
@@ -278,16 +285,16 @@ skullDungeonScript_spawnChestWhenOrb1Hit:
 ;	scriptjump spawnChestAfterPuff
 
 
-mermaidsCaveScript_spawnBridgeWhenOrbHit:
-	stopifroomflag40set
-	checkflagset $00, wToggleBlocksState
-	asm15 scriptHelp.mermaidsCave_spawnBridge_room38
-	scriptend
+;mermaidsCaveScript_spawnBridgeWhenOrbHit:
+;	stopifroomflag40set
+;	checkflagset $00, wToggleBlocksState
+;	asm15 scriptHelp.mermaidsCave_spawnBridge_room38
+;	scriptend
 
-mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1:
-	wait 1
-	asm15 scriptHelp.setTrigger2IfTriggers0And1Set
-	scriptjump mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1
+;mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1:
+;	wait 1
+;	asm15 scriptHelp.setTrigger2IfTriggers0And1Set
+;	scriptjump mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1
 
 
 ; Creates a stair tile facing south when trigger 0 is activated
@@ -325,7 +332,7 @@ mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1:
 ;	checknoenemies
 ;	playsound SND_SOLVEPUZZLE
 ;	asm15 objectCreatePuff
-;	settilehere $45
+;	settilehere $44
 ;	orroomflag $80
 ;	scriptend
 
@@ -360,25 +367,25 @@ mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1:
 
 
 moonlitGrottoScript_brokeCrystal:
-	disableinput
-	wait 30
-	playsound SNDCTRL_STOPSFX
-	shakescreen 180
-	playsound SND_RUMBLE2
-	wait 180
-	showtext TX_1200
-	orroomflag $40
-	setstate $ff
+;	disableinput
+;	wait 30
+;	playsound SNDCTRL_STOPSFX
+;	shakescreen 180
+;	playsound SND_RUMBLE2
+;	wait 180
+;	showtext TX_1200
+;	orroomflag $40
+;	setstate $ff
 
 moonlitGrottoScript_brokeAllCrystals:
-	wait 30
-	shakescreen 100
-	playsound SND_BIG_EXPLOSION
-	wait 90
-	playsound SND_SOLVEPUZZLE
-	wait 30
-	showtext TX_1201
-	setglobalflag GLOBALFLAG_D3_CRYSTALS
-	enableinput
-	asm15 scriptHelp.moonlitGrotto_enableControlAfterBreakingCrystal
-	scriptend
+;	wait 30
+;	shakescreen 100
+;	playsound SND_BIG_EXPLOSION
+;	wait 90
+;	playsound SND_SOLVEPUZZLE
+;	wait 30
+;	showtext TX_1201
+;	setglobalflag GLOBALFLAG_D3_CRYSTALS
+;	enableinput
+;	asm15 scriptHelp.moonlitGrotto_enableControlAfterBreakingCrystal
+;	scriptend

@@ -112,7 +112,7 @@ enemyCodeTable:
 	.dw enemyCodeNil       ; 0x6d
 	.dw enemyCodeNil       ; 0x6e
 	.dw enemyCodeNil       ; 0x6f
-	.dw bank0f.enemyCode70 ; 0x70
+	.dw enemyCodeNil       ; 0x70 Giant Ghini Miniboss, commented out to free up space. Re-add this if you want to use them.
 	.dw bank0f.enemyCode71 ; 0x71
 	.dw bank0f.enemyCode72 ; 0x72
 	.dw bank0f.enemyCode73 ; 0x73
@@ -127,7 +127,7 @@ enemyCodeTable:
 	.dw bank0f.enemyCode7c ; 0x7c
 	.dw bank0f.enemyCode7d ; 0x7d
 	.dw bank0f.enemyCode7e ; 0x7e
-	.dw bank0f.enemyCode7f ; 0x7f
+	.dw enemyCodeNil       ; 0x7f King Moblin Miniboss, commented out to free up space. Re-add this if you want to use them.
 .else
 	.dw bank0f.enemyCode00
 	.dw bank0f.enemyCode01

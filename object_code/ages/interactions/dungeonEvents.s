@@ -32,15 +32,14 @@ interactionCode21:
 	.dw interaction21_subid18
 	.dw interaction21_subid19
 	.dw interaction21_subid1a
+	.dw interaction21_subid1b
+	.dw interaction21_subid1c
 
 ; Custom interaction for Pit Hack, Floor 11:
 ; Create a staircase at position Y which appears when [wActiveTriggers] == X, but which also
 ; disappears when the trigger is released.
 interaction21_subid1a:
 	call interactionDeleteAndRetIfEnabled02
-	call getThisRoomFlags
-	and ROOMFLAG_ITEM
-	jp nz,interactionDelete
 
 	ld e,Interaction.xh
 	ld a,(de)
@@ -85,6 +84,49 @@ interaction21_subid1a:
 	ld a,l
 	call setTile
 	jp createPuffAt
+
+; On all enemies killed, set tile at Y coord to Tile of X Coord, and play jingle. Custom Interaction for The Pit Hack.
+interaction21_subid1b:
+	call interactionDeleteAndRetIfEnabled02
+	ld a,(wNumEnemies)
+	or a
+	ret nz
+	ld e,Interaction.yh
+	ld a,(de)
+	ld c,a
+	ld b,>wRoomLayout
+	ld a,(bc)
+	ld h,d
+	ld l,Interaction.xh
+	cp (hl)
+	ret z
+
+	ld a,(hl)
+	call setTile
+	call createPuffAt
+	ld a,SND_SOLVEPUZZLE
+	jp playSound
+
+; Spawn Dungeon Script if link is in arena bounds
+; TODO: De-hardcode this by making it pull from interaction coordinates
+interaction21_subid1c:
+	call interactionDeleteAndRetIfEnabled02
+	ld a,(w1Link.xh)
+	cp a,$50
+	ret c
+	cp a,$a0
+	ret nc
+	ld a,(w1Link.yh)
+	cp a,$30
+	ret c
+	cp a,$80
+	ret nc
+	call getFreeInteractionSlot
+	ret nz
+	ld (hl),INTERAC_DUNGEON_SCRIPT
+	inc l
+	ld (hl),$05
+	jp interactionDelete
 
 ; D2: Verify a 2x2 floor pattern
 interaction21_subid01:
@@ -307,33 +349,33 @@ interaction21_subid0a:
 
 ; Unused? A chest appears when 4 torches in a diamond formation are lit?
 interaction21_subid0b:
-	call checkInteractionState
-	jr nz,@initialized
-
-	call getThisRoomFlags
-	and $80
-	jp nz,interactionDelete
-
-	ld hl,objectData.objectData77d4
-	call parseGivenObjectData
-
-	ldbc $4b,$35
-	call makeTorchAtPositionTemporarilyLightable
-	jp nz,interactionDelete
-
-	ldbc $4b,$53
-	call makeTorchAtPositionTemporarilyLightable
-	jp nz,interactionDelete
-
-	ldbc $4b,$57
-	call makeTorchAtPositionTemporarilyLightable
-	jp nz,interactionDelete
-
-	ldbc $4b,$75
-	call makeTorchAtPositionTemporarilyLightable
-	jp nz,interactionDelete
-
-	call interactionIncState
+;	call checkInteractionState
+;	jr nz,@initialized
+;
+;	call getThisRoomFlags
+;	and $80
+;	jp nz,interactionDelete
+;
+;	ld hl,objectData.objectData77d4
+;	call parseGivenObjectData
+;
+;	ldbc $4b,$35
+;	call makeTorchAtPositionTemporarilyLightable
+;	jp nz,interactionDelete
+;
+;	ldbc $4b,$53
+;	call makeTorchAtPositionTemporarilyLightable
+;	jp nz,interactionDelete
+;
+;	ldbc $4b,$57
+;	call makeTorchAtPositionTemporarilyLightable
+;	jp nz,interactionDelete
+;
+;	ldbc $4b,$75
+;	call makeTorchAtPositionTemporarilyLightable
+;	jp nz,interactionDelete
+;
+;	call interactionIncState
 
 @initialized:
 	ld a,(wNumTorchesLit)

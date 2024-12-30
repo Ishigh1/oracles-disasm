@@ -553,7 +553,8 @@ m_section_free Enemy_Code_Bank0d NAMESPACE bank0d
 	.include "object_code/common/enemies/thwomp.s"
 
 	.include "object_code/ages/enemies/veranSpider.s"
-	.include "object_code/ages/enemies/eyesoarChild.s"
+	;.include "object_code/ages/enemies/eyesoarChild.s"
+	.include "object_code/ages/enemies/miniDigdogger.s"
 	.include "object_code/common/enemies/ironMask.s"
 	.include "object_code/ages/enemies/veranChildBee.s"
 	.include "object_code/ages/enemies/anglerFishBubble.s"
@@ -636,7 +637,7 @@ m_section_free Enemy_Code_Bank0f NAMESPACE bank0f
 	.include "object_code/common/enemies/commonCode.s"
 	.include "object_code/common/enemies/commonBossCode.s"
 
-	.include "object_code/ages/enemies/giantGhini.s"
+	;.include "object_code/ages/enemies/giantGhini.s"
 	.include "object_code/ages/enemies/swoop.s"
 	.include "object_code/ages/enemies/subterror.s"
 	.include "object_code/ages/enemies/armosWarrior.s"
@@ -647,11 +648,13 @@ m_section_free Enemy_Code_Bank0f NAMESPACE bank0f
 	.include "object_code/ages/enemies/pumpkinHead.s"
 	.include "object_code/ages/enemies/headThwomp.s"
 	.include "object_code/ages/enemies/shadowHag.s"
-	.include "object_code/ages/enemies/eyesoar.s"
+	;.include "object_code/ages/enemies/eyesoar.s"
 	.include "object_code/ages/enemies/smog.s"
 	.include "object_code/ages/enemies/octogon.s"
 	.include "object_code/ages/enemies/plasmarine.s"
-	.include "object_code/ages/enemies/kingMoblin.s"
+	;.include "object_code/ages/enemies/kingMoblin.s"
+
+	.include "object_code/ages/enemies/digdogger.s"
 
 .ends
 

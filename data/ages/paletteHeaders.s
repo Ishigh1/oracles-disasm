@@ -506,7 +506,7 @@ m_PaletteHeaderStart $83, PALH_83
 	m_PaletteHeaderEnd
 
 m_PaletteHeaderStart $84, PALH_84
-	m_PaletteHeaderSpr 6, 1, paletteData4970
+	m_PaletteHeaderSpr 6, 1, paletteData48a8
 	m_PaletteHeaderEnd
 
 m_PaletteHeaderStart $85, PALH_85

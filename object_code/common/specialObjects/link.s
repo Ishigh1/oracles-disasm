@@ -1874,7 +1874,7 @@ linkState0c:
 	ldi (hl),a
 
 	; wWarpDestPos
-	ld a,$87
+	ld a,(wDungeonData6)
 	ldi (hl),a
 
 	; wWarpDestTransition2

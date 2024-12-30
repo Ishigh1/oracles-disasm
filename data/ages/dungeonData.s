@@ -26,12 +26,13 @@ dungeonDataTable:
 ;    This only affects how the map names the floor.
 ; 5: Bitset of floors that are unlocked on the map when you get the compass.
 ;    Again, this only affects the map.
-; 6-7: Unused?
+; 6: NOW USED FOR PIT ROMHACK! The position in the room wallmasters send you to.
+; 7: Unused?
 
 dungeonData00:
 	m_DungeonData >wGroup4RoomFlags, $04, dungeon00Layout, $01, $03, $00, $01, $00
 dungeonData01:
-	m_DungeonData >wGroup4RoomFlags, $13, dungeon01Layout, $02, $02, $03, $00, $00
+	m_DungeonData >wGroup4RoomFlags, $13, dungeon01Layout, $02, $02, $03, $57, $00
 dungeonData02:
 	m_DungeonData >wGroup4RoomFlags, $46, dungeon02Layout, $02, $02, $01, $00, $00
 dungeonData03:

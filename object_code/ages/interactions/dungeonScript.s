@@ -75,6 +75,7 @@ interactionCode20:
 	.dw mainScripts.spiritsGraveScript_stairsToBraceletRoom
 	.dw mainScripts.spiritsGraveScript_startArenaTrigger
 	.dw mainScripts.spiritsGraveScript_spawnShovelPlatform
+	.dw mainScripts.dungeonScript_refillChest
 @dungeon2:
 	.dw mainScripts.wingDungeonScript_spawnFeather
 	.dw mainScripts.wingDungeonScript_spawn30Rupees
@@ -113,6 +114,6 @@ interactionCode20:
 	;.dw mainScripts.herosCaveScript_spawnBridgeWhenTriggerPressed
 	;.dw mainScripts.herosCaveScript_spawnNorthStairsWhenEnemiesKilled
 @dungeonc:
-	.dw mainScripts.dungeonScript_bossDeath
-	.dw mainScripts.mermaidsCaveScript_spawnBridgeWhenOrbHit
-	.dw mainScripts.mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1
+	;.dw mainScripts.dungeonScript_bossDeath
+	;.dw mainScripts.mermaidsCaveScript_spawnBridgeWhenOrbHit
+	;.dw mainScripts.mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1

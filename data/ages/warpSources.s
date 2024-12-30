@@ -551,6 +551,14 @@ group4WarpSources:
 	m_PointerWarp  $14 group4Room14WarpSources
 	m_PointerWarp  $17 group4Room17WarpSources
 	m_PointerWarp  $18 group4Room18WarpSources
+	m_PointerWarp  $22 group4Room22WarpSources
+	m_PointerWarp  $1f group4Room1fWarpSources
+	m_WarpListEndNoDefault
+group4Room1fWarpSources:
+	m_PositionWarp $97 $5e $4 $2
+	m_WarpListEndNoDefault
+group4Room22WarpSources:
+	m_PositionWarp $51 $5d $4 $2
 	m_WarpListEndNoDefault
 group4Room18WarpSources:
 	m_PositionWarp $1d $5c $4 $2
