@@ -107,6 +107,7 @@ breakableTileCollisionTable:
 	.db $15 $29
 	.db $db $2d
 	.db $24 $2c
+	.db $14 $34
 	.db $68 $2e
 	.db $69 $2f
 	.db $00
@@ -194,3 +195,5 @@ breakableTileModes:
 	m_BreakableTileData %10100100 %10000000 %0000 $0 $06 $01 ; $31
 	m_BreakableTileData %01111100 %00000001 %1101 $0 $1f $00 ; $32
 	m_BreakableTileData %00000010 %00000000 %0000 $0 $ca $44 ; $33
+	m_BreakableTileData %00000010 %00000000 %0000 $0 $0a $9f ; $34
+

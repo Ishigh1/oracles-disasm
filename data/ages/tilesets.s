@@ -394,7 +394,7 @@ tilesetData:
 	.db $21, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_SPIRITS_GRAVE
-	.db PALH_TILESET_SPIRITS_GRAVE
+	.db PALH_TILESET_CROWN_DUNGEON
 	.db $21, $04, $10
 
 	; 0x37
@@ -758,4 +758,4 @@ tilesetData:
 	.db $0f $01 $00 $00 $00 $00 $00 $00 ; Tileset 0x7c
 	.db $0f $01 $00 $00 $00 $00 $00 $00 ; Tileset 0x7d
 	.db $0f $01 $00 $00 $00 $00 $00 $00 ; Tileset 0x7e
-	.db $0f $01 $00 $00 $00 $00 $00 $00 ; Tileset 0x7f
+	.db $0f $01 $00 $00 PALH_00 $00 $00 $00 ; Tileset 0x7f

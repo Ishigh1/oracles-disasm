@@ -18549,9 +18549,11 @@ groups:
 
   - name: TX_3901
     index: 0x01
-    text: |-
+    text: >-
       The red stairs shall
       take you home.
+      The blue stairs shall
+      let you try again.
 
   - name: TX_3902
     index: 0x02

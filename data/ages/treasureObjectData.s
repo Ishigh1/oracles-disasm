@@ -294,7 +294,7 @@ treasureObjectData2d:
 	m_TreasureSubid $49, $ff, $54, $0e, TREASURE_OBJECT_RING_02
 	m_TreasureSubid $59, $ff, $54, $0e, TREASURE_OBJECT_RING_03
 	m_TreasureSubid $2a, $28, $FF, $0e, TREASURE_OBJECT_RING_04
-	m_TreasureSubid $38, $10, $54, $0e, TREASURE_OBJECT_RING_05
+	m_TreasureSubid $39, $11, $FF, $0e, TREASURE_OBJECT_RING_05
 	m_TreasureSubid $38, $10, $54, $0e, TREASURE_OBJECT_RING_06
 	m_TreasureSubid $38, $0c, $54, $0e, TREASURE_OBJECT_RING_07
 	m_TreasureSubid $38, $0d, $54, $0e, TREASURE_OBJECT_RING_08

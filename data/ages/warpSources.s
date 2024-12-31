@@ -499,7 +499,6 @@ group4WarpSources:
 	m_StandardWarp $0 $09 $00 $6 $2
 	m_StandardWarp $0 $07 $1d $1 $4
 	m_StandardWarp $0 $01 $26 $0 $4
-	m_StandardWarp $0 $1b $01 $6 $2
 	m_StandardWarp $0 $32 $02 $6 $2
 	m_PointerWarp     $37 warpSource7b8e
 	m_StandardWarp $0 $47 $03 $6 $2
@@ -554,6 +553,11 @@ group4WarpSources:
 	m_PointerWarp  $22 group4Room22WarpSources
 	m_PointerWarp  $1f group4Room1fWarpSources
 	m_PointerWarp  $2c group4Room2cWarpSources
+	m_PointerWarp  $1b group4Room1bWarpSources
+	m_WarpListEndNoDefault
+group4Room1bWarpSources:
+	m_PositionWarp $82 $60 $4 $2
+	m_PositionWarp $12 $61 $4 $2
 	m_WarpListEndNoDefault
 group4Room2cWarpSources:
 	m_PositionWarp $51 $5f $4 $2
@@ -579,7 +583,7 @@ group4Room13WarpSources:
 	m_PositionWarp $2b $59 $4 $2
 	m_WarpListEndNoDefault
 group4Room12WarpSources:
-	m_PositionWarp $7d $56 $0 $2
+	m_PositionWarp $9b $62 $4 $2
 	m_PositionWarp $28 $58 $4 $2
 	m_PositionWarp $11 $14 $6 $2
 	m_WarpListEndNoDefault
