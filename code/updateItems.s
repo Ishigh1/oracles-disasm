@@ -104,7 +104,7 @@ updateItems:
 	.dw itemCode22 ; 0x22
 	.dw itemCode23 ; 0x23
 	.dw itemCode24 ; 0x24
-	.dw itemDelete ; 0x25
+	.dw itemCode25 ; 0x25
 	.dw itemDelete ; 0x26
 	.dw itemCode27 ; 0x27
 	.dw itemCode28 ; 0x28

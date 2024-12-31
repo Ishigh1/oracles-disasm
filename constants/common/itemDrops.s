@@ -12,7 +12,7 @@
 	ITEM_DROP_PEGASUS_SEEDS           db ; $07
 	ITEM_DROP_GALE_SEEDS              db ; $08
 	ITEM_DROP_MYSTERY_SEEDS           db ; $09
-	ITEM_DROP_0a                      db ; $0a
+	ITEM_DROP_SNOWFLAKE_SEEDS         db ; $0a
 	ITEM_DROP_0b                      db ; $0b
 	ITEM_DROP_1_ORE_CHUNK             db ; $0c
 	ITEM_DROP_10_ORE_CHUNKS           db ; $0d

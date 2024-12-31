@@ -4,12 +4,14 @@
 ; ITEM_PEGASUS_SEED
 ; ITEM_GALE_SEED
 ; ITEM_MYSTERY_SEED
+; ITEM_SNOWFLAKE_SEED
 ;
 itemCode20:
 itemCode21:
 itemCode22:
 itemCode23:
 itemCode24:
+itemCode25:
 	ld e,Item.state
 	ld a,(de)
 	rst_jumpTable
@@ -154,7 +156,7 @@ seedItemState1:
 
 	; Check bit 4 of Item.var2a
 	bit 4,a
-	jr z,@seedCollidedWithEnemy
+	jp z,@seedCollidedWithEnemy
 
 	; [Item.var2a] = 0
 	ld (hl),$00
@@ -199,6 +201,10 @@ seedItemState1:
 	jp objectCheckWithinScreenBoundary
 
 @satchelUpdate:
+	ld e,Item.id
+	ld a,(de)
+	cp ITEM_SNOWFLAKE_SEED
+	jr z, @@ground
 	; Set speed to 0 if landed in water?
 	ld h,d
 	ld l,Item.var3b
@@ -217,7 +223,7 @@ seedItemState1:
 	ret z
 
 ; Landed on ground
-
+@@ground:
 	ld a,SND_BOMB_LAND
 	call playSound
 	call itemAnimate
@@ -230,6 +236,7 @@ seedItemState1:
 	.dw seedItemDelete
 	.dw @galeLanded
 	.dw @mysteryStandard
+	.dw @snowflakeStandard
 
 
 ; This activates the seed on collision with something. The behaviour is slightly different
@@ -245,6 +252,7 @@ seedItemState1:
 	.dw @scentOrPegasusCollided
 	.dw @galeCollidedWithWall
 	.dw @mysteryStandard
+	.dw @snowflakeStandard
 
 
 ; Behaviour on collision with enemy; again slightly different
@@ -262,7 +270,7 @@ seedItemState1:
 	.dw @scentOrPegasusCollided
 	.dw @galeCollidedWithEnemy
 	.dw @mysteryCollidedWithEnemy
-
+	.dw @snowflakeStandard ; TODO : get a better idea
 
 @emberStandard:
 @galeCollidedWithEnemy:
@@ -271,7 +279,7 @@ seedItemState1:
 
 
 @scentLanded:
-	ld a,$27
+	ld a,$28
 	call @loadGfxVarsWithIndex
 	ld a,$02
 	call itemSetState
@@ -292,7 +300,7 @@ seedItemState1:
 @galeLanded:
 	call @breakTileWithGaleSeed
 
-	ld a,$25
+	ld a,$26
 	call @loadGfxVarsWithIndex
 	ld a,$02
 	call itemSetState
@@ -317,7 +325,7 @@ seedItemState1:
 
 @galeCollidedWithWall:
 	call @breakTileWithGaleSeed
-	ld a,$26
+	ld a,$27
 	call @loadGfxVarsWithIndex
 	ld a,$03
 	call itemSetState
@@ -348,6 +356,19 @@ seedItemState1:
 	jp @seedCollidedWithEnemy
 
 
+@snowflakeStandard:
+	call objectGetTileAtPosition
+	cp a,TILEINDEX_PUDDLE
+	ld c,TILEINDEX_WATER
+	jr z,@make_ice
+	cp a,TILEINDEX_WATER
+	ld c,TILEINDEX_PUDDLE
+	jr nz,@mysteryStandard
+@make_ice:
+	call objectGetShortPosition
+	ld c,a
+	ld a,e
+	call setTile
 @mysteryStandard:
 	ld e,Item.collisionType
 	xor a
@@ -397,6 +418,7 @@ seedItemState1:
 	.db $09 $18 $00 SND_LIGHTTORCH
 	.db $09 $28 $32 SND_GALE_SEED
 	.db $08 $18 $00 SND_MYSTERY_SEED
+	.db $09 $18 $00 SND_MAGIC_POWDER
 
 	.db $09 $28 $b4 SND_GALE_SEED
 	.db $09 $28 $1e SND_GALE_SEED
@@ -430,6 +452,7 @@ seedItemState3:
 	.dw seedUpdateAnimation
 	.dw seedUpdateAnimation
 	.dw galeSeedUpdateAnimationAndCounter
+	.dw seedUpdateAnimation
 	.dw seedUpdateAnimation
 
 emberSeedBurn:
@@ -493,6 +516,7 @@ seedItemState2:
 	.dw scentSeedSmell
 	.dw seedUpdateAnimation
 	.dw galeSeedTryToWarpLink
+	.dw seedUpdateAnimation
 	.dw seedUpdateAnimation
 
 ;;

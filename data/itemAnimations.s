@@ -167,10 +167,10 @@ item20Animations:
 item21Animations:
 item22Animations:
 item24Animations:
+item25Animations:
 	.dw itemAnimation1e829
 	.dw itemAnimation1e838
 item23Animations:
-item25Animations:
 item26Animations:
 	.dw itemAnimation1e840
 item28Animations:

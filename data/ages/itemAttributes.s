@@ -44,7 +44,7 @@ itemAttributes:
 	.db $9d $44 $ff $00 ; $22: ITEM_PEGASUS_SEED
 	.db $9e $44 $ff $00 ; $23: ITEM_GALE_SEED
 	.db $9a $44 $fe $00 ; $24: ITEM_MYSTERY_SEED
-	.db $92 $00 $00 $00 ; $25: ITEM_25
+	.db $9b $44 $fe $00 ; $25: ITEM_SNOWFLAKE_SEED
 	.db $92 $00 $00 $00 ; $26: ITEM_26
 	.db $99 $22 $fe $00 ; $27: ITEM_SWORD_BEAM
 	.db $99 $aa $fc $00 ; $28: ITEM_28

@@ -106,7 +106,8 @@ treasureDisplayData_standard:
 	.db TREASURE_PEGASUS_SEEDS,      $80, $00, $85, $00, $ff, <TX_0934 ; TREASURE_PEGASUS_SEEDS (0x22)
 	.db TREASURE_GALE_SEEDS,         $80, $00, $86, $00, $ff, <TX_0935 ; TREASURE_GALE_SEEDS (0x23)
 	.db TREASURE_MYSTERY_SEEDS,      $80, $00, $87, $00, $ff, <TX_0936 ; TREASURE_MYSTERY_SEEDS (0x24)
-	.db $00,                         $3a, $00, $3b, $00, $ff, <TX_0942 ; TREASURE_TUNE_OF_ECHOES (0x25)
+	.db TREASURE_SNOWFLAKE_SEEDS,    $80, $00, $8c, $00, $ff, <TX_0900 ; TREASURE_SNOWFLAKE_SEEDS (0x25)
+	; .db $00,                         $3a, $00, $3b, $00, $ff, <TX_0942 ; TREASURE_TUNE_OF_ECHOES (0x25)
 	.db $00,                         $3c, $00, $3d, $00, $ff, <TX_0943 ; TREASURE_TUNE_OF_CURRENTS (0x26)
 	.db $00,                         $3e, $00, $3f, $00, $ff, <TX_0944 ; TREASURE_TUNE_OF_AGES (0x27)
 	.db TREASURE_RUPEES,             $00, $00, $00, $00, $ff, <TX_0900 ; TREASURE_RUPEES (0x28)
@@ -175,6 +176,7 @@ treasureDisplayData_satchel:
 	.db TREASURE_PEGASUS_SEEDS,      $80, $05, $85, $01, $01, <TX_092d ; Pegasus seeds
 	.db TREASURE_GALE_SEEDS,         $80, $05, $86, $01, $01, <TX_092d ; Gale seeds
 	.db TREASURE_MYSTERY_SEEDS,      $80, $05, $87, $00, $01, <TX_092d ; Mystery seeds
+	.db TREASURE_SNOWFLAKE_SEEDS,    $80, $05, $8c, $04, $01, <TX_092d ; Snowflake seeds
 
 treasureDisplayData_shooter:
 	.db TREASURE_EMBER_SEEDS,        $8a, $05, $83, $02, $01, <TX_0940 ; Ember seeds
@@ -182,6 +184,7 @@ treasureDisplayData_shooter:
 	.db TREASURE_PEGASUS_SEEDS,      $8a, $05, $85, $01, $01, <TX_0940 ; Pegasus seeds
 	.db TREASURE_GALE_SEEDS,         $8a, $05, $86, $01, $01, <TX_0940 ; Gale seeds
 	.db TREASURE_MYSTERY_SEEDS,      $8a, $05, $87, $00, $01, <TX_0940 ; Mystery seeds
+	.db TREASURE_SNOWFLAKE_SEEDS,    $8a, $05, $8c, $04, $01, <TX_092d ; Snowflake seeds
 
 treasureDisplayData_sword:
 	.db TREASURE_SWORD, $90, $00, $00, $00, $00, <TX_0923 ; L1
@@ -243,6 +246,7 @@ treasureDisplayData_slingshot:
 	.db TREASURE_PEGASUS_SEEDS,      $81, $04, $85, $01, $01, <TX_09_SLINGSHOT
 	.db TREASURE_GALE_SEEDS,         $81, $04, $86, $01, $01, <TX_09_SLINGSHOT
 	.db TREASURE_MYSTERY_SEEDS,      $81, $04, $87, $00, $01, <TX_09_SLINGSHOT
+	.db TREASURE_SNOWFLAKE_SEEDS,    $81, $04, $8c, $04, $01, <TX_09_SLINGSHOT ; Snowflake seeds
 
 treasureDisplayData_hyperSlingshot:
 	.db TREASURE_EMBER_SEEDS,        $81, $05, $83, $02, $01, <TX_09_HYPERSLINGSHOT
@@ -250,6 +254,7 @@ treasureDisplayData_hyperSlingshot:
 	.db TREASURE_PEGASUS_SEEDS,      $81, $05, $85, $01, $01, <TX_09_HYPERSLINGSHOT
 	.db TREASURE_GALE_SEEDS,         $81, $05, $86, $01, $01, <TX_09_HYPERSLINGSHOT
 	.db TREASURE_MYSTERY_SEEDS,      $81, $05, $87, $00, $01, <TX_09_HYPERSLINGSHOT
+	.db TREASURE_SNOWFLAKE_SEEDS,    $81, $05, $8c, $04, $01, <TX_09_HYPERSLINGSHOT ; Snowflake seeds
 
 treasureDisplayData_boomerang:
 	.db TREASURE_BOOMERANG,          $9c, $05, $00, $00, $00, <TX_0927

@@ -732,17 +732,16 @@ wNumGaleSeeds: ; $c6bc/$c6b8
 	db
 wNumMysterySeeds: ; $c6bd/$c6b9
 	db
-wNumGashaSeeds: ; $c6be/$c6ba
+wNumSnowflakeSeeds: ; $c6be/$c6ba
 	db
-wEssencesObtained: ; $c6bf/$c6bb
+wNumGashaSeeds: ; $c6bf/$c6bb
 	db
-wTradeItem: ; $c6c0
+wEssencesObtained: ; $c6c0/$c6bc
+	db
+wTradeItem: ; $c6c1/$c6bd
 	db
 
 .ifdef ROM_AGES
-
-wc6c1: ; $c6c1
-	db
 wTuniNutState: ; $c6c2
 ; 0: broken
 ; 1: not in inventory (doing patch's game)
@@ -754,13 +753,13 @@ wNumSlates: ; $c6c3
 
 .else; ROM_SEASONS
 
-wPirateBellState: ; -/$c6bd
+wPirateBellState: ; -/$c6be
 	db
 .endif
 
 wUnusedc6c4:
 ; Used to have satchel/shooter selected seeds here
-	dsb 2
+	db
 
 wRingBoxContents: ; $c6c6/$c6c0
 	dsb 5

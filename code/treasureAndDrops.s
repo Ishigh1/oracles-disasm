@@ -203,7 +203,7 @@ giveTreasure_body:
 	.db TREASURE_SEED_SATCHEL	TREASURE_EMBER_SEEDS		$20
 	.db TREASURE_HEART_CONTAINER	TREASURE_HEART_REFILL		$40
 	.db TREASURE_BOMB_FLOWER	TREASURE_BOMB_FLOWER_LOWER_HALF	$00
-	.db TREASURE_TUNE_OF_ECHOES	TREASURE_HARP			$01
+	; .db TREASURE_TUNE_OF_ECHOES	TREASURE_HARP			$01
 	.db $00
 
 ; This is similar to above, except whenever Link obtains an item in the first column, the
@@ -902,7 +902,7 @@ itemDropAvailabilityTable:
 	.db (<wObtainedTreasureFlags+TREASURE_PEGASUS_SEEDS/8), 1<<(TREASURE_PEGASUS_SEEDS&7)
 	.db (<wObtainedTreasureFlags+TREASURE_GALE_SEEDS/8)   , 1<<(TREASURE_GALE_SEEDS&7)
 	.db (<wObtainedTreasureFlags+TREASURE_MYSTERY_SEEDS/8), 1<<(TREASURE_MYSTERY_SEEDS&7)
-	.db <wLinkNameNullTerminator, $00	; ITEM_DROP_0a
+	.db (<wObtainedTreasureFlags+TREASURE_SNOWFLAKE_SEEDS/8), 1<<(TREASURE_SNOWFLAKE_SEEDS&7)
 	.db <wLinkNameNullTerminator, $00	; ITEM_DROP_0b
 .ifdef ROM_AGES
 	.db <wLinkNameNullTerminator, $00	; ITEM_DROP_1_ORE_CHUNK

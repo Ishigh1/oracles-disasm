@@ -1173,7 +1173,7 @@ nayruScript07:
 	wait 36
 
 	writememory wTextboxFlags, TEXTBOXFLAG_ALTPALETTE1
-	giveitem TREASURE_TUNE_OF_ECHOES, $00
+	; giveitem TREASURE_TUNE_OF_ECHOES, $00
 	wait 16
 	scriptend
 

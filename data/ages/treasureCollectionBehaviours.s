@@ -218,10 +218,15 @@ treasureCollectionBehaviourTable:
 	.db $0f
 	.db SND_GETSEED
 
+	; TREASURE_SNOWFLAKE_SEEDS (0x25)
+	.db <wNumSnowflakeSeeds
+	.db $0f
+	.db SND_GETSEED
+
 	; TREASURE_TUNE_OF_ECHOES (0x25)
-	.db $00
-	.db $00
-	.db SND_NONE
+	; .db $00
+	; .db $00
+	; .db SND_NONE
 
 	; TREASURE_TUNE_OF_CURRENTS (0x26)
 	.db $00

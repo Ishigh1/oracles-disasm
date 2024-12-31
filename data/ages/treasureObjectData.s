@@ -63,7 +63,7 @@ treasureObjectData:
 	/* $22 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_PEGASUS_SEEDS_00
 	/* $23 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_GALE_SEEDS_00
 	/* $24 */ m_TreasureSubid   $00, $00, $ff, $00, TREASURE_OBJECT_MYSTERY_SEEDS_00
-	/* $25 */ m_TreasureSubid   $68, $00, $72, $69, TREASURE_OBJECT_TUNE_OF_ECHOES_00
+	/* $25 */ m_TreasureSubid   $68, $05, $72, $83, TREASURE_OBJECT_SNOWFLAKE_SEEDS_00
 	/* $26 */ m_TreasureSubid   $0a, $00, $0a, $6a, TREASURE_OBJECT_TUNE_OF_CURRENTS_00
 	/* $27 */ m_TreasureSubid   $0a, $00, $0b, $6b, TREASURE_OBJECT_TUNE_OF_AGES_00
 	/* $28 */ m_TreasurePointer treasureObjectData28

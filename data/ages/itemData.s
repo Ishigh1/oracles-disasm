@@ -43,7 +43,7 @@ itemData:
 	.db $78 $16 $01 ; $22: ITEM_PEGASUS_SEED
 	.db $78 $18 $01 ; $23: ITEM_GALE_SEED
 	.db $78 $1a $00 ; $24: ITEM_MYSTERY_SEED
-	.db $00 $1c $01 ; $25: ITEM_25
+	.db $78 $1c $04 ; $25: ITEM_SNOWFLAKE_SEED
 	.db $00 $1e $00 ; $26: ITEM_26
 	.db $00 $38 $0c ; $27: ITEM_SWORD_BEAM
 	.db $00 $00 $00 ; $28: ITEM_28

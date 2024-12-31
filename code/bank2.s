@@ -4531,7 +4531,7 @@ inventoryMenuState1:
 	ld (wInventory.selectedItem),a
 
 	; Satchel or shooter?
-	ld c,$1f
+	ld c,$3f
 	cp ITEM_SEED_SATCHEL
 	jr z,@hasSubmenu
 
@@ -5362,7 +5362,7 @@ inventorySubmenu2_drawCursor:
 
 ;;
 func_02_5a35:
-	ldde $05, $00
+	ldde $06, $00
 
 	call cpInventorySelectedItemToHarp
 	jr nz,+
@@ -5394,7 +5394,7 @@ func_02_5a35:
 
 	; If this is for the harp, skip over some of the following code
 	ld a,e
-	cp $05
+	cp $06
 	jr nc,@seedOnlyCodeDone
 
 ; Seed-only code (for seed satchel, seed shooter)
@@ -5456,6 +5456,7 @@ seedAndHarpSpriteTable:
 	dbrel @sprite2
 	dbrel @sprite3
 	dbrel @sprite4
+	dbrel @spriteSnowflake
 	dbrel @sprite5
 	dbrel @sprite6
 	dbrel @sprite7
@@ -5479,6 +5480,10 @@ seedAndHarpSpriteTable:
 @sprite4:
 	.db $01
 	.db $14 $0c $0e $08
+
+@spriteSnowflake:
+	.db $01
+	.db $14 $0c $19 $0c
 
 @sprite5:
 	.db $02
