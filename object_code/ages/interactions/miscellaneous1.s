@@ -407,7 +407,7 @@ interaction6b_subid0c:
 
 @state0:
 	call getThisRoomFlags
-	bit ROOMFLAG_BIT_ITEM,a
+	bit ROOMFLAG_BIT_80,a
 	jp nz,interactionDelete
 	ld e,Interaction.subid
 	ld a,(de)

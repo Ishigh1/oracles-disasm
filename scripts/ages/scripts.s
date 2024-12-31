@@ -6814,7 +6814,8 @@ interaction6b_subid0aScript:
 	scriptend
 
 @flippers:
-	giveitem TREASURE_FLIPPERS, $00
+	giveitem TREASURE_RING, $2d
+	orroomflag $80
 	wait 30
 	scriptend
 

@@ -3106,6 +3106,22 @@ menuStateFadeIntoMenu:
 	call nz,playSound
 	ld a,$02
 	call setMusicVolume
+
+	ld a,(wRingMenu_mode)
+	bit 7,a
+	jr z,++
+	and $7f
+	ld (wRingMenu_mode),a
+	xor a
+	ldh (<hCameraY),a
+	ldh (<hCameraX),a
+	ld hl,wScreenOffsetY
+	ldi (hl),a
+	ldi (hl),a
+	call clearMenu
+	; Does not return
+++
+
 ;;
 saveGraphicsOnEnterMenu_body:
 	ldh a,(<hCameraY)
@@ -3133,6 +3149,7 @@ saveGraphicsOnEnterMenu_body:
 	ld de,w4SavedVramTiles
 	call copyMemoryBc
 
+clearMenu:
 	ld hl,wMenuUnionStart
 	ld b,wMenuUnionEnd - wMenuUnionStart
 	call clearMemory
@@ -4642,6 +4659,13 @@ inventoryMenuState1:
 	jr ++
 +
 	call @checkEquipRing
+	ld a,(wInventorySubmenu1CursorPos)
+	cp $0f
+	jr nz,++
+	ld a,$81
+	ld (wRingMenu_mode),a
+	ld a,$04
+	call openMenu
 ++
 	call inventorySubmenu1_drawCursor
 	ld a,(wInventorySubmenu1CursorPos)
@@ -9908,6 +9932,14 @@ ringMenu_ringList_substate0:
 
 ; Selected a ring box slot; move the cursor to the ring list (substate 1).
 @aPressed:
+	ld a,(wRingMenu.ringBoxCursorIndex)
+	ld hl,wRingBoxContents
+	rst_addAToHl
+	ld a,(hl)
+	cp $ff
+	jr z,+
+	ld (wActiveRing),a
++
 	xor a
 	ld (wRingMenu.boxCursorFlickerCounter),a
 	inc a
@@ -10012,6 +10044,8 @@ ringMenu_selectedRingFromList:
 
 	; Put the ring (if it exists) in the box
 	call ringMenu_updateSelectedRingFromList
+
+	ld (wActiveRing),a
 	ld c,a
 	ld hl,wRingsObtained
 	call checkFlag

@@ -264,7 +264,7 @@ treasureObjectData28:
 
 treasureObjectData2b:
 	m_BeginTreasureSubids TREASURE_HEART_PIECE
-	m_TreasureSubid $0a, $01, $17, $3a, TREASURE_OBJECT_HEART_PIECE_00
+	m_TreasureSubid $3a, $01, $17, $3a, TREASURE_OBJECT_HEART_PIECE_00
 	m_TreasureSubid $38, $01, $17, $3a, TREASURE_OBJECT_HEART_PIECE_01
 	m_TreasureSubid $02, $01, $17, $3a, TREASURE_OBJECT_HEART_PIECE_02
 
@@ -276,7 +276,7 @@ treasureObjectData2a:
 
 treasureObjectData2c:
 	m_BeginTreasureSubids TREASURE_RING_BOX
-	m_TreasureSubid $02, $01, $57, $33, TREASURE_OBJECT_RING_BOX_00
+	m_TreasureSubid $3a, $01, $57, $33, TREASURE_OBJECT_RING_BOX_00
 	m_TreasureSubid $02, $02, $34, $34, TREASURE_OBJECT_RING_BOX_01
 	m_TreasureSubid $02, $03, $34, $35, TREASURE_OBJECT_RING_BOX_02
 	m_TreasureSubid $02, $02, $58, $34, TREASURE_OBJECT_RING_BOX_03
@@ -293,8 +293,8 @@ treasureObjectData2d:
 	m_TreasureSubid $29, $ff, $54, $0e, TREASURE_OBJECT_RING_01
 	m_TreasureSubid $49, $ff, $54, $0e, TREASURE_OBJECT_RING_02
 	m_TreasureSubid $59, $ff, $54, $0e, TREASURE_OBJECT_RING_03
-	m_TreasureSubid $38, $28, $54, $0e, TREASURE_OBJECT_RING_04
-	m_TreasureSubid $38, $2b, $54, $0e, TREASURE_OBJECT_RING_05
+	m_TreasureSubid $2a, $28, $FF, $0e, TREASURE_OBJECT_RING_04
+	m_TreasureSubid $38, $10, $54, $0e, TREASURE_OBJECT_RING_05
 	m_TreasureSubid $38, $10, $54, $0e, TREASURE_OBJECT_RING_06
 	m_TreasureSubid $38, $0c, $54, $0e, TREASURE_OBJECT_RING_07
 	m_TreasureSubid $38, $0d, $54, $0e, TREASURE_OBJECT_RING_08

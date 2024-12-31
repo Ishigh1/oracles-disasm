@@ -592,6 +592,7 @@ linkApplyDamage:
 	or a
 	jr z,++
 
+
 	; Protection ring does fixed damage on each hit
 	ld b,a
 	ld a,PROTECTION_RING

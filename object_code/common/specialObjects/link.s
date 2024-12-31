@@ -4479,8 +4479,21 @@ linkUpdateKnockback:
 	; Decrement knockback
 	sub c
 	jr c,@cancelKnockback
-	ld (hl),a
-
+	;THE PIT HACK: If Unsteadfast ring is equipped, only decrement knockback every two out of three frames.
+	ld b,a
+	ld a,UNSTEADFAST_RING
+	call cpActiveRing
+	jr nz,+
+	ld a,(wFrameCounter)
+	and $02
+	cp 0
+	jr nz,+
+	ld a,b
+	jr ++
++:
+	ld (hl),b
+++:
+	ld a,b
 	; Adjust link's knockback angle if necessary when sidescrolling
 	ld l,SpecialObject.knockbackAngle
 	call linkAdjustGivenAngleInSidescrollingArea

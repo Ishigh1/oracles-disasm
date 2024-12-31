@@ -1026,7 +1026,7 @@ group4Map21EnemyObjectData:
 group4Map23EnemyObjectData:
 	obj_SpecificEnemyA $00 $31 $00 $28 $28
 	obj_SpecificEnemyA     $31 $00 $78 $68
-	obj_SpecificEnemyA     $31 $00 $28 $b8
+	obj_SpecificEnemyA     $31 $00 $28 $98
 	obj_EndPointer
 
 group4Map25EnemyObjectData:
@@ -2577,13 +2577,13 @@ group4Map13EnemyObjectData:
 	obj_SpecificEnemyA     $4e $00 $58 $28
 	obj_SpecificEnemyA     $4e $00 $58 $c8
 	obj_SpecificEnemyA     $4e $00 $98 $78
-	obj_SpecificEnemyA     $28 $00 $ff $00
+	obj_SpecificEnemyA $03 $28 $00 $ff $00
 	obj_Part $13 $01 $83
 	obj_EndPointer
 
 group4Map10EnemyObjectData:
 	obj_RandomEnemy $63 $46 $00
-	obj_RandomEnemy $05 $17 $00
+	obj_RandomEnemy $25 $17 $00
 	obj_EndPointer
 
 group4Map14EnemyObjectData:

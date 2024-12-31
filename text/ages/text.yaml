@@ -725,8 +725,8 @@ groups:
     text: |-
       You got a
       \col(1)L-1 Ring Box\col(0)!
-      It can hold
-      one \col(1)ring\col(0)!
+      Press A on it in the items menu
+      to equip \col(1)rings\col(0)!
 
   - name: TX_0058
     index: 0x58
@@ -15428,7 +15428,7 @@ groups:
   - name: TX_304e
     index: 0x4e
     text: |-
-      GBA Time Ring
+      Pegasus Ring
 
   - name: TX_304f
     index: 0x4f
@@ -15443,7 +15443,7 @@ groups:
   - name: TX_3051
     index: 0x51
     text: |-
-      Pegasus Ring
+      Capricious Ring
 
   - name: TX_3052
     index: 0x52
@@ -15756,15 +15756,12 @@ groups:
       Boomerang
       damage \up
 
-  - name:
-    - TX_308e
-    - TX_30b3
-    index:
-    - 0x8e
-    - 0xb3
+  - name: TX_308e
+    index: 0x8e
     text: |-
-      Life Advanced!
-
+      Lengthen Pegasus
+      Seed effect
+      
   - name: TX_308f
     index: 0x8f
     text: |-
@@ -15779,8 +15776,8 @@ groups:
   - name: TX_3091
     index: 0x91
     text: |-
-      Lengthen Pegasus
-      Seed effect
+      Get knocked
+      back more
 
   - name: TX_3092
     index: 0x92
@@ -15916,8 +15913,8 @@ groups:
   - name: TX_30a8
     index: 0xa8
     text: |-
-      Sense soft
-      earth nearby
+      Sense The Pit's
+      secrets nearby
 
   - name: TX_30a9
     index: 0xa9
@@ -15978,6 +15975,11 @@ groups:
     text: |-
       Sword damage \up
       but you get hurt
+
+  - name: TX_30b3
+    index: 0xb3
+    text: |-
+      Life Advanced!
 
   - name: TX_30b4
     index: 0xb4
@@ -16060,7 +16062,12 @@ groups:
     text: |-
       \call(0xfd)
       \call(0xfc)
-
+      
+  - name: TX_30_GETRING
+    index: auto
+    text: |-
+      You got the
+      \call(0xfd)!
 - group: 0x31
   data:
   - name: TX_3100
@@ -20695,8 +20702,8 @@ groups:
   - name: TX_540e
     index: 0x0e
     text: |-
-      Changes the
-      music
+      Lengthen Pegasus
+      Seed effect
 
   - name: TX_540f
     index: 0x0f
@@ -20712,8 +20719,8 @@ groups:
   - name: TX_5411
     index: 0x11
     text: |-
-      Lengthen Pegasus
-      Seed effect
+      Get knocked back
+      greater distances
 
   - name: TX_5412
     index: 0x12
@@ -20847,8 +20854,8 @@ groups:
   - name: TX_5428
     index: 0x28
     text: |-
-      Sense soft
-      earth nearby
+      Sense The Pit's
+      secrets nearby
 
   - name: TX_5429
     index: 0x29

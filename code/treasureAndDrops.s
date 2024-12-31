@@ -426,24 +426,18 @@ giveTreasure_body:
 
 ; Add a ring to the unappraised ring list.
 @mode9:
-	; Setting bit 6 means the ring is unappraised
-	set 6,c
-	call realignUnappraisedRings
-
-	; Check that there are less than 64 unappraised rings (checking aginst a bcd
-	; number)
-	cp $64
-	jr c,+
-
-	; If there are already 64 unappraised rings, remove one duplicate ring and
-	; re-align the list.
-	call @removeOneDuplicateRing
-	call realignUnappraisedRings
-+
-	; Add the ring to the end of the list
+	ld hl,wRingsObtained
 	ld a,c
-	ld (wUnappraisedRingsEnd-1),a
-	jr realignUnappraisedRings
+	and $3f
+	ld c,a
+	call setFlag
+	ld a,c
+	add $40
+	ld (wTextSubstitutions+2),a
+	ld bc,TX_30_GETRING
+	call showText
+	ret
+
 
 ;;
 ; Decides on one ring to remove by counting all of the unappraised rings and finding the
