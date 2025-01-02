@@ -297,6 +297,8 @@ interactionCodece:
 	.db <TX_4509
 	.db <TX_4509
 	.db <TX_4509
+	.db <TX_450d
+	.db <TX_450c
 .else
 	.db <TX_4509
 	.db <TX_4509
@@ -328,6 +330,8 @@ interactionCodece:
 	.db RUPEEVAL_10
 	.db RUPEEVAL_20
 	.db RUPEEVAL_40
+	.db RUPEEVAL_30
+	.db RUPEEVAL_20
 .else
 	.db RUPEEVAL_050
 	.db RUPEEVAL_100
@@ -367,6 +371,8 @@ interactionCodece:
 	.dw $0010
 	.dw $0020
 	.dw $0040
+	.dw $0030
+	.dw $0020
 .else
 	.dw $0050
 	.dw $0100

@@ -485,6 +485,7 @@ musicf7c85:
 	vibrato $00
 	note as 40
 	note as 40
+	vibrato $41
 	goto musicf7c85
 	cmdff
 

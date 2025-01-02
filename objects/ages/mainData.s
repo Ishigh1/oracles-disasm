@@ -2689,10 +2689,7 @@ group4Map15ObjectData:
 	obj_End
 
 group4Map16ObjectData:
-	obj_Interaction $20 $00 $18 $78
-	obj_Interaction $1e $06 $a7 $00
-	obj_Part $09 $00 $22
-	obj_Part $09 $01 $2c
+	obj_Interaction $ce $00 $38 $c8
 	obj_End
 
 group4Map17ObjectData:
@@ -2705,7 +2702,6 @@ group4Map18ObjectData:
 	obj_Pointer group4Map18EnemyObjectData
 	obj_ItemDrop 0 $05 $53
 	obj_Part $13 $02 $57
-	obj_ItemDrop 0 $01 $67
 	obj_Interaction $21 $1b $1d $44
 	obj_End
 
@@ -2760,8 +2756,6 @@ group4Map1eObjectData:
 group4Map1fObjectData:
 	obj_Pointer group4Map1fEnemyObjectData
 	obj_Interaction $12 $05 $38 $78
-	obj_ItemDrop $01 $0a $12
-	obj_ItemDrop     $0a $1c
 	obj_Interaction $21 $1b $97 $44
 	obj_Interaction $20 $07 $28 $78
 	obj_End
@@ -2817,8 +2811,8 @@ group4Map29ObjectData:
 	obj_Pointer group4Map29EnemyObjectData
 	obj_Interaction $a1 $0f $48 $98
 	obj_Interaction $a1 $10 $48 $38
-	obj_ItemDrop 0 $00 $56
-	obj_ItemDrop     $01 $5c
+	obj_ItemDrop $01 $00 $56
+	obj_ItemDrop 0 $01 $5c
 	obj_End
 
 group4Map2aObjectData:
