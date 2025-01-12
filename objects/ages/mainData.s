@@ -2758,6 +2758,7 @@ group4Map1fObjectData:
 	obj_Interaction $12 $05 $38 $78
 	obj_Interaction $21 $1b $97 $44
 	obj_Interaction $20 $07 $28 $78
+	obj_Part $13 $04 $02
 	obj_End
 
 group4Map20ObjectData:

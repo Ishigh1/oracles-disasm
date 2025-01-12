@@ -28,7 +28,7 @@ itemAttributes:
 	.db $12 $00 $00 $00 ; $12: ITEM_12
 	.db $12 $00 $00 $00 ; $13: ITEM_SLINGSHOT
 	.db $12 $00 $00 $00 ; $14: ITEM_14
-	.db $8c $33 $ff $00 ; $15: ITEM_SHOVEL
+	.db $8c $33 $fe $00 ; $15: ITEM_SHOVEL
 	.db $16 $00 $fd $00 ; $16: ITEM_BRACELET
 	.db $12 $00 $00 $00 ; $17: ITEM_FEATHER
 	.db $15 $77 $fc $09 ; $18: ITEM_18

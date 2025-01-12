@@ -18568,13 +18568,18 @@ groups:
 
   - name:
     - TX_3904
-    - TX_3905
     index:
     - 0x04
-    - 0x05
     text: |-
-      Time's flow can
-      change the land.
+      The magnet ball
+      ignores i-frames.
+
+  - name: TX_3905
+    index: 0x05
+    text: |-
+      Do not forget
+      to feed me
+      Mystery Seeds.
 
   - name: TX_3906
     index: 0x06
