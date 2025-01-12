@@ -20,7 +20,7 @@ enemyCode22:
 @dead:
 	ld e,Enemy.subid
 	ld a,(de)
-	cp $02
+	cp $08
 	jr nz,++
 	ld hl,wKilledGoldenEnemies
 	set 1,(hl)
@@ -51,8 +51,8 @@ moblin_state_uninitialized:
 	set 4,(hl)
 
 	ld l,Enemy.subid
-	bit 1,(hl)
-	jr z,++
+	cp $08
+	jr nz,++
 	ld a,(wKilledGoldenEnemies)
 	bit 1,a
 	jp nz,enemyDelete

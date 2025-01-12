@@ -443,12 +443,14 @@
 ;;
 ; Not to be confused with INTERAC_DEKU_SCRUB. This is divided into two parts, the scrub
 ; itself (subids $00-$7f) and the bush above it (subid $80).
+; To Future Floormakers: It is completely trivial to add new items, just add them to
+; The tables, and they can be sold. Make sure to add your own text!
 ;
 ; @subid_00{Sells shield (expensive); subids 1-2 reserved for different shield levels}
 ; @subid_03{Sells shield (moderate); subids 5-6 reserved for different shield levels}
 ; @subid_06{Sells shield (cheap); subids 7-8 reserved for different shield levels}
-; @subid_09{Sells bombs (missing some data, doesn't work)}
-; @subid_0a{Sells ember seeds (missing some data)}
+; @subid_09{Sells bombs}
+; @subid_0a{Sells ember seeds}
 ; @subid_80{The "bush" the scrub hides under; spawned automatically}
 .define INTERAC_BUSINESS_SCRUB $ce
 

@@ -3298,67 +3298,6 @@ soldierSubid05Script:
 	scriptend
 
 
-; Guard in cutscene who takes mystery seeds from Link
-soldierSubid06Script:
-	setspeed SPEED_100
-	moveup $10
-	wait 60
-	moveright $18
-	wait 30
-	setanimation $03
-	wait 60
-
-	showtext TX_5905
-	wait 30
-	showtext TX_1300
-	wait 30
-
-	; Take mystery seeds from Link, give them to Ambi
-	moveleft $18
-	wait 8
-	setanimation $02
-	wait 40
-	writememory wNumMysterySeeds, $00
-	asm15 scriptHelp.soldierGiveMysterySeeds
-	wait 20
-	setanimation $00
-	wait 10
-	moveup $24
-	wait 40
-	playsound SND_GETSEED
-	wait 20
-
-	setspeed SPEED_080
-	setangle $10
-	applyspeed $48
-	setanimation $03
-	setangle $08
-	applyspeed $30
-
-	writememory   wTmpcfc0.genericCutscene.cfd1, $01
-	checkmemoryeq wTmpcfc0.genericCutscene.cfd1, $03
-
-	; Escort Link out of screen
-	setspeed SPEED_100
-	moveleft $18
-	setanimation $00
-	wait 30
-	showtext TX_5906
-	wait 30
-	setanimation $02
-	wait 30
-	showtext TX_590c
-	wait 30
-	writememory wScrollMode, $00
-	asm15 scriptHelp.soldierSetSimulatedInputToEscortLink, $01
-	enableallobjects
-	movedown $34
-
-	writememory wTmpcfc0.genericCutscene.cfd1, $04
-	setglobalflag GLOBALFLAG_0b
-	scriptend
-
-
 ; Guard just after Link is escorted out of the palace
 soldierSubid07Script:
 	wait 60
@@ -6875,7 +6814,8 @@ interaction6b_subid0aScript:
 	scriptend
 
 @flippers:
-	giveitem TREASURE_FLIPPERS, $00
+	giveitem TREASURE_RING, $2d
+	orroomflag $80
 	wait 30
 	scriptend
 

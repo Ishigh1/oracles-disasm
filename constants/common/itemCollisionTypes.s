@@ -66,7 +66,11 @@
 	ITEMCOLLISION_SCENT_SEED		db ; $1c: Scent seed
 	ITEMCOLLISION_PEGASUS_SEED		db ; $1d: Pegasus seed
 	ITEMCOLLISION_GALE_SEED			db ; $1e: Gale seed
-	ITEMCOLLISION_1f			db ; $1f: Probably unused
+.ifdef ROM_AGES
+	ITEMCOLLISION_MAGNET_BALL		db ; $1f: Romhack Crossitem
+.else
+	ITEMCOLLISION_1f                        db ; $1f: Probably unused
+.endif
 
 	; Values above $20 don't fit into "objectCollisionTable", and so can only be used
 	; if hard-coded somewhere. These values should never be written to an item's

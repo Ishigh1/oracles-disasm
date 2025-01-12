@@ -18,7 +18,7 @@ enemyCode0d:
 @dead:
 	ld e,Enemy.subid
 	ld a,(de)
-	cp $02
+	cp $08
 	jr nz,++
 	ld hl,wKilledGoldenEnemies
 	set 3,(hl)
@@ -51,7 +51,7 @@ enemyCode0d:
 @state_uninitialized:
 	ld e,Enemy.subid
 	ld a,(de)
-	cp $02
+	cp $08
 	jr nz,++
 	ld hl,wKilledGoldenEnemies
 	bit 3,(hl)

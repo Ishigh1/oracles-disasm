@@ -92,7 +92,7 @@
 	m_GfxData spr_ralph_1 ; $0ab20b
 	m_GfxData spr_ralph_2 ; $0ab3d5
 	m_GfxData spr_seasonfairy_ambi ; $0ab495
-	m_GfxData gfx_blank_2 ; $0ab5ff (unused)
+	m_GfxData spr_magnetball ; $0ab5ff
 	m_GfxData spr_farore_1 ; $0ab605
 	m_GfxData spr_nayru_1 ; $0ab652
 	m_GfxData spr_nayru_2 ; $0ab7d6
@@ -151,6 +151,7 @@
 	m_GfxData spr_armmimic_spikedroller_bari_biri ; $0afe35
 	m_GfxData spr_hostilescrub ; $0affaa
 	m_GfxData spr_floormaster ; $0b0112
+	m_GfxData spr_magunesu ; $0aaa1f
 	m_GfxData spr_thwomps ; $0b02a9
 	m_GfxData spr_fireball_cheepcheep ; $0b03ab
 	m_GfxData spr_waterbubble ; $0b046a
@@ -182,6 +183,9 @@
 	m_GfxData spr_headthwomp_3 ; $0b251e
 	m_GfxData spr_shadowhag_1 ; $0b253a
 	m_GfxData spr_shadowhag_2 ; $0b26ee
+	m_GfxData spr_digdogger_1 ; $0adf14
+	m_GfxData spr_digdogger_2 ; $0ae0ab
+	m_GfxData spr_digdogger_3 ; $0ae25c
 	m_GfxData spr_smog_1 ; $0b2823
 	m_GfxData spr_smog_2 ; $0b2950
 	m_GfxData spr_smog_3 ; $0b2ad5

@@ -70,7 +70,7 @@ enemyCodeTable:
 	.dw bank0e.enemyCode43 ; 0x43
 	.dw enemyCodeNil       ; 0x44
 	.dw bank0e.enemyCode45 ; 0x45
-	.dw enemyCodeNil       ; 0x46
+	.dw bank0e.enemyCode46 ; 0x46
 	.dw bank0e.enemyCode47 ; 0x47
 	.dw bank0e.enemyCode48 ; 0x48
 	.dw bank0e.enemyCode49 ; 0x49
@@ -84,7 +84,7 @@ enemyCodeTable:
 	.dw bank0e.enemyCode51 ; 0x51
 	.dw bank0e.enemyCode52 ; 0x52
 	.dw bank0e.enemyCode53 ; 0x53
-	.dw bank0e.enemyCode54 ; 0x54
+	.dw enemyCodeNil       ; 0x54 Ambi Palace Guard Enemy, commented out to free up space. Re-add this if you want to use them.
 	.dw bank0e.enemyCode55 ; 0x55
 	.dw bank0e.enemyCode56 ; 0x56
 	.dw enemyCodeNil       ; 0x57
@@ -112,7 +112,7 @@ enemyCodeTable:
 	.dw enemyCodeNil       ; 0x6d
 	.dw enemyCodeNil       ; 0x6e
 	.dw enemyCodeNil       ; 0x6f
-	.dw bank0f.enemyCode70 ; 0x70
+	.dw enemyCodeNil       ; 0x70 Giant Ghini Miniboss, commented out to free up space. Re-add this if you want to use them.
 	.dw bank0f.enemyCode71 ; 0x71
 	.dw bank0f.enemyCode72 ; 0x72
 	.dw bank0f.enemyCode73 ; 0x73
@@ -127,7 +127,7 @@ enemyCodeTable:
 	.dw bank0f.enemyCode7c ; 0x7c
 	.dw bank0f.enemyCode7d ; 0x7d
 	.dw bank0f.enemyCode7e ; 0x7e
-	.dw bank0f.enemyCode7f ; 0x7f
+	.dw enemyCodeNil       ; 0x7f King Moblin Miniboss, commented out to free up space. Re-add this if you want to use them.
 .else
 	.dw bank0f.enemyCode00
 	.dw bank0f.enemyCode01

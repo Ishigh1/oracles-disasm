@@ -668,15 +668,15 @@ musJabuJabusBelly:
 	.dw musJabuJabusBellyChannel6
 	.db $ff
 
-musAncientTomb:
+musCelestialTower:
 	.db $00
-	.dw musAncientTombChannel0
+	.dw musCelestialTowerChannel0
 	.db $01
-	.dw musAncientTombChannel1
+	.dw musCelestialTowerChannel1
 	.db $04
-	.dw musAncientTombChannel4
+	.dw musCelestialTowerChannel4
 	.db $06
-	.dw musAncientTombChannel6
+	.dw musCelestialTowerChannel6
 	.db $ff
 
 musUnderwater:
@@ -742,7 +742,7 @@ sndSolvePuzzle:
 	.db $ff
 
 sndDamageEnemy:
-	.db $02
+	.db $12
 	.dw sndDamageEnemyChannel2
 	.db $ff
 
@@ -757,12 +757,12 @@ sndClink:
 	.db $ff
 
 sndThrow:
-	.db $02
+	.db $12
 	.dw sndThrowChannel2
 	.db $ff
 
 sndBombLand:
-	.db $02
+	.db $12
 	.dw sndBombLandChannel2
 	.db $ff
 
@@ -772,26 +772,26 @@ sndJump:
 	.db $ff
 
 sndOpenMenu:
-	.db $02
+	.db $12
 	.dw sndOpenMenuChannel2
 	.db $03
 	.dw sndOpenMenuChannel3
 	.db $ff
 
 sndCloseMenu:
-	.db $02
+	.db $12
 	.dw sndCloseMenuChannel2
 	.db $03
 	.dw sndCloseMenuChannel3
 	.db $ff
 
 sndSelectItem:
-	.db $02
+	.db $12
 	.dw sndSelectItemChannel2
 	.db $ff
 
 sndGainHeart:
-	.db $02
+	.db $12
 	.dw sndGainHeartChannel2
 	.db $ff
 
@@ -801,7 +801,7 @@ sndClink2:
 	.db $ff
 
 sndFallInHole:
-	.db $02
+	.db $12
 	.dw sndFallInHoleChannel2
 	.db $ff
 
@@ -843,12 +843,12 @@ sndHeartBeep:
 	.db $ff
 
 sndRupee:
-	.db $02
+	.db $12
 	.dw sndRupeeChannel2
 	.db $ff
 
 sndGohmaSpawnGel:
-	.db $02
+	.db $12
 	.dw sndGohmaSpawnGelChannel2
 	.db $ff
 
@@ -868,7 +868,7 @@ sndLinkFall:
 	.db $ff
 
 sndText:
-	.db $02
+	.db $12
 	.dw sndTextChannel2
 	.db $ff
 
@@ -878,12 +878,12 @@ sndBossDead:
 	.db $ff
 
 sndUnknown3:
-	.db $02
+	.db $12
 	.dw sndUnknown3Channel2
 	.db $ff
 
 sndUnknown4:
-	.db $02
+	.db $12
 	.dw sndUnknown4Channel2
 	.db $ff
 
@@ -950,14 +950,14 @@ sndUnknown5:
 	.db $ff
 
 sndShield:
-	.db $02
+	.db $12
 	.dw sndShieldChannel2
 	.db $07
 	.dw sndShieldChannel7
 	.db $ff
 
 sndDropEssence:
-	.db $02
+	.db $12
 	.dw sndDropEssenceChannel2
 	.db $ff
 
@@ -977,7 +977,7 @@ sndMysterySeed:
 	.db $ff
 
 sndAquamentusHover:
-	.db $02
+	.db $12
 	.dw sndAquamentusHoverChannel2
 	.db $ff
 
@@ -992,31 +992,31 @@ sndMinecart:
 	.db $ff
 
 sndStrongPound:
-	.db $02
+	.db $12
 	.dw sndStrongPoundChannel2
 	.db $07
 	.dw sndStrongPoundChannel7
 	.db $ff
 
 sndRoller:
-	.db $02
+	.db $12
 	.dw sndRollerChannel2
 	.db $07
 	.dw sndRollerChannel7
 	.db $ff
 
 sndMagicPowder:
-	.db $02
+	.db $12
 	.dw sndMagicPowderChannel2
 	.db $ff
 
 sndMenuMove:
-	.db $02
+	.db $12
 	.dw sndMenuMoveChannel2
 	.db $ff
 
 sndScentSeed:
-	.db $02
+	.db $12
 	.dw sndScentSeedChannel2
 	.db $ff
 
@@ -1031,7 +1031,7 @@ sndSplash:
 	.db $ff
 
 sndLinkSwim:
-	.db $02
+	.db $12
 	.dw sndLinkSwimChannel2
 	.db $ff
 
@@ -1041,7 +1041,7 @@ sndText2:
 	.db $ff
 
 sndPieceOfPower:
-	.db $02
+	.db $12
 	.dw sndPieceOfPowerChannel2
 	.db $ff
 
@@ -1051,7 +1051,7 @@ sndFilledHeartContainer:
 	.db $ff
 
 sndUnknown7:
-	.db $02
+	.db $12
 	.dw sndUnknown7Channel2
 	.db $ff
 
@@ -1061,17 +1061,17 @@ sndTeleport:
 	.db $ff
 
 sndEnemyJump:
-	.db $02
+	.db $12
 	.dw sndEnemyJumpChannel2
 	.db $ff
 
 sndGaleSeed:
-	.db $02
+	.db $12
 	.dw sndGaleSeedChannel2
 	.db $ff
 
 sndFairyCutscene:
-	.db $02
+	.db $12
 	.dw sndFairyCutsceneChannel2
 	.db $ff
 
@@ -1085,12 +1085,12 @@ sndFairyCutscene:
 .endif
 
 snd93:
-	.db $02
+	.db $12
 	.dw snd93Channel2
 	.db $ff
 
 snd94:
-	.db $02
+	.db $12
 	.dw snd94Channel2
 	.db $ff
 
@@ -1100,22 +1100,22 @@ sndWarpStart:
 	.db $ff
 
 sndGhost:
-	.db $02
+	.db $12
 	.dw sndGhostChannel2
 	.db $ff
 
 snd97:
-	.db $02
+	.db $12
 	.dw snd97Channel2
 	.db $ff
 
 sndPoof:
-	.db $02
+	.db $12
 	.dw sndPoofChannel2
 	.db $ff
 
 sndBaseball:
-	.db $02
+	.db $12
 	.dw sndBaseballChannel2
 	.db $ff
 
@@ -1130,7 +1130,7 @@ sndJingle:
 	.db $ff
 
 sndPickup:
-	.db $02
+	.db $12
 	.dw sndPickupChannel2
 	.db $ff
 
@@ -1166,12 +1166,12 @@ sndPickup:
 .endif
 
 sndChicken:
-	.db $02
+	.db $12
 	.dw sndChickenChannel2
 	.db $ff
 
 sndMonkey:
-	.db $02
+	.db $12
 	.dw sndMonkeyChannel2
 	.db $07
 	.dw sndMonkeyChannel7
@@ -1205,12 +1205,12 @@ sndStrike:
 	.db $ff
 
 sndSwitchHook:
-	.db $02
+	.db $12
 	.dw sndSwitchHookChannel2
 	.db $ff
 
 sndVeranFairyAttack:
-	.db $02
+	.db $12
 	.dw sndVeranFairyAttackChannel2
 	.db $07
 	.dw sndVeranFairyAttackChannel7
@@ -1227,21 +1227,21 @@ sndWave:
 	.db $ff
 
 sndSwordObtained:
-	.db $02
+	.db $12
 	.dw sndSwordObtainedChannel2
 	.db $07
 	.dw sndSwordObtainedChannel7
 	.db $ff
 
 sndShock:
-	.db $02
+	.db $12
 	.dw sndShockChannel2
 	.db $07
 	.dw sndShockChannel7
 	.db $ff
 
 sndOpening:
-	.db $02
+	.db $12
 	.dw sndOpeningChannel2
 	.db $07
 	.dw sndOpeningChannel7
@@ -1253,14 +1253,14 @@ sndBigSword:
 	.db $ff
 
 sndMakuDisappear:
-	.db $02
+	.db $12
 	.dw sndMakuDisappearChannel2
 	.db $07
 	.dw sndMakuDisappearChannel7
 	.db $ff
 
 sndRumble:
-	.db $02
+	.db $12
 	.dw sndRumbleChannel2
 	.db $07
 	.dw sndRumbleChannel7
@@ -1272,14 +1272,14 @@ sndFadeout:
 	.db $ff
 
 sndb7:
-	.db $02
+	.db $12
 	.dw sndb7Channel2
 	.db $07
 	.dw sndb7Channel7
 	.db $ff
 
 sndRumble2:
-	.db $02
+	.db $12
 	.dw sndRumble2Channel2
 	.db $07
 	.dw sndRumble2Channel7
@@ -1306,22 +1306,22 @@ sndBigExplosion2:
 	.db $ff
 
 sndbd:
-	.db $02
+	.db $12
 	.dw sndbdChannel2
 	.db $ff
 
 sndVeranProjectile:
-	.db $02
+	.db $12
 	.dw sndVeranProjectileChannel2
 	.db $ff
 
 sndBlueStalfosCharge:
-	.db $02
+	.db $12
 	.dw sndBlueStalfosChargeChannel2
 	.db $ff
 
 sndTransform:
-	.db $02
+	.db $12
 	.dw sndTransformChannel2
 	.db $ff
 
@@ -1361,26 +1361,26 @@ sndGoron:
 	.db $ff
 
 sndDing:
-	.db $02
+	.db $12
 	.dw sndDingChannel2
 	.db $07
 	.dw sndDingChannel7
 	.db $ff
 
 sndCircling:
-	.db $02
+	.db $12
 	.dw sndCirclingChannel2
 	.db $ff
 
 sndca:
-	.db $02
+	.db $12
 	.dw sndcaChannel2
 	.db $07
 	.dw sndcaChannel7
 	.db $ff
 
 sndSeedShooter:
-	.db $02
+	.db $12
 	.dw sndSeedShooterChannel2
 	.db $07
 	.dw sndSeedShooterChannel7
@@ -1392,7 +1392,7 @@ sndWhistle:
 	.db $ff
 
 sndGoronDanceB:
-	.db $02
+	.db $12
 	.dw sndGoronDanceBChannel2
 	.db $03
 	.dw sndGoronDanceBChannel3
@@ -1401,7 +1401,7 @@ sndGoronDanceB:
 	.db $ff
 
 sndMakuTreePast:
-	.db $02
+	.db $12
 	.dw sndMakuTreePastChannel2
 	.db $05
 	.dw sndMakuTreePastChannel5
@@ -1410,12 +1410,12 @@ sndMakuTreePast:
 	.db $ff
 
 sndcf:
-	.db $02
+	.db $12
 	.dw sndcfChannel2
 	.db $ff
 
 sndPirateBell:
-	.db $02
+	.db $12
 	.dw sndPirateBellChannel2
 	.db $07
 	.dw sndPirateBellChannel7
@@ -1432,12 +1432,12 @@ sndWind:
 	.db $ff
 
 sndd5:
-	.db $02
+	.db $12
 	.dw sndd5Channel2
 	.db $ff
 
 snd92:
-	.db $02
+	.db $12
 	.dw snd92Channel2
 	.db $ff
 

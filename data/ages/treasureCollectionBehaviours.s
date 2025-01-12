@@ -101,7 +101,7 @@ treasureCollectionBehaviourTable:
 	; TREASURE_BOMBCHUS (0x0e)
 	.db <wNumBombchus
 	.db $04
-	.db SND_GETITEM
+	.db SND_GETSEED
 
 	; TREASURE_FLUTE (0x0e)
 	.db <wAnimalCompanion

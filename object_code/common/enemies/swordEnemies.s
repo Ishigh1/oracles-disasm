@@ -198,7 +198,7 @@ enemyCode48:
 @dead:
 	ld e,Enemy.subid
 	ld a,(de)
-	cp $02
+	cp $08
 	jr nz,++
 	ld hl,wKilledGoldenEnemies
 	set 2,(hl)
@@ -226,7 +226,7 @@ enemyCode48:
 swordDarknut_state_uninitialized:
 	ld e,Enemy.subid
 	ld a,(de)
-	cp $02
+	cp $08
 	jr nz,++
 	ld a,(wKilledGoldenEnemies)
 	bit 2,a

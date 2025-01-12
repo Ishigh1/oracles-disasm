@@ -18,6 +18,8 @@ movingSidescrollPlatformScriptTable:
 	.dw movingSidescrollPlatformScript_subid0c
 	.dw movingSidescrollPlatformScript_subid0d
 	.dw movingSidescrollPlatformScript_subid0e
+	.dw movingSidescrollPlatformScript_subid0f
+	.dw movingSidescrollPlatformScript_subid10
 
 
 movingSidescrollPlatformScript_subid00:
@@ -178,4 +180,24 @@ movingSidescrollPlatformScript_subid0e:
 	ms_wait  30
 	ms_right $a0
 	ms_wait  30
+	ms_loop  @@loop
+
+movingSidescrollPlatformScript_subid0f:
+	.db SPEED_80
+	.db $00
+@@loop:
+	ms_down  $48
+	ms_wait  20
+	ms_up    $18
+	ms_wait  20
+	ms_loop  @@loop
+
+movingSidescrollPlatformScript_subid10:
+	.db SPEED_80
+	.db $00
+@@loop:
+	ms_down  $78
+	ms_wait  10
+	ms_up    $48
+	ms_wait  10
 	ms_loop  @@loop

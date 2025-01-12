@@ -415,7 +415,7 @@ soldierScriptTable:
 	.dw mainScripts.soldierSubid03Script
 	.dw mainScripts.soldierSubid04Script
 	.dw mainScripts.soldierSubid05Script
-	.dw mainScripts.soldierSubid06Script
+	.dw mainScripts.stubScript
 	.dw mainScripts.soldierSubid07Script
 	.dw mainScripts.stubScript
 	.dw mainScripts.soldierSubid09Script

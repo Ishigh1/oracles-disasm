@@ -1446,6 +1446,12 @@ paletteData4890:
 	m_RGB16 $08 $15 $1f
 	m_RGB16 $19 $1e $1f
 
+paletteData48a8:
+	m_RGB16 $0b $0f $13
+	m_RGB16 $00 $00 $00
+	m_RGB16 $1f $07 $00
+	m_RGB16 $1f $1f $1f
+
 .ifndef REGION_JP
 paletteData48b0:
 	m_RGB16 $1f $1f $1f
@@ -3229,24 +3235,24 @@ paletteData5330:
 	m_RGB16 $1f $1a $11
 
 paletteData5360:
-	m_RGB16 $12 $12 $0a
+	m_RGB16 $1c $16 $0c
 	m_RGB16 $1c $12 $00
 	m_RGB16 $10 $08 $02
 	m_RGB16 $00 $00 $00
 
 	m_RGB16 $1f $1f $11
-	m_RGB16 $17 $12 $08
+	m_RGB16 $11 $0f $18
 	m_RGB16 $0c $09 $02
 	m_RGB16 $00 $00 $00
 
 	m_RGB16 $1f $1f $11
-	m_RGB16 $14 $14 $0c
-	m_RGB16 $0a $0c $08
+	m_RGB16 $1e $17 $01
+	m_RGB16 $12 $09 $05
 	m_RGB16 $00 $00 $00
 
-	m_RGB16 $12 $12 $0a
-	m_RGB16 $16 $07 $11
-	m_RGB16 $0e $01 $08
+	m_RGB16 $11 $0f $18
+	m_RGB16 $1e $17 $01
+	m_RGB16 $0a $0c $08
 	m_RGB16 $00 $00 $00
 
 	m_RGB16 $1f $1f $11
@@ -3688,19 +3694,19 @@ paletteData5600:
 	m_RGB16 $08 $0a $06
 	m_RGB16 $00 $00 $00
 
-	m_RGB16 $1c $19 $0f
+	m_RGB16 $00 $00 $00
 	m_RGB16 $0f $12 $01
 	m_RGB16 $05 $08 $00
-	m_RGB16 $00 $00 $00
+	m_RGB16 $02 $08 $00
 
-	m_RGB16 $1f $1f $11
+	m_RGB16 $1e $17 $01
 	m_RGB16 $11 $0b $19
 	m_RGB16 $0c $05 $10
 	m_RGB16 $00 $00 $00
 
 	m_RGB16 $1c $1c $1e
-	m_RGB16 $0b $10 $14
-	m_RGB16 $05 $0a $0f
+	m_RGB16 $11 $0f $18
+	m_RGB16 $0e $01 $08
 	m_RGB16 $00 $00 $00
 
 paletteData5630:

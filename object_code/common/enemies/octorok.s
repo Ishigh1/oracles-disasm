@@ -22,7 +22,7 @@ enemyCode09:
 @dead:
 	ld e,Enemy.subid
 	ld a,(de)
-	cp $04
+	cp $08
 	jr nz,++
 	ld hl,wKilledGoldenEnemies
 	set 0,(hl)
@@ -52,7 +52,7 @@ octorok_state_uninitialized:
 	; Delete self if it's a golden enemy that's been defeated
 	ld e,Enemy.subid
 	ld a,(de)
-	cp $04
+	cp $08
 	jr nz,++
 	ld hl,wKilledGoldenEnemies
 	bit 0,(hl)

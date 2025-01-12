@@ -84,15 +84,15 @@ interactiondc_subid08:
 	jp interactionIncState
 
 
-; Graveyard key spawner
+; Formerly Graveyard key spawner
 interactiondc_subid00:
 	call getThisRoomFlags
-	and ROOMFLAG_ITEM
+	and $80
 	jp nz,interactionDelete
-	ld a,(wNumTorchesLit)
-	cp $02
+	ld a,(wNumEnemies)
+	cp $00
 	ret nz
-	ld bc,TREASURE_OBJECT_GRAVEYARD_KEY_00
+	ld bc,TREASURE_OBJECT_RING_04
 	call createTreasure
 	call objectCopyPosition
 	jp interactionDelete

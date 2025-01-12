@@ -10,9 +10,7 @@ interactionCode12:
 	.dw @subid02
 	.dw @subid03
 	.dw @subid04
-.ifdef ROM_SEASONS
 	.dw @subid05
-.endif
 
 
 ; Show text upon entering a dungeon
@@ -196,7 +194,6 @@ interactionCode12:
 	ld l,Interaction.yh
 	jp setShortPosition_paramC
 
-.ifdef ROM_SEASONS
 @subid05:
 	ld e,Interaction.state
 	ld a,(de)
@@ -235,4 +232,3 @@ interactionCode12:
 	ret
 @@state2:
 	jp interactionDelete
-.endif

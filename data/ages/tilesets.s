@@ -286,11 +286,11 @@ tilesetData:
 	.db $11, $02, $07
 
 	; 0x27
-	.db $af, $18
+	.db $a1, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_BLACK_TOWER
-	.db PALH_TILESET_BLACK_TOWER
-	.db $13, $04, $ff
+	.db PALH_TILESET_ROOM_OF_RITES_ICE
+	.db $13, $04, $10
 
 	; 0x28
 	.db $1f, $04
@@ -394,18 +394,18 @@ tilesetData:
 	.db $21, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_SPIRITS_GRAVE
-	.db PALH_TILESET_SPIRITS_GRAVE
+	.db PALH_TILESET_CROWN_DUNGEON
 	.db $21, $04, $10
 
 	; 0x37
-	.db $22, $88
+	.db $21, $88
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_WING_DUNGEON
 	.db PALH_TILESET_WING_DUNGEON
 	.db $22, $04, $10
 
 	; 0x38
-	.db $23, $08
+	.db $21, $08
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_MOONLIT_GROTTO
 	.db PALH_TILESET_MOONLIT_GROTTO
@@ -548,7 +548,7 @@ tilesetData:
 	.db $31, $28
 	.db UNIQUE_GFXH_NONE
 	.db GFXH_TILESET_SIDESCROLL
-	.db PALH_TILESET_SIDESCROLL_SPIRITS_GRAVE
+	.db PALH_68
 	.db $32, $04, $12
 
 	; 0x4d
@@ -758,4 +758,4 @@ tilesetData:
 	.db $0f $01 $00 $00 $00 $00 $00 $00 ; Tileset 0x7c
 	.db $0f $01 $00 $00 $00 $00 $00 $00 ; Tileset 0x7d
 	.db $0f $01 $00 $00 $00 $00 $00 $00 ; Tileset 0x7e
-	.db $0f $01 $00 $00 $00 $00 $00 $00 ; Tileset 0x7f
+	.db $0f $01 $00 $00 PALH_00 $00 $00 $00 ; Tileset 0x7f

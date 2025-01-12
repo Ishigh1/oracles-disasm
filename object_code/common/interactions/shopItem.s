@@ -534,7 +534,7 @@ shopItemTreasureToGive:
 .ifdef ROM_AGES
 	/* $0d */ .db  TREASURE_FLUTE         SPECIALOBJECT_DIMITRI
 	/* $0e */ .db  TREASURE_GASHA_SEED    $01
-	/* $0f */ .db  TREASURE_RING          GBA_TIME_RING
+	/* $0f */ .db  TREASURE_RING          UNSTEADFAST_RING
 .else
 	/* $0d */ .db  TREASURE_FLUTE         SPECIALOBJECT_MOOSH
 	/* $0e */ .db  TREASURE_GASHA_SEED    $01

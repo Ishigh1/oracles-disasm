@@ -50,23 +50,147 @@ makuPathScript_spawnUpStairsWhen2TorchesLit:
 	scriptend
 
 
-; Spawn the moving platform in the room with 2 buttons when the right one is pressed.
-spiritsGraveScript_spawnMovingPlatform:
-	checkflagset $01, wActiveTriggers
+; The Pit Custom Scripts
+spiritsGraveScript_startArenaTrigger:
+	checkflagset $00, wMagnetGloveState
+	playsound SND_RUMBLE
+	shakescreen 10
+	wait 20
+	spawnenemy ENEMY_FLYING_TILE, $03, $50, $78
+	spawnenemy ENEMY_MAGUNESU, $00, $58, $38
+	spawnenemy ENEMY_MAGUNESU, $00, $18, $78
+	spawnenemy ENEMY_MAGUNESU, $00, $98, $78
+	spawnenemy ENEMY_MAGUNESU, $00, $58, $b8
+	asm15 scriptHelp.setNumEnemiesTo1
+	setcoords $38, $58
+	settilehere $49
+	setcoords $48, $58
+	settilehere $49
+	setcoords $58, $58
+	settilehere $49
+	setcoords $68, $58
+	settilehere $49
+	setcoords $78, $58
+	settilehere $49
+	setcoords $38, $68
+	settilehere $49
+	setcoords $48, $68
+	settilehere $49
+	setcoords $58, $68
+	settilehere $49
+	setcoords $68, $68
+	settilehere $49
+	setcoords $78, $68
+	settilehere $49
+	setcoords $38, $78
+	settilehere $49
 	setcoords $48, $78
-	asm15 objectCreatePuff
+	settilehere $49
 	setcoords $58, $78
-	asm15 objectCreatePuff
-	wait 30
-	spawninteraction INTERAC_MOVING_PLATFORM, $09, $50, $78
-	playsound SND_SOLVEPUZZLE
+	settilehere $49
+	setcoords $68, $78
+	settilehere $49
+	setcoords $78, $78
+	settilehere $49
+	setcoords $38, $88
+	settilehere $49
+	setcoords $48, $88
+	settilehere $49
+	setcoords $58, $88
+	settilehere $49
+	setcoords $68, $88
+	settilehere $49
+	setcoords $78, $88
+	settilehere $49
+	setcoords $38, $98
+	settilehere $49
+	setcoords $48, $98
+	settilehere $49
+	setcoords $58, $98
+	settilehere $49
+	setcoords $68, $98
+	settilehere $49
+	setcoords $78, $98
+	settilehere $49
+	setmusic MUS_MINIGAME
+	spawninteraction $20, $06, $00, $00
 	scriptend
 
-spiritsGraveScript_spawnBracelet:
+spiritsGraveScript_spawnHeartPieceOnEnemyDeath:
 	stopifitemflagset
-	spawnitem TREASURE_BRACELET, $00
+	wait 30
+	checknoenemies
+	spawnitem TREASURE_HEART_PIECE, $00
 	scriptend
 
+spiritsGraveScript_spawnShovelPlatform:
+	checknoenemies
+	setmusic MUS_NONE
+	setcoords $38, $58
+	settilehere $ef
+	setcoords $48, $58
+	settilehere $ef
+	setcoords $58, $58
+	settilehere $ef
+	setcoords $68, $58
+	settilehere $ef
+	setcoords $78, $58
+	settilehere $df
+	setcoords $38, $68
+	settilehere $ef
+	setcoords $48, $68
+	settilehere $ef
+	setcoords $58, $68
+	settilehere $ef
+	setcoords $68, $68
+	settilehere $ef
+	setcoords $78, $68
+	settilehere $ef
+	setcoords $38, $78
+	playsound SND_POOF
+	createpuff
+	settilehere $f1
+	setcoords $48, $78
+	settilehere $ef
+	setcoords $58, $78
+	settilehere $ef
+	setcoords $68, $78
+	settilehere $ef
+	setcoords $78, $78
+	settilehere $ef
+	setcoords $38, $88
+	settilehere $ef
+	setcoords $48, $88
+	settilehere $ef
+	setcoords $58, $88
+	settilehere $ef
+	setcoords $68, $88
+	settilehere $ef
+	setcoords $78, $88
+	settilehere $ef
+	setcoords $38, $98
+	settilehere $ef
+	setcoords $48, $98
+	settilehere $ef
+	setcoords $58, $98
+	settilehere $ef
+	setcoords $68, $98
+	settilehere $ef
+	setcoords $78, $98
+	settilehere $ef
+	playsound SNDCTRL_STOPSFX 
+	playsound SND_DING
+	wait 20
+	playsound SND_DING
+	wait 20
+	playsound SND_DING
+	wait 30
+	setmusic MUS_CELESTIAL_TOWER
+	scriptend
+
+dungeonScript_refillChest:
+	settilehere TILEINDEX_CHEST
+	scriptend
 
 ; Create the miniboss portal when it's killed.
 dungeonScript_minibossDeath:
@@ -155,113 +279,113 @@ skullDungeonScript_spawnChestWhenOrb1Hit:
 
 
 ; The room with 3 eyeball-statue things that need to be hit with a seed shooter
-crownDungeonScript_spawnChestWhen3TriggersActive:
-	stopifitemflagset
-	checkmemoryeq wActiveTriggers, $07
-	scriptjump spawnChestAfterPuff
+;crownDungeonScript_spawnChestWhen3TriggersActive:
+;	stopifitemflagset
+;	checkmemoryeq wActiveTriggers, $07
+;	scriptjump spawnChestAfterPuff
 
 
-mermaidsCaveScript_spawnBridgeWhenOrbHit:
-	stopifroomflag40set
-	checkflagset $00, wToggleBlocksState
-	asm15 scriptHelp.mermaidsCave_spawnBridge_room38
-	scriptend
+;mermaidsCaveScript_spawnBridgeWhenOrbHit:
+;	stopifroomflag40set
+;	checkflagset $00, wToggleBlocksState
+;	asm15 scriptHelp.mermaidsCave_spawnBridge_room38
+;	scriptend
 
-mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1:
-	wait 1
-	asm15 scriptHelp.setTrigger2IfTriggers0And1Set
-	scriptjump mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1
+;mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1:
+;	wait 1
+;	asm15 scriptHelp.setTrigger2IfTriggers0And1Set
+;	scriptjump mermaidsCaveScript_updateTrigger2BasedOnTriggers0And1
 
 
 ; Creates a stair tile facing south when trigger 0 is activated
-ancientTombScript_spawnSouthStairsWhenTrigger0Active:
-	stopifroomflag40set
-	checkmemoryeq wActiveTriggers, $01
-	settilehere $50
+;ancientTombScript_spawnSouthStairsWhenTrigger0Active:
+;	stopifroomflag40set
+;	checkmemoryeq wActiveTriggers, $01
+;	settilehere $50
 
-ancientTombScript_finishMakingStairs:
-	orroomflag $40
-	asm15 objectCreatePuff
-	playsound SND_SOLVEPUZZLE
-	scriptend
+;ancientTombScript_finishMakingStairs:
+;	orroomflag $40
+;	asm15 objectCreatePuff
+;	playsound SND_SOLVEPUZZLE
+;	scriptend
 
 ; Creates a stair tile facing north when trigger 0 is activated
-ancientTombScript_spawnNorthStairsWhenTrigger0Active:
-	stopifroomflag40set
-	checkmemoryeq wActiveTriggers, $01
-	settilehere $52
-	scriptjump ancientTombScript_finishMakingStairs
+;ancientTombScript_spawnNorthStairsWhenTrigger0Active:
+;	stopifroomflag40set
+;	checkmemoryeq wActiveTriggers, $01
+;	settilehere $52
+;	scriptjump ancientTombScript_finishMakingStairs
 
 
-ancientTombScript_retractWallWhenTrigger0Active:
-	stopifroomflag40set
-	checkmemoryeq wActiveTriggers, $01
-	disableinput
-	wait 30
-	asm15 scriptHelp.ancientTomb_startWallRetractionCutscene
-	scriptend
+;ancientTombScript_retractWallWhenTrigger0Active:
+;	stopifroomflag40set
+;	checkmemoryeq wActiveTriggers, $01
+;	disableinput
+;	wait 30
+;	asm15 scriptHelp.ancientTomb_startWallRetractionCutscene
+;	scriptend
 
 
-ancientTombScript_spawnDownStairsWhenEnemiesKilled:
-	stopifroomflag80set
-	wait 30
-	checknoenemies
-	playsound SND_SOLVEPUZZLE
-	asm15 objectCreatePuff
-	settilehere $45
-	orroomflag $80
-	scriptend
+;ancientTombScript_spawnDownStairsWhenEnemiesKilled:
+;	stopifroomflag80set
+;	wait 30
+;	checknoenemies
+;	playsound SND_SOLVEPUZZLE
+;	asm15 objectCreatePuff
+;	settilehere $44
+;	orroomflag $80
+;	scriptend
 
 
-ancientTombScript_spawnVerticalBridgeWhenTorchLit:
-	checkmemoryeq wNumTorchesLit, $01
-	settilehere $6a
-	playsound SND_SOLVEPUZZLE
-	createpuff
-	scriptend
+;ancientTombScript_spawnVerticalBridgeWhenTorchLit:
+;	checkmemoryeq wNumTorchesLit, $01
+;	settilehere $6a
+;	playsound SND_SOLVEPUZZLE
+;	createpuff
+;	scriptend
 
 
 
-herosCaveScript_spawnChestWhen4TriggersActive:
-	stopifitemflagset
-	checkmemoryeq wActiveTriggers, $0f
-	scriptjump spawnChestAfterPuff
+;herosCaveScript_spawnChestWhen4TriggersActive:
+;	stopifitemflagset
+;	checkmemoryeq wActiveTriggers, $0f
+;	scriptjump spawnChestAfterPuff
 
-herosCaveScript_spawnBridgeWhenTriggerPressed:
-	stopifroomflag40set
-	checkflagset $01, wActiveTriggers
-	asm15 scriptHelp.herosCave_spawnBridge_roomc9
-	scriptend
+;herosCaveScript_spawnBridgeWhenTriggerPressed:
+;	stopifroomflag40set
+;	checkflagset $01, wActiveTriggers
+;	asm15 scriptHelp.herosCave_spawnBridge_roomc9
+;	scriptend
 
-herosCaveScript_spawnNorthStairsWhenEnemiesKilled:
-	stopifitemflagset
-	checknoenemies
-	settilehere $52
-	playsound SND_SOLVEPUZZLE
-	scriptend
+;herosCaveScript_spawnNorthStairsWhenEnemiesKilled:
+;	stopifitemflagset
+;	checknoenemies
+;	settilehere $52
+;	playsound SND_SOLVEPUZZLE
+;	scriptend
 
 
 
 moonlitGrottoScript_brokeCrystal:
-	disableinput
-	wait 30
-	playsound SNDCTRL_STOPSFX
-	shakescreen 180
-	playsound SND_RUMBLE2
-	wait 180
-	showtext TX_1200
-	orroomflag $40
-	setstate $ff
+;	disableinput
+;	wait 30
+;	playsound SNDCTRL_STOPSFX
+;	shakescreen 180
+;	playsound SND_RUMBLE2
+;	wait 180
+;	showtext TX_1200
+;	orroomflag $40
+;	setstate $ff
 
 moonlitGrottoScript_brokeAllCrystals:
-	wait 30
-	shakescreen 100
-	playsound SND_BIG_EXPLOSION
-	wait 90
-	playsound SND_SOLVEPUZZLE
-	wait 30
-	showtext TX_1201
-	setglobalflag GLOBALFLAG_D3_CRYSTALS
-	enableinput
-	asm15 scriptHelp.moonlitGrotto_enableControlAfterBreakingCrystal
-	scriptend
+;	wait 30
+;	shakescreen 100
+;	playsound SND_BIG_EXPLOSION
+;	wait 90
+;	playsound SND_SOLVEPUZZLE
+;	wait 30
+;	showtext TX_1201
+;	setglobalflag GLOBALFLAG_D3_CRYSTALS
+;	enableinput
+;	asm15 scriptHelp.moonlitGrotto_enableControlAfterBreakingCrystal
+;	scriptend

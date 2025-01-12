@@ -262,7 +262,6 @@ enemy00Animations:
 enemy01Animations:
 enemy2bAnimations:
 enemy44Animations:
-enemy46Animations:
 enemy50Animations:
 enemy57Animations:
 enemy5aAnimations:
@@ -407,6 +406,11 @@ enemy10Animations:
 	.dw enemyAnimation374cb
 	.dw enemyAnimation374d3
 enemy11Animations:
+	.dw enemyAnimation3748e
+	.dw enemyAnimation37496
+	.dw enemyAnimation3749e
+	.dw enemyAnimation374a6
+	.dw enemyAnimation37729
 enemy1aAnimations:
 enemy1bAnimations:
 enemy37Animations:
@@ -538,6 +542,13 @@ enemy39Animations:
 enemy3bAnimations:
 	.dw enemyAnimation3746e
 	.dw enemyAnimation37476
+enemy46Animations:
+	.dw enemyAnimation374fb
+	.dw enemyAnimation37572
+	.dw enemyAnimation37584
+	.dw enemyAnimation3751f
+	.dw enemyAnimation3773e
+	.dw enemyAnimation37750
 enemy3cAnimations:
 	.dw enemyAnimation3756a
 	.dw enemyAnimation37679
@@ -703,8 +714,16 @@ enemy7aAnimations:
 	.dw enemyAnimation3799e
 	.dw enemyAnimation37993
 enemy7bAnimations:
-	.dw enemyAnimation379a7
-	.dw enemyAnimation379af
+	.dw enemyAnimation33468
+	.dw enemyAnimation33480
+	.dw enemyAnimation37500
+	.dw enemyAnimation37515
+	.dw enemyAnimation3751a
+	.dw enemyAnimation3398e
+	.dw enemyAnimation37524
+	.dw enemyAnimation37529
+	.dw enemyAnimation37724
+	.dw enemyAnimation37729
 enemy7cAnimations:
 	.dw enemyAnimation37710
 	.dw enemyAnimation377a7
@@ -1193,15 +1212,16 @@ enemyAnimation3756a:
 	.db $18 $02 $01
 	m_AnimationLoop enemyAnimation3756a
 
-enemyAnimation37572: ; Unused
+enemyAnimation37572: ; Used for Magunesu in Romhack
 	.db $08 $02 $00
 	.db $08 $10 $00
 	.db $08 $12 $01
 	.db $08 $10 $00
 	.db $08 $0c $00
 	.db $7f $0c $02
-	.db $08 $0a $00
-	.db $08 $10 $00
+enemyAnimation37584:
+	.db $7f $06 $00
+	m_AnimationLoop enemyAnimation37584
 	.db $08 $12 $00
 	.db $08 $10 $01
 	.db $08 $04 $00
@@ -1385,6 +1405,24 @@ enemyAnimation37708:
 	.db $04 $02 $00
 	m_AnimationLoop enemyAnimation37708
 
+enemyAnimation33468:
+	.db $06 $00 $00
+	.db $06 $06 $00
+	.db $06 $00 $00
+	.db $06 $06 $00
+	.db $06 $00 $00
+	.db $05 $06 $00
+	.db $05 $00 $00
+	.db $05 $06 $00
+enemyAnimation33480:
+	.db $7f $00 $00
+	m_AnimationLoop enemyAnimation33480
+
+enemyAnimation3398e:
+	.db $08 $08 $00
+	.db $08 $00 $00
+	m_AnimationLoop enemyAnimation3398e
+
 enemyAnimation37710:
 	.db $08 $00 $00
 	.db $08 $02 $00
@@ -1413,12 +1451,16 @@ enemyAnimation37736:
 	.db $01 $04 $00
 	m_AnimationLoop enemyAnimation37736
 
-enemyAnimation3773e: ; Unused
-	.db $08 $08 $04
-	.db $08 $0c $06
-	.db $08 $00 $00
-	.db $08 $04 $02
-	m_AnimationLoop enemyAnimation3773e
+enemyAnimation3773e: ; Used for Magunesu in Romhack
+	.db $08 $0a $00
+	.db $08 $10 $00
+	.db $08 $12 $00
+	.db $08 $10 $01
+	.db $08 $04 $00
+	.db $7f $04 $02
+enemyAnimation37750:
+	.db $7f $0e $00
+	m_AnimationLoop enemyAnimation37750
 
 enemyAnimation3774c:
 	.db $7f $16 $00
@@ -1794,7 +1836,6 @@ enemy00OamDataPointers: ; 0x379ff
 enemy01OamDataPointers: ; 0x379ff
 enemy2bOamDataPointers: ; 0x379ff
 enemy44OamDataPointers: ; 0x379ff
-enemy46OamDataPointers: ; 0x379ff
 enemy50OamDataPointers: ; 0x379ff
 enemy57OamDataPointers: ; 0x379ff
 enemy5aOamDataPointers: ; 0x379ff
@@ -2060,9 +2101,16 @@ enemy58OamDataPointers: ; 0x37b77
 	.dw enemyOamData4d33a
 	.dw enemyOamData4d39d
 
-enemy11OamDataPointers: ; 0x37b7f
-	.dw enemyOamData4d35e
-	.dw enemyOamData4d367
+enemy11OamDataPointers: ; mini_digdogger
+	.dw enemyOamData4d31f
+	.dw enemyOamData4d343
+	.dw enemyOamData4d34c
+	.dw enemyOamData4d355
+	.dw enemyOamData492bb
+	.dw enemyOamData4d33a
+	.dw enemyOamData492cd
+	.dw enemyOamData492d6
+	.dw enemyOamData4d42d
 
 enemy13OamDataPointers: ; 0x37b83
 enemy19OamDataPointers: ; 0x37b83
@@ -2215,7 +2263,17 @@ enemy3bOamDataPointers: ; 0x37c4b
 	.dw enemyOamData4e784
 	.dw enemyOamData4e7a5
 	.dw enemyOamData4e7c6
-
+enemy46OamDataPointers: ; magunesu
+	.dw enemyOamData492bb
+	.dw enemyOamData492cd
+	.dw enemyOamData4d34c
+	.dw enemyOamData4d31f
+	.dw enemyOamData492d6
+	.dw enemyOamData4946b
+	.dw enemyOamData49474
+	.dw enemyOamData493c0
+	.dw enemyOamData4947d
+	.dw enemyOamData49486
 enemy3cOamDataPointers: ; 0x37c53
 enemy55OamDataPointers: ; 0x37c53
 enemy59OamDataPointers: ; 0x37c53
@@ -2298,14 +2356,14 @@ enemy53OamDataPointers: ; 0x37cbf
 	.dw enemyOamData4d239
 
 enemy54OamDataPointers: ; 0x37cc7
-	.dw enemyOamData4d331
-	.dw enemyOamData4d328
-	.dw enemyOamData4d616
-	.dw enemyOamData4d623
-	.dw enemyOamData4d630
-	.dw enemyOamData4d63d
-	.dw enemyOamData4d64a
-	.dw enemyOamData4d657
+	;.dw enemyOamData4d331
+	;.dw enemyOamData4d328
+	;.dw enemyOamData4d616
+	;.dw enemyOamData4d623
+	;.dw enemyOamData4d630
+	;.dw enemyOamData4d63d
+	;.dw enemyOamData4d64a
+	;.dw enemyOamData4d657
 
 enemy5dOamDataPointers: ; 0x37cd7
 	.dw enemyOamData4d1e4
@@ -2501,13 +2559,16 @@ enemy7aOamDataPointers: ; 0x37e09
 	.dw enemyOamData4d556
 	.dw enemyOamData4e032
 
-enemy7bOamDataPointers: ; 0x37e1f
-	.dw enemyOamData4d7a9
-	.dw enemyOamData4d7b6
-	.dw enemyOamData4d7c3
-	.dw enemyOamData4d55f
-	.dw enemyOamData4d7d0
-	.dw enemyOamData4d568
+enemy7bOamDataPointers: ; digdogger
+	.dw enemyOamData4b477
+	.dw enemyOamData4b4a8
+	.dw enemyOamData4adf0
+	.dw enemyOamData4b4d9
+	.dw enemyOamData4b50a
+	.dw enemyOamData49570
+	.dw enemyOamData4a2f8
+	.dw enemyOamData4a311
+	.dw enemyOamData49579
 
 enemy7cOamDataPointers: ; 0x37e2b
 	.dw enemyOamData4d35e

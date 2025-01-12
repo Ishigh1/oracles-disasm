@@ -426,24 +426,18 @@ giveTreasure_body:
 
 ; Add a ring to the unappraised ring list.
 @mode9:
-	; Setting bit 6 means the ring is unappraised
-	set 6,c
-	call realignUnappraisedRings
-
-	; Check that there are less than 64 unappraised rings (checking aginst a bcd
-	; number)
-	cp $64
-	jr c,+
-
-	; If there are already 64 unappraised rings, remove one duplicate ring and
-	; re-align the list.
-	call @removeOneDuplicateRing
-	call realignUnappraisedRings
-+
-	; Add the ring to the end of the list
+	ld hl,wRingsObtained
 	ld a,c
-	ld (wUnappraisedRingsEnd-1),a
-	jr realignUnappraisedRings
+	and $3f
+	ld c,a
+	call setFlag
+	ld a,c
+	add $40
+	ld (wTextSubstitutions+2),a
+	ld bc,TX_30_GETRING
+	call showText
+	ret
+
 
 ;;
 ; Decides on one ring to remove by counting all of the unappraised rings and finding the
@@ -902,7 +896,7 @@ itemDropAvailabilityTable:
 	.db (<wObtainedTreasureFlags+TREASURE_PEGASUS_SEEDS/8), 1<<(TREASURE_PEGASUS_SEEDS&7)
 	.db (<wObtainedTreasureFlags+TREASURE_GALE_SEEDS/8)   , 1<<(TREASURE_GALE_SEEDS&7)
 	.db (<wObtainedTreasureFlags+TREASURE_MYSTERY_SEEDS/8), 1<<(TREASURE_MYSTERY_SEEDS&7)
-	.db <wLinkNameNullTerminator, $00	; ITEM_DROP_0a
+	.db (<wObtainedTreasureFlags+TREASURE_BOMBCHUS/8), 1<<(TREASURE_BOMBCHUS&7)
 	.db <wLinkNameNullTerminator, $00	; ITEM_DROP_0b
 .ifdef ROM_AGES
 	.db <wLinkNameNullTerminator, $00	; ITEM_DROP_1_ORE_CHUNK
@@ -989,10 +983,10 @@ itemDropSet2:
 	.db $06 $06 $07 $07 $08 $08 $09 $05
 
 itemDropSet3:
-	.db $0f $0f $0f $01 $01 $01 $01 $01
-	.db $01 $01 $01 $01 $02 $02 $02 $02
-	.db $02 $02 $02 $02 $02 $02 $02 $01
-	.db $02 $03 $03 $03 $03 $02 $00 $00
+	.db $0f $01 $01 $01 $01 $01 $01 $01
+	.db $02 $02 $02 $02 $0a $03 $03 $00
+	.db $04 $0a $04 $0a $04 $0a $04 $0a
+	.db $09 $08 $09 $07 $06 $06 $05 $05
 
 itemDropSet4:
 	.db $04 $04 $04 $04 $04 $04 $04 $04
@@ -1009,44 +1003,44 @@ itemDropSet5:
 itemDropSet6:
 	.db $01 $01 $01 $01 $01 $01 $01 $01
 	.db $01 $01 $02 $02 $02 $02 $02 $02
-	.db $02 $02 $02 $03 $03 $00 $04 $04
-	.db $04 $04 $04 $04 $04 $04 $04 $04
+	.db $02 $02 $02 $03 $03 $00 $04 $0a
+	.db $04 $0a $04 $0a $04 $0a $04 $0a
 
 itemDropSet7:
 	.db $01 $01 $01 $01 $01 $01 $01 $02
 	.db $02 $02 $02 $03 $03 $03 $03 $00
-	.db $04 $04 $04 $04 $04 $04 $04 $04
+	.db $04 $0a $04 $0a $04 $0a $04 $0a
 	.db $09 $08 $07 $07 $06 $06 $05 $05
 
 itemDropSet8:
 	.db $01 $01 $01 $01 $01 $01 $01 $01
 	.db $01 $01 $01 $01 $01 $01 $02 $02
-	.db $02 $02 $03 $03 $00 $04 $04 $04
-	.db $04 $09 $08 $07 $06 $05 $05 $07
+	.db $02 $02 $03 $03 $00 $04 $0a $04
+	.db $0a $09 $08 $07 $06 $05 $05 $07
 
 itemDropSet9:
-	.db $0f $0f $01 $01 $01 $01 $01 $01
-	.db $01 $01 $01 $01 $02 $02 $02 $02
-	.db $02 $02 $02 $03 $03 $00 $01 $02
-	.db $06 $06 $06 $06 $05 $05 $09 $09
+	.db $0f $01 $01 $01 $01 $01 $01 $05
+	.db $02 $02 $02 $02 $0a $03 $03 $00
+	.db $04 $0a $04 $0a $04 $0a $04 $0a
+	.db $09 $08 $09 $07 $06 $06 $05 $05
 
 itemDropSetA:
 	.db $01 $01 $01 $01 $01 $01 $02 $02
 	.db $02 $02 $02 $03 $03 $03 $00 $04
-	.db $04 $04 $04 $04 $04 $04 $04 $04
-	.db $04 $09 $08 $07 $07 $06 $05 $06
+	.db $0a $04 $0a $04 $0a $04 $0a $04
+	.db $0a $09 $08 $07 $07 $06 $05 $06
 
 itemDropSetB:
 	.db $01 $01 $01 $01 $02 $02 $02 $02
-	.db $02 $03 $03 $03 $00 $04 $04 $04
-	.db $04 $09 $09 $08 $08 $08 $07 $07
+	.db $02 $03 $03 $03 $00 $04 $0a $04
+	.db $0a $09 $09 $08 $08 $08 $07 $07
 	.db $07 $06 $06 $06 $09 $05 $05 $05
 
 itemDropSetC:
 	.db $01 $01 $01 $01 $02 $02 $02 $02
 	.db $02 $02 $03 $03 $03 $03 $03 $03
-	.db $04 $04 $04 $04 $04 $04 $04 $04
-	.db $04 $04 $04 $04 $04 $04 $04 $04
+	.db $04 $0a $04 $0a $04 $0a $04 $0a
+	.db $04 $0a $04 $0a $04 $0a $04 $0a
 
 itemDropSetD:
 	.db $02 $02 $02 $02 $02 $02 $02 $02

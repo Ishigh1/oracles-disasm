@@ -67,6 +67,7 @@ sndbdChannel2:
 .include "audio/ages/sfx/echoes.s"
 .include "audio/ages/mus/underwater.s"
 .include "audio/ages/mus/makuTree.s"
+.include "audio/ages/mus/celestialTower.s"
 
 .include "audio/seasons/sfx/magnetGloves.s" ; CROSSITEMS: Added this
 
@@ -303,7 +304,7 @@ bank3dChannelFallback:
 .include "audio/common/mus/mapleTheme.s"
 .include "audio/common/mus/intro1.s"
 .include "audio/common/mus/crazyDance.s"
-.include "audio/ages/mus/ancientTomb.s"
+
 
 snd93Start:
 snd93Channel2:
